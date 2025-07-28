@@ -18,18 +18,25 @@
 }
 
 .big-img {
-  height: 105vh;
-  width: 60vw;
+  height: 100vh;
+  width: 57.5vw;
 }
 
 .big-explore-right {
   margin-left: 550px;
 }
+.side-img-container {
+  margin-bottom: 20px;
+}
 
 .side-img {
-  height: 475px;
+  height: 580px;
   width: auto;
   margin-left: 150px;
+}
+
+.student-img-1 {
+  height: 407px;
 }
 
 .icon-custom {
@@ -43,7 +50,7 @@
 
 .article-item {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   height: 300px;
   width: 100%;
@@ -70,4 +77,10 @@
 
 .scholar-link:hover {
   color: rgb(90, 195, 231);
+}
+
+/* Contact Part */
+.contact-map {
+  height: 480px;
+  width: auto;
 }
