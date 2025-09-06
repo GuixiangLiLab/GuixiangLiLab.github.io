@@ -96,7 +96,7 @@
   width: 100%;
 }
 
-/* 研究方向 */
+/* 研究方向（research.html） */
 .research-card {
   max-width: 80%;
   margin: 2rem auto;
@@ -274,6 +274,141 @@
     border-radius: 0 0 16px 16px;
     border-left: 2px solid rgba(34, 197, 94, 0.3);
   }
+}
+
+/* 首页的研究方向 */
+.research-module {
+  --rm-bg: #fff;
+  --rm-fg: #111;
+  --rm-sub: #555;
+  --rm-line: #e8e8e8;
+  --rm-shadow: 0 6px 20px rgba(0, 0, 0, .06);
+  --rm-shadow-hover: 0 10px 28px rgba(0, 0, 0, .12);
+  --rm-radius: 16px;
+  --rm-gap: 14px;
+  --rm-tr: 220ms cubic-bezier(.2, .7, .2, 1);
+  color: var(--rm-fg);
+  font-family: system-ui, -apple-system, Microsoft YaHei, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "PingFang SC", sans-serif;
+}
+
+.research-module * {
+  box-sizing: border-box;
+}
+
+.rm-wrap {
+  background: var(--rm-bg);
+  border: 1px solid var(--rm-line);
+  border-radius: var(--rm-radius);
+  padding: 20px;
+  box-shadow: var(--rm-shadow);
+  max-width: 1124px;
+  margin: 24px auto;
+}
+
+.rm-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 14px;
+  border-bottom: 1px dashed var(--rm-line);
+  padding-bottom: 10px;
+}
+
+.rm-title {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: .2px;
+}
+
+.rm-sub {
+  font-size: 13px;
+  color: var(--rm-sub);
+}
+
+.rm-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--rm-gap);
+}
+
+@media (max-width:900px) {
+  .rm-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width:560px) {
+  .rm-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.rm-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid var(--rm-line);
+  border-radius: 14px;
+  padding: 16px;
+  transition: transform var(--rm-tr), box-shadow var(--rm-tr), border-color var(--rm-tr);
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+}
+
+.rm-card:hover,
+.rm-card:focus-visible {
+  transform: translateY(-3px);
+  box-shadow: var(--rm-shadow-hover);
+  border-color: #dcdcdc;
+  outline: none;
+}
+
+.rm-icon {
+  width: 36px;
+  height: 36px;
+  margin-bottom: 10px;
+  filter: grayscale(100%);
+  opacity: .9;
+}
+
+.rm-card h3 {
+  font-size: 16px;
+  margin: 0 0 6px;
+  font-weight: 700;
+}
+
+.rm-card p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--rm-sub);
+}
+
+/* 小的角标装饰（黑白条纹），不影响可读性 */
+.rm-card::after {
+  content: "";
+  position: absolute;
+  top: -24px;
+  right: -24px;
+  width: 80px;
+  height: 80px;
+  transform: rotate(25deg);
+  background:
+    repeating-linear-gradient(45deg, rgba(0, 0, 0, .06) 0 6px, transparent 6px 12px);
+  border-radius: 12px;
+  transition: opacity var(--rm-tr);
+  opacity: .6;
+  pointer-events: none;
+}
+
+.rm-card:hover::after {
+  opacity: .9;
+}
+
+/* 更清晰的键盘可达性 */
+.rm-card:focus-visible {
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, .15), var(--rm-shadow-hover);
 }
 
 /* 第三个论文图片 */
