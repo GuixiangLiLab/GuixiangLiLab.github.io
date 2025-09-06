@@ -288,7 +288,7 @@
   --rm-gap: 14px;
   --rm-tr: 220ms cubic-bezier(.2, .7, .2, 1);
   color: var(--rm-fg);
-  font-family: system-ui, -apple-system, Microsoft YaHei, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "PingFang SC", sans-serif;
+  font-family: 'Microsoft YaHei', sans-serif;
 }
 
 .research-module * {
@@ -404,11 +404,6 @@
 
 .rm-card:hover::after {
   opacity: .9;
-}
-
-/* 更清晰的键盘可达性 */
-.rm-card:focus-visible {
-  box-shadow: 0 0 0 3px rgba(0, 0, 0, .15), var(--rm-shadow-hover);
 }
 
 /* 第三个论文图片 */
