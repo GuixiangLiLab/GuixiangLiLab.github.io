@@ -555,8 +555,7 @@
 /* members 专页*/
 /* 容器与主题 */
 .lab-members {
-  --maxw: 1200px;
-  /* 仅用于宽度，不影响 GitHub Pages（不是颜色 var） */
+  max-width: 1200px;
   box-sizing: border-box;
   max-width: 1200px;
   margin: 0 auto;
