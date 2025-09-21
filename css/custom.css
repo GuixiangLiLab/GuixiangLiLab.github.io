@@ -335,16 +335,17 @@
 }
 
 .rm-card {
-  display: block;
+  display: flex;
+  flex-direction: column;
   text-decoration: none;
   color: inherit;
   border: 1px solid #e8e8e8;
   border-radius: 14px;
-  padding: 16px;
-  transition: transform 220ms cubic-bezier(.2, .7, .2, 1), box-shadow 220ms cubic-bezier(.2, .7, .2, 1), border-color 220ms cubic-bezier(.2, .7, .2, 1);
-  position: relative;
   overflow: hidden;
   background: #fff;
+  transition: transform 220ms cubic-bezier(.2, .7, .2, 1),
+    box-shadow 220ms cubic-bezier(.2, .7, .2, 1),
+    border-color 220ms cubic-bezier(.2, .7, .2, 1);
 }
 
 .rm-card:hover,
@@ -355,46 +356,337 @@
   outline: none;
 }
 
-.rm-icon {
-  width: 36px;
-  height: 36px;
-  margin-bottom: 10px;
-  filter: grayscale(100%);
-  opacity: .9;
+.rm-image {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+}
+
+.rm-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* 保持比例，填满裁剪 */
+  transition: transform 0.3s ease;
+}
+
+.rm-card:hover .rm-image img {
+  transform: scale(1.05);
+}
+
+.rm-text {
+  margin-top: 12px;
+  padding: 14px;
 }
 
 .rm-card h3 {
-  font-size: 16px;
-  margin: 0 0 6px;
-  font-weight: 700;
-}
-
-.rm-card p {
+  font-size: 15px;
   margin: 0;
-  font-size: 13px;
-  line-height: 1.5;
-  color: #555;
+  font-weight: 600;
+  line-height: 1.4;
 }
 
-/* 小的角标装饰（黑白条纹），不影响可读性 */
-.rm-card::after {
+
+/* 首页论文和活动 */
+/* ====== 布局基础 ====== */
+.pub-news-module {
+  max-width: 1124px;
+  margin: 70px auto 40px;
+  font-family: 'Microsoft YaHei', sans-serif;
+}
+
+.pn-wrap {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 36px;
+}
+
+@media (max-width: 880px) {
+  .pn-wrap {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* 卡片统一风格 */
+.pn-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, .05);
+  padding: 28px 28px 24px;
+  display: flex;
+  flex-direction: column;
+  /* 让 Read More 能贴底 */
+  min-height: 520px;
+  /* 两列高度更接近，可按需要微调 */
+  transition: transform .35s ease, box-shadow .35s ease;
+}
+
+.pn-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, .12);
+}
+
+/* 标题 */
+.pn-header h2 {
+  font-size: 20px;
+  font-weight: 800;
+  margin: 0 0 18px;
+  position: relative;
+  display: inline-block;
+}
+
+.pn-header h2 span {
+  color: #2e7d32;
+}
+
+.pn-header h2::after {
   content: "";
   position: absolute;
-  top: -24px;
-  right: -24px;
-  width: 80px;
-  height: 80px;
-  transform: rotate(25deg);
-  background: repeating-linear-gradient(45deg, rgba(0, 0, 0, .06) 0 6px, transparent 6px 12px);
+  left: 0;
+  bottom: -8px;
+  width: 56%;
+  height: 3px;
+  background: linear-gradient(90deg, #2e7d32, #66bb6a);
+  border-radius: 2px;
+  opacity: .75;
+}
+
+/* ====== Publications 列表（滚动） ====== */
+.pn-scroll {
+  position: relative;
+  overflow: auto;
+  /* 高度：约显示 3 条（含间距）；可按项目字数微调 */
+  max-height: 360px;
+  padding-right: 6px;
+  /* 预留滚动条空间 */
+  mask-image: linear-gradient(to bottom, transparent 0, #000 14px, #000 calc(100% - 14px), transparent 100%);
+}
+
+/* 自定义滚动条（WebKit） */
+.pn-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+
+.pn-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.pn-scroll::-webkit-scrollbar-thumb {
+  background: rgba(46, 125, 50, .25);
+  border-radius: 8px;
+}
+
+.pn-scroll::-webkit-scrollbar-thumb:hover {
+  background: rgba(46, 125, 50, .35);
+}
+
+.pn-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.pn-item {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 22px;
+  align-items: flex-start;
+  transition: transform .3s ease, background .3s ease, box-shadow .3s ease;
   border-radius: 12px;
-  transition: opacity 220ms cubic-bezier(.2, .7, .2, 1);
-  opacity: .6;
+  padding: 8px;
+  /* 轻微内边距，hover 有高亮感 */
+}
+
+.pn-item:hover {
+  transform: translateX(6px);
+  background: #f4fbf5;
+  box-shadow: inset 0 0 0 1px rgba(46, 125, 50, .08);
+}
+
+.pn-item img {
+  width: 74px;
+  height: 74px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+  transition: transform .4s ease, filter .4s ease;
+}
+
+.pn-item:hover img {
+  transform: scale(1.05);
+  filter: brightness(1.05);
+}
+
+.pn-text h3 {
+  font-size: 15px;
+  margin: 0 0 8px;
+  font-weight: 800;
+  color: #1f2d1f;
+  line-height: 1.55;
+  position: relative;
+}
+
+.pn-text h3::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, #66bb6a, transparent 70%);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .45s ease;
+}
+
+.pn-item:hover h3::after {
+  transform: scaleX(1);
+}
+
+.pn-text p {
+  margin: 0;
+  font-size: 13px;
+  color: #5e6a5e;
+  line-height: 1.65;
+}
+
+/* ====== News 列表（行高更大、卡片式） ====== */
+.pn-col--news .news-list li {
+  margin: 0 0 16px;
+}
+
+.pn-col--news .news-list a {
+  text-decoration: none;
+  color: inherit;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 16px;
+  border-radius: 12px;
+  background: #f8fbf9;
+  transition: background .25s ease, transform .25s ease, box-shadow .25s ease;
+  min-height: 74px;
+  /* 让每条更“厚实” */
+}
+
+.pn-col--news .news-list a:hover {
+  transform: translateX(6px);
+  background: #f2f8f3;
+  box-shadow: inset 0 0 0 1px rgba(46, 125, 50, .10);
+}
+
+.pn-date {
+  background: #e8f5e9;
+  color: #2e7d32;
+  font-size: 13px;
+  font-weight: 800;
+  padding: 6px 12px;
+  border-radius: 999px;
+  white-space: nowrap;
+  transition: background .25s ease, box-shadow .25s ease;
+}
+
+.pn-col--news .news-list a:hover .pn-date {
+  background: #cdebd2;
+  box-shadow: inset 0 0 6px rgba(46, 125, 50, .22);
+}
+
+.pn-title {
+  font-size: 15px;
+  color: #233323;
+  line-height: 1.6;
+  transition: color .25s ease;
+}
+
+.pn-col--news .news-list a:hover .pn-title {
+  color: #2e7d32;
+}
+
+/* ====== Read More 统一贴底 ====== */
+.pn-more {
+  margin-top: auto;
+  /* 关键：把按钮压到卡片底部 */
+  align-self: flex-start;
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: #eaf6ed;
+  color: #1b5e20;
+  font-size: 14px;
+  font-weight: 800;
+  text-decoration: none;
+  transition: transform .25s ease, box-shadow .25s ease, background .25s ease;
+}
+
+.pn-more::after {
+  content: "→";
+  transition: transform .25s ease;
+}
+
+.pn-more:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(46, 125, 50, .18);
+  background: #e2f3e7;
+}
+
+.pn-more:hover::after {
+  transform: translateX(3px);
+}
+
+/* ====== 中间装饰（细长渐变 + 轻纹理） ====== */
+.pn-has-divider .pn-deco {
+  position: absolute;
+  inset: 0;
   pointer-events: none;
 }
 
-.rm-card:hover::after {
+.pn-has-divider .pn-deco::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  bottom: 12px;
+  left: 50%;
+  width: 2px;
+  transform: translateX(-1px);
+  background: linear-gradient(#e6efe8, #cfe6d5, #e6efe8);
+  border-radius: 2px;
   opacity: .9;
 }
+
+.pn-has-divider .pn-deco::after {
+  /* 右上/左下两处淡淡的弧形云纹，填补留白但很克制 */
+  content: "";
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: radial-gradient(closest-side, rgba(102, 187, 106, .14), transparent 70%);
+  top: 40px;
+  left: calc(50% - 110px);
+  filter: blur(2px);
+}
+
+/* ====== 响应式微调 ====== */
+@media (max-width: 880px) {
+  .pn-card {
+    min-height: auto;
+  }
+
+  .pn-scroll {
+    max-height: 320px;
+  }
+
+  .pn-has-divider .pn-deco {
+    display: none;
+  }
+
+  /* 窄屏不显示中线装饰 */
+}
+
 
 /* 第三个论文图片 */
 .article-img-3 {
@@ -427,7 +719,8 @@
   color: rgb(90, 195, 231);
 }
 
-/* contact 地图 */
+/* contact 专页 --------------------------*/
+/* 地图 */
 .contact-map {
   height: 645px;
   width: auto;
@@ -435,7 +728,8 @@
 
 /* contact 标题和内容的外边框 */
 .contact-content {
-  width: 1000px;
+  width: 1300px;
+  font-size: 1.2rem;
 }
 
 .detail-item:hover {
@@ -446,6 +740,7 @@
 /* 需求列表 */
 .requirement-list {
   margin-left: 30px;
+  font-size: 1.2rem;
 }
 
 /* 列表表项 */
@@ -458,7 +753,11 @@
   cursor: pointer;
 }
 
-/* publications 专页 */
+.contact-info {
+  font-size: 1.2rem;
+}
+
+/* publications 专页----------------------- */
 .pubs-module * {
   box-sizing: border-box;
 }
@@ -552,7 +851,7 @@
   color: #1e40af;
 }
 
-/* members 专页*/
+/* members 专页 ----------------------------*/
 /* 容器与主题 */
 .lab-members {
   max-width: 1200px;
@@ -571,21 +870,16 @@
 
 /* 标题样式 */
 .lab-members .block-title {
-  text-align: center;
+  display: inline-block;
+  text-align: start;
   font-size: 28px;
   font-weight: 700;
   letter-spacing: .02em;
   margin: 18px 0 14px;
+  padding-bottom: 10px;
   color: #0d47a1;
   /* 深蓝 */
-}
-
-.lab-members .title-underline {
-  width: 72px;
-  height: 3px;
-  background: #1565c0;
-  margin: 10px auto 26px;
-  border-radius: 3px;
+  border-bottom: 2px solid #1384d5;
 }
 
 /* 树的“主干”——细蓝线从李老师延伸到下面 */
@@ -601,10 +895,10 @@
 /* 网格：自适应居中，卡片尺寸统一 */
 .members-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 28px 24px;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 28px 85px;
   align-items: start;
-  justify-items: center;
+  justify-items: start;
 }
 
 /* 成员卡片 */
@@ -620,8 +914,8 @@
 }
 
 .avatar {
-  width: 160px;
-  height: 160px;
+  width: 200px;
+  height: 200px;
   border-radius: 10%;
   overflow: hidden;
   margin: 0 auto 10px;
@@ -673,9 +967,8 @@
 /* 顶部：李老师置顶居中，稍大 */
 .lead {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   margin-bottom: 10px;
 }
 
@@ -684,19 +977,8 @@
 }
 
 .lead .avatar {
-  width: 180px;
-  height: 180px;
-}
-
-/* 空状态（博士后暂无） */
-.empty {
-  text-align: center;
-  color: #455a64;
-  font-size: 14px;
-  padding: 12px 0 6px;
-  background: #f7fbff;
-  border: 1px dashed #bbdefb;
-  border-radius: 10px;
+  width: 270px;
+  height: 270px;
 }
 
 /* 已毕业学生：头像去色微灰、悬停恢复色彩 */
