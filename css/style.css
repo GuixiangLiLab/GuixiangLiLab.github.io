@@ -191,6 +191,7 @@
     align-items: center;
     background: rgba(3, 27, 78, .3);
     z-index: 1;
+    height: 1080px;
 }
 
 .carousel-control-prev,
