@@ -1,0 +1,595 @@
+* {
+  box-sizing: border-box;
+}
+
+.test {
+  border: 2px solid red;
+}
+
+/* 统一居中的flex */
+.flex-normal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-button {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+/* 首页轮播图片 ----------------------------------- */
+/* 统一尺寸与定位 */
+#header-carousel,
+#header-carousel .carousel,
+#header-carousel .carousel-inner,
+#header-carousel .carousel-item {
+  height: 900px;
+  min-height: 560px;
+  position: relative;
+}
+
+/* 图片容器 */
+#header-carousel .img-container {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  /* 默认白底 */
+  overflow: hidden;
+}
+
+/* 背景暗角 */
+#header-carousel .img-container.fill-blur::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(120% 120% at 50% 60%, rgba(0, 0, 0, 0) 35%, rgba(0, 0, 0, 0.18) 100%);
+  pointer-events: none;
+}
+
+/* 等比主图 */
+#header-carousel .big-img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  z-index: 1;
+}
+
+/* 左右箭头固定垂直居中 */
+#header-carousel .carousel-control-prev,
+#header-carousel .carousel-control-next {
+  position: absolute;
+  margin: 0 20px 0 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: auto;
+  width: 100px;
+  opacity: 0.9;
+  z-index: 3;
+  /* 确保在模糊层和图像之上 */
+}
+
+/* 说明文字 */
+#header-carousel .carousel-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 6vh;
+  z-index: 4;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .4);
+}
+
+/* Explore More 按钮容器 */
+#header-carousel .caption-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+/* 响应式：小屏最小高度降低 */
+@media (max-width: 576px) {
+
+  #header-carousel,
+  #header-carousel .carousel,
+  #header-carousel .carousel-inner,
+  #header-carousel .carousel-item {
+    min-height: 460px;
+  }
+}
+
+/* Ken Burns 缩放（只作用于背景） */
+#header-carousel .img-container.kenburns::before {
+  animation: kb-zoom 18s ease-in-out infinite alternate;
+}
+
+@keyframes kb-zoom {
+  from {
+    transform: scale(1.06);
+  }
+
+  to {
+    transform: scale(1.14);
+  }
+}
+
+/* 老师大头照 -------------------------------------*/
+.profile-text {
+  width: 50%;
+  margin-left: -100px; 
+  padding-right: 20px; 
+}
+
+.side-img {
+  height: 475px;
+  width: auto;
+  margin-left: 100px;
+}
+
+.side-img-container {
+  margin-bottom: 20px;
+}
+
+/* 简介部分按钮样式 */
+.btn-toggle {
+  background-color: white;
+  color: #0d6efd;
+  border: 2px solid #0d6efd;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-toggle:hover {
+  background-color: #0d6efd;
+  color: white;
+}
+
+/* 简介隐藏内容淡入淡出 */
+#more-text {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.5s ease, max-height 0.5s ease;
+}
+
+#more-text.show {
+  opacity: 1;
+  max-height: 500px;
+}
+
+.student-img-1 {
+  height: 407px;
+}
+
+.icon-custom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.article-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 300px;
+  width: 100%;
+}
+
+/* 首页的研究方向 ------------------------------------------------------------*/
+.research-module {
+  color: #111;
+  font-family: 'Microsoft YaHei', sans-serif;
+}
+
+.research-module {
+  box-sizing: border-box;
+}
+
+.rm-wrap {
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, .06);
+  max-width: 1124px;
+  margin: 24px auto;
+}
+
+.rm-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 10px;
+  border-bottom: 1px dashed #e8e8e8;
+  padding-bottom: 10px;
+}
+
+.rm-title {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: .2px;
+}
+
+.rm-sub {
+  font-size: 13px;
+  color: #555;
+}
+
+.rm-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+@media (max-width:900px) {
+  .rm-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width:560px) {
+  .rm-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.rm-card {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid #e8e8e8;
+  border-radius: 14px;
+  overflow: hidden;
+  background: #fff;
+  transition: transform 220ms cubic-bezier(.2, .7, .2, 1),
+    box-shadow 220ms cubic-bezier(.2, .7, .2, 1),
+    border-color 220ms cubic-bezier(.2, .7, .2, 1);
+}
+
+.rm-card:hover,
+.rm-card:focus-visible {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, .12);
+  border-color: #dcdcdc;
+  outline: none;
+}
+
+.rm-image {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+}
+
+.rm-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* 保持比例，填满裁剪 */
+  transition: transform 0.3s ease;
+}
+
+.rm-card:hover .rm-image img {
+  transform: scale(1.05);
+}
+
+.rm-text {
+  margin-top: 12px;
+  padding: 14px;
+}
+
+.rm-card h3 {
+  font-size: 15px;
+  margin: 0;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+
+/* 首页论文和活动 ---------------------------------------------------------- */
+/* ====== 布局基础 ====== */
+.pub-news-module {
+  max-width: 1124px;
+  margin: 70px auto 40px;
+  font-family: 'Microsoft YaHei', sans-serif;
+}
+
+.pn-wrap {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 36px;
+}
+
+@media (max-width: 880px) {
+  .pn-wrap {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* 卡片统一风格 */
+.pn-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, .05);
+  padding: 28px 28px 24px;
+  display: flex;
+  flex-direction: column;
+  /* 让 Read More 能贴底 */
+  min-height: 520px;
+  /* 两列高度更接近，可按需要微调 */
+  transition: transform .35s ease, box-shadow .35s ease;
+}
+
+.pn-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, .12);
+}
+
+/* 标题 */
+.pn-header h2 {
+  font-size: 20px;
+  font-weight: 800;
+  margin: 0 0 18px;
+  position: relative;
+  display: inline-block;
+}
+
+.pn-header h2 span {
+  color: #2e7d32;
+}
+
+.pn-header h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 56%;
+  height: 3px;
+  background: linear-gradient(90deg, #2e7d32, #66bb6a);
+  border-radius: 2px;
+  opacity: .75;
+}
+
+/* ====== Publications 列表（滚动） ====== */
+.pn-scroll {
+  position: relative;
+  overflow: auto;
+  /* 高度：约显示 3 条（含间距）；可按项目字数微调 */
+  max-height: 360px;
+  padding-right: 6px;
+  /* 预留滚动条空间 */
+  mask-image: linear-gradient(to bottom, transparent 0, #000 14px, #000 calc(100% - 14px), transparent 100%);
+}
+
+/* 自定义滚动条（WebKit） */
+.pn-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+
+.pn-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.pn-scroll::-webkit-scrollbar-thumb {
+  background: rgba(46, 125, 50, .25);
+  border-radius: 8px;
+}
+
+.pn-scroll::-webkit-scrollbar-thumb:hover {
+  background: rgba(46, 125, 50, .35);
+}
+
+.pn-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.pn-item {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 22px;
+  align-items: flex-start;
+  transition: transform .3s ease, background .3s ease, box-shadow .3s ease;
+  border-radius: 12px;
+  padding: 8px;
+  /* 轻微内边距，hover 有高亮感 */
+}
+
+.pn-item:hover {
+  transform: translateX(6px);
+  background: #f4fbf5;
+  box-shadow: inset 0 0 0 1px rgba(46, 125, 50, .08);
+}
+
+.pn-item img {
+  width: 74px;
+  height: 74px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+  transition: transform .4s ease, filter .4s ease;
+}
+
+.pn-item:hover img {
+  transform: scale(1.05);
+  filter: brightness(1.05);
+}
+
+.pn-text h3 {
+  font-size: 15px;
+  margin: 0 0 8px;
+  font-weight: 800;
+  color: #1f2d1f;
+  line-height: 1.55;
+  position: relative;
+}
+
+.pn-text h3::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, #66bb6a, transparent 70%);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .45s ease;
+}
+
+.pn-item:hover h3::after {
+  transform: scaleX(1);
+}
+
+.pn-text p {
+  margin: 0;
+  font-size: 13px;
+  color: #5e6a5e;
+  line-height: 1.65;
+}
+
+/* ====== News 列表（行高更大、卡片式） ====== */
+.pn-col--news .news-list li {
+  margin: 0 0 16px;
+}
+
+.pn-col--news .news-list a {
+  text-decoration: none;
+  color: inherit;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 16px;
+  border-radius: 12px;
+  background: #f8fbf9;
+  transition: background .25s ease, transform .25s ease, box-shadow .25s ease;
+  min-height: 74px;
+  /* 让每条更“厚实” */
+}
+
+.pn-col--news .news-list a:hover {
+  transform: translateX(6px);
+  background: #f2f8f3;
+  box-shadow: inset 0 0 0 1px rgba(46, 125, 50, .10);
+}
+
+.pn-date {
+  background: #e8f5e9;
+  color: #2e7d32;
+  font-size: 13px;
+  font-weight: 800;
+  padding: 6px 12px;
+  border-radius: 999px;
+  white-space: nowrap;
+  transition: background .25s ease, box-shadow .25s ease;
+}
+
+.pn-col--news .news-list a:hover .pn-date {
+  background: #cdebd2;
+  box-shadow: inset 0 0 6px rgba(46, 125, 50, .22);
+}
+
+.pn-title {
+  font-size: 15px;
+  color: #233323;
+  line-height: 1.6;
+  transition: color .25s ease;
+}
+
+.pn-col--news .news-list a:hover .pn-title {
+  color: #2e7d32;
+}
+
+/* ====== Read More 统一贴底 ====== */
+.pn-more {
+  margin-top: auto;
+  /* 关键：把按钮压到卡片底部 */
+  align-self: flex-start;
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: #eaf6ed;
+  color: #1b5e20;
+  font-size: 14px;
+  font-weight: 800;
+  text-decoration: none;
+  transition: transform .25s ease, box-shadow .25s ease, background .25s ease;
+}
+
+.pn-more::after {
+  content: "→";
+  transition: transform .25s ease;
+}
+
+.pn-more:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(46, 125, 50, .18);
+  background: #e2f3e7;
+}
+
+.pn-more:hover::after {
+  transform: translateX(3px);
+}
+
+/* ====== 中间装饰（细长渐变 + 轻纹理） ====== */
+.pn-has-divider .pn-deco {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.pn-has-divider .pn-deco::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  bottom: 12px;
+  left: 50%;
+  width: 2px;
+  transform: translateX(-1px);
+  background: linear-gradient(#e6efe8, #cfe6d5, #e6efe8);
+  border-radius: 2px;
+  opacity: .9;
+}
+
+.pn-has-divider .pn-deco::after {
+  /* 右上/左下两处淡淡的弧形云纹，填补留白但很克制 */
+  content: "";
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: radial-gradient(closest-side, rgba(102, 187, 106, .14), transparent 70%);
+  top: 40px;
+  left: calc(50% - 110px);
+  filter: blur(2px);
+}
+
+/* ====== 响应式微调 ====== */
+@media (max-width: 880px) {
+  .pn-card {
+    min-height: auto;
+  }
+
+  .pn-scroll {
+    max-height: 320px;
+  }
+
+  .pn-has-divider .pn-deco {
+    display: none;
+  }
+
+  /* 窄屏不显示中线装饰 */
+}
