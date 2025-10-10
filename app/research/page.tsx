@@ -30,6 +30,7 @@ export default function ResearchPage() {
                 <Image
                   src="/img/perovskite_solar_cells.png"
                   alt="Perovskite Solar Cells"
+                  fill
                   className="research-image"
                 />
               </div>
@@ -66,6 +67,7 @@ export default function ResearchPage() {
                 <Image
                   src="/img/perovskite_photovoltaics.png"
                   alt="Perovskite Photovoltaics"
+                  fill
                   className="research-image"
                 />
               </div>
@@ -102,6 +104,7 @@ export default function ResearchPage() {
                 <Image
                   src="/img/novel_photoelectric_conversion_materials.png"
                   alt="Novel Photoelectric Materials"
+                  fill
                   className="research-image"
                 />
               </div>
