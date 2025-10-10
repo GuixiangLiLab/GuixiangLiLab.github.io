@@ -1,0 +1,30 @@
+name: setup-node
+description: "Setup Node.js ⚙️ - Cache pnpm store ⚡ - Install deps 🔧"
+
+runs:
+  using: "composite"
+  steps:
+    - name: Setup Node.js ⚙️
+      uses: actions/setup-node@v4
+      with:
+        node-version: 22
+        cache: 'pnpm'  # 让 setup-node 自带 pnpm 缓存（可选）
+
+    - name: Install pnpm
+      uses: pnpm/action-setup@v4
+      with:
+        version: 10
+        run_install: false
+
+    # 独立的 pnpm store 缓存（更稳）
+    - name: Cache pnpm store ⚡
+      uses: actions/cache@v4
+      with:
+        path: ~/.pnpm-store
+        key: pnpm-${{ runner.os }}-${{ hashFiles('**/pnpm-lock.yaml') }}
+        restore-keys: |
+          pnpm-${{ runner.os }}-
+
+    - name: Install dependencies 🔧
+      shell: bash
+      run: pnpm install --frozen-lockfile
