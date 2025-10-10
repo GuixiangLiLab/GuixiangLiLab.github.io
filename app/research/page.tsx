@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import Image from "next/image";
 import "./research.css";
 
 export default function ResearchPage() {
@@ -26,7 +27,7 @@ export default function ResearchPage() {
           <div className="left-section">
             <div className="title-image-group">
               <div className="image-container">
-                <img
+                <Image
                   src="/img/perovskite_solar_cells.png"
                   alt="Perovskite Solar Cells"
                   className="research-image"
@@ -62,7 +63,7 @@ export default function ResearchPage() {
           <div className="left-section">
             <div className="title-image-group">
               <div className="image-container">
-                <img
+                <Image
                   src="/img/perovskite_photovoltaics.png"
                   alt="Perovskite Photovoltaics"
                   className="research-image"
@@ -98,7 +99,7 @@ export default function ResearchPage() {
           <div className="left-section">
             <div className="title-image-group">
               <div className="image-container">
-                <img
+                <Image
                   src="/img/novel_photoelectric_conversion_materials.png"
                   alt="Novel Photoelectric Materials"
                   className="research-image"
