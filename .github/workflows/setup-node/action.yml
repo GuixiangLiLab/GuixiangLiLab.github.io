@@ -10,11 +10,11 @@ runs:
         node-version: 22
         cache: 'pnpm'  # 让 setup-node 自带 pnpm 缓存（可选）
 
-    - name: Install pnpm
-      uses: pnpm/action-setup@v4
-      with:
-        version: 10
-        run_install: false
+    # - name: Install pnpm
+    #   uses: pnpm/action-setup@v4
+    #   with:
+    #     version: 10
+    #     run_install: false
 
     # 独立的 pnpm store 缓存（更稳）
     - name: Cache pnpm store ⚡
