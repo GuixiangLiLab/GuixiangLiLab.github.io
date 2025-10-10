@@ -1,42 +1,79 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 html,
 body {
-  max-width: 100vw;
-  overflow-x: hidden;
+  height: 100%;
+}
+
+.test {
+  border: 1px solid red;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: var(--font-roboto), system-ui, -apple-system, "Segoe UI", Roboto, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Arial, "Noto Sans", sans-serif;
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+h1,
+h2,
+.display-1,
+.navbar-brand h1 {
+  font-family: var(--font-red-rose), var(--font-roboto), serif;
+}
+
+.display-header-brand {
+  font-size: 2.5rem;
+}
+
+#spinner.show {
+  display: flex;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+.nav-link.active {
+  color: #0a7cff !important;
+  font-weight: 600;
+  border-bottom: 2px solid #0a7cff;
+  /*底线高亮*/
+}
+
+.nav-link:hover {
+  color: #0affb5 !important;
+}
+
+/* 导航栏吸顶 */
+/* 基础样式 */
+.site-navbar {
+  transition: transform .25s ease, box-shadow .2s ease, background-color .2s ease;
+  will-change: transform;
+}
+
+/* 常规（未固定）：跟随文档流 */
+.site-navbar--normal {
+  position: relative;
+  /*或保持默认静态定位*/
+  transform: translateY(0);
+  box-shadow: none;
+  z-index: 2;
+}
+
+/* 固定在顶部，占满一行 */
+.site-navbar--fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1040;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, .06);
+}
+
+/* 向下滚动时隐藏（滑出顶部） */
+.site-navbar--fixed.site-navbar--hide {
+  transform: translateY(-100%);
+}
+
+/* 向上滚动或停止时显示（滑入） */
+.site-navbar--fixed.site-navbar--show {
+  transform: translateY(0);
 }

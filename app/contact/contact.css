@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+}
+
+.test {
+  border: 2px solid red;
+}
+
+.navbar-button {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+/* contact 专页 --------------------------*/
+/* 地图 */
+.contact-map {
+  height: 645px;
+  width: auto;
+}
+
+.contact-content p,
+.contact-content a {
+  color: #6c757d;
+}
+
+.contact-content a:hover {
+  color: #000;
+}
+
+/* contact 标题和内容的外边框 */
+.contact-content {
+  width: 1300px;
+  font-size: 1.2rem;
+}
+
+.detail-item:hover {
+  color: black;
+  cursor: pointer;
+}
+
+/* 需求列表 */
+.requirement-list {
+  margin-left: 30px;
+  font-size: 1.2rem;
+}
+
+/* 列表表项 */
+.list-item {
+  margin-bottom: 10px;
+}
+
+.list-item:hover {
+  background-color: #f2f2f2;
+  cursor: pointer;
+}
+
+.contact-info {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 992px) {
+  .contact-content { width: 100%; }
+  .contact-map { height: 360px; width: 100%; object-fit: cover; }
+}
