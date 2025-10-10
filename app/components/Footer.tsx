@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Footer() {
   return (
     <>
@@ -6,35 +8,46 @@ export default function Footer() {
         <div className="container">
           <div className="row g-5 py-5">
             <div className="col-lg-6 pe-lg-5">
-              <a href="/" className="navbar-brand">
+              <Link href="/" className="navbar-brand">
                 <h1 className="h1 text-primary mb-0">
-                  Guixiang Li<span className="text-white">Laboratory</span>
+                  Guixiang Li<span className="text-white"> Laboratory</span>
                 </h1>
-              </a>
+              </Link>
               <p className="fs-5 mb-4">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus augue, iaculis
                 id elit eget, ultrices pulvinar tortor.
               </p>
               <p><i className="fa fa-map-marker-alt me-2" />Southeast University, Nanjing, China</p>
               <p><i className="fa fa-envelope me-2" />guixiang.li@seu.edu.cn</p>
+              <p><i className="fa fa-envelope me-2"></i>info@example.com</p>
+              <div className="d-flex mt-4">
+                <Link className="btn btn-lg-square btn-primary me-2" href="https://x.com/GuixiangLi"><i
+                  className="fab fa-twitter"></i></Link>
+                <Link className="btn btn-lg-square btn-primary me-2" href="./Members/liguixiang.html"><i
+                  className="fab fa-facebook-f"></i></Link>
+                <Link className="btn btn-lg-square btn-primary me-2" href="./Members/liguixiang.html"><i
+                  className="fab fa-linkedin-in"></i></Link>
+                <Link className="btn btn-lg-square btn-primary me-2" href="./Members/liguixiang.html"><i
+                  className="fab fa-instagram"></i></Link>
+              </div>
             </div>
             <div className="col-lg-6 ps-lg-5">
               <div className="row g-5">
                 <div className="col-sm-6">
                   <h4 className="text-light mb-4">Quick Links</h4>
-                  <a className="btn btn-link" href="">About Us</a>
-                  <a className="btn btn-link" href="">Contact Us</a>
-                  <a className="btn btn-link" href="">Our Services</a>
-                  <a className="btn btn-link" href="">Terms & Condition</a>
-                  <a className="btn btn-link" href="">Support</a>
+                  <Link className="btn btn-link" href="">About Us</Link>
+                  <Link className="btn btn-link" href="">Contact Us</Link>
+                  <Link className="btn btn-link" href="">Our Services</Link>
+                  <Link className="btn btn-link" href="">Terms & Condition</Link>
+                  <Link className="btn btn-link" href="">Support</Link>
                 </div>
                 <div className="col-sm-6">
                   <h4 className="text-light mb-4">Popular Links</h4>
-                  <a className="btn btn-link" href="">About Us</a>
-                  <a className="btn btn-link" href="">Contact Us</a>
-                  <a className="btn btn-link" href="">Our Services</a>
-                  <a className="btn btn-link" href="">Terms & Condition</a>
-                  <a className="btn btn-link" href="">Support</a>
+                  <Link className="btn btn-link" href="">About Us</Link>
+                  <Link className="btn btn-link" href="">Contact Us</Link>
+                  <Link className="btn btn-link" href="">Our Services</Link>
+                  <Link className="btn btn-link" href="">Terms & Condition</Link>
+                  <Link className="btn btn-link" href="">Support</Link>
                 </div>
                 <div className="col-sm-12">
                   <h4 className="text-light mb-4">Newsletter</h4>
@@ -56,11 +69,11 @@ export default function Footer() {
         <div className="container">
           <div className="row">
             <div className="col-md-6 text-center text-md-start">
-              <p className="mb-0">&copy; <a href="#">Your Site Name</a>. All Rights Reserved.</p>
+              <p className="mb-0">&copy; <Link href="#">Your Site Name</Link>. All Rights Reserved.</p>
             </div>
             <div className="col-md-6 text-center text-md-end">
               <p className="mb-0">
-                Designed by <a href="https://htmlcodex.com">HTML Codex</a>
+                Designed by <Link href="https://htmlcodex.com">HTML Codex</Link>
               </p>
             </div>
           </div>
@@ -69,9 +82,9 @@ export default function Footer() {
       {/* Copyright End */}
 
       {/* Back to Top */}
-      <a href="#" className="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top">
+      <Link href="#" className="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top">
         <i className="bi bi-arrow-up" />
-      </a>
+      </Link>
     </>
   );
 }

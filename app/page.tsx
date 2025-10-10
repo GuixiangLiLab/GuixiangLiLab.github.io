@@ -98,17 +98,16 @@ export default function HomePage() {
               <img className="side-img" src="img/liguixiang.jpg" alt="Dr. Guixiang Li" />
             </div>
             <div className="col-md-6 wow fadeIn profile-text" data-wow-delay="0.5s">
-              <h1 className="display-6 mb-3">Dr. Guixiang Li</h1>
+              <h1 className="display-6 mb-3">Prof. Dr. Guixiang Li</h1>
               <p className="mb-1 teacher-intro">Professor</p>
               <p className="mb-5 teacher-intro">Southeast University, Nanjing, China</p>
               <h3 className="mb-3">Biography</h3>
               <p className="mb-4 teacher-intro">
-                Guixiang Li, Young Distinguished Professor at Southeast University, Doctoral Supervisor,
-                recipient of the National High-Level Young Talent Program, and Marie Skłodowska-Curie Fellow of the European Union.
-                Received Ph.D. from the Helmholtz-Zentrum Berlin in Germany, followed by postdoctoral research at
-                École Polytechnique Fédérale de Lausanne (EPFL) in Switzerland and Northwestern University in the United States.
-                Research interests include optoelectronic materials, energy chemistry, and semiconductor physics, with a particular
-                focus on application-oriented studies in photovoltaic devices.
+                Li Guixiang, Young Chief Professor and Doctoral Supervisor at Southeast University, 
+                is a National-level Young Talent and an EU Marie Curie Fellow. She earned her Ph.D. 
+                from the Helmholtz Centre for Materials and Energy in Germany, followed by 
+                postdoctoral research at the Swiss Federal Institute of Technology in Lausanne and 
+                Northwestern University in the United States.
               </p>
 
               <button
@@ -123,11 +122,29 @@ export default function HomePage() {
               </button>
 
               <p className={`mb-4 mt-3 ${showMore ? 'show' : ''} teacher-intro`} id="more-text">
-                Over 50 papers published in international academic journals, including 25 as first or corresponding author in
-                <em> Science</em>, <em> Nature Reviews Materials</em>, <em> Advanced Materials</em>, <em> Angewandte Chemie</em>, and other leading journals in recent years.
-                Multiple papers selected as ESI Highly Cited and Hot Papers. Three invention patents granted. Serving as Youth Editorial Board Member of
-                <em> APL Photonics</em> and <em> Energy & Environmental Materials</em>, and Editorial Board Member of <em> Scientific Reports</em>.
-                Recipient of one Second Prize of the Provincial Natural Science Award.
+                His research focuses on functional semiconductor materials and 
+                optoelectronic devices, addressing fundamental applications and key technological 
+                challenges in photovoltaic conversion. This encompasses functional molecular 
+                design and synthesis, perovskite solar modules and tandem cells, smart 
+                photovoltaic-energy storage integration, novel semiconductor materials and 
+                optoelectronic device development, alongside investigations into material 
+                chemistry and device physics mechanisms. Her work aims to advance next-generation 
+                functional materials, optoelectronic technologies, and their integrated applications.
+                <br /><br />
+                He has published over 70 papers in international academic journals, with more 
+                than 30 papers as corresponding/first author in prestigious journals such as 
+                Science, Nature Reviews Materials, Nature Photonics, Advanced 
+                Materials, and Angewandte Chemie in recent years. Several of these papers 
+                have been selected as ESI Highly Cited Papers/Hot Papers. He serves as an 
+                editorial board member for Discover Sustainability and Scientific Reports, a 
+                reviewer for Nature Energy, Advanced Materials, Journal of the American Chemical 
+                Society, and other journals, and is an evaluation expert for the Chinese Institute 
+                of Electronics. He has led projects including the National Natural Science 
+                Foundation of China High-Level Youth Program, the National Natural Science 
+                Foundation of China Youth Program, and the EU Framework Program for Research 
+                and Innovation. He was selected as one of the first batch of Jiangsu Province's 
+                “U35 Cultivation” Young Science and Technology Talents and received the Second 
+                Prize in Natural Science at the provincial/ministerial level.
               </p>
             </div>
           </div>

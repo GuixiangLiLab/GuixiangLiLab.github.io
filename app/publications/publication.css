@@ -764,16 +764,17 @@
 
 
 /* 第三个论文图片 */
-.article-img-3 {
+/* .article-img-3 {
   width: 400px !important;
   height: auto;
-}
+} */
 
 /* 论文的图片 */
 .article-item img {
   height: 95%;
   width: auto;
   padding-left: 50px;
+  width: 400px;
 }
 
 .article-box {

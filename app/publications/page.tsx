@@ -21,7 +21,7 @@ export default function PublicationsPage() {
               See full publication list in{" "}
               <a
                 className="scholar-link"
-                href="https://scholar.google.com/citations?hl=zh-CN&user=eaS3FCcAAAAJ"
+                href="https://scholar.google.com/citations?user=eaS3FCcAAAAJ&hl=en"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -147,6 +147,35 @@ export default function PublicationsPage() {
                 </div>
               </div>
             </div>
+
+            {/* Item 5 */}
+            <div className="article-item">
+              <img
+                className="article-img wow fadeInUp"
+                src="/img/Heat‐Triggered_Dynamic.png"
+                alt="Inverted Perovskite"
+              />
+              <div className="col-lg-7 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div className="service-item">
+                  <h5 className="mb-3">
+                    Heat‐Triggered Dynamic Self‐Healing Framework for Variable‐Temperature Stable Perovskite Solar Cells
+                  </h5>
+                  <p className="mb-4">
+                    Y Tang, Z Zhang, <span className="bold">G Li</span>, C Qin, Z Su, H Liu, F Yang, Y Yang, MH Aldamasy, ...
+                    (2025).Advanced Materials.
+                  </p>
+                  <h6 className="mb-3">DOI:10.1002/adma.202420378</h6>
+                  <a
+                    className="btn btn-light px-3"
+                    href="https://advanced.onlinelibrary.wiley.com/doi/abs/10.1002/adma.202420378"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Read More<i className="bi bi-chevron-double-right ms-1" />
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -187,6 +216,22 @@ export default function PublicationsPage() {
               <p className="pubs-meta">
                 Wang, A., Du, K., Fang, Z., Ren, Y., Zhou, C., ... Dong, X., Li, G., Nazeeruddin, M. K., &amp; Ding,
                 J.. (2025). Advanced Materials.
+              </p>
+            </li>
+
+            <li className="pubs-item">
+              <div className="pubs-title-line">
+                <a
+                  href="https://advanced.onlinelibrary.wiley.com/doi/abs/10.1002/adma.202420378"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Heat‐Triggered Dynamic Self‐Healing Framework for Variable‐Temperature Stable Perovskite Solar Cells
+                </a>
+              </div>
+              <p className="pubs-meta">
+                Y Tang, Z Zhang, <span className="bold">G Li</span>, C Qin, Z Su, H Liu, F Yang, Y Yang, MH Aldamasy, ...
+                    (2025).Advanced Materials.
               </p>
             </li>
           </ul>

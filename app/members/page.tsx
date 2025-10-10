@@ -17,7 +17,7 @@ export default function MembersPage() {
       <section className="lab-members">
         {/* 顶部：李老师 */}
         <div className="group">
-          <h2 className="block-title">Dr. Guixiang Li</h2>
+          <h2 className="block-title">Prof. Dr. Guixiang Li</h2>
           <div className="lead">
             <div className="member-card">
               <Link href="/members/liguixiang">
