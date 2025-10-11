@@ -103,10 +103,10 @@ export default function HomePage() {
               <p className="mb-5 teacher-intro">Southeast University, Nanjing, China</p>
               <h3 className="mb-3">Biography</h3>
               <p className="mb-4 teacher-intro">
-                Li Guixiang, Young Chief Professor and Doctoral Supervisor at Southeast University, 
-                is a National-level Young Talent and an EU Marie Curie Fellow. She earned her Ph.D. 
-                from the Helmholtz Centre for Materials and Energy in Germany, followed by 
-                postdoctoral research at the Swiss Federal Institute of Technology in Lausanne and 
+                Li Guixiang, Young Chief Professor and Doctoral Supervisor at Southeast University,
+                is a National-level Young Talent and an EU Marie Curie Fellow. She earned her Ph.D.
+                from the Helmholtz Centre for Materials and Energy in Germany, followed by
+                postdoctoral research at the Swiss Federal Institute of Technology in Lausanne and
                 Northwestern University in the United States.
               </p>
 
@@ -122,28 +122,28 @@ export default function HomePage() {
               </button>
 
               <p className={`mb-4 mt-3 ${showMore ? 'show' : ''} teacher-intro`} id="more-text">
-                His research focuses on functional semiconductor materials and 
-                optoelectronic devices, addressing fundamental applications and key technological 
-                challenges in photovoltaic conversion. This encompasses functional molecular 
-                design and synthesis, perovskite solar modules and tandem cells, smart 
-                photovoltaic-energy storage integration, novel semiconductor materials and 
-                optoelectronic device development, alongside investigations into material 
-                chemistry and device physics mechanisms. Her work aims to advance next-generation 
+                His research focuses on functional semiconductor materials and
+                optoelectronic devices, addressing fundamental applications and key technological
+                challenges in photovoltaic conversion. This encompasses functional molecular
+                design and synthesis, perovskite solar modules and tandem cells, smart
+                photovoltaic-energy storage integration, novel semiconductor materials and
+                optoelectronic device development, alongside investigations into material
+                chemistry and device physics mechanisms. Her work aims to advance next-generation
                 functional materials, optoelectronic technologies, and their integrated applications.
                 <br /><br />
-                He has published over 70 papers in international academic journals, with more 
-                than 30 papers as corresponding/first author in prestigious journals such as 
-                Science, Nature Reviews Materials, Nature Photonics, Advanced 
-                Materials, and Angewandte Chemie in recent years. Several of these papers 
-                have been selected as ESI Highly Cited Papers/Hot Papers. He serves as an 
-                editorial board member for Discover Sustainability and Scientific Reports, a 
-                reviewer for Nature Energy, Advanced Materials, Journal of the American Chemical 
-                Society, and other journals, and is an evaluation expert for the Chinese Institute 
-                of Electronics. He has led projects including the National Natural Science 
-                Foundation of China High-Level Youth Program, the National Natural Science 
-                Foundation of China Youth Program, and the EU Framework Program for Research 
-                and Innovation. He was selected as one of the first batch of Jiangsu Province's 
-                “U35 Cultivation” Young Science and Technology Talents and received the Second 
+                He has published over 70 papers in international academic journals, with more
+                than 30 papers as corresponding/first author in prestigious journals such as
+                Science, Nature Reviews Materials, Nature Photonics, Advanced
+                Materials, and Angewandte Chemie in recent years. Several of these papers
+                have been selected as ESI Highly Cited Papers/Hot Papers. He serves as an
+                editorial board member for Discover Sustainability and Scientific Reports, a
+                reviewer for Nature Energy, Advanced Materials, Journal of the American Chemical
+                Society, and other journals, and is an evaluation expert for the Chinese Institute
+                of Electronics. He has led projects including the National Natural Science
+                Foundation of China High-Level Youth Program, the National Natural Science
+                Foundation of China Youth Program, and the EU Framework Program for Research
+                and Innovation. He was selected as one of the first batch of Jiangsu Province's
+                “U35 Cultivation” Young Science and Technology Talents and received the Second
                 Prize in Natural Science at the provincial/ministerial level.
               </p>
             </div>
@@ -243,6 +243,18 @@ export default function HomePage() {
                         <div className="pn-text">
                           <h3>Inhibiting Interfacial Nonradiative Recombination in Inverted Perovskite Solar Cells with a Multifunctional Molecule</h3>
                           <p>Wu, J., Zhu, R., <span className="bold">Li, G.</span>, Zhang, Z., Pascual, J., ... Li, M.. (2024). Advanced Materials</p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://advanced.onlinelibrary.wiley.com/doi/abs/10.1002/adma.202420378" target="_blank" rel="noreferrer">
+                      <div className="pn-item">
+                        <img src="img/Heat‐Triggered_Dynamic.png" alt="Publication 4" />
+                        <div className="pn-text">
+                          <h3>Heat‐Triggered Dynamic Self‐Healing Framework for Variable‐Temperature Stable Perovskite Solar Cells</h3>
+                          <p>Y Tang, Z Zhang, <span className="bold">G Li</span>, C Qin, Z Su, H Liu, F Yang, Y Yang, MH Aldamasy, ...
+                            (2025).Advanced Materials.</p>
                         </div>
                       </div>
                     </a>
