@@ -16,7 +16,7 @@ h1,
 h2,
 .display-1,
 .navbar-brand h1 {
-  font-family: var(--font-red-rose), var(--font-roboto), serif;
+  font-family: var(--font-red-rose), var(--font-roboto), system-ui;
 }
 
 .display-header-brand {
@@ -76,4 +76,64 @@ a {
 /* 向上滚动或停止时显示（滑入） */
 .site-navbar--fixed.site-navbar--show {
   transform: translateY(0);
+}
+
+/* 中英文切换按钮 */
+.header-lang-toggle {
+  position: relative;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1px solid rgba(0,0,0,0.12);
+  background: #ffffff;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  transition: transform 0.18s ease, background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.header-lang-toggle:hover {
+  background: #f6f6f6;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+.header-lang-toggle:active {
+  transform: scale(0.98);
+}
+
+/* 切换时的“轻微弹跳” */
+.header-lang-toggle--bump {
+  animation: headerLangBump 0.22s ease;
+}
+@keyframes headerLangBump {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.06); }
+  100% { transform: scale(1); }
+}
+
+/* 背景地球图标 */
+.header-lang-toggle__bg {
+  position: absolute;
+  font-size: 18px;
+  opacity: 0.22;          /* 低调做背景，不喧宾夺主 */
+  pointer-events: none;
+}
+
+/* 中心文字：中/EN，带一个小过渡 */
+.header-lang-toggle__label {
+  position: relative;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.2px;
+  transition: transform 0.22s ease, opacity 0.22s ease;
+}
+
+/* 进入/退出时的小切换动效（基于 data-lang） */
+.header-lang-toggle__label[data-lang="zh"] {
+  /* 按钮中文样式 */
+}
+.header-lang-toggle__label[data-lang="en"] {
+  /* 英文默认样式就好 */
 }

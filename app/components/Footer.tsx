@@ -1,60 +1,112 @@
+"use client"
+
+/**
+ * 通用组件，页脚部分
+ */
+
+import useI18nLite from "@/components/useI18nLite";
 import Link from "next/link";
 
 export default function Footer() {
+  const { t, L } = useI18nLite();
+
   return (
     <>
       {/* Footer Start */}
-      <div className="container-fluid footer position-relative bg-dark text-white-50 py-5 wow fadeIn" data-wow-delay="0.1s">
+      <div
+        className="container-fluid footer position-relative bg-dark text-white-50 py-5 wow fadeIn"
+        data-wow-delay="0.1s"
+      >
         <div className="container">
           <div className="row g-5 py-5">
             <div className="col-lg-6 pe-lg-5">
-              <Link href="/" className="navbar-brand">
-                <h1 className="h1 text-primary mb-0">
-                  Guixiang Li<span className="text-white"> Laboratory</span>
+              <Link href={L("/")} className="navbar-brand">
+                <h1 className="h1 text-primary mb-5">
+                  {t("component.footer.labName.primary")}
+                  <span className="text-white">
+                    {t("component.footer.labName.secondary")}
+                  </span>
                 </h1>
               </Link>
-              <p className="fs-5 mb-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus augue, iaculis
-                id elit eget, ultrices pulvinar tortor.
+
+              <p>
+                <i className="fa fa-map-marker-alt me-2" />
+                {t("component.footer.address")}
               </p>
-              <p><i className="fa fa-map-marker-alt me-2" />Southeast University, Nanjing, China</p>
-              <p><i className="fa fa-envelope me-2" />guixiang.li@seu.edu.cn</p>
-              <p><i className="fa fa-envelope me-2"></i>info@example.com</p>
+              <p>
+                <i className="fa fa-envelope me-2" />
+                guixiang.li@seu.edu.cn
+              </p>
+
               <div className="d-flex mt-4">
-                <Link className="btn btn-lg-square btn-primary me-2" href="https://x.com/GuixiangLi"><i
-                  className="fab fa-twitter"></i></Link>
-                <Link className="btn btn-lg-square btn-primary me-2" href="./Members/liguixiang.html"><i
-                  className="fab fa-facebook-f"></i></Link>
-                <Link className="btn btn-lg-square btn-primary me-2" href="./Members/liguixiang.html"><i
-                  className="fab fa-linkedin-in"></i></Link>
-                <Link className="btn btn-lg-square btn-primary me-2" href="./Members/liguixiang.html"><i
-                  className="fab fa-instagram"></i></Link>
+                <Link
+                  className="btn btn-lg-square btn-primary me-2"
+                  href="https://x.com/GuixiangLi"
+                >
+                  <i className="fab fa-twitter"></i>
+                </Link>
               </div>
             </div>
+
             <div className="col-lg-6 ps-lg-5">
               <div className="row g-5">
                 <div className="col-sm-6">
-                  <h4 className="text-light mb-4">Quick Links</h4>
-                  <Link className="btn btn-link" href="">About Us</Link>
-                  <Link className="btn btn-link" href="">Contact Us</Link>
-                  <Link className="btn btn-link" href="">Our Services</Link>
-                  <Link className="btn btn-link" href="">Terms & Condition</Link>
-                  <Link className="btn btn-link" href="">Support</Link>
+                  <h4 className="text-light mb-4">
+                    {t("component.footer.quickLinks.title")}
+                  </h4>
+                  <Link className="btn btn-link" href={L("/")}>
+                    {t("component.footer.quickLinks.about")}
+                  </Link>
+                  <Link className="btn btn-link" href={L("/contact")}>
+                    {t("component.footer.quickLinks.contact")}
+                  </Link>
+                  <Link className="btn btn-link" href="#">
+                    {t("component.footer.quickLinks.services")}
+                  </Link>
+                  <Link className="btn btn-link" href="#">
+                    {t("component.footer.quickLinks.terms")}
+                  </Link>
+                  <Link className="btn btn-link" href="#">
+                    {t("component.footer.quickLinks.support")}
+                  </Link>
                 </div>
+
                 <div className="col-sm-6">
-                  <h4 className="text-light mb-4">Popular Links</h4>
-                  <Link className="btn btn-link" href="">About Us</Link>
-                  <Link className="btn btn-link" href="">Contact Us</Link>
-                  <Link className="btn btn-link" href="">Our Services</Link>
-                  <Link className="btn btn-link" href="">Terms & Condition</Link>
-                  <Link className="btn btn-link" href="">Support</Link>
+                  <h4 className="text-light mb-4">
+                    {t("component.footer.popularLinks.title")}
+                  </h4>
+                  <Link className="btn btn-link" href={L("/")}>
+                    {t("component.footer.popularLinks.about")}
+                  </Link>
+                  <Link className="btn btn-link" href={L("/contact")}>
+                    {t("component.footer.popularLinks.contact")}
+                  </Link>
+                  <Link className="btn btn-link" href="#">
+                    {t("component.footer.popularLinks.services")}
+                  </Link>
+                  <Link className="btn btn-link" href="#">
+                    {t("component.footer.popularLinks.terms")}
+                  </Link>
+                  <Link className="btn btn-link" href="#">
+                    {t("component.footer.popularLinks.support")}
+                  </Link>
                 </div>
+
                 <div className="col-sm-12">
-                  <h4 className="text-light mb-4">Newsletter</h4>
+                  <h4 className="text-light mb-4">
+                    {t("component.footer.newsletter.title")}
+                  </h4>
                   <div className="w-100">
                     <div className="input-group">
-                      <input type="text" className="form-control border-0 py-3 px-4" style={{ background: "rgba(255,255,255,.1)" }} placeholder="Your Email Address" />
-                      <button className="btn btn-primary px-4">Sign Up</button>
+                      <input
+                        type="text"
+                        className="form-control border-0 py-3 px-4"
+                        style={{ background: "rgba(255,255,255,.1)" }}
+                        placeholder={t("component.footer.newsletter.placeholder")}
+                      />
+                      <button className="btn btn-primary px-4">
+                        {t("component.footer.newsletter.signup")}
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -62,18 +114,24 @@ export default function Footer() {
             </div>
           </div>
         </div>
-      </div>{/* Footer End */}
+      </div>
+      {/* Footer End */}
 
       {/* Copyright Start */}
       <div className="container-fluid copyright bg-dark text-white-50 py-4">
         <div className="container">
           <div className="row">
             <div className="col-md-6 text-center text-md-start">
-              <p className="mb-0">&copy; <Link href="#">Your Site Name</Link>. All Rights Reserved.</p>
+              <p className="mb-0">
+                &copy;{" "}
+                <Link href={L("/")}>{t("component.footer.copyright.lab")}</Link>.{" "}
+                {t("component.footer.copyright.rights")}
+              </p>
             </div>
             <div className="col-md-6 text-center text-md-end">
               <p className="mb-0">
-                Designed by <Link href="https://htmlcodex.com">HTML Codex</Link>
+                {t("component.footer.copyright.design")}{" "}
+                <Link href="https://htmlcodex.com">HTML Codex</Link>
               </p>
             </div>
           </div>
@@ -82,7 +140,10 @@ export default function Footer() {
       {/* Copyright End */}
 
       {/* Back to Top */}
-      <Link href="#" className="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top">
+      <Link
+        href="#"
+        className="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"
+      >
         <i className="bi bi-arrow-up" />
       </Link>
     </>

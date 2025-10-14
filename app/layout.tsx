@@ -1,3 +1,7 @@
+/**
+ * 页面整体布局模块，包含顶部导航、页面主体、底部页脚
+ */
+
 import type { Metadata } from "next";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
@@ -17,7 +21,7 @@ export const metadata: Metadata = {
   description: "Personal website and blog of Guixiang Li",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;

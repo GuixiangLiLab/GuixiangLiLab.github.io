@@ -1,0 +1,175 @@
+* {
+  box-sizing: border-box;
+}
+
+.test {
+  border: 2px solid red;
+}
+
+/* members 专页 ----------------------------*/
+/* 容器与主题 */
+.lab-members {
+  max-width: 1200px;
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0px 20px 64px;
+  background: #ffffff;
+  color: #0b0b0b;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, "Noto Sans", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+}
+
+.lab-members * {
+  box-sizing: border-box;
+}
+
+/* 标题样式 */
+.lab-members .block-title {
+  display: inline-block;
+  text-align: start;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: .02em;
+  margin: 18px 0 14px;
+  padding-bottom: 10px;
+  color: #0d47a1;
+  /* 深蓝 */
+  border-bottom: 2px solid #1384d5;
+}
+
+/* 树的“主干”——细蓝线从李老师延伸到下面 */
+.lab-members .spine {
+  position: relative;
+  margin: 0 auto 28px;
+  width: 2px;
+  height: 36px;
+  background: #bbdefb;
+  /* 淡蓝 */
+}
+
+/* 网格：自适应居中，卡片尺寸统一 */
+.members-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 28px 100px;
+  align-items: start;
+  justify-items: start;
+}
+
+/* 成员卡片 */
+.lab-members {
+  padding-bottom: 2rem;
+}
+
+.group {
+  margin-bottom: 3rem;
+}
+
+/* 公共卡片样式（学生、RA、博士、硕士、校友） */
+.member-card {
+  width: 200px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.member-card a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+/* 头像容器 */
+.avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 10%;
+  overflow: hidden;
+  margin: 0 auto 10px;
+  border: 3px solid #e3f2fd;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, .04) inset;
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+  background: #f5f7fb;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* 名字与角色 */
+.member-name {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.member-role {
+  font-size: 13px;
+  color: #3a3a3a;
+  opacity: .72;
+  margin-top: 4px;
+}
+
+/* 悬停效果：轻微放大、阴影、名字下划线 */
+.member-card a:hover .avatar {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 10px 18px rgba(13, 71, 161, .10);
+  border-color: #90caf9;
+}
+
+.member-card a:hover .member-name {
+  text-decoration: underline;
+  text-decoration-color: #1565c0;
+  text-underline-offset: 3px;
+}
+
+/* ========================= */
+/* 教授卡片专用样式（modifier） */
+/* ========================= */
+.member-card.professor {
+  width: 240px;                /* 稍宽一点 */
+}
+
+.member-card.professor .avatar {
+  width: 270px;                /* 教授头像更大 */
+  height: 270px;
+  border-radius: 8%;           /* 略圆润 */
+}
+
+.member-card.professor .member-name {
+  width: 110%;
+  font-size: 18px;             /* 字号略大 */
+  font-weight: 700;
+  text-align: center;          /* ✅ 名字居中 */
+  margin-top: 10px;
+}
+
+/* 已毕业学生：头像去色微灰、悬停恢复色彩 */
+.alumni .avatar img {
+  filter: grayscale(20%);
+  opacity: .92;
+}
+
+.alumni a:hover .avatar img {
+  filter: none;
+  opacity: 1;
+}
+
+/* 小屏优化 */
+@media (max-width: 520px) {
+  .lead .avatar {
+    width: 160px;
+    height: 160px;
+  }
+
+  .member-card {
+    width: 160px;
+  }
+
+  .avatar {
+    width: 140px;
+    height: 140px;
+  }
+}
