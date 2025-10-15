@@ -8,11 +8,19 @@
  * 4. 直接替换当前路由
  */
 
-import { useEffect } from "react";
+import { useEffect,  Suspense } from "react";
 import { defaultLocale } from "@/i18n";
 import { usePathname, useSearchParams } from "next/navigation";
 
 export default function IndexRedirect() {
+  return (
+    <Suspense fallback={null}>
+      <IndexRedirectInner />
+    </Suspense>
+  );
+}
+
+function IndexRedirectInner() {
   const pathname = usePathname();           // e.g. "/"
   const search = useSearchParams();         // 保留查询参数
 
