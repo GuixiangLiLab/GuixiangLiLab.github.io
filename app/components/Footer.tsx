@@ -81,11 +81,11 @@ export default function Footer() {
                   <Link className="btn btn-link" href="https://www.seu.edu.cn/">
                     {t("component.footer.popularLinks.university")}
                   </Link>
+                  <Link className="btn btn-link" href="https://seugs.seu.edu.cn/">
+                    {t("component.footer.popularLinks.master")}
+                  </Link>
                   <Link className="btn btn-link" href="https://smse.seu.edu.cn/">
                     {t("component.footer.popularLinks.materials")}
-                  </Link>
-                  <Link className="btn btn-link" href="https://physics.seu.edu.cn/">
-                    {t("component.footer.popularLinks.physics")}
                   </Link>
                 </div>
 

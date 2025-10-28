@@ -23,8 +23,8 @@
 
   "component.footer.popularLinks.title": "常用链接",
   "component.footer.popularLinks.university": "东南大学",
-  "component.footer.popularLinks.materials": "材料学院",
-  "component.footer.popularLinks.physics": "物理学院",
+  "component.footer.popularLinks.materials": "材料科学与工程学院",
+  "component.footer.popularLinks.master": "东南大学研究生院",
 
   "component.footer.newsletter.title": "订阅邮件",
   "component.footer.newsletter.placeholder": "请输入邮箱地址",

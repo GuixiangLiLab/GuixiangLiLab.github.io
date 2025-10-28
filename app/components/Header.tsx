@@ -87,8 +87,8 @@ function HeaderInner() {
             <div className="d-flex align-items-center">
               {/* 左侧校徽区 */}
               <div className="brand-logos d-flex align-items-center me-4">
-                <img src="/img/Material_Emblem.png" alt="Material Emblem" className="brand-logo me-2" />
-                <img src="/img/Southeast_University_Emblem.png" alt="Southeast University Emblem" className="brand-logo" />
+                <img src="/img/Southeast_University_Emblem.png" alt="Southeast University Emblem" className="brand-logo me-2" />
+                <img src="/img/Material_Emblem.png" alt="Material Emblem" className="brand-logo" />
               </div>
 
               {/* 原有品牌名称 */}
