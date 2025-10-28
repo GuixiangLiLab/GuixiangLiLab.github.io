@@ -23,6 +23,25 @@ h2,
   font-size: 2.5rem;
 }
 
+/* 最顶上校徽显示 */
+.brand-logos {
+  margin-left: -200px;
+}
+
+.brand-logos img.brand-logo {
+  height: 82px; /* 校徽大小可调整 */
+  width: auto;
+  object-fit: contain;
+  
+}
+
+@media (max-width: 992px) {
+  /* 在小屏幕上缩小一些 */
+  .brand-logos img.brand-logo {
+    height: 56px;
+  }
+}
+
 #spinner.show {
   display: flex;
 }

@@ -57,17 +57,20 @@ export default function Footer() {
                   <Link className="btn btn-link" href={L("/")}>
                     {t("component.footer.quickLinks.about")}
                   </Link>
+                  <Link className="btn btn-link" href={L("/research")}>
+                    {t("component.footer.quickLinks.research")}
+                  </Link>
+                  <Link className="btn btn-link" href={L("/publications")}>
+                    {t("component.footer.quickLinks.publications")}
+                  </Link>
+                  <Link className="btn btn-link" href={L("/members")}>
+                    {t("component.footer.quickLinks.team")}
+                  </Link>
+                  <Link className="btn btn-link" href={L("/news")}>
+                    {t("component.footer.quickLinks.news")}
+                  </Link>
                   <Link className="btn btn-link" href={L("/contact")}>
                     {t("component.footer.quickLinks.contact")}
-                  </Link>
-                  <Link className="btn btn-link" href="#">
-                    {t("component.footer.quickLinks.services")}
-                  </Link>
-                  <Link className="btn btn-link" href="#">
-                    {t("component.footer.quickLinks.terms")}
-                  </Link>
-                  <Link className="btn btn-link" href="#">
-                    {t("component.footer.quickLinks.support")}
                   </Link>
                 </div>
 
@@ -75,20 +78,14 @@ export default function Footer() {
                   <h4 className="text-light mb-4">
                     {t("component.footer.popularLinks.title")}
                   </h4>
-                  <Link className="btn btn-link" href={L("/")}>
-                    {t("component.footer.popularLinks.about")}
+                  <Link className="btn btn-link" href="https://www.seu.edu.cn/">
+                    {t("component.footer.popularLinks.university")}
                   </Link>
-                  <Link className="btn btn-link" href={L("/contact")}>
-                    {t("component.footer.popularLinks.contact")}
+                  <Link className="btn btn-link" href="https://smse.seu.edu.cn/">
+                    {t("component.footer.popularLinks.materials")}
                   </Link>
-                  <Link className="btn btn-link" href="#">
-                    {t("component.footer.popularLinks.services")}
-                  </Link>
-                  <Link className="btn btn-link" href="#">
-                    {t("component.footer.popularLinks.terms")}
-                  </Link>
-                  <Link className="btn btn-link" href="#">
-                    {t("component.footer.popularLinks.support")}
+                  <Link className="btn btn-link" href="https://physics.seu.edu.cn/">
+                    {t("component.footer.popularLinks.physics")}
                   </Link>
                 </div>
 

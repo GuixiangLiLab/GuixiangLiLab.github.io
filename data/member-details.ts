@@ -47,8 +47,8 @@ export const memberDetails: Record<string, MemberDetail> = {
   zhangxiaochun: {
     slug: "zhangxiaochun",
     portrait: "/img/Members/zhangxiaochun.jpg",
-    alt: { en: "Xiaochun Zhang", zh: "张小春" },
-    name: { en: "Xiaochun Zhang", zh: "张小春" },
+    alt: { en: "Xiaochun Zhang", zh: "张晓春" },
+    name: { en: "Xiaochun Zhang", zh: "张晓春" },
     statusBadge: { en: "Research Assistant", zh: "科研助理" },
     affiliation: {
       en: "Guixiang Li Laboratory · Southeast University",
@@ -114,8 +114,8 @@ export const memberDetails: Record<string, MemberDetail> = {
   liyifan: {
     slug: "liyifan",
     portrait: "/img/liyifan.jpg",
-    alt: { en: "Yifan Li", zh: "李一凡" },
-    name: { en: "Yifan Li", zh: "李一凡" },
+    alt: { en: "Yifan Li", zh: "李怡凡" },
+    name: { en: "Yifan Li", zh: "李怡凡" },
     statusBadge: { en: "Research Assistant", zh: "科研助理" },
     affiliation: {
       en: "Guixiang Li Laboratory · Southeast University",
@@ -206,8 +206,8 @@ export const memberDetails: Record<string, MemberDetail> = {
   luodongdong: {
     slug: "luodongdong",
     portrait: "/img/Members/luodongdong.jpg",
-    alt: { en: "Dongdong Luo", zh: "罗东东" },
-    name: { en: "Dongdong Luo", zh: "罗东东" },
+    alt: { en: "Dongdong Luo", zh: "罗栋栋" },
+    name: { en: "Dongdong Luo", zh: "罗栋栋" },
     statusBadge: { en: "Master's · Year 2", zh: "硕士二年级" },
     affiliation: {
       en: "Guixiang Li Laboratory · Southeast University",
@@ -241,8 +241,8 @@ export const memberDetails: Record<string, MemberDetail> = {
   lixinru: {
     slug: "lixinru",
     portrait: "/img/Members/lixinru.jpg",
-    alt: { en: "Xinru Li", zh: "李馨儒" },
-    name: { en: "Xinru Li", zh: "李馨儒" },
+    alt: { en: "Xinru Li", zh: "李心如" },
+    name: { en: "Xinru Li", zh: "李心如" },
     statusBadge: { en: "Master's · Year 1", zh: "硕士一年级" },
     affiliation: {
       en: "Guixiang Li Laboratory · Southeast University",
@@ -337,8 +337,8 @@ export const memberDetails: Record<string, MemberDetail> = {
   wenxuebing: {
     slug: "wenxuebing",
     portrait: "/img/Members/wenxuebing.jpg",
-    alt: { en: "Xuebing Wen", zh: "温学兵" },
-    name: { en: "Xuebing Wen", zh: "温学兵" },
+    alt: { en: "Xuebing Wen", zh: "温雪冰" },
+    name: { en: "Xuebing Wen", zh: "温雪冰" },
     statusBadge: { en: "PhD · Year 1", zh: "博士一年级" },
     affiliation: {
       en: "Guixiang Li Laboratory · Southeast University",

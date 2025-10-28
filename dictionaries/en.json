@@ -15,17 +15,16 @@
 
   "component.footer.quickLinks.title": "Quick Links",
   "component.footer.quickLinks.about": "About Us",
+  "component.footer.quickLinks.research": "Our Research Areas",
+  "component.footer.quickLinks.publications": "Our Publications",
+  "component.footer.quickLinks.team": "Our Team",
+  "component.footer.quickLinks.news": "News & Events",
   "component.footer.quickLinks.contact": "Contact Us",
-  "component.footer.quickLinks.services": "Our Services",
-  "component.footer.quickLinks.terms": "Terms & Conditions",
-  "component.footer.quickLinks.support": "Support",
 
   "component.footer.popularLinks.title": "Popular Links",
-  "component.footer.popularLinks.about": "About Us",
-  "component.footer.popularLinks.contact": "Contact Us",
-  "component.footer.popularLinks.services": "Our Services",
-  "component.footer.popularLinks.terms": "Terms & Conditions",
-  "component.footer.popularLinks.support": "Support",
+  "component.footer.popularLinks.university": "Southeast University",
+  "component.footer.popularLinks.materials": "School of Materials",
+  "component.footer.popularLinks.physics": "School of Physics",
 
   "component.footer.newsletter.title": "Newsletter",
   "component.footer.newsletter.placeholder": "Your Email Address",
@@ -60,10 +59,10 @@
   "page.home.research.aria": "Research Directions",
   "page.home.research.title.span": "Research",
   "page.home.research.title.rest": "Directions",
-  "page.home.research.card1.alt": "Perovskite solar cells",
-  "page.home.research.card1.title": "Degradation and stability mechanisms of perovskite solar cells",
-  "page.home.research.card2.alt": "Perovskite photovoltaics",
-  "page.home.research.card2.title": "Large-area perovskite photovoltaics, tandem cells, and modules",
+  "page.home.research.card1.alt": "Perovskite photovoltaics",
+  "page.home.research.card1.title": "Large-area perovskite photovoltaics, tandem cells, and modules",
+  "page.home.research.card2.alt": "Perovskite solar cells",
+  "page.home.research.card2.title": "Degradation and stability mechanisms of perovskite solar cells",
   "page.home.research.card3.alt": "Novel photoelectric materials",
   "page.home.research.card3.title": "Development of novel photoelectric conversion materials and functional applications",
 
@@ -81,15 +80,12 @@
 
 
   "page.research.title": "Research",
-
-  "page.research.cards.1.alt": "Perovskite Solar Cells",
-  "page.research.cards.1.title": "Degradation and stability mechanisms of perovskite solar cells",
+  "page.research.cards.1.alt": "Perovskite Photovoltaics",
+  "page.research.cards.1.title": "Large-area perovskite photovoltaics, tandem cells, and modules",
   "page.research.cards.1.text": "High-efficiency and stable perovskite/heterojunction tandem solar cells are a joint focus in academia and industry. While the efficiency advantage of small-area tandems is clear, commercialization still faces challenges in device architecture and interface regulation, perovskite composition selection and optimization, device scaling, and long-term stability.",
-
-  "page.research.cards.2.alt": "Perovskite Photovoltaics",
-  "page.research.cards.2.title": "Large-area perovskite photovoltaics, tandem cells, and modules",
+  "page.research.cards.2.alt": "Perovskite Solar Cells",
+  "page.research.cards.2.title": "Degradation and stability mechanisms of perovskite solar cells",
   "page.research.cards.2.text": "For practical deployment, ambient temperature variations limit PSC performance due to severe ion migration, phase transitions, and thermo-induced strain, causing reduced PCE. Under variable temperatures, cycling imposes alternating tensile and compressive stresses. Developing high-efficiency PSCs with thermal-cycling stability is crucial for advancing applications.",
-
   "page.research.cards.3.alt": "Novel Photoelectric Materials",
   "page.research.cards.3.title": "Development of novel photoelectric conversion materials and functional applications",
   "page.research.cards.3.text": "Emerging photoelectric materials enable further efficiency gains, improved stability, cost optimization, and broader application scenarios. AI is becoming a key driver in perovskite solar cells; leveraging AI to screen high-performance semiconductors greatly reduces cost and accelerates commercialization.",
@@ -134,14 +130,14 @@
 
 
   "page.contact.title": "Contact",
-  "page.contact.intro": "The research group is committed to providing students with a harmonious, warm, and positive academic and research environment. A reward system is implemented for students who demonstrate outstanding performance. Each year, the group plans to recruit four master's students, either in the academic track of Optical Engineering or the professional track of Optoelectronic Information Engineering. Undergraduate and master's students who have a strong interest in this field are also welcome to join the group for academic exchange.",
+  "page.contact.intro": "The research group is committed to providing students with a harmonious, warm and positive environment for scientific research and learning. Corresponding rewards will be given to students who have outstanding performance in scientific research. Every year, the group plans to recruit 2 doctoral students, 4 master's students and a number of research assistants. Applications are welcome from undergraduate, master's/doctoral students with relevant backgrounds in materials science, physics, chemistry or optoelectronics, as well as exchange students, postdoctoral researchers and young scholars who wish to join!",
   "page.contact.requirements.title": "Requirements:",
   "page.contact.requirements.item1": "Diligent, hardworking, practical, and capable, with a strong interest in scientific research, a strong sense of motivation, and a good team spirit.",
   "page.contact.requirements.item2": "Able to follow the supervisor’s guidance and complete all assigned tasks conscientiously.",
   "page.contact.requirements.item3": "CET-4 or above in English is required; CET-6 is preferred.",
   "page.contact.email.intro": "Students who are interested are welcome to send their resume to: ",
   "page.contact.email.suffix": " (Contact: Prof. Li).",
-  "page.contact.position.title": "Position",
+  "page.contact.position.title": "Location",
   "page.contact.position.value": "Southeast University",
   "page.contact.mail.title": "Mail Us",
   "page.contact.mail.value": "guixiang.li@seu.edu.cn",

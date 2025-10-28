@@ -1,6 +1,6 @@
 {
   "brand.primary": "李桂香",
-  "brand.secondary": "实验室",
+  "brand.secondary": "课题组",
   "brand.mailnow": "邮箱",
   "nav.home": "首页",
   "nav.research": "研究",
@@ -10,28 +10,27 @@
   "nav.contact": "联系",
 
   "component.footer.labName.primary": "李桂香",
-  "component.footer.labName.secondary": "实验室",
+  "component.footer.labName.secondary": "课题组",
   "component.footer.address": "中国南京 东南大学",
 
   "component.footer.quickLinks.title": "快速链接",
   "component.footer.quickLinks.about": "关于我们",
+  "component.footer.quickLinks.research": "研究方向",
+  "component.footer.quickLinks.publications": "发表论文",
+  "component.footer.quickLinks.team": "我们团队",
+  "component.footer.quickLinks.news": "组内新闻",
   "component.footer.quickLinks.contact": "联系我们",
-  "component.footer.quickLinks.services": "研究方向",
-  "component.footer.quickLinks.terms": "使用条款",
-  "component.footer.quickLinks.support": "支持",
 
   "component.footer.popularLinks.title": "常用链接",
-  "component.footer.popularLinks.about": "关于我们",
-  "component.footer.popularLinks.contact": "联系我们",
-  "component.footer.popularLinks.services": "研究方向",
-  "component.footer.popularLinks.terms": "使用条款",
-  "component.footer.popularLinks.support": "支持",
+  "component.footer.popularLinks.university": "东南大学",
+  "component.footer.popularLinks.materials": "材料学院",
+  "component.footer.popularLinks.physics": "物理学院",
 
   "component.footer.newsletter.title": "订阅邮件",
   "component.footer.newsletter.placeholder": "请输入邮箱地址",
   "component.footer.newsletter.signup": "订阅",
 
-  "component.footer.copyright.lab": "李桂香实验室",
+  "component.footer.copyright.lab": "李桂香课题组",
   "component.footer.copyright.rights": "保留所有权利。",
   "component.footer.copyright.design": "页面设计来源",
 
@@ -61,10 +60,10 @@
   "page.home.research.aria": "研究方向",
   "page.home.research.title.span": "研究",
   "page.home.research.title.rest": "方向",
-  "page.home.research.card1.alt": "钙钛矿太阳能电池",
-  "page.home.research.card1.title": "钙钛矿太阳能电池的退化与稳定性机理",
-  "page.home.research.card2.alt": "钙钛矿光伏",
-  "page.home.research.card2.title": "大面积钙钛矿光伏、叠层电池与组件",
+  "page.home.research.card1.alt": "钙钛矿光伏",
+  "page.home.research.card1.title": "大面积钙钛矿光伏、叠层电池与组件",
+  "page.home.research.card2.alt": "钙钛矿太阳能电池",
+  "page.home.research.card2.title": "钙钛矿太阳能电池的退化与稳定性机理",
   "page.home.research.card3.alt": "新型光电材料",
   "page.home.research.card3.title": "新型光电转换材料的开发与功能应用",
 
@@ -81,13 +80,12 @@
 
 
   "page.research.title": "研究方向",
-
-  "page.research.cards.1.alt": "钙钛矿太阳能电池",
-  "page.research.cards.1.title": "钙钛矿太阳能电池的退化与稳定性机理",
+  "page.research.cards.1.alt": "钙钛矿光伏",
+  "page.research.cards.1.title": "大面积钙钛矿光伏、叠层电池与组件",
   "page.research.cards.1.text": "高效且稳定的钙钛矿/异质结叠层太阳能电池是学术界与产业界共同关注的重点。尽管小面积叠层器件的效率优势已十分明显，但在走向产业化过程中，器件结构与界面调控、钙钛矿成分的选择与优化、器件放大以及长期稳定性等方面仍存在诸多挑战。",
 
-  "page.research.cards.2.alt": "钙钛矿光伏",
-  "page.research.cards.2.title": "大面积钙钛矿光伏、叠层电池与组件",
+  "page.research.cards.2.alt": "钙钛矿太阳能电池",
+  "page.research.cards.2.title": "钙钛矿太阳能电池的退化与稳定性机理",
   "page.research.cards.2.text": "在实际应用中，环境温度变化会显著影响钙钛矿电池性能：离子迁移、相变与温致应变可能发生，导致效率下降。在变温条件下，器件结构需承受反复的拉压循环应力。因此，发展具备热循环稳定性的高效钙钛矿电池，对推动应用落地至关重要。",
 
   "page.research.cards.3.alt": "新型光电材料",
@@ -134,7 +132,7 @@
 
 
   "page.contact.title": "联系方式",
-  "page.contact.intro": "课题组致力于为学生提供一个和谐、温暖、积极向上的科研与学习环境。对于在科研中表现突出的同学，将给予相应奖励。课题组每年计划招收4名硕士研究生，方向包括光学工程（学术型）与光电信息工程（专业型）。同时，欢迎对本领域有浓厚兴趣的本科生和硕士生加入课题组开展学术交流。",
+  "page.contact.intro": "课题组致力于为学生提供一个和谐、温暖、积极向上的科研与学习环境。对于在科研中表现突出的同学，将给予相应奖励。课题组每年计划招收2名博士，4名硕士，以及若干科研助理，欢迎材料、物理、化学或光电子学相关背景的本科、硕士/博士研究生报考、及交流生、博士后、青年学者的加入！",
   "page.contact.requirements.title": "招生要求：",
   "page.contact.requirements.item1": "勤奋踏实，具有较强的科研兴趣、进取心与团队合作精神。",
   "page.contact.requirements.item2": "能够认真遵循导师的科研指导，积极完成各项科研任务。",

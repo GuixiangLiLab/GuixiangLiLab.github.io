@@ -56,7 +56,7 @@ export const members: Member[] = [
     group: "phd",
     slug: "wenxuebing",
     img: "/img/Members/wenxuebing.jpg",
-    name: { en: "Xuebing Wen", zh: "温学兵" },
+    name: { en: "Xuebing Wen", zh: "温雪冰" },
     order: 3
   },
 
@@ -66,7 +66,7 @@ export const members: Member[] = [
     group: "ra",
     slug: "liyifan",
     img: "/img/liyifan.jpg",
-    name: { en: "Yifan Li", zh: "李一凡" },
+    name: { en: "Yifan Li", zh: "李怡凡" },
     order: 1
   },
   {
@@ -74,7 +74,7 @@ export const members: Member[] = [
     group: "ra",
     slug: "zhangxiaochun",
     img: "/img/Members/zhangxiaochun.jpg",
-    name: { en: "Xiaochun Zhang", zh: "张小春" },
+    name: { en: "Xiaochun Zhang", zh: "张晓春" },
     order: 2
   },
 
@@ -84,7 +84,7 @@ export const members: Member[] = [
     group: "master",
     slug: "luodongdong",
     img: "/img/Members/luodongdong.jpg",
-    name: { en: "Dongdong Luo", zh: "罗东东" },
+    name: { en: "Dongdong Luo", zh: "罗栋栋" },
     order: 1
   },
   {
@@ -100,7 +100,7 @@ export const members: Member[] = [
     group: "master",
     slug: "lixinru",
     img: "/img/Members/lixinru.jpg",
-    name: { en: "Xinru Li", zh: "李馨儒" },
+    name: { en: "Xinru Li", zh: "李心如" },
     order: 3
   },
 

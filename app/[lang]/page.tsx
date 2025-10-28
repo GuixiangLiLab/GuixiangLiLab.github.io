@@ -65,7 +65,7 @@ export default function HomePage() {
                     <div className="col-lg-7 caption-col">
                       <h1 className="display-1 text-end text-white mb-3">{t("page.home.hero.title")}</h1>
                       <p className="mb-4 text-end">{t("page.home.hero.desc")}</p>
-                      <a href={L("#")} className="btn btn-primary py-3 px-5">{t("page.home.hero.cta")}</a>
+                      <a href={L("/research")} className="btn btn-primary py-3 px-5">{t("page.home.hero.cta")}</a>
                     </div>
                   </div>
                 </div>

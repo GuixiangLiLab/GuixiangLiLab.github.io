@@ -31,7 +31,7 @@ function HeaderInner() {
   // 切换语言
   const switchTo = (target: "en" | "zh") => {
     if (target === lang) return;
-    try { sessionStorage.setItem("__keep_scroll_y", String(window.scrollY || 0)); } catch {}
+    try { sessionStorage.setItem("__keep_scroll_y", String(window.scrollY || 0)); } catch { }
     const parts = pathname.split("/");
     if (parts[1] === "en" || parts[1] === "zh") parts[1] = target;
     else parts.splice(1, 0, target);
@@ -84,10 +84,19 @@ function HeaderInner() {
       <div className="container-fluid bg-primary text-white pt-4 pb-3 d-none d-lg-flex">
         <div className="container pb-2">
           <div className="d-flex align-items-center justify-content-between">
-            <Link href={L("/")} className="h1 text-warning mb-0 display-1 display-header-brand">
-              {t("brand.primary")}
-              <span className="text-white">{t("brand.secondary")}</span>
-            </Link>
+            <div className="d-flex align-items-center">
+              {/* 左侧校徽区 */}
+              <div className="brand-logos d-flex align-items-center me-4">
+                <img src="/img/Material_Emblem.png" alt="Material Emblem" className="brand-logo me-2" />
+                <img src="/img/Southeast_University_Emblem.png" alt="Southeast University Emblem" className="brand-logo" />
+              </div>
+
+              {/* 原有品牌名称 */}
+              <Link href={L("/")} className="h1 text-warning mb-0 display-1 display-header-brand">
+                {t("brand.primary")}
+                <span className="text-white">{t("brand.secondary")}</span>
+              </Link>
+            </div>
             <div className="d-flex">
               <i className="bi bi-envelope fs-2" />
               <div className="ms-3">
@@ -106,7 +115,7 @@ function HeaderInner() {
       <nav
         ref={navRef as any}
         className={[
-          "navbar","navbar-expand-lg","navbar-light","bg-white","py-lg-0","px-lg-3","site-navbar",
+          "navbar", "navbar-expand-lg", "navbar-light", "bg-white", "py-lg-0", "px-lg-3", "site-navbar",
           isFixed ? "site-navbar--fixed" : "site-navbar--normal",
           isFixed && hideOnScroll ? "site-navbar--hide" : "site-navbar--show",
         ].join(" ")}
@@ -144,7 +153,7 @@ function LangToggleButton(props: { current: "en" | "zh"; onToggle: () => void })
     >
       <i className="bi bi-globe2 header-lang-toggle__bg" aria-hidden="true" />
       <span className="header-lang-toggle__label" data-lang={current}>
-        {current === "zh" ? "中" : "EN"}
+        {current === "zh" ? "EN" : "中"}
       </span>
     </button>
   );
