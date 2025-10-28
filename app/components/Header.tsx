@@ -8,7 +8,7 @@ import { useEffect, useMemo, useRef, useState, Suspense } from "react";
 import useI18nLite from "@/components/useI18nLite";
 
 export default function Header() {
-  // 🚩 外层不使用任何 next/navigation 的 hook
+  // 外层不使用任何 next/navigation 的 hook
   return (
     <Suspense fallback={null /* 或者骨架占位 */}>
       <HeaderInner />
@@ -17,7 +17,7 @@ export default function Header() {
 }
 
 function HeaderInner() {
-  // ✅ 所有 hook 都在 Suspense 内部调用
+  // 所有 hook 都在 Suspense 内部调用
   const pathname = usePathname() || "/";
   const search = useSearchParams();
   const router = useRouter();
@@ -28,6 +28,7 @@ function HeaderInner() {
     return parts.length <= 2 ? "/" : `/${parts.slice(2).join("/")}`;
   }, [pathname]);
 
+  // 切换语言
   const switchTo = (target: "en" | "zh") => {
     if (target === lang) return;
     try { sessionStorage.setItem("__keep_scroll_y", String(window.scrollY || 0)); } catch {}
@@ -46,6 +47,7 @@ function HeaderInner() {
   const navRef = useRef<HTMLElement | null>(null);
   const sentinelRef = useRef<HTMLDivElement | null>(null);
 
+  // 当哨兵元素不可见，说明页面已经滚过了哨兵，则让 `isFixed = true`，导航栏切到吸顶样式
   useEffect(() => {
     if (!sentinelRef.current) return;
     const io = new IntersectionObserver(([entry]) => setIsFixed(!entry.isIntersecting));
@@ -53,6 +55,7 @@ function HeaderInner() {
     return () => io.disconnect();
   }, []);
 
+  // 只在吸顶状态时根据滚动方向切换导航栏是否显示，往上滑时才显示
   useEffect(() => {
     const onScroll = () => {
       const y = window.scrollY || 0;
@@ -65,6 +68,7 @@ function HeaderInner() {
     return () => window.removeEventListener("scroll", onScroll);
   }, [isFixed]);
 
+  // 占位高度，避免布局跳动
   useEffect(() => {
     if (!navRef.current) return;
     const measure = () => setNavHeight(navRef.current!.offsetHeight || 0);
