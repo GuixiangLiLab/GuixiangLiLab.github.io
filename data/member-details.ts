@@ -162,8 +162,8 @@ export const memberDetails: Record<string, MemberDetail> = {
   lizeyu: {
     slug: "lizeyu",
     portrait: "/img/Members/lizeyu.jpg",
-    alt: { en: "Zeyu Li", zh: "李泽宇" },
-    name: { en: "Zeyu Li", zh: "李泽宇" },
+    alt: { en: "Zeyu Li", zh: "李泽雨" },
+    name: { en: "Zeyu Li", zh: "李泽雨" },
     statusBadge: { en: "Master's · Year 1", zh: "硕士一年级" },
     affiliation: {
       en: "Guixiang Li Laboratory · Southeast University",
@@ -198,7 +198,7 @@ export const memberDetails: Record<string, MemberDetail> = {
       title: { en: "Research Direction", zh: "研究方向" },
       text: {
         en: "All-tin halide perovskite solar cells.",
-        zh: "全锡卤化物钙钛矿太阳能电池。"
+        zh: "纯锡卤化物钙钛矿太阳能电池。"
       }
     }
   },

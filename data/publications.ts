@@ -35,6 +35,23 @@ export const publications: Publication[] = [
     selected: true
   },
   {
+    id: "natpho-2025-stab-high-effi",
+    year: 2025,
+    href: "https://doi.org/10.1038/s41566-025-01791-1",
+    img: "/img/Perovskite_Stabilizing_high_efficiency_PSCs_via_strategic.png",
+    title: {
+      en: "Stabilizing high-efficiency perovskite solar cells via strategic interfacial contact engineering",
+      zh: "通过策略性界面接触工程稳定高效钙钛矿太阳能电池"
+    },
+    authorsHtml: {
+      en: `<span class="bold">Li, G.</span>, Zhang, Z., Agyei-Tuffour, B., Wu, L., ... Wang, L., Li Z., ... Li, M., & Abate, A.*.`,
+      zh: `<span class="bold">李桂香</span>，张祖宏，Agyei-Tuffour, B.，吴录艳，… 王露遥，李哲，… 李萌，& Abate, A.*`
+    },
+    venue: { en: "Nature Photonics (2025)", zh: "Nature Photonics（2025）" },
+    doi: "10.1038/s41566-025-01791-1",
+    selected: true
+  },
+  {
     id: "nrm-2025-temp-cycling-resilience",
     year: 2025,
     href: "https://www.nature.com/articles/s41578-025-00781-7",
@@ -45,7 +62,7 @@ export const publications: Publication[] = [
     },
     authorsHtml: {
       en: `Wu, L., Hu, S., Yang, F., <span class="bold">Li, G.</span>, Wang, J., ... Pascual, J., Li, M., & Abate, A.`,
-      zh: `吴立，胡松，杨帆，<span class="bold">李桂香</span>，王俊，… Pascual, J.，李明，& Abate, A.`
+      zh: `吴立，胡松，杨帆，<span class="bold">李桂香</span>，王俊，… Pascual, J.，李萌，& Abate, A.`
     },
     venue: { en: "Nature Reviews Materials (2025)", zh: "Nature Reviews Materials（2025）" },
     doi: "10.1038/s41578-025-00781-7",

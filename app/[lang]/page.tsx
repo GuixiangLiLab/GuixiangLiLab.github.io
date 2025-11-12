@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import useI18nLite from "@/components/useI18nLite";
 import Publications from "@/app/components/Publications";
+import SliderLeftImgRightText from "@/components/slider/SliderLeftImgRightText";
 import "./page.css";
 
 export default function HomePage() {
@@ -54,7 +55,33 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Slide 3 (active) */}
+            {/* Slide 3 */}
+            {/* <div className="carousel-item">
+              <div className="img-container fill-blur kenburns" style={{ ['--bg-url' as any]: "url('img/main_page/20251111_lgx_CarouselStart.png')" }}>
+                <img className="big-img" src="/img/main_page/20251111_lgx_CarouselStart.png" alt={t("page.home.carousel.alt.member")} />
+              </div>
+            </div> */}
+
+            {/* Slide 3 */}
+<div className="carousel-item">
+  <div className="img-container fill-blur kenburns" style={{ ['--bg-url' as any]: "url('img/main_page/20251111_lgx_CarouselStart.png')" }}>
+    <img className="big-img" src="/img/main_page/20251111_lgx_CarouselStart.png" alt={t("page.home.carousel.alt.member")} />
+  </div>
+  {/* 新增标注区域，与slide4结构一致 */}
+  <div className="carousel-caption">
+    <div className="container">
+      <div className="row justify-content-end">
+        <div className="col-lg-7 caption-col">
+          <h1 className="display-1 text-end text-white mb-3">{t("page.home.carousel.slide3.title")}</h1>
+          <p className="mb-4 text-end">{t("page.home.carousel.slide3.desc")}</p>
+          <a href={L("/news")} className="btn btn-primary py-3 px-5">{t("page.home.carousel.slide3.cta")}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+            {/* Slide 4 (active) */}
             <div className="carousel-item active">
               <div className="img-container fill-blur kenburns" style={{ ['--bg-url' as any]: "url('img/SouthEastUniversity.png')" }}>
                 <img className="big-img" src="/img/SouthEastUniversity.png" alt={t("page.home.carousel.alt.seu")} />
@@ -179,19 +206,19 @@ export default function HomePage() {
               <ul className="pn-list news-list">
                 <li>
                   <a href={L("/news")}>
-                    <span className="pn-date">2025-09-19</span>
+                    <span className="pn-date">2025-11-11</span>
                     <span className="pn-title">{t("page.home.news.item1.title")}</span>
                   </a>
                 </li>
                 <li>
-                  <a href={L("#")}>
-                    <span className="pn-date">2025-09-01</span>
+                  <a href={L("/news")}>
+                    <span className="pn-date">2025-10-28</span>
                     <span className="pn-title">{t("page.home.news.item2.title")}</span>
                   </a>
                 </li>
                 <li>
-                  <a href={L("#")}>
-                    <span className="pn-date">2025-09-01</span>
+                  <a href={L("/news")}>
+                    <span className="pn-date">2025-09-19</span>
                     <span className="pn-title">{t("page.home.news.item3.title")}</span>
                   </a>
                 </li>

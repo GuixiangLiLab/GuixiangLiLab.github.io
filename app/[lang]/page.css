@@ -2,3 +2,27 @@
 .teacher-intro {
   color: #8d8d8d;
 }
+
+/* 自定义轮播项容器，适配现有carousel样式 */
+.slider-custom-container {
+  max-width: 1000px;
+  height: 100vh; /* 与其他轮播项高度一致 */
+  display: flex;
+  align-items: center;
+  padding: 0 2rem; /* 左右内边距，避免内容贴边 */
+}
+
+/* 覆盖组件默认样式，适配现有轮播 */
+.slider-custom-container .slider-left-img-right-text {
+  padding: 0;
+  gap: 2rem;
+  height: 90%; /* 预留轮播控制区空间 */
+}
+
+.slider-custom-container .slider-img-container {
+  height: 100%;
+}
+
+.slider-custom-container .slider-text-container {
+  padding: 1rem 0;
+}

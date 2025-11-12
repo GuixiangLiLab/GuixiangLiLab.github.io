@@ -92,7 +92,7 @@ export const members: Member[] = [
     group: "master",
     slug: "lizeyu",
     img: "/img/lizeyu.jpg",
-    name: { en: "Zeyu Li", zh: "李泽宇" },
+    name: { en: "Zeyu Li", zh: "李泽雨" },
     order: 2
   },
   {

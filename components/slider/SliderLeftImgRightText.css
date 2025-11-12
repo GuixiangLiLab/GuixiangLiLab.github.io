@@ -1,0 +1,91 @@
+/* 轮播项整体容器：控制左右布局，适配现有轮播高度 */
+.slider-left-img-right-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh; /* 和你现有轮播的高度一致（全屏） */
+  padding: 0 20rem; /* 左右留白，避免内容贴边 */
+  gap: 5rem; /* 图片和文字之间的间距 */
+  box-sizing: border-box;
+}
+
+/* 左侧图片容器：控制图片大小和样式 */
+.slider-img-box {
+  flex: 1; /* 图片区占1份宽度 */
+  height: 80%; /* 图片高度比容器略小，避免溢出 */
+  border-radius: 8px; /* 圆角，和现有UI风格统一 */
+  overflow: visible; /* 防止图片超出容器 */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* 轻微阴影，增加层次感 */
+}
+
+/* 图片样式：填充容器且不变形 */
+.slider-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* 保持图片比例，填充容器 */
+  transition: transform 0.3s ease; /*  hover时轻微放大，增加交互感 */
+}
+
+.slider-img-box:hover .slider-img {
+  transform: scale(1.02); /*  hover放大2% */
+}
+
+/* 右侧文字容器：控制文字区域宽度和排版 */
+.slider-text-box {
+  flex: 0.6; /* 文字区占1份宽度，和图片区对称 */
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; /* 标题和摘要之间的间距 */
+  color: #2d3748; /* 文字颜色，适配浅色背景 */
+  padding: 0 2rem; 
+}
+
+/* 标题样式：突出且不刺眼 */
+.slider-text-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.4;
+  margin: 0; /* 清除默认margin，避免错位 */
+}
+
+/* 摘要区域样式 */
+.slider-text-abstract {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: #4a5568; /* 摘要文字颜色稍浅，区分标题 */
+}
+
+/* 摘要标签样式（"Abstract"字样） */
+.slider-abstract-label {
+  display: block;
+  font-weight: 600;
+  color: #1a202c; /* 标签颜色更深，突出层级 */
+  margin-bottom: 0.5rem;
+}
+
+/* 移动端适配：小屏幕下改为上下堆叠布局 */
+@media (max-width: 768px) {
+  .slider-left-img-right-wrapper {
+    flex-direction: column;
+    padding: 2rem 0;
+    gap: 2rem;
+    height: auto; /* 移动端高度自适应，避免内容被截断 */
+    padding: 2rem 0;
+  }
+
+  .slider-img-box {
+    width: 100%;
+    height: 50vh; /* 移动端图片高度减小，避免占满屏幕 */
+  }
+
+  .slider-text-title {
+    font-size: 1.5rem; /* 移动端标题缩小，适配屏幕 */
+    text-align: center;
+  }
+
+  .slider-text-abstract {
+    text-align: center; /* 移动端文字居中，更易阅读 */
+    padding: 0 1rem;
+  }
+}
