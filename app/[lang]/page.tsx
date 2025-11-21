@@ -44,7 +44,7 @@ export default function HomePage() {
             {/* Slide 1 */}
             <div className="carousel-item">
               <div className="img-container fill-blur kenburns" style={{ ['--bg-url' as any]: "url('img/Perovskite_Phase_Transition_Temperature_Cycle.jpg')" }}>
-                <img className="big-img" src="/img/Perovskite_Phase_Transition_Temperature_Cycle.png" alt={t("page.home.carousel.alt.phase")} />
+                <img className="big-img" src="/img/main_page/Schematic.jpg" alt={t("page.home.carousel.alt.phase")} />
               </div>
             </div>
 
@@ -161,7 +161,7 @@ export default function HomePage() {
             <div className="rm-grid">
               <a className="rm-card" href={L("/research")}>
                 <div className="rm-image">
-                  <img src="/img/perovskite_solar_cells.png" alt={t("page.home.research.card1.alt")} />
+                  <img src="/img/research/perovskite_photovoltaics.jpg" alt={t("page.home.research.card1.alt")} />
                 </div>
                 <div className="rm-text">
                   <h3>{t("page.home.research.card1.title")}</h3>
@@ -170,7 +170,7 @@ export default function HomePage() {
 
               <a className="rm-card" href={L("/research")}>
                 <div className="rm-image">
-                  <img src="/img/perovskite_photovoltaics.png" alt={t("page.home.research.card2.alt")} />
+                  <img src="/img/research/perovskite_solar_cells.png" alt={t("page.home.research.card2.alt")} />
                 </div>
                 <div className="rm-text">
                   <h3>{t("page.home.research.card2.title")}</h3>
@@ -179,7 +179,7 @@ export default function HomePage() {
 
               <a className="rm-card" href={L("/research")}>
                 <div className="rm-image">
-                  <img src="/img/novel_photoelectric_conversion_materials.png" alt={t("page.home.research.card3.alt")} />
+                  <img src="/img/research/novel_photoelectric_conversion_materials.png" alt={t("page.home.research.card3.alt")} />
                 </div>
                 <div className="rm-text">
                   <h3>{t("page.home.research.card3.title")}</h3>

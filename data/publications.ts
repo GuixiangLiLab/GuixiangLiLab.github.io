@@ -100,7 +100,7 @@ export const publications: Publication[] = [
     },
     venue: { en: "Advanced Materials (2024)", zh: "Advanced Materials（2024）" },
     doi: "10.1002/adma.202407433",
-    selected: true
+    selected: false
   },
   {
     id: "adma-2025-heat-triggered-self-healing",

@@ -12,6 +12,7 @@
   "component.footer.labName.primary": "李桂香",
   "component.footer.labName.secondary": "课题组",
   "component.footer.address": "中国南京 东南大学",
+  "component.footer.addressdetail": "地址：江苏省南京市江宁区东南大学路2号材料A楼 邮编：211189",
 
   "component.footer.quickLinks.title": "快速链接",
   "component.footer.quickLinks.about": "关于我们",
@@ -25,6 +26,8 @@
   "component.footer.popularLinks.university": "东南大学",
   "component.footer.popularLinks.materials": "材料科学与工程学院",
   "component.footer.popularLinks.master": "东南大学研究生院",
+  "component.footer.popularLinks.individual": "材料学院李桂香个人主页",
+  "component.footer.popularLinks.QRCode": "欢迎关注课题组微信公众号\n光电未来智创社",
 
   "component.footer.newsletter.title": "订阅邮件",
   "component.footer.newsletter.placeholder": "请输入邮箱地址",
@@ -64,10 +67,10 @@
   "page.home.research.aria": "研究方向",
   "page.home.research.title.span": "研究",
   "page.home.research.title.rest": "方向",
-  "page.home.research.card1.alt": "钙钛矿光伏",
-  "page.home.research.card1.title": "大面积钙钛矿光伏、叠层电池与组件",
-  "page.home.research.card2.alt": "钙钛矿太阳能电池",
-  "page.home.research.card2.title": "钙钛矿太阳能电池的退化与稳定性机理",
+  "page.home.research.card1.alt": "钙钛矿太阳能电池",
+  "page.home.research.card1.title": "钙钛矿太阳能电池的退化与稳定性机理",
+  "page.home.research.card2.alt": "钙钛矿光伏",
+  "page.home.research.card2.title": "大面积钙钛矿光伏、叠层电池与组件",
   "page.home.research.card3.alt": "新型光电材料",
   "page.home.research.card3.title": "新型光电转换材料的开发与功能应用",
 
@@ -84,13 +87,13 @@
 
 
   "page.research.title": "研究方向",
-  "page.research.cards.1.alt": "钙钛矿光伏",
-  "page.research.cards.1.title": "大面积钙钛矿光伏、叠层电池与组件",
-  "page.research.cards.1.text": "高效且稳定的钙钛矿/异质结叠层太阳能电池是学术界与产业界共同关注的重点。尽管小面积叠层器件的效率优势已十分明显，但在走向产业化过程中，器件结构与界面调控、钙钛矿成分的选择与优化、器件放大以及长期稳定性等方面仍存在诸多挑战。",
+  "page.research.cards.1.alt": "钙钛矿太阳能电池",
+  "page.research.cards.1.title": "钙钛矿太阳能电池的退化与稳定性机理",
+  "page.research.cards.1.text": "在实际应用中，环境温度变化会显著影响钙钛矿电池性能：离子迁移、相变与温致应变可能发生，导致效率下降。在变温条件下，器件结构需承受反复的拉压循环应力。因此，发展具备热循环稳定性的高效钙钛矿电池，对推动应用落地至关重要。",
 
-  "page.research.cards.2.alt": "钙钛矿太阳能电池",
-  "page.research.cards.2.title": "钙钛矿太阳能电池的退化与稳定性机理",
-  "page.research.cards.2.text": "在实际应用中，环境温度变化会显著影响钙钛矿电池性能：离子迁移、相变与温致应变可能发生，导致效率下降。在变温条件下，器件结构需承受反复的拉压循环应力。因此，发展具备热循环稳定性的高效钙钛矿电池，对推动应用落地至关重要。",
+  "page.research.cards.2.alt": "钙钛矿光伏",
+  "page.research.cards.2.title": "大面积钙钛矿光伏、叠层电池与组件",
+  "page.research.cards.2.text": "高效且稳定的钙钛矿/异质结叠层太阳能电池是学术界与产业界共同关注的重点。尽管小面积叠层器件的效率优势已十分明显，但在走向产业化过程中，器件结构与界面调控、钙钛矿成分的选择与优化、器件放大以及长期稳定性等方面仍存在诸多挑战。",
 
   "page.research.cards.3.alt": "新型光电材料",
   "page.research.cards.3.title": "新型光电转换材料的开发与功能应用",
@@ -102,8 +105,8 @@
   "page.publications.seeFull": "完整论文列表见",
   "page.publications.googleScholar": "Google Scholar",
   "page.publications.readMore": "查看原文",
-  "page.publications.allAria": "全部论文",
-  "page.publications.allTitle": "全部论文",
+  "page.publications.allAria": "主要论文",
+  "page.publications.allTitle": "主要论文",
 
 
   "page.members.title": "成员",

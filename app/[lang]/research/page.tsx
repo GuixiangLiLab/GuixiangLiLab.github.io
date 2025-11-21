@@ -25,7 +25,7 @@ export default function ResearchPage() {
             <div className="title-image-group">
               <div className="image-container">
                 <Image
-                  src="/img/perovskite_solar_cells.png"
+                  src="/img/research/perovskite_photovoltaics.jpg"
                   alt={t("page.research.cards.1.alt")}
                   fill
                   className="research-image"
@@ -52,7 +52,7 @@ export default function ResearchPage() {
             <div className="title-image-group">
               <div className="image-container">
                 <Image
-                  src="/img/perovskite_photovoltaics.png"
+                  src="/img/research/perovskite_solar_cells.png"
                   alt={t("page.research.cards.2.alt")}
                   fill
                   className="research-image"
@@ -79,7 +79,7 @@ export default function ResearchPage() {
             <div className="title-image-group">
               <div className="image-container">
                 <Image
-                  src="/img/novel_photoelectric_conversion_materials.png"
+                  src="/img/research/novel_photoelectric_conversion_materials.png"
                   alt={t("page.research.cards.3.alt")}
                   fill
                   className="research-image"

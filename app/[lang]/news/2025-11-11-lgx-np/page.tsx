@@ -136,10 +136,16 @@ export default function MemberReportInPage() {
                 {t("page.news.20251111-lgx-np.p21")}
               </p>
 
-              <p className="mb-10">
-                {t("page.news.20251111-lgx-np.p22")}
-                <a href="https://doi.org/10.1038/s41566-025-01791-1">https://doi.org/10.1038/s41566-025-01791-1</a>
-              </p>
+             <p className="mb-10">
+              {t("page.news.20251111-lgx-np.p22")}
+              <a 
+              href="https://doi.org/10.1038/s41566-025-01791-1" 
+              target="_blank"
+              rel="noopener noreferrer" // 安全增强：防止窗口劫持
+              >
+                https://doi.org/10.1038/s41566-025-01791-1
+              </a>
+             </p>
               
               {/* Back button */}
               <div className="mt-4">

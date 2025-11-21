@@ -156,3 +156,8 @@ a {
 .header-lang-toggle__label[data-lang="en"] {
   /* 英文默认样式就好 */
 }
+
+/* 全局覆盖 display-2 类的字体加粗 */
+.display-2 {
+  font-weight: bold !important;
+}

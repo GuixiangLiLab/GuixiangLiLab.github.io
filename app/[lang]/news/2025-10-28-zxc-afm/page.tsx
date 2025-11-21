@@ -101,9 +101,15 @@ export default function ZxcAfmPage() {
               </p>
 
               <p className="mb-9">
-                {t("page.news.20251028-zxc-afm.p17")}
-                <a href="https://doi.org/10.1002/adfm.202523417">https://doi.org/10.1002/adfm.202523417</a>
-              </p>
+              {t("page.news.20251111-lgx-np.p22")}
+              <a 
+              href="https://doi.org/10.1002/adfm.202523417" 
+              target="_blank"
+              rel="noopener noreferrer" // 安全增强：防止窗口劫持
+              >
+                https://doi.org/10.1002/adfm.202523417
+              </a>
+             </p>
 
               {/* Back button */}
               <div className="mt-4">

@@ -12,6 +12,7 @@
   "component.footer.labName.primary": "Guixiang Li",
   "component.footer.labName.secondary": " Laboratory",
   "component.footer.address": "Southeast University, Nanjing, China",
+  "component.footer.addressdetail": "Address: Building A, Materials Science and Engineering Department, No. 2 Southeast University Road, Jiangning District, Nanjing, Jiangsu Province, China. Postcode: 211189",
 
   "component.footer.quickLinks.title": "Quick Links",
   "component.footer.quickLinks.about": "About Us",
@@ -25,6 +26,8 @@
   "component.footer.popularLinks.university": "Southeast University",
   "component.footer.popularLinks.materials": "School of Materials Sci. & Eng.",
   "component.footer.popularLinks.master": "Grad. Sch. of Southeast Univ.",
+  "component.footer.popularLinks.individual": "Li Guixiang's personal homepage, School of Materials Science and Engineering",
+   "component.footer.popularLinks.QRCode": "Welcome to follow our research group's WeChat official account\nOptoelectronic Future Innovation Community",
 
   "component.footer.newsletter.title": "Newsletter",
   "component.footer.newsletter.placeholder": "Your Email Address",
@@ -63,10 +66,10 @@
   "page.home.research.aria": "Research Directions",
   "page.home.research.title.span": "Research",
   "page.home.research.title.rest": "Directions",
-  "page.home.research.card1.alt": "Perovskite photovoltaics",
-  "page.home.research.card1.title": "Large-area perovskite photovoltaics, tandem cells, and modules",
-  "page.home.research.card2.alt": "Perovskite solar cells",
-  "page.home.research.card2.title": "Degradation and stability mechanisms of perovskite solar cells",
+  "page.home.research.card1.alt": "Perovskite solar cells",
+  "page.home.research.card1.title": "Degradation and stability mechanisms of perovskite solar cells",
+  "page.home.research.card2.alt": "Perovskite photovoltaics",
+  "page.home.research.card2.title": "Large-area perovskite photovoltaics, tandem cells, and modules",
   "page.home.research.card3.alt": "Novel photoelectric materials",
   "page.home.research.card3.title": "Development of novel photoelectric conversion materials and functional applications",
 
@@ -84,12 +87,12 @@
 
 
   "page.research.title": "Research",
-  "page.research.cards.1.alt": "Perovskite Photovoltaics",
-  "page.research.cards.1.title": "Large-area perovskite photovoltaics, tandem cells, and modules",
-  "page.research.cards.1.text": "High-efficiency and stable perovskite/heterojunction tandem solar cells are a joint focus in academia and industry. While the efficiency advantage of small-area tandems is clear, commercialization still faces challenges in device architecture and interface regulation, perovskite composition selection and optimization, device scaling, and long-term stability.",
-  "page.research.cards.2.alt": "Perovskite Solar Cells",
-  "page.research.cards.2.title": "Degradation and stability mechanisms of perovskite solar cells",
-  "page.research.cards.2.text": "For practical deployment, ambient temperature variations limit PSC performance due to severe ion migration, phase transitions, and thermo-induced strain, causing reduced PCE. Under variable temperatures, cycling imposes alternating tensile and compressive stresses. Developing high-efficiency PSCs with thermal-cycling stability is crucial for advancing applications.",
+  "page.research.cards.1.alt": "Perovskite Solar Cells",
+  "page.research.cards.1.title": "Degradation and stability mechanisms of perovskite solar cells",
+  "page.research.cards.1.text": "For practical deployment, ambient temperature variations limit PSC performance due to severe ion migration, phase transitions, and thermo-induced strain, causing reduced PCE. Under variable temperatures, cycling imposes alternating tensile and compressive stresses. Developing high-efficiency PSCs with thermal-cycling stability is crucial for advancing applications.",
+  "page.research.cards.2.alt": "Perovskite Photovoltaics",
+  "page.research.cards.2.title": "Large-area perovskite photovoltaics, tandem cells, and modules",
+  "page.research.cards.2.text": "High-efficiency and stable perovskite/heterojunction tandem solar cells are a joint focus in academia and industry. While the efficiency advantage of small-area tandems is clear, commercialization still faces challenges in device architecture and interface regulation, perovskite composition selection and optimization, device scaling, and long-term stability.",
   "page.research.cards.3.alt": "Novel Photoelectric Materials",
   "page.research.cards.3.title": "Development of novel photoelectric conversion materials and functional applications",
   "page.research.cards.3.text": "Emerging photoelectric materials enable further efficiency gains, improved stability, cost optimization, and broader application scenarios. AI is becoming a key driver in perovskite solar cells; leveraging AI to screen high-performance semiconductors greatly reduces cost and accelerates commercialization.",
@@ -100,8 +103,8 @@
   "page.publications.seeFull": "See full publication list in",
   "page.publications.googleScholar": "Google Scholar",
   "page.publications.readMore": "Read More",
-  "page.publications.allAria": "All Publications",
-  "page.publications.allTitle": "All Publications",
+  "page.publications.allAria": "Main Publications",
+  "page.publications.allTitle": "Main Publications",
 
 
   "page.members.title": "Members",
