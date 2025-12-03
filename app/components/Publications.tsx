@@ -8,6 +8,7 @@ import Link from "next/link";
 import { publications, type Lang } from "@/data/publications";
 import useI18nLite from "@/components/useI18nLite";
 
+
 function isExternal(href?: string) {
   return !!href && /^(https?:)?\/\//i.test(href);
 }
@@ -20,7 +21,7 @@ export default function Publications({
   className?: string;
 }) {
   const { lang, t } = useI18nLite();
-  const items = publications;
+  const items = publications.filter(p => p.selected === true) // 只保留“精选论文”
 
   return (
     <div className={`pn-col pn-card pn-col--pub ${className}`}>

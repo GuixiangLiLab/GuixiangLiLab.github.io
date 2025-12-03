@@ -56,30 +56,23 @@ export default function HomePage() {
             </div>
 
             {/* Slide 3 */}
-            {/* <div className="carousel-item">
+            <div className="carousel-item">
               <div className="img-container fill-blur kenburns" style={{ ['--bg-url' as any]: "url('img/main_page/20251111_lgx_CarouselStart.png')" }}>
                 <img className="big-img" src="/img/main_page/20251111_lgx_CarouselStart.png" alt={t("page.home.carousel.alt.member")} />
               </div>
-            </div> */}
-
-            {/* Slide 3 */}
-<div className="carousel-item">
-  <div className="img-container fill-blur kenburns" style={{ ['--bg-url' as any]: "url('img/main_page/20251111_lgx_CarouselStart.png')" }}>
-    <img className="big-img" src="/img/main_page/20251111_lgx_CarouselStart.png" alt={t("page.home.carousel.alt.member")} />
-  </div>
-  {/* 新增标注区域，与slide4结构一致 */}
-  <div className="carousel-caption">
-    <div className="container">
-      <div className="row justify-content-end">
-        <div className="col-lg-7 caption-col">
-          <h1 className="display-1 text-end text-white mb-3">{t("page.home.carousel.slide3.title")}</h1>
-          <p className="mb-4 text-end">{t("page.home.carousel.slide3.desc")}</p>
-          <a href={L("/news")} className="btn btn-primary py-3 px-5">{t("page.home.carousel.slide3.cta")}</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+              {/* 新增标注区域，与slide4结构一致 */}
+              <div className="carousel-caption">
+                <div className="container">
+                  <div className="row justify-content-end">
+                    <div className="col-lg-7 caption-col">
+                      <h1 className="display-1 text-end text-white mb-3">{t("page.home.carousel.slide3.title")}</h1>
+                      <p className="mb-4 text-end">{t("page.home.carousel.slide3.desc")}</p>
+                      <a href={L("/news")} className="btn btn-primary py-3 px-5">{t("page.home.carousel.slide3.cta")}</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
             {/* Slide 4 (active) */}
             <div className="carousel-item active">

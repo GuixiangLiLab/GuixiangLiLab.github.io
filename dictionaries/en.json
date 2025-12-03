@@ -27,7 +27,8 @@
   "component.footer.popularLinks.materials": "School of Materials Sci. & Eng.",
   "component.footer.popularLinks.master": "Grad. Sch. of Southeast Univ.",
   "component.footer.popularLinks.individual": "Li Guixiang's personal homepage, School of Materials Science and Engineering",
-   "component.footer.popularLinks.QRCode": "Welcome to follow our research group's WeChat official account\nOptoelectronic Future Innovation Community",
+  "component.footer.popularLinks.QRCode": "Welcome to follow our research group's WeChat official account\nOptoelectronic Future Innovation Community",
+  "component.footer.wechat.clickToEnlarge":"Clink to view larger image",
 
   "component.footer.newsletter.title": "Newsletter",
   "component.footer.newsletter.placeholder": "Your Email Address",

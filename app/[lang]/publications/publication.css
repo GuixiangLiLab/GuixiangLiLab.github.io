@@ -930,3 +930,25 @@
 .service-item p {
   color: gray;
 }
+
+/* 论文列表自动编号：按年份分组递增 */
+.pubs-module {
+  counter-reset: pub-counter; /* 初始化计数器，每个 .pubs-module 内重新计数 */
+}
+
+.pubs-item {
+  counter-increment: pub-counter; /* 每一个论文项，计数器自动+1 */
+  position: relative; /* 为编号绝对定位做准备 */
+  padding-left: 40px; /* 左侧预留编号空间，避免编号与文字重叠 */
+}
+
+/* 渲染编号（显示在论文项左侧） */
+.pubs-item::before {
+  content: counter(pub-counter) "."; /* 显示计数器值，后缀加英文句号 */
+  position: absolute;
+  left: 16px; /* 编号与论文项左侧内边距对齐 */
+  top: 15px; /* 编号与论文内容垂直居中 */
+  font-size: 13px;
+  font-weight: 700;
+  color: #1d4ed8; /* 编号颜色（与论文链接色一致，视觉协调） */
+}

@@ -19,26 +19,42 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  gap: 60px; /* 新闻项之间的垂直间隙 */
+  
 }
 
 .np-item {
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 300px;
+  width: 100%; */
   display: flex;
+  align-items: flex-start; /* 顶部对齐，适配不同高度图片 */
   justify-content: space-between;
   align-items: center;
   height: 300px;
   width: 100%;
+  gap: 40px; /* 图片与文字的水平间隙*/
+  padding-bottom: 30px;
 }
 
 /* 图片尺寸 */
 .np-img {
-  height: 110%;
+  /* height: 110%;
   width: auto;
-  margin-left: -70px;
+  margin-left: -70px; */
+  width: 40%; /* 图片占新闻项宽度的比例 */
+  max-width: 450px; /* 限制图片最大宽度，避免大屏下过大 */
+  height: auto; /* 高度自适应，保持原始宽高比 */
+  object-fit: contain; /* 图片完全包含在容器内，不裁剪 */
+  border-radius: 6px; /* 圆角优化 */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05); /* 轻微阴影，增强立体感 */
 }
 
 /* 文本内容块 */
 .np-content {
-  height: 100%;
+  height: auto; /* 避免高度被限制 */
 }
 
 .np-readmore {

@@ -21,14 +21,14 @@ export const publications: Publication[] = [
     id: "science-2023-pipn-temp-variation",
     year: 2023,
     href: "https://www.science.org/doi/10.1126/science.add7331",
-    img: "/img/Perovskite_Solar_Cell_Structure_and_Morphology.png",
+    img: "/img/publications/Perovskite_Solar_Cell_Structure_and_Morphology.png",
     title: {
       en: "Highly efficient p-i-n perovskite solar cells that endure temperature variations",
       zh: "高效 p-i-n 钙钛矿太阳能电池的耐温变化研究"
     },
     authorsHtml: {
-      en: `<span class="bold">Li, G.</span>, Su, Z., Canil, L., Hughes, D., Aldamasy, M. H., ... Wang, L., Li, M., & Abate, A.*.`,
-      zh: `<span class="bold">李桂香</span>，苏振，Canil, L.，Hughes, D.，Aldamasy, M. H.，… Wang, L.，Li, M.，& Abate, A.*`
+      en: `<span class="bold">Guixiang Li#</span>, Zhenhuang Su#, Laura Canil, Declan Hughes, Mahmoud H. Aldamasy, ... ,  Meng Li*, and Antonio Abate*`,
+      zh: `<span class="bold">李桂香#</span>, Zhenhuang Su#, Laura Canil, Declan Hughes, Mahmoud H. Aldamasy, ... ,  Meng Li*, and Antonio Abate*`
     },
     venue: { en: "Science (2023)", zh: "Science（2023）" },
     doi: "10.1126/science.add7331",
@@ -44,8 +44,8 @@ export const publications: Publication[] = [
       zh: "通过策略性界面接触工程稳定高效钙钛矿太阳能电池"
     },
     authorsHtml: {
-      en: `<span class="bold">Li, G.</span>, Zhang, Z., Agyei-Tuffour, B., Wu, L., ... Wang, L., Li Z., ... Li, M., & Abate, A.*.`,
-      zh: `<span class="bold">李桂香</span>，张祖宏，Agyei-Tuffour, B.，吴录艳，… 王露遥，李哲，… 李萌，& Abate, A.*`
+      en: `<span class="bold">Guixiang Li#*</span>, Zuhong Zhang#, Benjamin Agyei-Tuffour#, Luyan Wu#, Thomas W. Gries, ... , Luyao Wang*, Zhe Li*, ... , Meng Li*`,
+      zh: `<span class="bold">李桂香#*</span>, Zuhong Zhang#, Benjamin Agyei-Tuffour#, Luyan Wu#, Thomas W. Gries, ... , Luyao Wang*, Zhe Li*, ... , Meng Li*`
     },
     venue: { en: "Nature Photonics (2025)", zh: "Nature Photonics（2025）" },
     doi: "10.1038/s41566-025-01791-1",
@@ -61,8 +61,8 @@ export const publications: Publication[] = [
       zh: "温度循环条件下卤化物钙钛矿光伏的韧性路径"
     },
     authorsHtml: {
-      en: `Wu, L., Hu, S., Yang, F., <span class="bold">Li, G.</span>, Wang, J., ... Pascual, J., Li, M., & Abate, A.`,
-      zh: `吴立，胡松，杨帆，<span class="bold">李桂香</span>，王俊，… Pascual, J.，李萌，& Abate, A.`
+      en: `Luyan Wu#, Shuaifeng Hu#, Feng Yang#, <span class="bold">Guixiang Li*</span>, Junke Wang, Weiwei Zuo, ... , Jorge Pascual*, Meng Li*, Antonio Abate*`,
+      zh: `Luyan Wu#, Shuaifeng Hu#, Feng Yang#, <span class="bold">李桂香*</span>, Junke Wang, Weiwei Zuo, ... , Jorge Pascual*, Meng Li*, Antonio Abate*`
     },
     venue: { en: "Nature Reviews Materials (2025)", zh: "Nature Reviews Materials（2025）" },
     doi: "10.1038/s41578-025-00781-7",
@@ -78,8 +78,8 @@ export const publications: Publication[] = [
       zh: "通过成核与结晶调控实现高效 Sn-Pb 钙钛矿太阳能电池"
     },
     authorsHtml: {
-      en: `Wang, A., Du, K., Fang, Z., Ren, Y., Zhou, C., ... Dong, X., <span class="bold">Li, G.</span>, Nazeeruddin, M. K., & Ding, J.`,
-      zh: `王昂，杜凯，方正，任宇，周晨，… 董翔，<span class="bold">李桂香</span>，Nazeeruddin, M. K.，& 丁健`
+      en: `Aili Wang#, Kaihuai Du#, Zhimin Fang, Yinkang Ren, Chenguang Zhou, Yunlong Yang, Xu Dong*, ... , <span class="bold">Guixiang Li*</span>, Mohammad Kahaj Khaja Nazeeruddin*, Jianning Ding*`,
+      zh: `Aili Wang#, Kaihuai Du#, Zhimin Fang, Yinkang Ren, Chenguang Zhou, Yunlong Yang, Xu Dong*, ... , <span class="bold">李桂香*</span>, Mohammad Kahaj Khaja Nazeeruddin*, Jianning Ding*`
     },
     venue: { en: "Advanced Materials (2025)", zh: "Advanced Materials（2025）" },
     doi: "10.1002/adma.202418766",
@@ -95,8 +95,8 @@ export const publications: Publication[] = [
       zh: "利用多功能分子抑制倒置结构钙钛矿太阳能电池界面非辐射复合"
     },
     authorsHtml: {
-      en: `Wu, J., Zhu, R., <span class="bold">Li, G.</span>, Zhang, Z., Pascual, J., ... Li, M.`,
-      zh: `吴杰，朱蓉，<span class="bold">李桂香</span>，张哲，Pascual, J.，… 李明`
+      en: `Jiaxin Wu#, Rui Zhu#, <span class="bold">Guixiang Li*</span>, Zuhong Zhang, Jorge Pascual, ...  ,Antonio Abate, Meng Li*`,
+      zh: `Jiaxin Wu#, Rui Zhu#, <span class="bold">李桂香*</span>, Zuhong Zhang, Jorge Pascual, ...  ,Antonio Abate, Meng Li*`
     },
     venue: { en: "Advanced Materials (2024)", zh: "Advanced Materials（2024）" },
     doi: "10.1002/adma.202407433",
@@ -112,11 +112,232 @@ export const publications: Publication[] = [
       zh: "用于耐变温稳定性的热触发动态自修复框架"
     },
     authorsHtml: {
-      en: `Tang, Y., Zhang, Z., <span class="bold">Li, G.</span>, Qin, C., Su, Z., Liu, H., Yang, F., Yang, Y., Aldamasy, M. H., ...`,
-      zh: `唐源，张哲，<span class="bold">李桂香</span>，秦超，苏振，刘浩，杨帆，杨阳，Aldamasy, M. H.，…`
+      en: `Ying Tang#, Zuhong Zhang#, <span class="bold">Guixiang Li*</span>, Chaochao Qin, Zhenhuang Su, ... , Luyao Wang*, Antonio Abate, Yufang Liu*, Meng Li*`,
+      zh: `Ying Tang#, Zuhong Zhang#, <span class="bold">李桂香*</span>, Chaochao Qin, Zhenhuang Su, ... , Luyao Wang*, Antonio Abate, Yufang Liu*, Meng Li*`
     },
     venue: { en: "Advanced Materials (2025)", zh: "Advanced Materials（2025）" },
     doi: "10.1002/adma.202420378",
     selected: true
+  },
+  {
+    id: "ccr-2026-under-mitig-inter-defec",
+    year: 2026,
+    href: "https://www.sciencedirect.com/science/article/pii/S0010854525007477",
+    img: "",
+    title: {
+      en: "Understanding and mitigating interfacial defects in tin‑lead perovskites for robust photovoltaics",
+      zh: "理解和缓解锡铅钙钛矿中的界面缺陷以实现稳定的光伏器件"
+    },
+    authorsHtml: {
+      en: `Aili Wang#, Chunna Huang#, Kaihuai Du, Luozheng Zhang, Lvzhou Li, Xu Dong, Artem Musiienko, Meng Li, Antonio Abate, Xiangli Wen*, <span class="bold">Guixiang Li*</span>, Jianning Ding*`,
+      zh: `Aili Wang#, Chunna Huang#, Kaihuai Du, Luozheng Zhang, Lvzhou Li, Xu Dong, Artem Musiienko, Meng Li, Antonio Abate, Xiangli Wen*, <span class="bold">李桂香*</span>, Jianning Ding*`
+    },
+    venue: { en: "Coordination Chemistry Reviews (2026)", zh: "Coordination Chemistry Reviews（2026）" },
+    doi: "10.1016/j.ccr.2025.217177",
+    selected: false
+  },
+  {
+    id: "afm-2025-defec-heali-in-perov",
+    year: 2025,
+    href: "https://advanced.onlinelibrary.wiley.com/doi/full/10.1002/adfm.202523417",
+    img: "",
+    title: {
+      en: "Defect-Healing in Perovskite Photovoltaics Driving Long-Term Reliability and Performance",
+      zh: "钙钛矿光伏器件中的缺陷修复驱动长期可靠性和性能提升"
+    },
+    authorsHtml: {
+      en: `Xiaochun Zhang, Qing Cao*, Luyao Wang, Tiankai Zhang, Kaiyu X. Fu, Zhe Li, Antonio Abate, Meng Li*, <span class="bold">Guixiang Li*</span>`,
+      zh: `张晓春, Qing Cao*, Luyao Wang, Tiankai Zhang, Kaiyu X. Fu, Zhe Li, Antonio Abate, Meng Li*, <span class="bold">李桂香*</span>`
+    },
+    venue: { en: "Advanced Functional Materials (2025)", zh: "Advanced Functional Materials（2025）" },
+    doi: "10.1002/adfm.202523417",
+    selected: false
+  },
+  {
+    id: "afm-2025-unvei-elect-regul-mecha",
+    year: 2025,
+    href: "https://advanced.onlinelibrary.wiley.com/doi/abs/10.1002/adfm.202515501",
+    img: "",
+    title: {
+      en: "Unveiling Electronic Regulation Mechanism in Amorphous Ni3S2/Crystalline Cu Heterointerface for Alkaline Overall Water Splitting",
+      zh: "揭示非晶态Ni3S2/晶体Cu异质界面在碱性全分解水反应中的电子调控机制"
+    },
+    authorsHtml: {
+      en: `Quanshuo Wu, Haofeng Li, Junli Wang, Ruidong Xu*, Jeongwon Kim, ... , Mohammad Khaja Nazeeruddin*, <span class="bold">Guixiang Li*</span>, Linjing Yang*`,
+      zh: `Quanshuo Wu, Haofeng Li, Junli Wang, Ruidong Xu*, Jeongwon Kim, ... , Mohammad Khaja Nazeeruddin*, <span class="bold">李桂香*</span>, Linjing Yang*`
+    },
+    venue: { en: "Advanced Functional Materials (2025)", zh: "Advanced Functional Materials（2025）" },
+    doi: "110.1002/adfm.202515501",
+    selected: false
+  },
+  {
+    id: "ael-2025-fluor-termi-conju-spiro",
+    year: 2025,
+    href: "https://pubs.acs.org/doi/full/10.1021/acsenergylett.4c03233",
+    img: "",
+    title: {
+      en: "Fluorene-Terminated π-Conjugated Spiro-Type Hole Transport Materials for Perovskite Solar Cells",
+      zh: "用于钙钛矿太阳能电池的芴封端π共轭螺型空穴传输材料"
+    },
+    authorsHtml: {
+      en: `Mengde Zhai#, Kaihuai Du#, Chengyang Liu, Cheng Chen, <span class="bold">Guixiang Li*</span>, ... , Aili Wang*, Toshinori Matsushima, Zhanglin Guo, Meng Li, Antonio Abate, Paul J. Dyson, Mohammad Khaja Nazeeruddin, Ming Cheng*`,
+      zh: `Mengde Zhai#, Kaihuai Du#, Chengyang Liu, Cheng Chen, <span class="bold">李桂香*</span>, ... , Aili Wang*, Toshinori Matsushima, Zhanglin Guo, Meng Li, Antonio Abate, Paul J. Dyson, Mohammad Khaja Nazeeruddin, Ming Cheng*`
+    },
+    venue: { en: "ACS Energy Letters (2025)", zh: "ACS Energy Letters（2025）" },
+    doi: "10.1021/acsenergylett.4c03233",
+    selected: false
+  },
+  {
+    id: "acbee-2025-dual-activ-site-accel",
+    year: 2025,
+    href: "https://www.sciencedirect.com/science/article/pii/S0926337325006125",
+    img: "",
+    title: {
+      en: "Dual-active-site Accelerated Hydrogenation Facilitates Efficient Electrochemical Reduction of Nitrate to Ammonia",
+      zh: "双活性位点加速氢化促进硝酸盐高效电化学还原为氨"
+    },
+    authorsHtml: {
+      en: `Jinlong Wei, Junli Wang, Wanqiang Yu, Jiawei Li, Ye Yang, Yunpeng Wang, Nan Li, Ruidong Xu*, Linjing Yang*, <span class="bold">Guixiang Li*</span>, Paul J. Dyson`,
+      zh: `Jinlong Wei, Junli Wang, Wanqiang Yu, Jiawei Li, Ye Yang, Yunpeng Wang, Nan Li, Ruidong Xu*, Linjing Yang*, <span class="bold">李桂香*</span>, Paul J. Dyson`
+    },
+    venue: { en: "Applied Catalysis B: Environment and Energy (2025)", zh: "Applied Catalysis B: Environment and Energy（2025）" },
+    doi: "10.1016/j.apcatb.2025.125629",
+    selected: false
+  },
+  {
+    id: "jcis-2025-laser-induc-mo-valen",
+    year: 2025,
+    href: "https://www.sciencedirect.com/science/article/pii/S0021979725026475",
+    img: "",
+    title: {
+      en: "Laser-induced Mo valence engineering in Cu2O enables efficient nitrate electroreduction",
+      zh: "激光诱导Cu2O中Mo价态调控可实现高效的硝酸盐电还原"
+    },
+    authorsHtml: {
+      en: `Ye Yang, Jinlong Wei, Junli Wang, Wanqiang Yu, Jiawei Li, Yuantao Yang, Ruidong Xu*, <span class="bold">Guixiang Li*</span>, Linjing Yang*`,
+      zh: `Ye Yang, Jinlong Wei, Junli Wang, Wanqiang Yu, Jiawei Li, Yuantao Yang, Ruidong Xu*, <span class="bold">李桂香*</span>, Linjing Yang*`
+    },
+    venue: { en: "Journal of Colloid and Interface Science (2025)", zh: "Journal of Colloid and Interface Science（2025）" },
+    doi: "10.1016/j.jcis.2025.139255",
+    selected: false
+  },
+  {
+    id: "small-2025-ratio-desig-asymm-fen3s",
+    year: 2025,
+    href: "https://onlinelibrary.wiley.com/doi/full/10.1002/smll.202508823",
+    img: "",
+    title: {
+      en: "Rational Design of Asymmetric FeN3S Single-Atom Sites for eg Orbital Engineering toward Efficient ORR in PEMFCs",
+      zh: "合理设计不对称FeN3S单原子位点，例如通过轨道工程实现 PEMFC 中高效的氧还原反应"
+    },
+    authorsHtml: {
+      en: `Chengjie Chen, Xin Lai, Yongqi Jian, Dengke Zhang, Wenyu Huang, ... , <span class="bold">Guixiang Li*</span>, Nan Wang*, Hui Meng*, Mohammad Khaja Nazeeruddin`,
+      zh: `Chengjie Chen, Xin Lai, Yongqi Jian, Dengke Zhang, Wenyu Huang, ... , <span class="bold">李桂香*</span>, Nan Wang*, Hui Meng*, Mohammad Khaja Nazeeruddin`
+    },
+    venue: { en: "Small (2025)", zh: "Small（2025）" },
+    doi: "10.1002/smll.202508823",
+    selected: false
+  },
+  {
+    id: "sr-2025-resil-repai-perov-photo",
+    year: 2025,
+    href: "https://onlinelibrary.wiley.com/doi/abs/10.1002/solr.202500688",
+    img: "",
+    title: {
+      en: "Resilient and Repairable Perovskite Photovoltaics for Extreme Environments",
+      zh: "适用于极端环境的韧性可修复钙钛矿光伏电池"
+    },
+    authorsHtml: {
+      en: `Yanyue Tang, <span class="bold">Guixiang Li*</span>`,
+      zh: `Yanyue Tang, <span class="bold">李桂香*</span>`
+    },
+    venue: { en: "Solar RRL (2025)", zh: "Solar RRL（2025）" },
+    doi: "10.1002/solr.202500688",
+    selected: false
+  },
+  {
+    id: "am-2024-high-stable-lead-free",
+    year: 2024,
+    href: "https://advanced.onlinelibrary.wiley.com/doi/full/10.1002/adma.202308655",
+    img: "",
+    title: {
+      en: "High-Stable Lead-Free Solar Cells Achieved by Surface Reconstruction of Quasi-2D Tin-Based Perovskites",
+      zh: "通过准二维锡基钙钛矿的表面重构实现高稳定性无铅太阳能电池"
+    },
+    authorsHtml: {
+      en: `Feng Yang, Rui Zhu*, Zuhong Zhang, Zhenhuang Su*, Weiwei Zuo, ... , <span class="bold">Guixiang Li*</span>, Xingyu Gao, Zhe Li, Michael Saliba, Antonio Abate, Meng Li*`,
+      zh: `Feng Yang, Rui Zhu*, Zuhong Zhang, Zhenhuang Su*, Weiwei Zuo, ... , <span class="bold">李桂香*</span>, Xingyu Gao, Zhe Li, Michael Saliba, Antonio Abate, Meng Li*`
+    },
+    venue: { en: "Advanced Materials (2024)", zh: "Advanced Materials（2024）" },
+    doi: "10.1002/adma.202308655",
+    selected: false
+  },
+  {
+    id: "am-2024-bioto-of-halid-perov",
+    year: 2024,
+    href: "https://advanced.onlinelibrary.wiley.com/doi/full/10.1002/adma.202306860",
+    img: "",
+    title: {
+      en: "Biotoxicity of Halide Perovskites in Mice",
+      zh: "卤化物钙钛矿对小鼠的生物毒性"
+    },
+    authorsHtml: {
+      en: `<span class="bold">Guixiang Li#</span>, Yong-Tao Liu#, Feng Yang#, Meng Li*, Zuhong Zhang, Jorge Pascual, Zhao-Kui Wang*, ... , Antonio Abate*, Irene Cantone*`,
+      zh: `<span class="bold">李桂香#</span>, Yong-Tao Liu#, Feng Yang#, Meng Li*, Zuhong Zhang, Jorge Pascual, Zhao-Kui Wang*, ... , Antonio Abate*, Irene Cantone*`
+    },
+    venue: { en: "Advanced Materials (2024)", zh: "Advanced Materials（2024）" },
+    doi: "10.1002/adma.202306860",
+    selected: false
+  },
+  {
+    id: "aem-2024-halog-hole-selec-conta",
+    year: 2024,
+    href: "https://advanced.onlinelibrary.wiley.com/doi/abs/10.1002/aenm.202400640",
+    img: "",
+    title: {
+      en: "Halogenated Hole Selective Contact Enhances Interfacial Weak Bonding of Perovskite Solar Cells",
+      zh: "卤化空穴选择性接触增强钙钛矿太阳能电池的界面弱键合"
+    },
+    authorsHtml: {
+      en: `Aili Wang#, Mengde Zhai#, Kaihuai Du, Jinman Yang, Luozheng Zhang, ... , <span class="bold">Guixiang Li*</span>, Meng Li, Antonio Abate, Ming Cheng*, Jianning Ding*`,
+      zh: `Aili Wang#, Mengde Zhai#, Kaihuai Du, Jinman Yang, Luozheng Zhang, ... , <span class="bold">李桂香*</span>, Meng Li, Antonio Abate, Ming Cheng*, Jianning Ding*`
+    },
+    venue: { en: "Advanced Energy Materials (2024)", zh: "Advanced Energy Materials（2024）" },
+    doi: "10.1002/aenm.202400640",
+    selected: false
+  },
+  {
+    id: "angew-2024-contr-tin-halid-perov",
+    year: 2024,
+    href: "https://onlinelibrary.wiley.com/doi/full/10.1002/ange.202407193",
+    img: "",
+    title: {
+      en: "Controlling Tin Halide Perovskite Oxidation Dynamics in Solution for Perovskite Optoelectronic Devices",
+      zh: "控制溶液中卤化锡钙钛矿的氧化动力学以用于钙钛矿光电器件"
+    },
+    authorsHtml: {
+      en: `Shun Tian#, <span class="bold">Guixiang Li#</span>, Roland C. Turnell‐Ritson, Zhaofu Fei, Aurélien Bornet, Mohammad Khaja Nazeeruddin*, Paul J Dyson*`,
+      zh: `Shun Tian#, <span class="bold">李桂香#</span>, Roland C. Turnell‐Ritson, Zhaofu Fei, Aurélien Bornet, Mohammad Khaja Nazeeruddin*, Paul J Dyson*`
+    },
+    venue: { en: "Angewandte Chemie International Edition (2024)", zh: "Angewandte Chemie International Edition（2024）" },
+    doi: "10.1002/ange.202407193",
+    selected: false
+  },
+  {
+    id: "afm-2024-coval-organ-frame-enhanc",
+    year: 2024,
+    href: "https://advanced.onlinelibrary.wiley.com/doi/abs/10.1002/adfm.202418897",
+    img: "",
+    title: {
+      en: "Covalent Organic Framework‐Enhanced Metal Halide Perovskites for Selective and Sensitive Gas Sensing",
+      zh: "共价有机框架增强的金属卤化物钙钛矿用于选择性和灵敏的气体传感"
+    },
+    authorsHtml: {
+      en: `Wen Ye#, Meng Li#, <span class="bold">Guixiang Li#</span>, Lihua Jiang, Shun Tian, ... , Mohammad Khaja Nazeeruddin*, Paul J. Dyson*, Antonio Abate*, Jian-Mei Lu*`,
+      zh: `Wen Ye#, Meng Li#, <span class="bold">李桂香#</span>, Lihua Jiang, Shun Tian, ... , Mohammad Khaja Nazeeruddin*, Paul J. Dyson*, Antonio Abate*, Jian-Mei Lu*`
+    },
+    venue: { en: "Advanced Functional Materials (2024)", zh: "Advanced Functional Materials（2024）" },
+    doi: "10.1002/adfm.202418897",
+    selected: false
   }
 ];

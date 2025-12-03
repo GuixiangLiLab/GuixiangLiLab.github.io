@@ -133,7 +133,7 @@ export default function Footer() {
                         <h5 className="text-light mb-1" style={{ whiteSpace: "pre-line" }}> {/* 减小文字底部间距 */}
                            {t("component.footer.popularLinks.QRCode")}
                         </h5>
-                        <span className="text-sm text-primary">点击查看大图</span>
+                        <span className="text-sm text-primary">{t("component.footer.wechat.clickToEnlarge")}</span>
                       </div>
                     </div>
                   </div>
