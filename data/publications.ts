@@ -324,6 +324,23 @@ export const publications: Publication[] = [
     selected: false
   },
   {
+    id: "afm-2024-catal-oxida-of-btx",
+    year: 2024,
+    href: "https://advanced.onlinelibrary.wiley.com/doi/full/10.1002/adfm.202401281",
+    img: "",
+    title: {
+      en: "Catalytic oxidation of BTX (benzene, toluene, and xylene) using metal oxide perovskites",
+      zh: "利用金属氧化物钙钛矿催化氧化BTX（苯、甲苯和二甲苯）"
+    },
+    authorsHtml: {
+      en: `Jianhua Yuan#, <span class="bold">Guixiang Li#</span>, Xiao Liu, Yun Yang, Fei Yu, Jianglin Cao, Zhaofu Fei*, Jie Ma*, Mohammad Khaja Nazeeruddin*, Paul J Dyson*`,
+      zh: `Jianhua Yuan#, <span class="bold">李桂香#</span>, Xiao Liu, Yun Yang, Fei Yu, Jianglin Cao, Zhaofu Fei*, Jie Ma*, Mohammad Khaja Nazeeruddin*, Paul J Dyson*`
+    },
+    venue: { en: "Advanced Functional Materials (2024)", zh: "Advanced Functional Materials（2024）" },
+    doi: "10.1002/adfm.202401281",
+    selected: false
+  },
+  {
     id: "afm-2024-coval-organ-frame-enhanc",
     year: 2024,
     href: "https://advanced.onlinelibrary.wiley.com/doi/abs/10.1002/adfm.202418897",
@@ -338,6 +355,244 @@ export const publications: Publication[] = [
     },
     venue: { en: "Advanced Functional Materials (2024)", zh: "Advanced Functional Materials（2024）" },
     doi: "10.1002/adfm.202418897",
+    selected: false
+  },
+  {
+    id: "cej-2024-elect-struc-engin-NiFe",
+    year: 2024,
+    href: "https://www.sciencedirect.com/science/article/abs/pii/S138589472407921X",
+    img: "",
+    title: {
+      en: "Electronic structure engineering of NiFe hydroxide nanosheets via ion doping for efficient OER electrocatalysis",
+      zh: "通过离子掺杂调控NiFe氢氧化物纳米片的电子结构以实现高效的OER电催化"
+    },
+    authorsHtml: {
+      en: `Can Zhang, Jing Wang, Hang Ma, Junli Wang, Ruidong Xu*, <span class="bold">Guixiang Li*</span>, Linjing Yang*, Hong Guo`,
+      zh: `Can Zhang, Jing Wang, Hang Ma, Junli Wang, Ruidong Xu*, <span class="bold">李桂香*</span>, Linjing Yang*, Hong Guo`
+    },
+    venue: { en: "Chemical Engineering Journal (2024)", zh: "Chemical Engineering Journal（2024）" },
+    doi: "10.1016/j.cej.2024.156430",
+    selected: false
+  },
+  {
+    id: "aml-2024-micro-immob-for-enhan",
+    year: 2024,
+    href: "https://pubs.acs.org/doi/abs/10.1021/acsmaterialslett.4c01360",
+    img: "",
+    title: {
+      en: "Microbial Immobilization for Enhancing Environmental Sustainability of Perovskite Photovoltaics",
+      zh: "微生物固定化增强钙钛矿光伏电池的环境可持续性"
+    },
+    authorsHtml: {
+      en: `Jianhua Yuan#, Tianxiao Sun#, <span class="bold">Guixiang Li*</span>, Markus Weigand, Fei Yu, Zhe Li, Jianglin Cao, Jiayuan Yu, Meng Li, Weijia Zhou*`,
+      zh: `Jianhua Yuan#, Tianxiao Sun#, <span class="bold">李桂香*</span>, Markus Weigand, Fei Yu, Zhe Li, Jianglin Cao, Jiayuan Yu, Meng Li, Weijia Zhou*`
+    },
+    venue: { en: "ACS Materials Letters (2024)", zh: "ACS Materials Letters（2024）" },
+    doi: "10.1021/acsmaterialslett.4c01360",
+    selected: false
+  },
+  {
+    id: "am-2023-stabi-of-inorg-perov",
+    year: 2023,
+    href: "https://advanced.onlinelibrary.wiley.com/doi/full/10.1002/adma.202304150",
+    img: "",
+    title: {
+      en: "Stabilization of Inorganic Perovskite Solar Cells with a 2D Dion-Jacobson Passivating Layer",
+      zh: "利用二维Dion-Jacobson钝化层稳定无机钙钛矿太阳能电池"
+    },
+    authorsHtml: {
+      en: `Luyan Wu, <span class="bold">Guixiang Li*</span>, Karunanantharajah Prashanthan, Artem Musiienko, Jinzhao Li, ... , Michele Saba*, Antonio Abate*`,
+      zh: `Luyan Wu, <span class="bold">李桂香*</span>, Karunanantharajah Prashanthan, Artem Musiienko, Jinzhao Li, ... , Michele Saba*, Antonio Abate*`
+    },
+    venue: { en: "Advanced Materials (2023)", zh: "Advanced Materials（2023）" },
+    doi: "10.1002/adma.202304150",
+    selected: false
+  },
+  {
+    id: "angew-2023-manag-exces-lead-iodid",
+    year: 2023,
+    href: "https://onlinelibrary.wiley.com/doi/full/10.1002/ange.202307395",
+    img: "",
+    title: {
+      en: "Managing Excess Lead Iodide with Functionalized Oxo-graphene Nanosheets for Stable Perovskite Solar Cells",
+      zh: "利用功能化氧化石墨烯纳米片控制过量碘化铅以实现稳定的钙钛矿太阳能电池"
+    },
+    authorsHtml: {
+      en: `<span class="bold">Guixiang Li#</span>, Yalei Hu#, Meng Li*, Ying Tang, Zuhong Zhang, ... , Ece Aktas*, Siegfried Eigler*, Antonio Abate*`,
+      zh: `<span class="bold">李桂香#</span>, Yalei Hu#, Meng Li*, Ying Tang, Zuhong Zhang, ... , Ece Aktas*, Siegfried Eigler*, Antonio Abate*`
+    },
+    venue: { en: "Angewandte Chemie International Edition (2023)", zh: "Angewandte Chemie International Edition（2023）" },
+    doi: "10.1002/anie.202307395",
+    selected: false
+  },
+  {
+    id: "aem-2023-dimen-tunin-in-leadf",
+    year: 2023,
+    href: "https://advanced.onlinelibrary.wiley.com/doi/full/10.1002/aenm.202204233",
+    img: "",
+    title: {
+      en: "Dimensional Tuning in Lead-Free Tin Halide Perovskite for Solar Cells",
+      zh: "无铅锡卤化物钙钛矿太阳能电池的维度调控"
+    },
+    authorsHtml: {
+      en: `Jinbo Zhao, Zuhong Zhang, <span class="bold">Guixiang Li*</span>, Mahmoud H. Aldamasy*, Meng Li*, Antonio Abate`,
+      zh: `Jinbo Zhao, Zuhong Zhang, <span class="bold">李桂香*</span>, Mahmoud H. Aldamasy*, Meng Li*, Antonio Abate`
+    },
+    venue: { en: "Advanced Energy Materials (2023)", zh: "Advanced Energy Materials（2023）" },
+    doi: "10.1002/aenm.202204233",
+    selected: false
+  },
+  {
+    id: "aem-2022-struc-and-perfo-evolu",
+    year: 2022,
+    href: "https://advanced.onlinelibrary.wiley.com/doi/full/10.1002/aenm.202202887",
+    img: "",
+    title: {
+      en: "Structure and Performance Evolution of Perovskite Solar Cells under Extreme Temperatures",
+      zh: "极端温度下钙钛矿太阳能电池的结构和性能演变"
+    },
+    authorsHtml: {
+      en: `<span class="bold">Guixiang Li#</span>, Zhenhuang Su#, Meng Li*, Harrison Ka Hin Lee, Ram Datt, ... , Wing Chung Tsoi*, Xingyu Gao, Zhaokui Wang, Michael Saliba, Antonio Abate*`,
+      zh: `<span class="bold">李桂香#</span>, Zhenhuang Su#, Meng Li*, Harrison Ka Hin Lee, Ram Datt, ... , Wing Chung Tsoi*, Xingyu Gao, Zhaokui Wang, Michael Saliba, Antonio Abate*`
+    },
+    venue: { en: "Advanced Energy Materials (2022)", zh: "Advanced Energy Materials（2022）" },
+    doi: "10.1002/aenm.202202887",
+    selected: false
+  },
+  {
+    id: "aem-2021-ionic-liqui-stabi-highe",
+    year: 2021,
+    href: "https://advanced.onlinelibrary.wiley.com/doi/full/10.1002/aenm.202101539",
+    img: "",
+    title: {
+      en: "Ionic Liquid Stabilizing High‐Efficiency Tin Halide Perovskite Solar Cells",
+      zh: "离子液体稳定高效卤化锡钙钛矿太阳能电池"
+    },
+    authorsHtml: {
+      en: `<span class="bold">Guixiang Li#</span>, Zhenhuang Su#, Meng Li*, Feng Yang, Mahmoud H Aldamasy, ... , Antonio Abate*`,
+      zh: `<span class="bold">李桂香#</span>, Zhenhuang Su#, Meng Li*, Feng Yang, Mahmoud H Aldamasy, ... , Antonio Abate*`
+    },
+    venue: { en: "Advanced Energy Materials (2021)", zh: "Advanced Energy Materials（2021）" },
+    doi: "10.1002/aenm.202101539",
+    selected: false
+  },
+  {
+    id: "acbe-2020-NiNi3-nanop-embed-into",
+    year: 2020,
+    href: "https://www.sciencedirect.com/science/article/abs/pii/S092633731930894X",
+    img: "",
+    title: {
+      en: "Ni-Ni3P nanoparticles embedded into N, P-doped carbon on 3D graphene frameworks via in situ phosphatization of saccharomycetes with multifunctional electrodes for electrocatalytic hydrogen production and anodic degradation",
+      zh: "通过原位磷化酵母，将Ni-Ni3P纳米颗粒嵌入到N、P掺杂的碳基三维石墨烯框架中，并利用多功能电极进行电催化制氢和阳极降解"
+    },
+    authorsHtml: {
+      en: `<span class="bold">Guixiang Li#</span>, Jingang Wang#, Jiayuan Yu, Hui Liu, Qing Cao, Jialei Du, Lili Zhao, Jin Jia, Hong Liu*, Weijia Zhou*`,
+      zh: `<span class="bold">李桂香#</span>, Jingang Wang#, Jiayuan Yu, Hui Liu, Qing Cao, Jialei Du, Lili Zhao, Jin Jia, Hong Liu*, Weijia Zhou*`
+    },
+    venue: { en: "Applied Catalysis B: Environmental (2020)", zh: "Applied Catalysis B: Environmental（2020）" },
+    doi: "10.1016/j.apcatb.2019.118147",
+    selected: false
+  },
+  {
+    id: "small-2020-phosp-doped-iron-nitri",
+    year: 2020,
+    href: "https://onlinelibrary.wiley.com/doi/full/10.1002/smll.202001980",
+    img: "",
+    title: {
+      en: "Phosphorus‐Doped Iron Nitride Nanoparticles Encapsulated by Nitrogen‐Doped Carbon Nanosheets on Iron Foam In Situ Derived from Saccharomycetes Cerevisiae for Electrocatalytic Overall Water Splitting",
+      zh: "原位制备的氮掺杂碳纳米片包覆磷掺杂氮化铁纳米颗粒于铁泡沫上，该铁泡沫源自酿酒酵母，用于电催化全分解水"
+    },
+    authorsHtml: {
+      en: `<span class="bold">Guixiang Li#</span>, Jiayuan Yu#, Wanqiang Yu, Linjing Yang, Xiaoli Zhang, Xiaoyan Liu, Hong Liu*, Weijia Zhou*`,
+      zh: `<span class="bold">李桂香#</span>, Jiayuan Yu#, Wanqiang Yu, Linjing Yang, Xiaoli Zhang, Xiaoyan Liu, Hong Liu*, Weijia Zhou*`
+    },
+    venue: { en: "Small (2020)", zh: "Small（2020）" },
+    doi: "10.1002/smll.202001980",
+    selected: false
+  },
+  {
+    id: "iscie-2019-ndoped-mo2c-nanob-nanos",
+    year: 2019,
+    href: "https://www.cell.com/iscience/fulltext/S2589-0042(19)30334-7",
+    img: "",
+    title: {
+      en: "N-doped Mo2C nanobelts/graphene nanosheets bonded with hydroxy nanocellulose as flexible and editable electrode for hydrogen evolution reaction",
+      zh: "以羟基纳米纤维素为键合材料的N掺杂Mo2C纳米带/石墨烯纳米片作为柔性可编辑电极用于析氢反应"
+    },
+    authorsHtml: {
+      en: `<span class="bold">Guixiang Li#</span>, Jiayuan Yu#, Ziqian Zhou#, Renkun Li, Zhihua Xiang, Qing Cao, Lili Zhao, Xiwen Wang, Xinwen Peng, Hong Liu*, Weijia Zhou*`,
+      zh: `<span class="bold">李桂香#</span>, Jiayuan Yu#, Ziqian Zhou#, Renkun Li, Zhihua Xiang, Qing Cao, Lili Zhao, Xiwen Wang, Xinwen Peng, Hong Liu*, Weijia Zhou*`
+    },
+    venue: { en: "Iscience (2019)", zh: "Iscience（2019）" },
+    doi: "10.1016/j.isci.2019.08.055",
+    selected: false
+  },
+  {
+    id: "afm-2019-ruru2-and-npcru-synth",
+    year: 2019,
+    href: "https://advanced.onlinelibrary.wiley.com/doi/abs/10.1002/adfm.201901154",
+    img: "",
+    title: {
+      en: "Ru–Ru2PΦNPC and NPC@RuO2 synthesized via environment‐friendly and solid‐phase phosphating process by Saccharomycetes as N/P sources and carbon template for overall water splitting in acid electrolyte",
+      zh: "利用酵母菌作为氮/磷源和碳模板，通过环境友好的固相磷化法合成Ru–Ru2PΦNPC和NPC@RuO2，用于酸性电解液中的全分解水反应"
+    },
+    authorsHtml: {
+      en: `Jiayuan Yu#, <span class="bold">Guixiang Li#</span>, Hui Liu, Lili Zhao, Aizhu Wang, Zhen Liu, Haidong Li, Hong Liu, Yongyou Hu*, Weijia Zhou*`,
+      zh: `Jiayuan Yu#, <span class="bold">李桂香#</span>, Hui Liu, Lili Zhao, Aizhu Wang, Zhen Liu, Haidong Li, Hong Liu, Yongyou Hu*, Weijia Zhou*`
+    },
+    venue: { en: "Advanced Functional Materials (2019)", zh: "Advanced Functional Materials（2019）" },
+    doi: "10.1002/adfm.201901154",
+    selected: false
+  },
+  {
+    id: "as-2019-ruru2-and-npcru-synth",
+    year: 2019,
+    href: "https://advanced.onlinelibrary.wiley.com/doi/full/10.1002/advs.201901458",
+    img: "",
+    title: {
+      en: "Electrochemical flocculation integrated hydrogen evolution reaction of Fe@ N‐doped carbon nanotubes on iron foam for ultralow voltage electrolysis in neutral media",
+      zh: "电化学絮凝法将Fe@N掺杂碳纳米管负载于铁泡沫上的析氢反应与中性介质中的超低电压电解相结合"
+    },
+    authorsHtml: {
+      en: `Jiayuan Yu#, <span class="bold">Guixiang Li#</span>, Hui Liu, Lili Zeng, Lili Zhao, Jin Jia, Mingyuan Zhang, Weijia Zhou*, Hong Liu, Yongyou Hu*`,
+      zh: `Jiayuan Yu#, <span class="bold">李桂香#</span>, Hui Liu, Lili Zeng, Lili Zhao, Jin Jia, Mingyuan Zhang, Weijia Zhou*, Hong Liu, Yongyou Hu*`
+    },
+    venue: { en: "Advanced Science (2019)", zh: "Advanced Science（2019）" },
+    doi: "10.1002/advs.201901458",
+    selected: false
+  },
+  {
+    id: "ijhe-2018-simul-water-recov-and",
+    year: 2018,
+    href: "https://www.sciencedirect.com/science/article/pii/S0360319918314319",
+    img: "",
+    title: {
+      en: "Simultaneous water recovery and hydrogen production by bifunctional electrocatalyst of nitrogen-doped carbon nanotubes protected cobalt nanoparticles",
+      zh: "利用氮掺杂碳纳米管保护的钴纳米粒子双功能电催化剂同时实现水回收和氢气生产"
+    },
+    authorsHtml: {
+      en: `Jiayuan Yu#, <span class="bold">Guixiang Li#</span>, Hui Liu, Aili Wang, Linjing Yang, Weijia Zhou*, Yongyou Hu*, Benli Chu`,
+      zh: `Jiayuan Yu#, <span class="bold">李桂香#</span>, Hui Liu, Aili Wang, Linjing Yang, Weijia Zhou*, Yongyou Hu*, Benli Chu`
+    },
+    venue: { en: "International Journal of Hydrogen Energy (2018)", zh: "International Journal of Hydrogen Energy（2018）" },
+    doi: "10.1016/j.ijhydene.2018.04.210",
+    selected: false
+  },
+  {
+    id: "afm-2018-cobal-cobal-phosp-nanop",
+    year: 2018,
+    href: "https://advanced.onlinelibrary.wiley.com/doi/abs/10.1002/adfm.201801332",
+    img: "",
+    title: {
+      en: "Cobalt–cobalt phosphide nanoparticles@ nitrogen‐phosphorus doped carbon/graphene derived from cobalt ions adsorbed Saccharomycete yeasts as an efficient, stable, and large‐current‐density electrode for hydrogen evolution reactions",
+      zh: "由吸附钴离子的酵母衍生的钴-磷化钴纳米颗粒@氮磷掺杂碳/石墨烯可作为高效、稳定且具有大电流密度的析氢反应电极"
+    },
+    authorsHtml: {
+      en: `Guixiang Li#, Jiayuan Yu#, Jin Jia, Linjing Yang, Lili Zhao, Weijia Zhou*, Hong Liu*`,
+      zh: `Guixiang Li#, Jiayuan Yu#, Jin Jia, Linjing Yang, Lili Zhao, Weijia Zhou*, Hong Liu*`
+    },
+    venue: { en: "Advanced Functional Materials (2018)", zh: "Advanced Functional Materials（2018）" },
+    doi: "10.1002/adfm.201801332",
     selected: false
   }
 ];
