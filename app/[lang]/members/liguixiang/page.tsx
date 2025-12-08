@@ -27,6 +27,7 @@ export default function MemberPage() {
               <h3 className="mb-3">{t("page.members.detail.prof.bio.title")}</h3>
               <p className="mb-4">{t("page.members.detail.prof.bio.p1")}</p>
               <p className="mb-4">{t("page.members.detail.prof.bio.p2")}</p>
+              <p className="mb-4">{t("page.members.detail.prof.bio.p3")}</p>
 
               <div style={{ marginTop: 16 }}>
                 <Link href={L("/members")} className="btn btn-light px-3">

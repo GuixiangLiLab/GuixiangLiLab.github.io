@@ -199,25 +199,25 @@ export default function HomePage() {
               <ul className="pn-list news-list">
                 <li>
                   <a href={L("/news")}>
-                    <span className="pn-date">2025-11-11</span>
+                    <span className="pn-date">2025-12-05</span>
                     <span className="pn-title">{t("page.home.news.item1.title")}</span>
                   </a>
                 </li>
                 <li>
                   <a href={L("/news")}>
-                    <span className="pn-date">2025-10-28</span>
+                    <span className="pn-date">2025-11-11</span>
                     <span className="pn-title">{t("page.home.news.item2.title")}</span>
                   </a>
                 </li>
                 <li>
                   <a href={L("/news")}>
-                    <span className="pn-date">2025-09-19</span>
+                    <span className="pn-date">2025-10-28</span>
                     <span className="pn-title">{t("page.home.news.item3.title")}</span>
                   </a>
                 </li>
                 <li>
                   <a href={L("#")}>
-                    <span className="pn-date">2025-09-01</span>
+                    <span className="pn-date">2025-09-19</span>
                     <span className="pn-title">{t("page.home.news.item4.title")}</span>
                   </a>
                 </li>

@@ -27,7 +27,7 @@
   "component.footer.popularLinks.materials": "School of Materials Sci. & Eng.",
   "component.footer.popularLinks.master": "Grad. Sch. of Southeast Univ.",
   "component.footer.popularLinks.individual": "Li Guixiang's personal homepage, School of Materials Science and Engineering",
-  "component.footer.popularLinks.QRCode": "Welcome to follow our research group's WeChat official account\nOptoelectronic Future Innovation Community",
+  "component.footer.popularLinks.QRCode": "Welcome to follow our group's WeChat account",
   "component.footer.wechat.clickToEnlarge":"Clink to view larger image",
 
   "component.footer.newsletter.title": "Newsletter",
@@ -62,7 +62,7 @@
   "page.home.profile.bio.more": "Show More",
   "page.home.profile.bio.less": "Show Less",
   "page.home.profile.bio.long_1": "His research focuses on functional semiconductor materials and optoelectronic devices, addressing fundamental applications and key technological challenges in photovoltaic conversion. This encompasses functional molecular design and synthesis, perovskite solar modules and tandem cells, smart photovoltaic–energy storage integration, novel semiconductor materials and optoelectronic device development, alongside investigations into material chemistry and device physics mechanisms. ",
-  "page.home.profile.bio.long_2": "His work aims to advance next-generation functional materials, optoelectronic technologies, and their integrated applications.\n\nHe has published over 70 papers in international journals, with more than 30 as corresponding/first author in Science, Nature Reviews Materials, Nature Photonics, Advanced Materials, Angewandte Chemie, etc. Several have been selected as ESI Highly Cited/Hot Papers. He serves as editorial board member for Discover Sustainability and Scientific Reports, and reviewer for Nature Energy, Advanced Materials, JACS, etc. He has led projects including NSFC High-Level Youth Program, NSFC Youth Program, and the EU Framework Programme. He was selected into Jiangsu U35 cultivation program and received the Second Prize in Natural Science at provincial/ministerial level.",
+  "page.home.profile.bio.long_2": "His work aims to advance next-generation functional materials, optoelectronic technologies, and their integrated applications.\n\nHe has published over 70 papers in international journals, with more than 30 as corresponding/first author in Science, Nature Reviews Materials, Nature Photonics, Advanced Materials, Angewandte Chemie, etc. Several have been selected as ESI Highly Cited/Hot Papers. He has co-authored one English monograph. He serves as editorial board member for Discover Sustainability and Scientific Reports, and reviewer for Nature Energy, Nature Communications, Advanced Materials, JACS, etc. He has led projects including NSFC High-Level Youth Program, NSFC Youth Program, and the EU Framework Programme for Research and Innovation. He was selected into the first batch of Jiangsu U35 cultivation program and received the Second Prize in Natural Science at provincial/ministerial level.",
 
   "page.home.research.aria": "Research Directions",
   "page.home.research.title.span": "Research",
@@ -79,10 +79,10 @@
   "page.home.pub.title.rest": "Publications",
 
   "page.home.news.title": "News",
-  "page.home.news.item1.title": "Professor Li Guixiang's team at Nature Photonics: Constructing efficient and stable perovskite photovoltaic devices using a full-interface modulation strategy.",
-  "page.home.news.item2.title": "Zhang Xiaochun from the research group published a review paper in the journal Adv. Funct. Mater.",
-  "page.home.news.item3.title": "All members of the research group report in",
-  "page.home.news.item4.title": "News title 2",
+  "page.home.news.item1.title": "Welcome Teacher Li Jing to the Laboratory",
+  "page.home.news.item2.title": "Professor Li Guixiang's team at Nature Photonics: Constructing efficient and stable perovskite photovoltaic devices using a full-interface modulation strategy",
+  "page.home.news.item3.title": "Zhang Xiaochun from the research group published a review paper in the journal Adv. Funct. Mater.",
+  "page.home.news.item4.title": "All members of the research group report in",
 
   "page.home.common.readMore": "Read More",
 
@@ -110,11 +110,12 @@
 
   "page.members.title": "Members",
   "page.members.group.prof": "Prof. Dr",
+  "page.members.group.visitingscholar":"Visiting Scholar",
   "page.members.group.postdoc": "Postdoc",
   "page.members.group.phd": "PhD",
   "page.members.group.ra": "Research Assistant",
   "page.members.group.master": "Postgraduate Student",
-  "page.members.group.alumni": "Graduate",
+  "page.members.group.alumni": "Alumni",
 
 
   "page.members.detail.notFound": "Member Not Found",
@@ -134,6 +135,7 @@
   "page.members.detail.prof.bio.title": "Biography",
   "page.members.detail.prof.bio.p1": "Li Guixiang, Young Chief Professor and Doctoral Supervisor at Southeast University, is a National-level Young Talent and an EU Marie Curie Fellow. He earned his Ph.D. from the Helmholtz Centre for Materials and Energy in Germany, followed by postdoctoral research at EPFL and Northwestern University.",
   "page.members.detail.prof.bio.p2": "His research focuses on functional semiconductor materials and optoelectronic devices, addressing fundamental applications and key technological challenges in photovoltaic conversion. This includes functional molecular design and synthesis, perovskite solar modules and tandem cells, smart photovoltaic–energy storage integration, novel semiconductor materials and optoelectronic device development, as well as studies of material chemistry and device physics.",
+  "page.members.detail.prof.bio.p3":"His work aims to advance next-generation functional materials, optoelectronic technologies, and their integrated applications.\n\nHe has published over 70 papers in international journals, with more than 30 as corresponding/first author in Science, Nature Reviews Materials, Nature Photonics, Advanced Materials, Angewandte Chemie, etc. Several have been selected as ESI Highly Cited/Hot Papers. He has co-authored one English monograph. He serves as editorial board member for Discover Sustainability and Scientific Reports, and reviewer for Nature Energy, Nature Communications, Advanced Materials, JACS, etc. He has led projects including NSFC High-Level Youth Program, NSFC Youth Program, and the EU Framework Programme for Research and Innovation. He was selected into the first batch of Jiangsu U35 cultivation program and received the Second Prize in Natural Science at provincial/ministerial level.",
   "page.members.detail.prof.back": "← Back to Members",
 
 

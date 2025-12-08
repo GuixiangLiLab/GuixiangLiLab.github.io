@@ -1,7 +1,7 @@
 // /data/members.ts
 export type Lang = "en" | "zh";
 
-export type MemberGroup = "prof" | "postdoc" | "phd" | "ra" | "master" | "alumni";
+export type MemberGroup = "prof" | "visitingscholar" | "postdoc" | "phd" | "ra" | "master" | "alumni";
 
 export interface Member {
   id: string;                          // 稳定 ID
@@ -15,7 +15,7 @@ export interface Member {
 
 // 展示顺序（分组）
 export const GROUP_ORDER: MemberGroup[] = [
-  "prof", "postdoc", "phd", "ra", "master", "alumni"
+  "prof", "visitingscholar", "postdoc", "phd", "ra", "master", "alumni"
 ];
 
 // 数据源（把后续新增成员都放这里即可）
@@ -30,6 +30,9 @@ export const members: Member[] = [
     order: 1,
     isProfessor: true
   },
+  
+  // 访问学者
+  // { id: "...", group: "postdoc", slug: "...", img: "...", name: {en:"...", zh:"..."} },
 
   // 博士后（目前空，如有成员直接在这里补）
   // { id: "...", group: "postdoc", slug: "...", img: "...", name: {en:"...", zh:"..."} },

@@ -63,7 +63,7 @@
   "page.home.profile.bio.more": "展开",
   "page.home.profile.bio.less": "收起",
   "page.home.profile.bio.long_1": "其研究面向功能半导体材料与光电器件，聚焦光伏能量转换中的基础问题与关键技术挑战，涵盖功能分子设计与合成、钙钛矿光伏组件与叠层电池、光伏—储能一体化、新型半导体材料与光电器件开发，以及材料化学与器件物理机理研究，旨在推动新一代功能材料与光电技术的演进及其集成应用。",
-  "page.home.profile.bio.long_2": "\n\n近年在 Science、Nature Reviews Materials、Nature Photonics、Advanced Materials、Angewandte Chemie 等国际期刊发表论文 70 余篇，其中以通讯/第一作者发表 30 余篇，多篇入选 ESI 高被引/热点论文。担任 Discover Sustainability、Scientific Reports 编委，并受邀为 Nature Energy、Advanced Materials、JACS 等期刊审稿。主持国家自然科学基金高层次青年项目、青年项目及欧盟框架计划等。入选江苏省“U35培养”青年科技人才，获省部级自然科学二等奖。",
+  "page.home.profile.bio.long_2": "\n\n在国际学术期刊发表论文 70 余篇，近年以第一/通讯作者在 Science、Nature Reviews Materials、Nature Photonics、Advanced Materials、Angewandte Chemie 等国际期刊发表论文 30 余篇，多篇入选 ESI 高被引/热点论文，合著英文专著 1 部。担任 Discover Sustainability、Scientific Reports 期刊编委，并受邀为 Nature Energy、Nature Communications、Advanced Materials、JACS 等期刊审稿。主持国家自然科学基金高层次青年项目、青年项目及欧盟科技框架计划项目等。入选首批江苏省“U35培养”青年科技人才，获省部级自然科学二等奖。",
 
   "page.home.research.aria": "研究方向",
   "page.home.research.title.span": "研究",
@@ -79,10 +79,10 @@
   "page.home.pub.title.rest": "论文",
 
   "page.home.news.title": "新闻",
-  "page.home.news.item1.title": "李桂香教授团队Nature Photonics：全界面调控策略构筑高效稳定钙钛矿光伏器件",
-  "page.home.news.item2.title": "课题组张晓春在Adv. Funct. Mater.期刊发表综述论文",
-  "page.home.news.item3.title": "课题组成员全部到岗报道",
-  "page.home.news.item4.title": "新闻条目 2",
+  "page.home.news.item1.title": "欢迎李净老师加入课题组",
+  "page.home.news.item2.title": "李桂香教授团队Nature Photonics：全界面调控策略构筑高效稳定钙钛矿光伏器件",
+  "page.home.news.item3.title": "课题组张晓春在Adv. Funct. Mater.期刊发表综述论文",
+  "page.home.news.item4.title": "课题组成员全部到岗报道",
 
   "page.home.common.readMore": "查看更多",
 
@@ -112,6 +112,7 @@
 
   "page.members.title": "成员",
   "page.members.group.prof": "教授",
+  "page.members.group.visitingscholar":"访问学者",
   "page.members.group.postdoc": "博士后",
   "page.members.group.phd": "博士研究生",
   "page.members.group.ra": "科研助理",
@@ -136,6 +137,7 @@
   "page.members.detail.prof.bio.title": "简介",
   "page.members.detail.prof.bio.p1": "李桂香，东南大学青年首席教授、博士生导师，国家级青年人才、欧盟玛丽·居里学者。于德国亥姆霍兹材料与能源研究中心获得博士学位，先后在洛桑联邦理工学院（EPFL）与西北大学（Northwestern University）从事博士后研究。",
   "page.members.detail.prof.bio.p2": "主要研究方向为功能半导体材料与光电器件，围绕光伏转换中的基础科学问题与关键工程技术展开，包括功能分子设计与合成、钙钛矿太阳能电池组件与叠层电池、光伏—储能一体化、 新型半导体材料与光电器件研发，以及材料化学与器件物理机理研究。",
+  "page.members.detail.prof.bio.p3":"在国际学术期刊发表论文 70 余篇，近年以第一/通讯作者在 Science、Nature Reviews Materials、Nature Photonics、Advanced Materials、Angewandte Chemie 等国际期刊发表论文 30 余篇，多篇入选 ESI 高被引/热点论文，合著英文专著 1 部。担任 Discover Sustainability、Scientific Reports 期刊编委，并受邀为 Nature Energy、Nature Communications、Advanced Materials、JACS 等期刊审稿。主持国家自然科学基金高层次青年项目、青年项目及欧盟科技框架计划项目等。入选首批江苏省“U35培养”青年科技人才，获省部级自然科学二等奖。",
   "page.members.detail.prof.back": "← 返回成员列表",
 
 
