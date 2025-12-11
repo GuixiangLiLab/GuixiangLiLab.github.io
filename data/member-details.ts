@@ -41,6 +41,10 @@ export interface MemberDetail {
  */
 export const memberDetails: Record<string, MemberDetail> = {
   // ========================
+  // Visiting Scholar
+  // ========================
+  
+  // ========================
   // Research Assistant
   // ========================
 

@@ -76,7 +76,7 @@ export default function PublicationsPage() {
                   />
                   <div className="col-lg-7 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div className="service-item">
-                      <h5 className="mb-3">{Title}</h5>
+                      <h5 className="mb-3" dangerouslySetInnerHTML={{ __html: Title }}></h5>
                       <p className="mb-4">
                         <span
                           className="bold pn-authors"

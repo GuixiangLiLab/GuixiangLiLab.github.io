@@ -32,7 +32,14 @@ export const members: Member[] = [
   },
   
   // 访问学者
-  // { id: "...", group: "postdoc", slug: "...", img: "...", name: {en:"...", zh:"..."} },
+  {
+    id: "jing-li",
+    group: "visitingscholar",
+    slug: "lijing",
+    img: "/img/replace.png",
+    name: { en: "Jing Li", zh: "李净" },
+    order: 1
+  },
 
   // 博士后（目前空，如有成员直接在这里补）
   // { id: "...", group: "postdoc", slug: "...", img: "...", name: {en:"...", zh:"..."} },

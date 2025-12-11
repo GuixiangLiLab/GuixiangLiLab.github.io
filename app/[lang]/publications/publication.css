@@ -167,8 +167,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 300px;
+  min-height: 300px; 
   width: 100%;
+  margin-bottom: 60px; 
 }
 
 /* 研究方向（research.html）-------------------------- */
