@@ -26,7 +26,7 @@
   "component.footer.popularLinks.university": "Southeast University",
   "component.footer.popularLinks.materials": "School of Materials Sci. & Eng.",
   "component.footer.popularLinks.master": "Grad. Sch. of Southeast Univ.",
-  "component.footer.popularLinks.individual": "Li Guixiang's personal homepage, School of Materials Science and Engineering",
+  "component.footer.popularLinks.individual": "Guixiang Li's personal homepage, School of Materials Sci. & Eng.",
   "component.footer.popularLinks.QRCode": "Welcome to follow our group's WeChat account",
   "component.footer.wechat.clickToEnlarge":"Clink to view larger image",
 
@@ -49,7 +49,7 @@
   "page.home.hero.cta": "Explore More",
 
   "page.home.carousel.slide3.title": "Academic News",
-  "page.home.carousel.slide3.desc": "Professor Li Guixiang's team at Nature Photonics: Constructing efficient and stable perovskite photovoltaic devices using a full-interface modulation strategy.",
+  "page.home.carousel.slide3.desc": "Professor Guixiang Li's team at Nature Photonics: Constructing efficient and stable perovskite photovoltaic devices using a full-interface modulation strategy.",
   "page.home.carousel.slide3.cta": "View Details",
 
   "page.home.profile.alt": "Prof. Guixiang Li",
@@ -79,9 +79,9 @@
   "page.home.pub.title.rest": "Publications",
 
   "page.home.news.title": "News",
-  "page.home.news.item1.title": "Welcome Teacher Li Jing to the Laboratory",
-  "page.home.news.item2.title": "Professor Li Guixiang's team at Nature Photonics: Constructing efficient and stable perovskite photovoltaic devices using a full-interface modulation strategy",
-  "page.home.news.item3.title": "Zhang Xiaochun from the research group published a review paper in the journal Adv. Funct. Mater.",
+  "page.home.news.item1.title": "Welcome Dr. Jing Li to the Research Group",
+  "page.home.news.item2.title": "Professor Guixiang Li's team at Nature Photonics: Constructing efficient and stable perovskite photovoltaic devices using a full-interface modulation strategy",
+  "page.home.news.item3.title": "Xiaochun Zhang from the research group published a review paper in the journal Adv. Funct. Mater.",
   "page.home.news.item4.title": "All members of the research group report in",
 
   "page.home.common.readMore": "Read More",
@@ -106,6 +106,7 @@
   "page.publications.readMore": "Read More",
   "page.publications.allAria": "Main Publications",
   "page.publications.allTitle": "Main Publications",
+  "page.publications.before2022":"2022 & Earlier",
 
 
   "page.members.title": "Members",
@@ -133,7 +134,7 @@
   "page.members.detail.prof.role": "Professor",
   "page.members.detail.prof.affiliation": "Southeast University, Nanjing, China",
   "page.members.detail.prof.bio.title": "Biography",
-  "page.members.detail.prof.bio.p1": "Li Guixiang, Young Chief Professor and Doctoral Supervisor at Southeast University, is a National-level Young Talent and an EU Marie Curie Fellow. He earned his Ph.D. from the Helmholtz Centre for Materials and Energy in Germany, followed by postdoctoral research at EPFL and Northwestern University.",
+  "page.members.detail.prof.bio.p1": "Guixiang Li, Young Chief Professor and Doctoral Supervisor at Southeast University, is a National-level Young Talent and an EU Marie Curie Fellow. He earned his Ph.D. from the Helmholtz Centre for Materials and Energy in Germany, followed by postdoctoral research at EPFL and Northwestern University.",
   "page.members.detail.prof.bio.p2": "His research focuses on functional semiconductor materials and optoelectronic devices, addressing fundamental applications and key technological challenges in photovoltaic conversion. This includes functional molecular design and synthesis, perovskite solar modules and tandem cells, smart photovoltaic–energy storage integration, novel semiconductor materials and optoelectronic device development, as well as studies of material chemistry and device physics.",
   "page.members.detail.prof.bio.p3":"His work aims to advance next-generation functional materials, optoelectronic technologies, and their integrated applications.\n\nHe has published over 70 papers in international journals, with more than 30 as corresponding/first author in Science, Nature Reviews Materials, Nature Photonics, Advanced Materials, Angewandte Chemie, etc. Several have been selected as ESI Highly Cited/Hot Papers. He has co-authored one English monograph. He serves as editorial board member for Discover Sustainability and Scientific Reports, and reviewer for Nature Energy, Nature Communications, Advanced Materials, JACS, etc. He has led projects including NSFC High-Level Youth Program, NSFC Youth Program, and the EU Framework Programme for Research and Innovation. He was selected into the first batch of Jiangsu U35 cultivation program and received the Second Prize in Natural Science at provincial/ministerial level.",
   "page.members.detail.prof.back": "← Back to Members",
@@ -164,9 +165,9 @@
   "page.news.member-report-in.coverAlt": "New Member Arrival",
   "page.news.member-report-in.p1": "When the first ray of morning light falls across the notebook by the lab window; when a spark of ideas quietly collides in the soft conversations down the corridor—the wind of September blows away the last heat of summer while stirring every beating scientific pulse. On this fertile academic land yet to be cultivated, the ship of the Functional Semiconductors and Optoelectronics Group now sounds its horn and sails forth!",
   
-  "page.news.20251028-zxc-afm.title": "Congratulations to Zhang Xiaochun from the research group for publishing his research progress on the self-healing of defects in perovskite solar cells at AFM",
+  "page.news.20251028-zxc-afm.title": "Congratulations to Xiaochun Zhang from the research group for publishing his research progress on the self-healing of defects in perovskite solar cells at AFM",
   "page.news.20251028-zxc-afm.coverAlt": "theme",
-  "page.news.20251028-zxc-afm.p1": "Recently, Professor Li Guixiang's team from the School of Materials Science and Engineering at Southeast University published a review paper entitled 'Defect-Healing in Perovskite Photovoltaics Driving Long-Term Reliability and Performance' in the internationally renowned journal *Advanced Functional Materials*.",
+  "page.news.20251028-zxc-afm.p1": "Recently, Professor Guixiang Li's team from the School of Materials Science and Engineering at Southeast University published a review paper entitled 'Defect-Healing in Perovskite Photovoltaics Driving Long-Term Reliability and Performance' in the internationally renowned journal *Advanced Functional Materials*.",
   "page.news.20251028-zxc-afm.p2":"This paper systematically analyzes the degradation mechanism and defect self-healing principle of perovskite solar cells (PSCs), and proposes four core self-healing strategies, providing key theoretical support and technical reference for solving the stability bottleneck of perovskite devices and promoting their large-scale commercial application.",
   "page.news.20251028-zxc-afm.p18":"The School of Materials Science and Engineering at Southeast University is the first corresponding affiliation for this paper. Research assistant Xiaochun Zhang is the first author, and Professor Guixiang Li from Southeast University, Professor Meng Li from Henan University, and Dr. Qing Cao from the University of Notre Dame are the corresponding authors.",
   "page.news.20251028-zxc-afm.p3":"01 Research Background",
@@ -185,16 +186,16 @@
   "page.news.20251028-zxc-afm.p16":"Corresponding Authors: Professor Guixiang Li (Southeast University), Professor Meng Li (Henan University), Dr. Qing Cao (University of Notre Dame)",
   "page.news.20251028-zxc-afm.p17":"Paper Link: ",
 
-  "page.news.20251111-lgx-np.title": "Professor Li Guixiang's team at Nature Photonics: Constructing efficient and stable perovskite photovoltaic devices using a full-interface modulation strategy.",
+  "page.news.20251111-lgx-np.title": "Professor Guixiang Li's team at Nature Photonics: Constructing efficient and stable perovskite photovoltaic devices using a full-interface modulation strategy.",
   "page.news.20251111-lgx-np.coverAlt": "theme",
-  "page.news.20251111-lgx-np.p1": "Recently, Professor Li Guixiang's team from the School of Materials Science and Engineering at Southeast University has achieved a major breakthrough in the emerging field of photovoltaic technology. Their research findings, titled 'Stabilizing high-efficiency perovskite solar cells via strategic interfacial contact engineering' have been published in the top international academic journal *Nature Photonics*.",
+  "page.news.20251111-lgx-np.p1": "Recently, Professor Guixiang Li's team from the School of Materials Science and Engineering at Southeast University has achieved a major breakthrough in the emerging field of photovoltaic technology. Their research findings, titled 'Stabilizing high-efficiency perovskite solar cells via strategic interfacial contact engineering' have been published in the top international academic journal *Nature Photonics*.",
   "page.news.20251111-lgx-np.p2":"This study addresses the long-standing stability bottleneck in the industrialization of perovskite solar cells by proposing an innovative full-interface modulation strategy, providing a novel solution for developing high-efficiency, long-life hybrid semiconductor photovoltaic devices.",
   "page.news.20251111-lgx-np.p3":"The School of Materials Science and Engineering at Southeast University is the first and corresponding affiliation of this paper. Professor Guixiang Li of Southeast University, Professor Meng Li of Henan University, Associate Professor Luyao Wang of Xiamen University, Professor Zhe Li of Queen Mary University of London, and Professor Antonio Abate of the Helmholtz Centre for Materials and Energy are the corresponding authors; Professor Guixiang Li, doctoral student Zuhong Zhang, Associate Professor Benjamin Agyei-Tuffour, and Dr. Luyan Wu are the first authors. This research received strong support from the School of Materials Science and Engineering and related research platforms at Southeast University, and was funded by several research projects.",
   "page.news.20251111-lgx-np.p4":"01 Research Background",
   "page.news.20251111-lgx-np.p5":"Metal halide perovskite solar cells are considered a promising next-generation photovoltaic technology due to their excellent photoelectric performance and ease of mass production.",
   "page.news.20251111-lgx-np.p6":"However, the insufficient thermodynamic and kinetic stability of these devices under multiple external fields such as temperature, humidity, and light, especially the rapid performance degradation caused by interface defects, severely restricts their commercialization process.",
   "page.news.20251111-lgx-np.p7":"02 Research Content and Highlights",
-  "page.news.20251111-lgx-np.p8":"Addressing the aforementioned challenges, Professor Li Guixiang's team has long focused on the study of the interface physical mechanisms and stability of novel photovoltaic devices. In this work, they innovatively constructed an integrated control system of 'photoactive layer surface - contact interface - electron transport layer.' This design achieves three enhancements:",
+  "page.news.20251111-lgx-np.p8":"Addressing the aforementioned challenges, Professor Guixiang Li's team has long focused on the study of the interface physical mechanisms and stability of novel photovoltaic devices. In this work, they innovatively constructed an integrated control system of 'photoactive layer surface - contact interface - electron transport layer.' This design achieves three enhancements:",
   "page.news.20251111-lgx-np.p9":"1. Significantly increasing the defect formation energy of the perovskite surface, fundamentally enhancing the material's structural stability;",
   "page.news.20251111-lgx-np.p10":"2. Forming an interface dipole moment to optimize the energy level structure, greatly improving charge extraction and transport efficiency;",
   "page.news.20251111-lgx-np.p11":"3. Promoting the formation of a dense and uniform film layer in the electron transport material, effectively suppressing ion migration and electrode corrosion.",

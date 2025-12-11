@@ -904,6 +904,11 @@
   margin: 0;
 }
 
+.pub-venue-wrap-main-publication {
+  display: block;
+  margin-top: 4px; /* 与句号的间距，更美观 */
+}
+
 /* 链接按钮 */
 .pubs-actions {
   margin-top: 6px;
@@ -929,6 +934,17 @@
 
 .service-item p {
   color: gray;
+}
+
+/* 期刊名换行容器：强制另起一行 */
+.pub-venue-wrap {
+  display: block;
+  margin-top: 12px; /* 与句号的间距，更美观 */
+}
+
+/* 作者后的英文句号：强制黑色 */
+.pub-period {
+  color: black !important; /* !important 确保覆盖 gray 继承色 */
 }
 
 /* 论文列表自动编号：按年份分组递增 */

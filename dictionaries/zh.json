@@ -63,7 +63,7 @@
   "page.home.profile.bio.more": "展开",
   "page.home.profile.bio.less": "收起",
   "page.home.profile.bio.long_1": "其研究面向功能半导体材料与光电器件，聚焦光伏能量转换中的基础问题与关键技术挑战，涵盖功能分子设计与合成、钙钛矿光伏组件与叠层电池、光伏—储能一体化、新型半导体材料与光电器件开发，以及材料化学与器件物理机理研究，旨在推动新一代功能材料与光电技术的演进及其集成应用。",
-  "page.home.profile.bio.long_2": "\n\n在国际学术期刊发表论文 70 余篇，近年以第一/通讯作者在 Science、Nature Reviews Materials、Nature Photonics、Advanced Materials、Angewandte Chemie 等国际期刊发表论文 30 余篇，多篇入选 ESI 高被引/热点论文，合著英文专著 1 部。担任 Discover Sustainability、Scientific Reports 期刊编委，并受邀为 Nature Energy、Nature Communications、Advanced Materials、JACS 等期刊审稿。主持国家自然科学基金高层次青年项目、青年项目及欧盟科技框架计划项目等。入选首批江苏省“U35培养”青年科技人才，获省部级自然科学二等奖。",
+  "page.home.profile.bio.long_2": "\n\n在国际学术期刊发表论文 70 余篇，近年以第一/通讯作者在 Science、Nature Reviews Materials、Nature Photonics、Advanced Materials、Angewandte Chemie 等国际期刊发表论文 30 余篇，多篇入选 ESI 高被引/热点论文，合著英文专著 1 部。担任 Discover Sustainability、Scientific Reports 期刊编委，并受邀为 Nature Energy、Nature Communications、Advanced Materials、JACS 等期刊审稿。主持国家自然科学基金高层次青年项目、青年项目及欧盟科技框架计划项目等。入选首批江苏青年科技人才“U35培育”对象，获省部级自然科学二等奖。",
 
   "page.home.research.aria": "研究方向",
   "page.home.research.title.span": "研究",
@@ -108,6 +108,7 @@
   "page.publications.readMore": "查看原文",
   "page.publications.allAria": "主要论文",
   "page.publications.allTitle": "主要论文",
+  "page.publications.before2022":"2022及之前",
 
 
   "page.members.title": "成员",
