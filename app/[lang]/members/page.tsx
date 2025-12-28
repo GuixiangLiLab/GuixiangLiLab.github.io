@@ -31,6 +31,7 @@ export default function MembersPage() {
     phd: "page.members.group.phd",
     ra: "page.members.group.ra",
     master: "page.members.group.master",
+    undergrad: "page.members.group.undergrad",
     alumni: "page.members.group.alumni"
   };
 

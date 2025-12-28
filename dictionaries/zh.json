@@ -79,10 +79,10 @@
   "page.home.pub.title.rest": "论文",
 
   "page.home.news.title": "新闻",
-  "page.home.news.item1.title": "欢迎李净老师加入课题组",
-  "page.home.news.item2.title": "李桂香教授团队Nature Photonics：全界面调控策略构筑高效稳定钙钛矿光伏器件",
-  "page.home.news.item3.title": "课题组张晓春在Adv. Funct. Mater.期刊发表综述论文",
-  "page.home.news.item4.title": "课题组成员全部到岗报道",
+  "page.home.news.item1.title": "欢迎博士后方栋老师加入课题组",
+  "page.home.news.item2.title": "欢迎李净老师加入课题组",
+  "page.home.news.item3.title": "李桂香教授团队Nature Photonics：全界面调控策略构筑高效稳定钙钛矿光伏器件",
+  "page.home.news.item4.title": "课题组张晓春在Adv. Funct. Mater.期刊发表综述论文",
 
   "page.home.common.readMore": "查看更多",
 
@@ -118,6 +118,7 @@
   "page.members.group.phd": "博士研究生",
   "page.members.group.ra": "科研助理",
   "page.members.group.master": "硕士研究生",
+  "page.members.group.undergrad": "本科生",
   "page.members.group.alumni": "已毕业",
 
 

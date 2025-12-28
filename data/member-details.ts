@@ -43,7 +43,100 @@ export const memberDetails: Record<string, MemberDetail> = {
   // ========================
   // Visiting Scholar
   // ========================
-  
+  lijing: {
+    slug: "lijing",
+    portrait: "/img/Members/lijing1.png",
+    alt: { en: "Jing Li", zh: "李净" },
+    name: { en: "Jing Li", zh: "李净" },
+    statusBadge: { en: "Visiting Scholar", zh: "访问学者" },
+    affiliation: {
+      en: "Guixiang Li Laboratory · Southeast University",
+      zh: "功能光电实验室 · 东南大学"
+    },
+    sideNotes: {
+      
+    },
+    background: {
+      title: { en: "Background", zh: "教育经历" },
+      text: {
+        en: "<strong>Ph.D.</strong> School of Physical and Chemical Sciences, Queen Mary University of London, September 2025",
+        zh: "玛丽女王大学 · 化学院 · 博士，2025 年 9 月"
+      }
+    },
+    hobbies: {
+      en: ["Reading", "Running"],
+      zh: ["阅读", "跑步"]
+    },
+    statement: {
+      title: { en: "Personal Statement", zh: "个人陈述" },
+      text: {
+        en:
+          "I am quite conscientious in my work and willing to dedicate the time needed to do things well. I maintain a long-term interest in research, and when I encounter problems, I think them through repeatedly. I'm not driven by short-term gains and tend to be quite grounded and practical.",
+        zh: "做事比较认真，也愿意花时间把事情做好。对科研保持长期兴趣，遇到问题会反复琢磨，不太急功近利，比较踏实。"
+      }
+    },
+    motto: {
+      en: "“love the life you live,live the life you love.”",
+      zh: "“按照自己喜欢的方式，去度过一生。”"
+    },
+    research: {
+      title: { en: "Research Direction", zh: "研究方向" },
+      text: {
+        en:
+          "Research on interface engineering of perovskite photovoltaic devices and the behavior and control of lead contamination in perovskite materials.",
+        zh: "钙钛矿光伏器件界面工程及钙钛矿铅污染行为与调控研究。"
+      }
+    }
+  },
+  // ========================
+  // PostDoc
+  // ========================
+    fangdong: {
+    slug: "fangdong",
+    portrait: "/img/Members/fangdong1.png",
+    alt: { en: "Dong Fang", zh: "方栋" },
+    name: { en: "Dong Fang", zh: "方栋" },
+    statusBadge: { en: "Postdoc", zh: "博士后" },
+    affiliation: {
+      en: "Guixiang Li Laboratory · Southeast University",
+      zh: "功能光电实验室 · 东南大学"
+    },
+    sideNotes: {
+
+    },
+    background: {
+      title: { en: "Background", zh: "教育经历" },
+      text: {
+        en: "<strong>successive postgraduate and doctoral program</strong> Condensed Matter Physics, University of Posts and Telecommunications, June 2025",
+        zh: "南京邮电大学 · 硕博连读，2025 年 12 月"
+      }
+    },
+    hobbies: {
+      en: ["Reading", "Singing", "Playing badminton", "Playing table tennis"],
+      zh: ["阅读", "唱歌", "羽毛球", "乒乓球"]
+    },
+    statement: {
+      title: { en: "Personal Statement", zh: "个人陈述" },
+      text: {
+        en:
+          "Attentive, highly responsible, diligent, and possesses strong teamwork skills.",
+        zh: "细心，责任心强，认真负责，具备团队精神。"
+      }
+    },
+    motto: {
+      en: "“The success isn't all about me, but I am always present in the success.”",
+      zh: "“功成不必在我，功成必定有我。”"
+    },
+    research: {
+      title: { en: "Research Direction", zh: "研究方向" },
+      text: {
+        en:
+          "Research on Tin-Based Optoelectronic Functional Materials and Solar Cells.",
+        zh: "锡基光电功能材料及其太阳能电池研究"
+      }
+    }
+  },
+
   // ========================
   // Research Assistant
   // ========================

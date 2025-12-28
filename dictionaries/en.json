@@ -79,10 +79,10 @@
   "page.home.pub.title.rest": "Publications",
 
   "page.home.news.title": "News",
-  "page.home.news.item1.title": "Welcome Dr. Jing Li to the Research Group",
-  "page.home.news.item2.title": "Professor Guixiang Li's team at Nature Photonics: Constructing efficient and stable perovskite photovoltaic devices using a full-interface modulation strategy",
-  "page.home.news.item3.title": "Xiaochun Zhang from the research group published a review paper in the journal Adv. Funct. Mater.",
-  "page.home.news.item4.title": "All members of the research group report in",
+  "page.home.news.item1.title": "Welcome PostDoc. Dong Fang to the Research Group",
+  "page.home.news.item2.title": "Welcome Dr. Jing Li to the Research Group",
+  "page.home.news.item3.title": "Professor Guixiang Li's team at Nature Photonics: Constructing efficient and stable perovskite photovoltaic devices using a full-interface modulation strategy",
+  "page.home.news.item4.title": "Xiaochun Zhang from the research group published a review paper in the journal Adv. Funct. Mater.",
 
   "page.home.common.readMore": "Read More",
 
@@ -116,6 +116,7 @@
   "page.members.group.phd": "PhD",
   "page.members.group.ra": "Research Assistant",
   "page.members.group.master": "Postgraduate Student",
+  "page.members.group.undergrad": "Undergraduate Student",
   "page.members.group.alumni": "Alumni",
 
 

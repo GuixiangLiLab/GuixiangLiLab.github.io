@@ -1,7 +1,7 @@
 // /data/members.ts
 export type Lang = "en" | "zh";
 
-export type MemberGroup = "prof" | "visitingscholar" | "postdoc" | "phd" | "ra" | "master" | "alumni";
+export type MemberGroup = "prof" | "visitingscholar" | "postdoc" | "phd" | "ra" | "master" | "undergrad" | "alumni";
 
 export interface Member {
   id: string;                          // 稳定 ID
@@ -15,7 +15,7 @@ export interface Member {
 
 // 展示顺序（分组）
 export const GROUP_ORDER: MemberGroup[] = [
-  "prof", "visitingscholar", "postdoc", "phd", "ra", "master", "alumni"
+  "prof", "visitingscholar", "postdoc", "phd", "ra", "master", "undergrad", "alumni"
 ];
 
 // 数据源（把后续新增成员都放这里即可）
@@ -36,13 +36,20 @@ export const members: Member[] = [
     id: "jing-li",
     group: "visitingscholar",
     slug: "lijing",
-    img: "/img/replace.png",
+    img: "/img/Members/lijing.png",
     name: { en: "Jing Li", zh: "李净" },
     order: 1
   },
 
-  // 博士后（目前空，如有成员直接在这里补）
-  // { id: "...", group: "postdoc", slug: "...", img: "...", name: {en:"...", zh:"..."} },
+  // 博士后
+  {
+    id: "dong-fang",
+    group: "postdoc",
+    slug: "fangdong",
+    img: "/img/Members/fangdong.png",
+    name: { en: "Dong Fang", zh: "方栋" },
+    order: 1
+  },
 
   // 博士
   {
@@ -59,7 +66,7 @@ export const members: Member[] = [
     slug: "zhangxu",
     img: "/img/Members/zhangxu.jpg",
     name: { en: "Xu Zhang", zh: "张旭" },
-    order: 2
+    order: 3
   },
   {
     id: "xuebing-wen",
@@ -67,7 +74,7 @@ export const members: Member[] = [
     slug: "wenxuebing",
     img: "/img/Members/wenxuebing.jpg",
     name: { en: "Xuebing Wen", zh: "温雪冰" },
-    order: 3
+    order: 2
   },
 
   // 科研助理
@@ -95,7 +102,7 @@ export const members: Member[] = [
     slug: "luodongdong",
     img: "/img/Members/luodongdong.jpg",
     name: { en: "Dongdong Luo", zh: "罗栋栋" },
-    order: 1
+    order: 3
   },
   {
     id: "zeyu-li",
@@ -111,8 +118,10 @@ export const members: Member[] = [
     slug: "lixinru",
     img: "/img/Members/lixinru.jpg",
     name: { en: "Xinru Li", zh: "李心如" },
-    order: 3
+    order: 1
   },
+
+  // 本科生
 
   // 已毕业
   {
