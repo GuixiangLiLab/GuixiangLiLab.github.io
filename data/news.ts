@@ -54,8 +54,8 @@ export const news: NewsItem[] = [
     slug: "2025-11-11-lgx-np",
     cover: "/img/News/Perovskite_Stabilizing_high_efficiency_PSCs_via_strategic.png",
     title: {
-      en: "Professor Guixiang Li's team at Nature Photonics: Constructing efficient and stable perovskite photovoltaic devices using a full-interface modulation strategy.",
-      zh: "李桂香教授团队Nature Photonics：全界面调控策略构筑高效稳定钙钛矿光伏器件"
+      en: "Academic News | Nature Photonics: Constructing efficient and stable perovskite photovoltaic devices using a full-interface modulation strategy.",
+      zh: "学术动态 | Nature Photonics：全界面调控策略构筑高效稳定钙钛矿光伏器件"
     },
     date: "2025.11.11"
     // summary: {
@@ -68,8 +68,8 @@ export const news: NewsItem[] = [
     slug: "2026-01-11-lgx-nc",
     cover: "/img/News/20260111_lgx_nc/Anti-aggregation self-assembled monolayers.jpg",
     title: {
-      en: "Professor Guixiang Li and his research team publish in Nature Communications: Anti-aggregation self-assembled monolayers enable high-performance, scalable perovskite solar cells.",
-      zh: "李桂香教授及其合作团队Nature Communications：抗聚集自组装单分子层实现高性能、可扩展的钙钛矿太阳能电池"
+      en: "Academic News | Nature Communications: Anti-aggregation self-assembled monolayers enable high-performance, scalable perovskite solar cells.",
+      zh: "学术动态 | Nature Communications：抗聚集自组装单分子层实现高性能、可扩展的钙钛矿太阳能电池"
     },
     date: "2026.01.11"
     // summary: {
