@@ -69,6 +69,23 @@ export const publications: Publication[] = [
     selected: true
   },
   {
+    id: "natcom-2026-anti-aggregation-sams",
+    year: 2026,
+    href: "https://www.nature.com/articles/s41467-025-68207-0",
+    img: "/img/publications/Anti-aggregation SAMs.png",
+    title: {
+      en: "Anti-aggregation self-assembled monolayers enable high-performance and scalable perovskite solar cells",
+      zh: "Anti-aggregation self-assembled monolayers enable high-performance and scalable perovskite solar cells<br/>（抗聚集自组装单分子层可实现高性能且可扩展的钙钛矿太阳能电池）"
+    },
+    authorsHtml: {
+      en: `Kaihuai Du, Chunna Huang, Aili Wang*, Haoran Zhang, Lvzhou Li*, Xu Dong, Luozheng Zhang, Mohammad Khaja Nazeeruddin*, Guixiang Li*, Jianning Ding*`,
+      zh: `Kaihuai Du, Chunna Huang, Aili Wang*, Haoran Zhang, Lvzhou Li*, Xu Dong, Luozheng Zhang, Mohammad Khaja Nazeeruddin*, <span class="bold">Guixiang Li*(李桂香*)</span>, Jianning Ding*`
+    },
+    venue: { en: "Nature Communications (2026)", zh: "Nature Communications（2026）" },
+    doi: "10.1038/s41467-025-68207-0",
+    selected: true
+  },
+  {
     id: "adma-2025-snpb-nucleation",
     year: 2025,
     href: "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202418766",
