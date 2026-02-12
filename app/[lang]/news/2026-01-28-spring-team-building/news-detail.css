@@ -192,3 +192,9 @@
     font-size: clamp(24px, 6vw, 32px);
   }
 }
+
+/* 让返回新闻按钮靠左对齐（覆盖父容器的居中） */
+.fsog-news .mt-4 {
+  text-align: left !important; /* 强制按钮容器靠左 */
+  margin-left: 0 !important;   /* 清除可能的自动外边距 */
+}
