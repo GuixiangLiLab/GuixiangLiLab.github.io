@@ -79,11 +79,16 @@
   "page.home.pub.title.rest": "Publications",
 
   "page.home.news.title": "News",
-  "page.home.news.item1.title": "Academic News | Nature Communications: Anti-aggregation self-assembled monolayers enable high-performance, scalable perovskite solar cells.",
-  "page.home.news.item2.title": "Welcome PostDoc. Dong Fang to the Research Group",
-  "page.home.news.item3.title": "Welcome Dr. Jing Li to the Research Group",
-  "page.home.news.item4.title": "Academic News | Nature Photonics: Constructing efficient and stable perovskite photovoltaic devices using a full-interface modulation strategy",
-
+  "page.home.news.item1.date": "2026-01-28",
+  "page.home.news.item1.title": "A Warm Winter Gathering, Accompanied by Research Journeys – The Research Group's Spring Festival Team Building Party Concludes Successfully",
+  "page.home.news.item2.date": "2026-01-11",
+  "page.home.news.item2.title": "Academic News | Nature Communications: Anti-aggregation self-assembled monolayers enable high-performance, scalable perovskite solar cells.",
+  "page.home.news.item3.date": "2025-12-24",
+  "page.home.news.item3.title": "Welcome PostDoc. Dong Fang to the Research Group",
+  "page.home.news.item4.date": "2025-12-05",
+  "page.home.news.item4.title": "Welcome Dr. Jing Li to the Research Group",
+  "page.home.news.item5.date": "2025-11-11",
+  "page.home.news.item5.title": "Academic News | Nature Photonics: Constructing efficient and stable perovskite photovoltaic devices using a full-interface modulation strategy",
   "page.home.common.readMore": "Read More",
 
 
@@ -247,5 +252,18 @@
   "page.news.20260111-lgx-nc.p23":"Paper Title: Anti-aggregation self-assembled monolayers enable high-performance and scalable perovskite solar cells",
   "page.news.20260111-lgx-nc.p24":"Published journal: Nature Communications",
   "page.news.20260111-lgx-nc.p25":"Corresponding authors: Professor Jianning Ding (Yangzhou University), Professor Guixiang Li (Southeast University), Professor Mohammad Khaja Nazeeruddin (Swiss Federal Institute of Technology Lausanne), Professor Luzhou Li (Yangzhou University), and Associate Professor Aili Wang (Yangzhou University)",
-  "page.news.20260111-lgx-nc.p26":"Paper link: "
+  "page.news.20260111-lgx-nc.p26":"Paper link: ",
+
+  "page.news.20260128-spring-team-building.title":"Warm Winter Gathering, Accompanied by Research Journey—Research Group's Spring Festival Team Building Party Successfully Concluded",
+  "page.news.20260128-spring-team-building.p1": "As the new year begins and spring fills the world, to welcome the arrival of the Year of the Rabbit, alleviate the intense pace of scientific research, and enhance the friendship and cohesion among teachers and students in the research group, Guixiang Li's research group organized a unique Spring Festival team building party on January 28th. All teachers and students gathered together, spending wonderful time together in laughter and joy.",
+  "page.news.20260128-spring-team-building.p2": "The event was held in a cozy and fun-filled party venue. The pre-arranged Chinese New Year decorations created a festive atmosphere: bright red lanterns, auspicious couplets, and exquisitely crafted 'Fu' (good fortune) characters adorned every corner. Upon entering the venue, a strong holiday spirit immediately enveloped everyone. This team-building event departed from the traditional discussion format, instead featuring a variety of fun activities to allow everyone to relax, unwind, and connect in a relaxed atmosphere.",
+  "page.news.20260128-spring-team-building.p3": "Amidst the warmth of everyday life, and the collaborative efforts, a sense of unity was evident. From the very beginning, teachers and students spontaneously divided tasks and cooperated seamlessly: some carefully selected and washed vegetables, arranging the fresh greens and mushrooms neatly; others diligently arranged the meat, meatballs, and other hot pot ingredients, adjusting the heat of the grill and hot pot; still others enthusiastically experimented with mixing drinks, cleverly combining milk with sparkling water and juice. Occasional small attempts and exchanges filled the meal preparation time with laughter. The busy work at their fingertips and the casual conversations around them quietly melted away the tension of daily research, bringing everyone closer together.",
+  "page.news.20260128-spring-team-building.p4": "After the delicious food, the fun games brought the atmosphere to a climax!",
+  "page.news.20260128-spring-team-building.p5": "Once the ingredients were ready, the bubbling hot pot steamed, and the sizzling grilled meat emitted an enticing aroma. Teachers and students sat together, cooking fresh ingredients and turning the skewers on the grill, occasionally raising a glass to enjoy homemade drinks and chatting about the little anecdotes of research and the simple joys of life.",
+  "page.news.20260128-spring-team-building.p6": "Delicious food heals the soul, and joyful gatherings make the most of time. After a satisfying meal, everyone sat together and started a lighthearted and fun game of Werewolf. There was no rigor of scientific data, no tedious paper writing, only pure joy and tacit understanding: some became 'werewolfs', cleverly disguising themselves and concealing their brilliance; some acted as 'seers', calmly analyzing and guiding the way; some, as 'villains', listened attentively and judged cautiously, their occasional mistakes and wildly imaginative remarks eliciting laughter from everyone. During breaks in the game, Professor Li Guixiang, the research group leader, had a warm chat with everyone, reviewing the group's collaborative efforts and achievements over the past year, thanking each member for their hard work and dedication, and extending New Year's greetings. She encouraged everyone to focus on research and enjoy life in the new year, wishing everyone to cherish their youth and embark on a new journey together in this warm and supportive community.",
+  "page.news.20260128-spring-team-building.p7": "As night deepened, the laughter and joy continued, and the event slowly came to a close with a heartwarming group photo. Everyone expressed that this New Year's party not only relieved the pressure of daily research but also allowed them to feel the warmth and vitality of the research group as a large family. In the new year, all members of the Gui Xiangli research group will dedicate themselves to their research work with even greater enthusiasm and a more harmonious atmosphere, writing a new chapter in scientific research with unity and a spirit of progress.",
+  "page.news.20260128-spring-team-building.coverAlt": "Teachers and students worked together, washing ingredients and preparing meals.",
+  "page.news.20260128-spring-team-building.coverAlt1": "Teachers and students gathered together to enjoy hot pot and barbecue.",
+  "page.news.20260128-spring-team-building.coverAlt2": "During the Werewolf game, everyone laughed and chatted happily.",
+  "page.news.20260128-spring-team-building.coverAlt3": "A group photo of all teachers and students captured this heartwarming moment."
 }

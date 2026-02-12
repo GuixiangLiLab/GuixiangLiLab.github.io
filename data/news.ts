@@ -76,6 +76,21 @@ export const news: NewsItem[] = [
     //   en: "Short English summary...",
     //   zh: "中文简要摘要……"
     // }
+  },
+    {
+    id: "2026-01-28-spring-team-building", // 建议按「年份-月份-日期-核心关键词」命名
+    slug: "2026-01-28-spring-team-building",
+    cover: "/img/News/20260128_spring_team_building/spring_team_building.jpg", // 请替换为实际团建图片路径
+    title: {
+      en: "A Warm Winter Gathering, Accompanied by Research Journeys – The Research Group's Spring Festival Team Building Party Concludes Successfully",
+      zh: "暖冬聚首，研路相伴——课题组新春轰趴团建圆满落幕"
+    },
+    date: "2026.01.28" // 请替换为实际团建日期（格式保持 YYYY.MM.DD）
+    // 若需要添加摘要，可取消以下注释并补充内容
+    // summary: {
+    //   en: "To welcome the New Year, members of GuixiangLiLab gathered for a lively team building party, enjoying food, games and warm exchanges, enhancing the cohesion of the research group.",
+    //   zh: "为迎接新春到来，李桂香课题组全体师生齐聚一堂开展趣味团建轰趴，在美食、游戏与温馨交流中增进情谊，凝聚课题组向心力。"
+    // }
   }
   // 未来新增新闻只需在此处 push 新对象即可
 ].sort(sortByDateDesc);

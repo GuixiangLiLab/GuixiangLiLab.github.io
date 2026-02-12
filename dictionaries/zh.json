@@ -79,11 +79,14 @@
   "page.home.pub.title.rest": "论文",
 
   "page.home.news.title": "新闻",
-  "page.home.news.item1.title": "学术动态 | Nature Communications：抗聚集自组装单分子层实现高性能、可扩展的钙钛矿太阳能电池",
-  "page.home.news.item2.title": "欢迎博士后方栋老师加入课题组",
-  "page.home.news.item3.title": "欢迎李净老师加入课题组",
-  "page.home.news.item4.title": "学术动态 | Nature Photonics：全界面调控策略构筑高效稳定钙钛矿光伏器件",
-
+  "page.home.news.item1.date": "2026-01-28",
+  "page.home.news.item1.title": "暖冬聚首，研路相伴——课题组新春轰趴团建圆满落幕",
+  "page.home.news.item2.date": "2026-01-11",
+  "page.home.news.item2.title": "学术动态 | Nature Communications：抗聚集自组装单分子层实现高性能、可扩展的钙钛矿太阳能电池",
+  "page.home.news.item3.date": "2025-12-24",
+  "page.home.news.item3.title": "欢迎博士后方栋老师加入课题组",
+  "page.home.news.item4.date": "2025-12-05",
+  "page.home.news.item4.title": "欢迎李净老师加入课题组",
   "page.home.common.readMore": "查看更多",
 
 
@@ -249,5 +252,18 @@
   "page.news.20260111-lgx-nc.p23":"论文题目：Anti-aggregation self-assembled monolayers enable high-performance and scalable perovskite solar cells",
   "page.news.20260111-lgx-nc.p24":"发表期刊：Nature Communications",
   "page.news.20260111-lgx-nc.p25":"通讯作者：丁建宁教授（扬州大学）、李桂香教授（东南大学）、Mohammad Khaja Nazeeruddin教授（瑞士洛桑联邦理工学院）、李绿洲教授（扬州大学）以及王爱丽副教授（扬州大学）",
-  "page.news.20260111-lgx-nc.p26":"论文链接："
+  "page.news.20260111-lgx-nc.p26":"论文链接：",
+
+  "page.news.20260128-spring-team-building.title":"暖冬聚首，研路相伴——课题组新春轰趴团建圆满落幕",
+  "page.news.20260128-spring-team-building.p1": "岁启新章，春满人间。为迎接癸卯新春的到来，缓解科研工作的紧张节奏，增进课题组师生间的情谊与凝聚力，课题组于1月28日组织了一场别开生面的新春团建轰趴活动，在欢声笑语中共度美好时光。",
+  "page.news.20260128-spring-team-building.p2": "活动选址在温馨又充满趣味的轰趴馆，提前布置的新春装饰让现场年味十足：红彤彤的灯笼、喜庆的春联、精致的福字贴满各个角落，刚踏入场地，浓浓的节日氛围便扑面而来。本次团建摒弃了传统的座谈形式，设置了丰富多样的趣味环节，让大家在轻松的氛围中放松身心、增进交流。",
+  "page.news.20260128-spring-team-building.p3": "烟火气里见温情，分工协作显同心。活动伊始，师生们便自发分工、默契配合：有人细心择洗时蔬，将新鲜的青菜、菌菇打理得整整齐齐；有人认真摆放肉类、丸子等火锅食材，调试烤炉与火锅的火候；还有人兴致勃勃地尝试调制饮品，将奶与气泡水、果汁巧妙搭配，偶尔的小尝试、小交流，让备餐的时光满是欢声笑语。指尖的忙碌，耳边的闲谈，悄然消融了平日科研中的紧张，让彼此的距离更近一步。",
+  "page.news.20260128-spring-team-building.p4": "火锅沸腾暖人心，烤肉飘香聚情谊！",
+  "page.news.20260128-spring-team-building.p5": "待食材备好，咕嘟咕嘟的火锅冒着热气，滋滋作响的烤肉散发着诱人香气，师生们围坐在一起，一边涮煮着新鲜食材，一边翻动着烤盘里的肉串，偶尔举杯品尝自制的饮品，畅谈科研中的小趣事、生活里的小美好。",
+  "page.news.20260128-spring-team-building.p6": "美食治愈心灵，欢聚不负时光。酒足饭饱后，大家围坐在一起，开启了轻松有趣的狼人杀游戏。没有科研数据的严谨，没有论文写作的繁琐，只有纯粹的欢乐与默契：有人化身“狼人”，巧妙伪装、暗藏锋芒；有人担任“预言家”，沉着分析、指引方向；有人身为“平民”，认真倾听、谨慎判断，偶尔的失误与脑洞大开的发言，引得全场捧腹大笑。游戏间隙，课题组负责人李桂香教授与大家亲切谈心，回顾了过去一年课题组的并肩奋斗与收获，感谢每一位成员的辛勤付出与默默坚守，并送上了新春的美好祝福，叮嘱大家新的一年既要潜心科研，也要好好生活，愿大家在温暖的集体中，不负韶华、共赴新程。",
+  "page.news.20260128-spring-team-building.p7": "夜幕渐深，欢声笑语依旧未停，活动在温馨的合影留念中缓缓落幕。大家纷纷表示，这次新春轰趴不仅缓解了日常科研的压力，更让大家感受到了课题组这个大家庭的温暖与活力。新的一年，桂香李课题组全体成员将以更饱满的热情、更融洽的氛围投入到科研工作中，以团结之姿、奋进之势，书写新的科研篇章。",
+  "page.news.20260128-spring-team-building.coverAlt": "师生分工协作，清洗食材、准备餐食",
+  "page.news.20260128-spring-team-building.coverAlt1": "师生欢聚一堂，共享火锅与烤肉",
+  "page.news.20260128-spring-team-building.coverAlt2": "狼人杀游戏环节，大家欢声笑语、其乐融融",
+  "page.news.20260128-spring-team-building.coverAlt3": "全体师生合影留念，定格温馨瞬间"
 }
