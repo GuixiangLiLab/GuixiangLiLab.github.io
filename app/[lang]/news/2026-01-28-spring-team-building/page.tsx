@@ -39,7 +39,7 @@ export default function SpringTeamBuildingPage() {
 
               {/* 食材图片 */}
               <img
-                src="/img/News/20260128_spring_team_building/food.jpg"
+                src="/img/News/20260128_spring_team_building/food.JPG"
                 alt={t("page.news.20260128-spring-team-building.coverAlt")}
               />
 
@@ -49,7 +49,7 @@ export default function SpringTeamBuildingPage() {
 
               {/* 围炉聚餐图片 */}
               <img
-                src="/img/News/20260128_spring_team_building/cooking.jpg"
+                src="/img/News/20260128_spring_team_building/cooking.JPG"
                 alt={t("page.news.20260128-spring-team-building.coverAlt1")}
               />
 
@@ -63,7 +63,7 @@ export default function SpringTeamBuildingPage() {
 
               {/* 游戏环节图片 */}
               <img
-                src="/img/News/20260128_spring_team_building/games.jpg"
+                src="/img/News/20260128_spring_team_building/games.JPG"
                 alt={t("page.news.20260128-spring-team-building.coverAlt2")}
               />
 
