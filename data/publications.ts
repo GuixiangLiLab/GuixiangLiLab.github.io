@@ -35,9 +35,26 @@ export const publications: Publication[] = [
     selected: true
   },
   {
+    id: "natene-2026-phot-isom-impr",
+    year: 2026,
+    href: "https://www.nature.com/articles/s41560-026-01993-z",
+    img: "/img/publications/ne_lgx_2026.png",
+    title: {
+      en: "Photoswitchable isomers to improve grain boundary resilience and perovskite solar cells stability under light cycling",
+      zh: "Photoswitchable isomers to improve grain boundary resilience and perovskite solar cells stability under light cycling<br/>（光致异构体提升钙钛矿太阳能电池晶界韧性和在光循环下的稳定性）"
+    },
+    authorsHtml: {
+      en: `Zuhong Zhang, Rui Zhu, <span class="bold">Guixiang Li*</span>, Ying Tang, Hongzhuo Wu, ... , Luyao Wang*, ... , Michael Saliba*, Antonio Abate* and Meng Li*`,
+      zh: `Zuhong Zhang, Rui Zhu, <span class="bold">Guixiang Li*(李桂香#)</span>, Ying Tang, Hongzhuo Wu, ... , Luyao Wang*, ... , Michael Saliba*, Antonio Abate* and Meng Li*`
+    },
+    venue: { en: "Nature Energy (2026)", zh: "Nature Energy（2026）" },
+    doi: "10.1038/s41560-026-01993-z",
+    selected: true
+  },
+  {
     id: "natpho-2025-stab-high-effi",
     year: 2025,
-    href: "https://doi.org/10.1038/s41566-025-01791-1",
+    href: "https://www.nature.com/articles/s41566-025-01791-1",
     img: "/img/Perovskite_Stabilizing_high_efficiency_PSCs_via_strategic.png",
     title: {
       en: "Stabilizing high-efficiency perovskite solar cells via strategic interfacial contact engineering",

@@ -85,12 +85,17 @@ export const news: NewsItem[] = [
       en: "A Warm Winter Gathering, Accompanied by Research Journeys – The Research Group's Spring Festival Team Building Party Concludes Successfully",
       zh: "暖冬聚首，研路相伴——课题组新春轰趴团建圆满落幕"
     },
-    date: "2026.01.28" // 请替换为实际团建日期（格式保持 YYYY.MM.DD）
-    // 若需要添加摘要，可取消以下注释并补充内容
-    // summary: {
-    //   en: "To welcome the New Year, members of GuixiangLiLab gathered for a lively team building party, enjoying food, games and warm exchanges, enhancing the cohesion of the research group.",
-    //   zh: "为迎接新春到来，李桂香课题组全体师生齐聚一堂开展趣味团建轰趴，在美食、游戏与温馨交流中增进情谊，凝聚课题组向心力。"
-    // }
+    date: "2026.01.28"
+  },
+  {
+    id: "2026-02-26-lgx-ne",
+    slug: "2026-02-26-lgx-ne", // 和文件夹名一致
+    cover: "/img/News/20260226_lgx_ne/cover_20260226_lgx_ne.png",// 列表页封面图
+    title: {
+      zh: "学术动态 | Nature Energy：课题组合作报道钙钛矿器件光循环稳定性研究",
+      en: "Academic News | Nature Energy: Cooperative study on photocycling stability of perovskite devices"
+    },
+    date: "2026-02-26" 
   }
   // 未来新增新闻只需在此处 push 新对象即可
 ].sort(sortByDateDesc);
