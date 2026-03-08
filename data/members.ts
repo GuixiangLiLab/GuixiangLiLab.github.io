@@ -1,7 +1,7 @@
 // /data/members.ts
 export type Lang = "en" | "zh";
 
-export type MemberGroup = "prof" | "visitingscholar" | "postdoc" | "phd" | "ra" | "master" | "undergrad" | "alumni";
+export type MemberGroup = "prof" | "postdoc" | "phd" | "ra" | "master" | "undergraduate" | "visitingscholar" | "alumni";
 
 export interface Member {
   id: string;                          // 稳定 ID
@@ -15,7 +15,7 @@ export interface Member {
 
 // 展示顺序（分组）
 export const GROUP_ORDER: MemberGroup[] = [
-  "prof", "visitingscholar", "postdoc", "phd", "ra", "master", "undergrad", "alumni"
+  "prof", "postdoc", "phd", "ra", "master", "undergraduate", "visitingscholar", "alumni"
 ];
 
 // 数据源（把后续新增成员都放这里即可）
@@ -30,16 +30,6 @@ export const members: Member[] = [
     order: 1,
     isProfessor: true
   },
-  
-  // 访问学者
-  {
-    id: "jing-li",
-    group: "visitingscholar",
-    slug: "lijing",
-    img: "/img/Members/lijing.png",
-    name: { en: "Jing Li", zh: "李净" },
-    order: 1
-  },
 
   // 博士后
   {
@@ -53,12 +43,20 @@ export const members: Member[] = [
 
   // 博士
   {
+    id: "yifan-li",
+    group: "phd",
+    slug: "liyifan",
+    img: "/img/liyifan.jpg",
+    name: { en: "Yifan Li", zh: "李怡凡" },
+    order: 1
+  },
+  {
     id: "shaoqiang-wang",
     group: "phd",
     slug: "wangshaoqiang",
     img: "/img/wangshaoqiang.jpg",
     name: { en: "Shaoqiang Wang", zh: "王少强" },
-    order: 1
+    order: 2
   },
   {
     id: "xu-zhang",
@@ -66,7 +64,7 @@ export const members: Member[] = [
     slug: "zhangxu",
     img: "/img/Members/zhangxu.jpg",
     name: { en: "Xu Zhang", zh: "张旭" },
-    order: 3
+    order: 4
   },
   {
     id: "xuebing-wen",
@@ -74,18 +72,10 @@ export const members: Member[] = [
     slug: "wenxuebing",
     img: "/img/Members/wenxuebing.jpg",
     name: { en: "Xuebing Wen", zh: "温雪冰" },
-    order: 2
+    order: 3
   },
 
   // 科研助理
-  {
-    id: "yifan-li",
-    group: "ra",
-    slug: "liyifan",
-    img: "/img/liyifan.jpg",
-    name: { en: "Yifan Li", zh: "李怡凡" },
-    order: 1
-  },
   {
     id: "xiaochun-zhang",
     group: "ra",
@@ -122,6 +112,24 @@ export const members: Member[] = [
   },
 
   // 本科生
+ {
+    id: "zerui-yi",
+    group: "undergraduate",
+    slug: "yizerui",
+    img: "/img/Members/yizerui.png",
+    name: { en: "Zerui Yi", zh: "易泽瑞" },
+    order: 1
+  },
+
+  // 访问学者
+  {
+    id: "jing-li",
+    group: "visitingscholar",
+    slug: "lijing",
+    img: "/img/Members/lijing.png",
+    name: { en: "Jing Li", zh: "李净" },
+    order: 1
+  },
 
   // 已毕业
   {

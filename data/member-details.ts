@@ -40,57 +40,11 @@ export interface MemberDetail {
  * - 其他成员都在这里维护；中英文都给了草稿，可自行微调。
  */
 export const memberDetails: Record<string, MemberDetail> = {
-  // ========================
-  // Visiting Scholar
-  // ========================
-  lijing: {
-    slug: "lijing",
-    portrait: "/img/Members/lijing1.png",
-    alt: { en: "Jing Li", zh: "李净" },
-    name: { en: "Jing Li", zh: "李净" },
-    statusBadge: { en: "Visiting Scholar", zh: "访问学者" },
-    affiliation: {
-      en: "Guixiang Li Laboratory · Southeast University",
-      zh: "功能光电实验室 · 东南大学"
-    },
-    sideNotes: {
-      
-    },
-    background: {
-      title: { en: "Background", zh: "教育经历" },
-      text: {
-        en: "<strong>Ph.D.</strong> School of Physical and Chemical Sciences, Queen Mary University of London, September 2025",
-        zh: "玛丽女王大学 · 化学院 · 博士，2025 年 9 月"
-      }
-    },
-    hobbies: {
-      en: ["Reading", "Running"],
-      zh: ["阅读", "跑步"]
-    },
-    statement: {
-      title: { en: "Personal Statement", zh: "个人陈述" },
-      text: {
-        en:
-          "I am quite conscientious in my work and willing to dedicate the time needed to do things well. I maintain a long-term interest in research, and when I encounter problems, I think them through repeatedly. I'm not driven by short-term gains and tend to be quite grounded and practical.",
-        zh: "做事比较认真，也愿意花时间把事情做好。对科研保持长期兴趣，遇到问题会反复琢磨，不太急功近利，比较踏实。"
-      }
-    },
-    motto: {
-      en: "“love the life you live,live the life you love.”",
-      zh: "“按照自己喜欢的方式，去度过一生。”"
-    },
-    research: {
-      title: { en: "Research Direction", zh: "研究方向" },
-      text: {
-        en:
-          "Research on interface engineering of perovskite photovoltaic devices and the behavior and control of lead contamination in perovskite materials.",
-        zh: "钙钛矿光伏器件界面工程及钙钛矿铅污染行为与调控研究。"
-      }
-    }
-  },
+
   // ========================
   // PostDoc
   // ========================
+
     fangdong: {
     slug: "fangdong",
     portrait: "/img/Members/fangdong1.png",
@@ -204,50 +158,6 @@ export const memberDetails: Record<string, MemberDetail> = {
         en:
           "Inverted (p–i–n) regular-bandgap perovskite solar cells; electron-transport-layer/interface engineering; stability and aggregation issues in device stacks.",
         zh: "倒置（p–i–n）常规带隙钙钛矿太阳能电池；电子传输层/界面工程；器件层间稳定性与聚集问题。"
-      }
-    }
-  },
-
-  liyifan: {
-    slug: "liyifan",
-    portrait: "/img/liyifan.jpg",
-    alt: { en: "Yifan Li", zh: "李怡凡" },
-    name: { en: "Yifan Li", zh: "李怡凡" },
-    statusBadge: { en: "Research Assistant", zh: "科研助理" },
-    affiliation: {
-      en: "Guixiang Li Laboratory · Southeast University",
-      zh: "功能光电实验室 · 东南大学"
-    },
-    background: {
-      title: { en: "Background", zh: "教育经历" },
-      text: {
-        en:
-          "<strong>M.Eng.</strong> Optical Engineering, Hebei University. Research focus on wide-bandgap perovskite solar cells, with a strong interest in photovoltaic materials.",
-        zh:
-          "河北大学 · 光学工程 · 工程硕士。研究方向为宽带隙钙钛矿太阳能电池，对光伏材料有浓厚兴趣。"
-      }
-    },
-    hobbies: {
-      en: ["Badminton", "Table tennis", "Billiards"],
-      zh: ["羽毛球", "乒乓球", "台球"]
-    },
-    statement: {
-      title: { en: "Personal Statement", zh: "个人陈述" },
-      text: {
-        en:
-          "Objective and rational; persistent in daily work, able to endure hardship and adapt to change; courageous when facing challenges.",
-        zh: "客观理性，做事持久；能吃苦、适应性强；面对挑战勇于直面。"
-      }
-    },
-    motto: {
-      en: "“What’s done is done.”",
-      zh: "“做过便无悔。”"
-    },
-    research: {
-      title: { en: "Research Direction", zh: "研究方向" },
-      text: {
-        en: "Wide-bandgap perovskite solar cells and all-perovskite tandem cells.",
-        zh: "宽带隙钙钛矿太阳能电池与全钙钛矿叠层电池。"
       }
     }
   },
@@ -384,6 +294,50 @@ export const memberDetails: Record<string, MemberDetail> = {
   // PhD
   // ========================
 
+  liyifan: {
+    slug: "liyifan",
+    portrait: "/img/liyifan.jpg",
+    alt: { en: "Yifan Li", zh: "李怡凡" },
+    name: { en: "Yifan Li", zh: "李怡凡" },
+    statusBadge: { en: "PhD · Year 1", zh: "博士一年级" },
+    affiliation: {
+      en: "Guixiang Li Laboratory · Southeast University",
+      zh: "功能光电实验室 · 东南大学"
+    },
+    background: {
+      title: { en: "Background", zh: "教育经历" },
+      text: {
+        en:
+          "<strong>M.Eng.</strong> Optical Engineering, Hebei University. Research focus on wide-bandgap perovskite solar cells, with a strong interest in photovoltaic materials.",
+        zh:
+          "河北大学 · 光学工程 · 工程硕士。研究方向为宽带隙钙钛矿太阳能电池，对光伏材料有浓厚兴趣。"
+      }
+    },
+    hobbies: {
+      en: ["Badminton", "Table tennis", "Billiards"],
+      zh: ["羽毛球", "乒乓球", "台球"]
+    },
+    statement: {
+      title: { en: "Personal Statement", zh: "个人陈述" },
+      text: {
+        en:
+          "Objective and rational; persistent in daily work, able to endure hardship and adapt to change; courageous when facing challenges.",
+        zh: "客观理性，做事持久；能吃苦、适应性强；面对挑战勇于直面。"
+      }
+    },
+    motto: {
+      en: "“What’s done is done.”",
+      zh: "“做过便无悔。”"
+    },
+    research: {
+      title: { en: "Research Direction", zh: "研究方向" },
+      text: {
+        en: "Wide-bandgap perovskite solar cells and all-perovskite tandem cells.",
+        zh: "宽带隙钙钛矿太阳能电池与全钙钛矿叠层电池。"
+      }
+    }
+  },
+
   wangshaoqiang: {
     slug: "wangshaoqiang",
     portrait: "/img/Members/wangshaoqiang.png",
@@ -519,5 +473,113 @@ export const memberDetails: Record<string, MemberDetail> = {
         zh: "钙钛矿太阳能器件的稳定性。"
       }
     }
+  },
+
+  // ========================
+  // Undergraduate
+  // ========================
+
+  yizerui: {
+    slug: "yizerui",
+    portrait: "/img/Members/yizerui1.png",
+    alt: { en: "Zerui Yi", zh: "易泽瑞" },
+    name: { en: "Zerui Yi", zh: "易泽瑞" },
+    statusBadge: { en: "Undergraduate", zh: "本科生" },
+    affiliation: {
+      en: "Guixiang Li Laboratory · Southeast University",
+      zh: "功能光电实验室 · 东南大学"
+    },
+    sideNotes: {
+      
+    },
+    background: {
+      title: { en: "Background", zh: "教育经历" },
+      text: {
+        en: "<strong>B.Eng.</strong> School of Materials Science and Engineering, Southeast University(SEU), September 2025 to date",
+        zh: "<strong>本科</strong> 东南大学材料科学与工程学院，2022 年 9 月-至今"
+      }
+    },
+    hobbies: {
+      en: ["Badminton", "Running"],
+      zh: ["羽毛球", "跑步"]
+    },
+    statement: {
+      title: { en: "Personal Statement", zh: "个人陈述" },
+      text: {
+        en:
+          "Live life to the fullest.",
+        zh: "热爱生活。"
+      }
+    },
+    motto: {
+      en: "“Turn shame into courage, turn weakness into strength.”",
+      zh: "“知耻而后勇，知不足而奋进。”"
+    },
+    extraSections: [
+      {
+        id: "origin",
+        title: { en: "Hometown", zh: "家乡" },
+        text: { en: "Ganzhou, Jiangxi Province.", zh: "江西省赣州市。" }
+      }
+    ],
+    research: {
+      title: { en: "Research Direction", zh: "研究方向" },
+      text: {
+        en:
+          "Stability of perovskite solar cells.",
+        zh: "钙钛矿太阳能电池稳定性。"
+      }
+    }
+  },
+
+  // ========================
+  // Visiting Scholar
+  // ========================
+
+  lijing: {
+    slug: "lijing",
+    portrait: "/img/Members/lijing1.png",
+    alt: { en: "Jing Li", zh: "李净" },
+    name: { en: "Jing Li", zh: "李净" },
+    statusBadge: { en: "Visiting Scholar", zh: "访问学者" },
+    affiliation: {
+      en: "Guixiang Li Laboratory · Southeast University",
+      zh: "功能光电实验室 · 东南大学"
+    },
+    sideNotes: {
+      
+    },
+    background: {
+      title: { en: "Background", zh: "教育经历" },
+      text: {
+        en: "<strong>Ph.D.</strong> School of Physical and Chemical Sciences, Queen Mary University of London, September 2025",
+        zh: "玛丽女王大学 · 化学院 · 博士，2025 年 9 月"
+      }
+    },
+    hobbies: {
+      en: ["Reading", "Running"],
+      zh: ["阅读", "跑步"]
+    },
+    statement: {
+      title: { en: "Personal Statement", zh: "个人陈述" },
+      text: {
+        en:
+          "I am quite conscientious in my work and willing to dedicate the time needed to do things well. I maintain a long-term interest in research, and when I encounter problems, I think them through repeatedly. I'm not driven by short-term gains and tend to be quite grounded and practical.",
+        zh: "做事比较认真，也愿意花时间把事情做好。对科研保持长期兴趣，遇到问题会反复琢磨，不太急功近利，比较踏实。"
+      }
+    },
+    motto: {
+      en: "“love the life you live,live the life you love.”",
+      zh: "“按照自己喜欢的方式，去度过一生。”"
+    },
+    research: {
+      title: { en: "Research Direction", zh: "研究方向" },
+      text: {
+        en:
+          "Research on interface engineering of perovskite photovoltaic devices and the behavior and control of lead contamination in perovskite materials.",
+        zh: "钙钛矿光伏器件界面工程及钙钛矿铅污染行为与调控研究。"
+      }
+    }
   }
 };
+

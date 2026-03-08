@@ -108,7 +108,7 @@ export default function NatureEnergyPage() {
               </p>
 
               <img
-                src="/img/News/20260111_lgx_nc/figure1.png"
+                src="/img/News/20260226_lgx_ne/figure1.png"
                 alt={t("page.news.20260226-lgx-ne.coverAlt_1")}
               />
 
@@ -117,7 +117,7 @@ export default function NatureEnergyPage() {
               </p>
 
               <img
-                src="/img/News/20260111_lgx_nc/figure2.png"
+                src="/img/News/20260226_lgx_ne/figure2.png"
                 alt={t("page.news.20260226-lgx-ne.coverAlt_2")}
               />
 
@@ -126,7 +126,7 @@ export default function NatureEnergyPage() {
               </p>
 
               <img
-                src="/img/News/20260111_lgx_nc/figure3.png"
+                src="/img/News/20260226_lgx_ne/figure3.png"
                 alt={t("page.news.20260226-lgx-ne.coverAlt_3")}
               />
               
@@ -135,7 +135,7 @@ export default function NatureEnergyPage() {
               </p>
 
               <img
-                src="/img/News/20260111_lgx_nc/figure4.png"
+                src="/img/News/20260226_lgx_ne/figure4.png"
                 alt={t("page.news.20260226-lgx-ne.coverAlt_4")}
               />
 

@@ -26,12 +26,12 @@ export default function MembersPage() {
   // 分组标题 key 映射（用现有 i18n 键）
   const groupTitleKey: Record<MemberGroup, string> = {
     prof: "page.members.group.prof",
-    visitingscholar:"page.members.group.visitingscholar",
     postdoc: "page.members.group.postdoc",
     phd: "page.members.group.phd",
     ra: "page.members.group.ra",
     master: "page.members.group.master",
-    undergrad: "page.members.group.undergrad",
+    undergraduate: "page.members.group.undergrad",
+    visitingscholar:"page.members.group.visitingscholar",
     alumni: "page.members.group.alumni"
   };
 

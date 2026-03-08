@@ -45,7 +45,7 @@ export const publications: Publication[] = [
     },
     authorsHtml: {
       en: `Zuhong Zhang, Rui Zhu, <span class="bold">Guixiang Li*</span>, Ying Tang, Hongzhuo Wu, ... , Luyao Wang*, ... , Michael Saliba*, Antonio Abate* and Meng Li*`,
-      zh: `Zuhong Zhang, Rui Zhu, <span class="bold">Guixiang Li*(李桂香#)</span>, Ying Tang, Hongzhuo Wu, ... , Luyao Wang*, ... , Michael Saliba*, Antonio Abate* and Meng Li*`
+      zh: `Zuhong Zhang, Rui Zhu, <span class="bold">Guixiang Li*(李桂香*)</span>, Ying Tang, Hongzhuo Wu, ... , Luyao Wang*, ... , Michael Saliba*, Antonio Abate* and Meng Li*`
     },
     venue: { en: "Nature Energy (2026)", zh: "Nature Energy（2026）" },
     doi: "10.1038/s41560-026-01993-z",
@@ -62,7 +62,7 @@ export const publications: Publication[] = [
     },
     authorsHtml: {
       en: `<span class="bold">Guixiang Li#*</span>, Zuhong Zhang#, Benjamin Agyei-Tuffour#, Luyan Wu#, Thomas W. Gries, ... , Luyao Wang*, Zhe Li*, ... , Meng Li*, Antonio Abate*`,
-      zh: `<span class="bold">Guixiang Li#(李桂香#)*</span>, Zuhong Zhang#, Benjamin Agyei-Tuffour#, Luyan Wu#, Thomas W. Gries, ... , Luyao Wang*, Zhe Li*, ... , Meng Li*, Antonio Abate*`
+      zh: `<span class="bold">Guixiang Li#*(李桂香#*)</span>, Zuhong Zhang#, Benjamin Agyei-Tuffour#, Luyan Wu#, Thomas W. Gries, ... , Luyao Wang*, Zhe Li*, ... , Meng Li*, Antonio Abate*`
     },
     venue: { en: "Nature Photonics (2025)", zh: "Nature Photonics（2025）" },
     doi: "10.1038/s41566-025-01791-1",
@@ -117,7 +117,7 @@ export const publications: Publication[] = [
     },
     venue: { en: "Advanced Materials (2025)", zh: "Advanced Materials（2025）" },
     doi: "10.1002/adma.202418766",
-    selected: true
+    selected: false
   },
   {
     id: "adma-2024-inverted-nonrad",
@@ -151,7 +151,7 @@ export const publications: Publication[] = [
     },
     venue: { en: "Advanced Materials (2025)", zh: "Advanced Materials（2025）" },
     doi: "10.1002/adma.202420378",
-    selected: true
+    selected: false
   },
   {
     id: "ccr-2026-under-mitig-inter-defec",
@@ -181,7 +181,7 @@ export const publications: Publication[] = [
     },
     authorsHtml: {
       en: `Xiaochun Zhang, Qing Cao*, Luyao Wang, Tiankai Zhang, Kaiyu X. Fu, Zhe Li, Antonio Abate, Meng Li*, <span class="bold">Guixiang Li*</span>`,
-      zh: `张晓春, Qing Cao*, Luyao Wang, Tiankai Zhang, Kaiyu X. Fu, Zhe Li, Antonio Abate, Meng Li*, <span class="bold">Guixiang Li*(李桂香*)</span>`
+      zh: `Xiaochun Zhang(张晓春), Qing Cao*, Luyao Wang, Tiankai Zhang, Kaiyu X. Fu, Zhe Li, Antonio Abate, Meng Li*, <span class="bold">Guixiang Li*(李桂香*)</span>`
     },
     venue: { en: "Advanced Functional Materials (2025)", zh: "Advanced Functional Materials（2025）" },
     doi: "10.1002/adfm.202523417",
@@ -418,8 +418,8 @@ export const publications: Publication[] = [
       zh: "Microbial Immobilization for Enhancing Environmental Sustainability of Perovskite Photovoltaics<br/>（微生物固定化增强钙钛矿光伏电池的环境可持续性）"
     },
     authorsHtml: {
-      en: `Jianhua Yuan#, Tianxiao Sun#, <span class="bold">Guixiang Li*</span>, Markus Weigand, Fei Yu, Zhe Li, Jianglin Cao, Jiayuan Yu, Meng Li, Weijia Zhou*`,
-      zh: `Jianhua Yuan#, Tianxiao Sun#, <span class="bold">Guixiang Li*(李桂香*)</span>, Markus Weigand, Fei Yu, Zhe Li, Jianglin Cao, Jiayuan Yu, Meng Li, Weijia Zhou*`
+      en: `Jianhua Yuan#, Tianxiao Sun#, <span class="bold">Guixiang Li*</span>, Markus Weigand, Fei Yu, Zhe Li, Jianglin Cao, Jiayuan Yu, Meng Li, Weijia Zhou*, Antonio Abate, Jie Ma*`,
+      zh: `Jianhua Yuan#, Tianxiao Sun#, <span class="bold">Guixiang Li*(李桂香*)</span>, Markus Weigand, Fei Yu, Zhe Li, Jianglin Cao, Jiayuan Yu, Meng Li, Weijia Zhou*, Antonio Abate, Jie Ma*`
     },
     venue: { en: "ACS Materials Letters (2024)", zh: "ACS Materials Letters（2024）" },
     doi: "10.1021/acsmaterialslett.4c01360",
