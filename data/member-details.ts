@@ -500,8 +500,8 @@ export const memberDetails: Record<string, MemberDetail> = {
       }
     },
     hobbies: {
-      en: ["Badminton", "Running"],
-      zh: ["羽毛球", "跑步"]
+      en: ["Badminton", "Game"],
+      zh: ["羽毛球", "游戏"]
     },
     statement: {
       title: { en: "Personal Statement", zh: "个人陈述" },
@@ -528,6 +528,59 @@ export const memberDetails: Record<string, MemberDetail> = {
         en:
           "Stability of perovskite solar cells.",
         zh: "钙钛矿太阳能电池稳定性。"
+      }
+    }
+  },
+
+  louhaixin: {
+    slug: "louhaixin",
+    portrait: "/img/Members/louhaixin1.png",
+    alt: { en: "Haixin Lou", zh: "楼海欣" },
+    name: { en: "Haixin Lou", zh: "楼海欣" },
+    statusBadge: { en: "Undergraduate", zh: "本科生" },
+    affiliation: {
+      en: "Guixiang Li Laboratory · Southeast University",
+      zh: "功能光电实验室 · 东南大学"
+    },
+    sideNotes: {
+      
+    },
+    background: {
+      title: { en: "Background", zh: "教育经历" },
+      text: {
+        en: "<strong>B.Eng.</strong> School of Materials Science and Engineering, Southeast University(SEU), September 2025 to date",
+        zh: "<strong>本科</strong> 东南大学材料科学与工程学院，2022 年 9 月-至今"
+      }
+    },
+    hobbies: {
+      en: ["Music", "Making crafts", "Nature"],
+      zh: ["音乐", "手工", "自然"]
+    },
+    statement: {
+      title: { en: "Personal Statement", zh: "个人陈述" },
+      text: {
+        en:
+          "Live Long and Prosper.",
+        zh: "生生不息。"
+      }
+    },
+    motto: {
+      en: "“The journey is better than the dream.”",
+      zh: "“出发永远比向往有意义。”"
+    },
+    extraSections: [
+      {
+        id: "origin",
+        title: { en: "Hometown", zh: "家乡" },
+        text: { en: "Jinhua, Zhejiang Province.", zh: "浙江省金华市。" }
+      }
+    ],
+    research: {
+      title: { en: "Research Direction", zh: "研究方向" },
+      text: {
+        en:
+          "Narrow bandgap semiconductor materials.",
+        zh: "窄带隙半导体材料。"
       }
     }
   },

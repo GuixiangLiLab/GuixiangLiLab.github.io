@@ -118,6 +118,14 @@ export const members: Member[] = [
     slug: "yizerui",
     img: "/img/Members/yizerui.png",
     name: { en: "Zerui Yi", zh: "易泽瑞" },
+    order: 2
+  },
+ {
+    id: "haixin-lou",
+    group: "undergraduate",
+    slug: "louhaixin",
+    img: "/img/Members/louhaixin.png",
+    name: { en: "Haixin Lou", zh: "楼海欣" },
     order: 1
   },
 
