@@ -43,20 +43,28 @@ export const members: Member[] = [
 
   // 博士
   {
+    id: "yuepeng-huang",
+    group: "phd",
+    slug: "huangyuepeng",
+    img: "/img/Members/huangyuepeng.png",
+    name: { en: "Yuepeng Huang", zh: "黄月鹏" },
+    order: 1
+  },  
+  {
     id: "yifan-li",
     group: "phd",
     slug: "liyifan",
-    img: "/img/liyifan.jpg",
+    img: "/img/Members/liyifan.jpg",
     name: { en: "Yifan Li", zh: "李怡凡" },
-    order: 1
+    order: 2
   },
   {
     id: "shaoqiang-wang",
     group: "phd",
     slug: "wangshaoqiang",
-    img: "/img/wangshaoqiang.jpg",
+    img: "/img/Members/wangshaoqiang.jpg",
     name: { en: "Shaoqiang Wang", zh: "王少强" },
-    order: 2
+    order: 3
   },
   {
     id: "xu-zhang",
@@ -64,7 +72,7 @@ export const members: Member[] = [
     slug: "zhangxu",
     img: "/img/Members/zhangxu.jpg",
     name: { en: "Xu Zhang", zh: "张旭" },
-    order: 4
+    order: 5
   },
   {
     id: "xuebing-wen",
@@ -72,7 +80,7 @@ export const members: Member[] = [
     slug: "wenxuebing",
     img: "/img/Members/wenxuebing.jpg",
     name: { en: "Xuebing Wen", zh: "温雪冰" },
-    order: 3
+    order: 4
   },
 
   // 科研助理
@@ -98,7 +106,7 @@ export const members: Member[] = [
     id: "zeyu-li",
     group: "master",
     slug: "lizeyu",
-    img: "/img/lizeyu.jpg",
+    img: "/img/Members/lizeyu.jpg",
     name: { en: "Zeyu Li", zh: "李泽雨" },
     order: 2
   },

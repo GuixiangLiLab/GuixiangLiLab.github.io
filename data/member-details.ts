@@ -168,7 +168,7 @@ export const memberDetails: Record<string, MemberDetail> = {
 
   lizeyu: {
     slug: "lizeyu",
-    portrait: "/img/Members/lizeyu.jpg",
+    portrait: "/img/Members/lizeyu1.jpg",
     alt: { en: "Zeyu Li", zh: "李泽雨" },
     name: { en: "Zeyu Li", zh: "李泽雨" },
     statusBadge: { en: "Master's · Year 1", zh: "硕士一年级" },
@@ -262,7 +262,7 @@ export const memberDetails: Record<string, MemberDetail> = {
           en:
             "I'm Li Xinru, originally from Tai'an, Shandong—renowned for the grandeur of Mount Tai and the grace of the Wen River. I completed my undergraduate studies at Taiyuan University of Technology. I enjoy quiet, reflective activities such as reading and films; my guiding principle: “A journey of a thousand miles begins beneath one's feet; steady effort leads to goals.”",
           zh:
-            "我叫李馨儒，来自山东泰安——一方有泰山之雄、汶水之柔的土地。本科毕业于太原理工大学。日常喜欢阅读与观影等安静的活动；座右铭：“千里之行，始于足下；持之以恒，行稳致远。”"
+            "我叫李心如，来自山东泰安——一方有泰山之雄、汶水之柔的土地。本科毕业于太原理工大学。日常喜欢阅读与观影等安静的活动；座右铭：“千里之行，始于足下；持之以恒，行稳致远。”"
         }
       ]
     },
@@ -293,10 +293,53 @@ export const memberDetails: Record<string, MemberDetail> = {
   // ========================
   // PhD
   // ========================
+  huangyuepeng: {
+    slug: "huangyuepeng",
+    portrait: "/img/Members/huangyuepeng1.png",
+    alt: { en: "Yuepeng Huang", zh: "黄月鹏" },
+    name: { en: "Yuepeng Huang", zh: "黄月鹏" },
+    statusBadge: { en: "PhD · Year 2", zh: "博士二年级" },
+    affiliation: {
+      en: "Guixiang Li Laboratory · Southeast University",
+      zh: "功能光电实验室 · 东南大学"
+    },
+    background: {
+      title: { en: "Background", zh: "教育经历" },
+      text: {
+        en:
+          "<strong>B.Eng.</strong> Nanjing University of Aeronautics and Astronautics<br/><strong>M.Eng.</strong>, Guizhou University.",
+        zh:
+          "南京航空航天大学 · 本科工学学位；<br/>贵州大学 · 工程硕士。"
+      }
+    },
+    hobbies: {
+      en: ["Game", "Basketball"],
+      zh: ["游戏", "篮球"]
+    },
+    statement: {
+      title: { en: "Personal Statement", zh: "个人陈述" },
+      text: {
+        en:
+          "",
+        zh: ""
+      }
+    },
+    motto: {
+      en: "",
+      zh: ""
+    },
+    research: {
+      title: { en: "Research Direction", zh: "研究方向" },
+      text: {
+        en: "Photothermal management materials.",
+        zh: "光热管理材料。"
+      }
+    }
+  },
 
   liyifan: {
     slug: "liyifan",
-    portrait: "/img/liyifan.jpg",
+    portrait: "/img/Members/liyifan.jpg",
     alt: { en: "Yifan Li", zh: "李怡凡" },
     name: { en: "Yifan Li", zh: "李怡凡" },
     statusBadge: { en: "PhD · Year 1", zh: "博士一年级" },
@@ -340,7 +383,7 @@ export const memberDetails: Record<string, MemberDetail> = {
 
   wangshaoqiang: {
     slug: "wangshaoqiang",
-    portrait: "/img/Members/wangshaoqiang.png",
+    portrait: "/img/Members/wangshaoqiang1.png",
     alt: { en: "Shao-Qiang Wang", zh: "王少强" },
     name: { en: "Shao-Qiang Wang", zh: "王少强" },
     statusBadge: { en: "PhD · Year 1", zh: "博士一年级" },
@@ -447,7 +490,7 @@ export const memberDetails: Record<string, MemberDetail> = {
         en:
           "<strong>B.Eng.</strong> School of Physics and Optoelectronic Information Engineering, Anhui University<br/><strong>M.Eng.</strong> School of Nanoscience and Materials Engineering, Henan University",
         zh:
-          "安徽大学 物理与光电信息工程学院 本科工学学位；<br/>河南大学 纳米科学与材料工程学院 工程硕士"
+          "安徽大学 · 物理与光电信息工程学院 · 本科工学学位；<br/>河南大学 · 纳米科学与材料工程学院 · 工程硕士"
       }
     },
     hobbies: {
