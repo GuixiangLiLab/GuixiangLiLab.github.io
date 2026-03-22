@@ -96,6 +96,16 @@ export const news: NewsItem[] = [
       en: "Academic News | Nature Energy: Cooperative study on photocycling stability of perovskite devices"
     },
     date: "2026-02-26" 
+  },
+  {
+    id: "2026-03-19-wsq-csr",
+    slug: "2026-03-19-wsq-csr", // 和文件夹名一致
+    cover: "/img/News/20260319_wsq_csr/cover_20260319_wsq_csr.png",// 列表页封面图
+    title: {
+      zh: "学术动态 | 课题组王少强在《科学通报》期刊发表综述论文",
+      en: "Academic News | Wang Shaoqiang from the research group published a review article in the journal Chinese Science Bulletin."
+    },
+    date: "2026-03-19" 
   }
   // 未来新增新闻只需在此处 push 新对象即可
 ].sort(sortByDateDesc);
