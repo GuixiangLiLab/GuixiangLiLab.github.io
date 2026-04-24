@@ -103,6 +103,40 @@ export const publications: Publication[] = [
     selected: true
   },
   {
+    id: "chinesesciencebulletin-2026-ai-aided-structural",
+    year: 2026,
+    href: "https://www.sciengine.com/CSB/doi/10.1360/CSB-2025-5779",
+    img: "",
+    title: {
+      en: "AI-aided structural design and stability of hybrid semiconductor photovoltaics",
+      zh: "AI-aided structural design and stability of hybrid semiconductor photovoltaics<br/>（富勒烯和金属富勒烯的超分子纯化及区域选择性功能化）"
+    },
+    authorsHtml: {
+      en: `Shaoqiang Wang, Wei Liu, Yifan Li, Xiaochun Zhang, Shimin Di*, Qing Cao*, Guixiang Li*`,
+      zh: `Shaoqiang Wang, Wei Liu, Yifan Li, Xiaochun Zhang, Shimin Di*, Qing Cao*, <span class="bold">Guixiang Li*(李桂香*)</span>`
+    },
+    venue: { en: "Chinese Science Bulletin (2026)", zh: "Chinese Science Bulletin（2026）" },
+    doi: "10.1360/CSB-2025-5779",
+    selected: false
+  },
+  {
+    id: "smallmethods-2026-lattice-oxidation-driven",
+    year: 2026,
+    href: "https://onlinelibrary.wiley.com/doi/abs/10.1002/smtd.202501842",
+    img: "",
+    title: {
+      en: "Lattice-Oxidation-Driven Efficient OER in FeOOH/NiFeOx Heterointerface Electrocatalyst via Laser-Corrosion Engineering",
+      zh: "Lattice-Oxidation-Driven Efficient OER in FeOOH/NiFeOx Heterointerface Electrocatalyst via Laser-Corrosion Engineering<br/>（通过激光腐蚀工程实现FeOOH/NiFeOx异质界面电催化剂中晶格氧化驱动的高效析氧反应）"
+    },
+    authorsHtml: {
+      en: `Rong Lu, Jinlong Wei, Junli Wang, Qian Chen, Jeongwon Kim, Paul J. Dyson, Ruidong Xu*, Guixiang Li*, Linjing Yang*`,
+      zh: `Rong Lu, Jinlong Wei, Junli Wang, Qian Chen, Jeongwon Kim, Paul J. Dyson, Ruidong Xu*, <span class="bold">Guixiang Li*(李桂香*)</span>, Linjing Yang*`
+    },
+    venue: { en: "Small Methods (2026)", zh: "Small Methods（2026）" },
+    doi: "10.1002/smtd.202501842",
+    selected: false
+  },
+  {
     id: "adma-2025-snpb-nucleation",
     year: 2025,
     href: "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202418766",

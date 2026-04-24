@@ -27,6 +27,11 @@
   position: relative;
 }
 
+/* 短卡片样式（高度为原卡片一半） */
+.research-card.short-card {
+  max-width: 80%; /* 和原卡片保持一致宽度 */
+}
+
 @keyframes slideInUp {
   to {
     opacity: 1;
@@ -34,10 +39,16 @@
   }
 }
 
+/* 原卡片内容区高度 */
 .card-content {
   display: flex;
   min-height: 400px;
   position: relative;
+}
+
+/* 短卡片内容区高度（减半为200px） */
+.card-content.short-card-content {
+  min-height: 200px; 
 }
 
 .left-section {
@@ -96,6 +107,12 @@
   border-left: 1px solid rgba(34, 197, 94, 0.2);
 }
 
+/* 短卡片右侧内容区占满宽度（无左侧图片） */
+.right-section.short-card-right {
+  flex: 1 1 100%; 
+  border-left: none; /* 去掉左侧边框 */
+}
+
 .content-area {
   padding: 2rem;
   height: 100%;
@@ -110,6 +127,12 @@
   border-radius: 0 16px 16px 0;
   box-shadow: inset 0 0 20px rgba(34, 197, 94, 0.1);
   transition: all 0.4s ease;
+}
+
+/* 短卡片内容区圆角适配（无左侧图片，全圆角） */
+.short-card-right .content-area {
+  border-radius: 16px; /* 替换原右半圆角为全圆角 */
+  border-left: 2px solid rgba(34, 197, 94, 0.3); /* 恢复左侧边框 */
 }
 
 .slide-overlay {
@@ -140,6 +163,11 @@
   transition: color 0.4s ease;
   position: relative;
   z-index: 3;
+}
+
+/* 适配短卡片数字大小（可选，保持一致也可以） */
+.short-card .section-number {
+  font-size: 2.5rem; 
 }
 
 .right-section:hover .section-number {
@@ -177,9 +205,15 @@
   color: rgba(255, 255, 255, 0.95);
 }
 
+/* 响应式适配（补充短卡片） */
 @media (max-width: 768px) {
   .card-content {
     flex-direction: column;
+  }
+
+  /* 短卡片响应式高度 */
+  .card-content.short-card-content {
+    min-height: 180px;
   }
 
   .right-section {
@@ -187,8 +221,19 @@
     border-top: 1px solid rgba(34, 197, 94, 0.2);
   }
 
+  /* 短卡片移动端边框适配 */
+  .right-section.short-card-right {
+    border-top: none;
+  }
+
   .content-area {
     border-radius: 0 0 16px 16px;
     border-left: 2px solid rgba(34, 197, 94, 0.3);
   }
+
+  /* 短卡片移动端全圆角 */
+  .short-card-right .content-area {
+    border-radius: 16px;
+  }
 }
+
