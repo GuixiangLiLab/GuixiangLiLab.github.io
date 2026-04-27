@@ -109,14 +109,31 @@ export const publications: Publication[] = [
     img: "",
     title: {
       en: "AI-aided structural design and stability of hybrid semiconductor photovoltaics",
-      zh: "AI-aided structural design and stability of hybrid semiconductor photovoltaics<br/>（富勒烯和金属富勒烯的超分子纯化及区域选择性功能化）"
+      zh: "AI-aided structural design and stability of hybrid semiconductor photovoltaics<br/>（人工智能助力杂化半导体光伏结构设计与稳定性提升）"
     },
     authorsHtml: {
       en: `Shaoqiang Wang, Wei Liu, Yifan Li, Xiaochun Zhang, Shimin Di*, Qing Cao*, Guixiang Li*`,
-      zh: `Shaoqiang Wang, Wei Liu, Yifan Li, Xiaochun Zhang, Shimin Di*, Qing Cao*, <span class="bold">Guixiang Li*(李桂香*)</span>`
+      zh: `Shaoqiang Wang（王少强）, Wei Liu（刘威）, Yifan Li（李怡凡）, Xiaochun Zhang（ 张晓春）, Shimin Di*（ 邸世民*）, Qing Cao*（曹青*）, <span class="bold">Guixiang Li*(李桂香*)</span>`
     },
-    venue: { en: "Chinese Science Bulletin (2026)", zh: "Chinese Science Bulletin（2026）" },
+    venue: { en: "Chinese Science Bulletin (2026)", zh: "Chinese Science Bulletin（科学通报）（2026）" },
     doi: "10.1360/CSB-2025-5779",
+    selected: false
+  },
+  {
+    id: "ccr-2026-under-mitig-inter-defec",
+    year: 2026,
+    href: "https://www.sciencedirect.com/science/article/pii/S0010854525007477",
+    img: "",
+    title: {
+      en: "Understanding and mitigating interfacial defects in tin‑lead perovskites for robust photovoltaics",
+      zh: "Understanding and mitigating interfacial defects in tin‑lead perovskites for robust photovoltaics<br/>（理解和缓解锡铅钙钛矿中的界面缺陷以实现稳定的光伏器件）"
+    },
+    authorsHtml: {
+      en: `Aili Wang#, Chunna Huang#, Kaihuai Du, Luozheng Zhang, Lvzhou Li, Xu Dong, Artem Musiienko, Meng Li, Antonio Abate, Xiangli Wen*, <span class="bold">Guixiang Li*</span>, Jianning Ding*`,
+      zh: `Aili Wang#, Chunna Huang#, Kaihuai Du, Luozheng Zhang, Lvzhou Li, Xu Dong, Artem Musiienko, Meng Li, Antonio Abate, Xiangli Wen*, <span class="bold">Guixiang Li*(李桂香*)</span>, Jianning Ding*`
+    },
+    venue: { en: "Coordination Chemistry Reviews (2026)", zh: "Coordination Chemistry Reviews（2026）" },
+    doi: "10.1016/j.ccr.2025.217177",
     selected: false
   },
   {
@@ -185,23 +202,6 @@ export const publications: Publication[] = [
     },
     venue: { en: "Advanced Materials (2025)", zh: "Advanced Materials（2025）" },
     doi: "10.1002/adma.202420378",
-    selected: false
-  },
-  {
-    id: "ccr-2026-under-mitig-inter-defec",
-    year: 2026,
-    href: "https://www.sciencedirect.com/science/article/pii/S0010854525007477",
-    img: "",
-    title: {
-      en: "Understanding and mitigating interfacial defects in tin‑lead perovskites for robust photovoltaics",
-      zh: "Understanding and mitigating interfacial defects in tin‑lead perovskites for robust photovoltaics<br/>（理解和缓解锡铅钙钛矿中的界面缺陷以实现稳定的光伏器件）"
-    },
-    authorsHtml: {
-      en: `Aili Wang#, Chunna Huang#, Kaihuai Du, Luozheng Zhang, Lvzhou Li, Xu Dong, Artem Musiienko, Meng Li, Antonio Abate, Xiangli Wen*, <span class="bold">Guixiang Li*</span>, Jianning Ding*`,
-      zh: `Aili Wang#, Chunna Huang#, Kaihuai Du, Luozheng Zhang, Lvzhou Li, Xu Dong, Artem Musiienko, Meng Li, Antonio Abate, Xiangli Wen*, <span class="bold">Guixiang Li*(李桂香*)</span>, Jianning Ding*`
-    },
-    venue: { en: "Coordination Chemistry Reviews (2026)", zh: "Coordination Chemistry Reviews（2026）" },
-    doi: "10.1016/j.ccr.2025.217177",
     selected: false
   },
   {
