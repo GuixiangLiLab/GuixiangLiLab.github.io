@@ -1,11 +1,9 @@
 * {
   box-sizing: border-box;
 }
-
 .test {
   border: 2px solid red;
 }
-
 .navbar-button {
   display: flex;
   justify-content: space-evenly;
@@ -13,10 +11,17 @@
   width: 100%;
 }
 
-/* 研究方向（research.html）-------------------------- */
-.research-card {
+/* 核心：卡片行容器 - 实现3个卡片横向并排 */
+.card-row {
+  display: flex;
+  gap: 1.5rem;
   max-width: 80%;
-  margin: 2rem auto;
+  margin: 0 auto 2rem;
+  flex-wrap: nowrap;
+}
+
+/* 研究卡片基础样式 */
+.research-card {
   background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 50%, #f0f8f0 100%);
   border-radius: 16px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
@@ -27,11 +32,20 @@
   position: relative;
 }
 
-/* 短卡片样式（高度为原卡片一半） */
+/* 短卡片（大类介绍）样式 - 原有样式完全保留 */
 .research-card.short-card {
-  max-width: 80%; /* 和原卡片保持一致宽度 */
+  max-width: 80%;
+  margin: 2rem auto;
+  width: 100%;
 }
 
+/* 横向小卡片：三等分等宽 */
+.research-card:not(.short-card) {
+  flex: 1;
+  width: 0;
+}
+
+/* 入场动画 */
 @keyframes slideInUp {
   to {
     opacity: 1;
@@ -39,18 +53,23 @@
   }
 }
 
-/* 原卡片内容区高度 */
-.card-content {
+/* 短卡片内容区 - 原有样式保留 */
+.card-content.short-card-content {
   display: flex;
-  min-height: 400px;
+  min-height: 200px;
   position: relative;
 }
 
-/* 短卡片内容区高度（减半为200px） */
-.card-content.short-card-content {
-  min-height: 200px; 
+/* 横向小卡片内容区：垂直布局 */
+.card-content.grid-card-content {
+  display: flex;
+  flex-direction: column;
+  min-height: 500px;
+  position: relative;
+  height: 100%;
 }
 
+/* 原有左侧图片区（仅短卡片生效） */
 .left-section {
   flex: 1;
   padding: 2rem;
@@ -59,7 +78,6 @@
   justify-content: flex-start;
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(240, 248, 240, 0.3) 100%);
 }
-
 .title-image-group {
   display: flex;
   flex-direction: column;
@@ -68,7 +86,6 @@
   margin-bottom: 1rem;
   height: 100%;
 }
-
 .research-title {
   font-size: 1.8rem;
   font-weight: bold;
@@ -78,6 +95,7 @@
   font-family: 'Microsoft YaHei', sans-serif;
 }
 
+/* 原有图片容器（仅短卡片生效） */
 .image-container {
   width: 100%;
   max-width: 500px;
@@ -88,6 +106,18 @@
   position: relative;
 }
 
+/* 横向小卡片图片容器：标题下方、正文上方 */
+.grid-image-container {
+  width: 100%;
+  aspect-ratio: 4/3;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  position: relative;
+  margin: 1rem 0;
+}
+
+/* 图片通用样式 */
 .research-image {
   width: 100%;
   height: 100%;
@@ -95,24 +125,24 @@
   object-position: center;
   transition: transform 0.3s ease;
 }
-
-.image-container:hover .research-image {
+.image-container:hover .research-image,
+.grid-image-container:hover .research-image {
   transform: scale(1.05);
 }
 
+/* 短卡片右侧内容区 - 原有样式保留 */
 .right-section {
   flex: 1;
   position: relative;
   overflow: hidden;
   border-left: 1px solid rgba(34, 197, 94, 0.2);
 }
-
-/* 短卡片右侧内容区占满宽度（无左侧图片） */
 .right-section.short-card-right {
-  flex: 1 1 100%; 
-  border-left: none; /* 去掉左侧边框 */
+  flex: 1 1 100%;
+  border-left: none;
 }
 
+/* 短卡片内容区 - 原有样式保留 */
 .content-area {
   padding: 2rem;
   height: 100%;
@@ -128,13 +158,27 @@
   box-shadow: inset 0 0 20px rgba(34, 197, 94, 0.1);
   transition: all 0.4s ease;
 }
-
-/* 短卡片内容区圆角适配（无左侧图片，全圆角） */
 .short-card-right .content-area {
-  border-radius: 16px; /* 替换原右半圆角为全圆角 */
-  border-left: 2px solid rgba(34, 197, 94, 0.3); /* 恢复左侧边框 */
+  border-radius: 16px;
+  border-left: 2px solid rgba(34, 197, 94, 0.3);
 }
 
+/* 横向小卡片内容区容器 */
+.grid-card-content-area {
+  padding: 2rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+  background: transparent;
+  border: 2px solid rgba(34, 197, 94, 0.3);
+  border-radius: 16px;
+  box-shadow: inset 0 0 20px rgba(34, 197, 94, 0.1);
+  transition: all 0.4s ease;
+}
+
+/* hover遮罩层通用样式 */
 .slide-overlay {
   position: absolute;
   top: 0;
@@ -145,52 +189,53 @@
   transition: left 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 1;
 }
-
-.right-section:hover .slide-overlay {
+.right-section:hover .slide-overlay,
+.research-card:not(.short-card):hover .slide-overlay {
   left: 0;
 }
-
-.right-section:hover .content-area {
+.right-section:hover .content-area,
+.research-card:not(.short-card):hover .grid-card-content-area {
   border-color: transparent;
   box-shadow: none;
 }
 
+/* 编号通用样式 */
 .section-number {
-  font-size: 3rem;
+  font-size: 1.8rem;
   font-weight: bold;
   color: #22c55e;
-  margin: 0 0 1rem 0;
+  margin: 0 0 0.5rem 0;
   transition: color 0.4s ease;
   position: relative;
   z-index: 3;
 }
-
-/* 适配短卡片数字大小（可选，保持一致也可以） */
 .short-card .section-number {
-  font-size: 2.5rem; 
+  font-size: 2.5rem;
 }
-
-.right-section:hover .section-number {
+.right-section:hover .section-number,
+.research-card:not(.short-card):hover .section-number {
   color: white;
 }
 
+/* 标题通用样式 */
 .content-title {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   color: #1f2937;
-  margin: 0 0 1rem 0;
+  margin: 0 0 0.5rem 0;
   line-height: 1.4;
   transition: color 0.4s ease;
   position: relative;
   z-index: 3;
 }
-
-.right-section:hover .content-title {
+.right-section:hover .content-title,
+.research-card:not(.short-card):hover .content-title {
   color: white;
 }
 
+/* 短卡片正文样式 - 原有保留 */
 .content-text {
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   line-height: 1.6;
   color: #4b5563;
   margin: 0;
@@ -200,40 +245,74 @@
   z-index: 3;
   min-height: fit-content;
 }
-
 .right-section:hover .content-text {
   color: rgba(255, 255, 255, 0.95);
 }
 
-/* 响应式适配（补充短卡片） */
+/* 横向小卡片正文多行样式 */
+.content-text-wrapper {
+  margin-top: auto;
+  position: relative;
+  z-index: 3;
+}
+.content-text-line {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #4b5563;
+  margin: 0 0 0.5rem 0;
+  text-align: left;
+  transition: color 0.4s ease;
+}
+.content-text-line:last-child {
+  margin-bottom: 0;
+}
+.research-card:not(.short-card):hover .content-text-line {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+/* 响应式适配 */
+@media (max-width: 1200px) {
+  .card-row {
+    flex-wrap: wrap;
+  }
+  .research-card:not(.short-card) {
+    flex: 1 1 calc(50% - 0.75rem);
+    width: auto;
+  }
+}
+
 @media (max-width: 768px) {
-  .card-content {
+  .card-row {
     flex-direction: column;
+    max-width: 90%;
+  }
+  .research-card.short-card {
+    max-width: 90%;
+  }
+  .research-card:not(.short-card) {
+    width: 100%;
+    flex: none;
+  }
+  .card-content.grid-card-content {
+    min-height: auto;
   }
 
-  /* 短卡片响应式高度 */
+  /* 短卡片移动端原有样式保留 */
   .card-content.short-card-content {
     min-height: 180px;
   }
-
   .right-section {
     border-left: none;
     border-top: 1px solid rgba(34, 197, 94, 0.2);
   }
-
-  /* 短卡片移动端边框适配 */
   .right-section.short-card-right {
     border-top: none;
   }
-
   .content-area {
     border-radius: 0 0 16px 16px;
     border-left: 2px solid rgba(34, 197, 94, 0.3);
   }
-
-  /* 短卡片移动端全圆角 */
   .short-card-right .content-area {
     border-radius: 16px;
   }
 }
-

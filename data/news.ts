@@ -95,7 +95,7 @@ export const news: NewsItem[] = [
       zh: "学术动态 | Nature Energy：课题组合作报道钙钛矿器件光循环稳定性研究",
       en: "Academic News | Nature Energy: Cooperative study on photocycling stability of perovskite devices"
     },
-    date: "2026-02-26" 
+    date: "2026.02.26" 
   },
   {
     id: "2026-03-19-wsq-csr",
@@ -105,7 +105,21 @@ export const news: NewsItem[] = [
       zh: "学术动态 | 课题组王少强在《科学通报》期刊发表综述论文",
       en: "Academic News | Wang Shaoqiang from the research group published a review article in the journal Chinese Science Bulletin."
     },
-    date: "2026-03-19" 
+    date: "2026.03.19" 
+  },
+  {
+    id: "2026-04-15-achievement",
+    slug: "2026-04-15-achievement",
+    cover: "/img/News/20260415_achievement/cover_20260415_achievement.png",
+    title: {
+      en: "News | perovskite photovoltaic technology of the research group was selected into the list of the first batch of Jiangsu Scientific and technological achievements",
+      zh: "新闻资讯 | 课题组钙钛矿光伏技术入选首批江苏科技成果清单"
+    },
+    date: "2026.04.15"
+    // summary: {
+    //   en: "Short English summary...",
+    //   zh: "中文简要摘要……"
+    // }
   }
   // 未来新增新闻只需在此处 push 新对象即可
 ].sort(sortByDateDesc);

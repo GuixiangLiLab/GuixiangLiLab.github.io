@@ -151,10 +151,10 @@ export default function HomePage() {
               </div>
             </div>
 
-            <div className="rm-grid">
+            <div className="rm-grid rm-grid--2col">
               <a className="rm-card" href={L("/research")}>
                 <div className="rm-image">
-                  <img src="/img/research/research_directions1.png" alt={t("page.home.research.card1.alt")} />
+                  <img src="/img/research/research_directions1.png" alt={t("page.research.energy_opt_card.title")} />
                 </div>
                 <div className="rm-text">
                   <h3>{t("page.home.research.card1.title")}</h3>
@@ -163,48 +163,13 @@ export default function HomePage() {
 
               <a className="rm-card" href={L("/research")}>
                 <div className="rm-image">
-                  <img src="/img/research/research_directions2.png" alt={t("page.home.research.card2.alt")} />
+                  <img src="/img/research/research_directions2.png" alt={t("page.research.func_semi_card.title")} />
                 </div>
                 <div className="rm-text">
                   <h3>{t("page.home.research.card2.title")}</h3>
                 </div>
               </a>
 
-              <a className="rm-card" href={L("/research")}>
-                <div className="rm-image">
-                  <img src="/img/research/research_directions3.png" alt={t("page.home.research.card3.alt")} />
-                </div>
-                <div className="rm-text">
-                  <h3>{t("page.home.research.card3.title")}</h3>
-                </div>
-              </a>
-
-              <a className="rm-card" href={L("/research")}>
-                <div className="rm-image">
-                  <img src="/img/research/research_directions4.png" alt={t("page.home.research.card4.alt")} />
-                </div>
-                <div className="rm-text">
-                  <h3>{t("page.home.research.card4.title")}</h3>
-                </div>
-              </a>
-
-              <a className="rm-card" href={L("/research")}>
-                <div className="rm-image">
-                  <img src="/img/research/research_directions5.png" alt={t("page.home.research.card5.alt")} />
-                </div>
-                <div className="rm-text">
-                  <h3>{t("page.home.research.card5.title")}</h3>
-                </div>
-              </a>
-
-              <a className="rm-card" href={L("/research")}>
-                <div className="rm-image">
-                  <img src="/img/research/research_directions6.png" alt={t("page.home.research.card6.alt")} />
-                </div>
-                <div className="rm-text">
-                  <h3>{t("page.home.research.card6.title")}</h3>
-                </div>
-              </a>
             </div>
           </div>
         </div>

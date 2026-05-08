@@ -107,32 +107,33 @@
   "page.research.intro_card.text": "课题组聚焦新型半导体功能材料与光电器件，围绕光电能量转换与信息功能中的关键科学问题，开展从材料设计、器件物理到系统集成与智能优化的系统性研究。",
   "page.research.intro_card.alt": "总体研究方向",
 
-  "page.research.energy_opt_card.title": "能源光电材料与器件（Energy Optoelectronics）",
+  "page.research.energy_opt_card.title": "Ⅰ 能源光电材料与器件（Energy Optoelectronics）",
   "page.research.energy_opt_card.text": "聚焦能源光电转换核心科学问题，从材料设计、器件制备到物理机制开展全链条研究，重点突破钙钛矿光伏、叠层电池等关键技术瓶颈。",
   "page.research.energy_opt_card.alt": "能源光电材料与器件",
 
   "page.research.cards.1.alt": "钙钛矿太阳能电池",
-  "page.research.cards.1.title": "功能材料设计与可控制备",
-  "page.research.cards.1.text": "半导体功能材料的分子/晶体结构设计；钙钛矿及相关材料的可控制备与多尺度调控；材料结构-性能关系及优化策略。",
+  "page.research.cards.1.title": "01 功能材料设计与可控制备",
+  "page.research.cards.1.text": "半导体功能材料的分子/晶体结构设计;钙钛矿及相关材料的可控制备与多尺度调控;材料结构-性能关系及优化策略。",
   "page.research.cards.2.alt": "钙钛矿光伏",
-  "page.research.cards.2.title": "高效光伏材料与器件",
-  "page.research.cards.2.text": "钙钛矿光伏技术与叠层太阳电池；大面积器件与光伏模组制备；光伏材料的环境可持续性与绿色制备。",
+  "page.research.cards.2.title": "02 高效光伏材料与器件",
+  "page.research.cards.2.text": "钙钛矿光伏技术与叠层太阳电池;大面积器件与光伏模组制备;光伏材料的环境可持续性与绿色制备。",
   "page.research.cards.3.alt": "新型光电材料",
-  "page.research.cards.3.title": "光电过程与器件物理",
-  "page.research.cards.3.text": "光电转换中的反应动力学与结晶调控；载流子输运行为与界面/缺陷物理；光电过程调控与器件性能提升机制。",
+  "page.research.cards.3.title": "03 光电过程与器件物理",
+  "page.research.cards.3.text": "光电转换中的反应动力学与结晶调控;载流子输运行为与界面/缺陷物理;光电过程调控与器件性能提升机制。",
 
-  "page.research.func_semi_card.title": "功能半导体与智能器件（Functional & Intelligent Semiconductors）",
+  "page.research.func_semi_card.title": "Ⅱ 功能半导体与智能器件（Functional & Intelligent Semiconductors）",
   "page.research.func_semi_card.text": "围绕器件稳定性、信息功能、智能设计开展研究，实现能源-信息融合的新型器件体系突破。",
   "page.research.func_semi_card.alt": "功能半导体与智能器件",
+  
   "page.research.cards.4.alt": "器件稳定性",
-  "page.research.cards.4.title": "器件稳定性与系统集成",
-  "page.research.cards.4.text": "能源器件失效机制与长期稳定性；器件封装与环境适应性；光伏-储能系统与集成应用。",
+  "page.research.cards.4.title": "04 器件稳定性与系统集成",
+  "page.research.cards.4.text": "能源器件失效机制与长期稳定性;器件封装与环境适应性;光伏-储能系统与集成应用。",
   "page.research.cards.5.alt": "信息功能器件",
-  "page.research.cards.5.title": "新兴信息功能器件",
-  "page.research.cards.5.text": "信息存储与加密（防伪）；杂化半导体晶体管与多功能光电器件；能源-信息融合的新型器件体系。",
+  "page.research.cards.5.title": "05 新兴信息功能器件",
+  "page.research.cards.5.text": "信息存储与加密（防伪）;杂化半导体晶体管与多功能光电器件;能源-信息融合的新型器件体系。",
   "page.research.cards.6.alt": "数据驱动设计",
-  "page.research.cards.6.title": "数据驱动材料与器件设计",
-  "page.research.cards.6.text": "人工智能辅助材料设计与筛选；数据驱动器件结构优化与性能预测；智能光电器件与系统。",
+  "page.research.cards.6.title": "06 数据驱动材料与器件设计",
+  "page.research.cards.6.text": "人工智能辅助材料设计与筛选;数据驱动器件结构优化与性能预测;智能光电器件与系统。",
   
 
   "page.publications.title": "论文成果",
@@ -363,5 +364,13 @@
   "page.news.20260319-wsq-csr.p23": "论文标题：人工智能助力杂化半导体光伏结构设计与稳定性提升",
   "page.news.20260319-wsq-csr.p24": "发表期刊：《科学通报》",
   "page.news.20260319-wsq-csr.p25": "通讯作者：李桂香教授（东南大学）、邸世民教授（东南大学）、曹青博士（美国圣母大学）",
-  "page.news.20260319-wsq-csr.doiDesc": "论文链接："
+  "page.news.20260319-wsq-csr.doiDesc": "论文链接：",
+
+  "page.news.20260415-achievement.title": "新闻资讯 | 课题组钙钛矿光伏技术入选首批江苏科技成果清单",
+  "page.news.20260415-achievement.coverAlt": "theme",
+  "page.news.20260415-achievement.coverAlt_1": "Fig.1",
+  "page.news.20260415-achievement.coverAlt_2": "Fig.2",
+  "page.news.20260415-achievement.p1": "近日，江苏省团省委、省青联在全省摸排青年科学家、青年企业家在手成果后，面向全国发布首批6大产业领域50项江苏U35青年科技成果！其中，课题组新型钙钛矿光伏技术成果入选首批U35江苏青年科技成果清单。",
+  "page.news.20260415-achievement.p2": "首批U35江苏青年科技成果",
+  "page.news.20260415-achievement.p3": "新型钙钛矿光伏技术"
 }

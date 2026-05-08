@@ -170,6 +170,17 @@
   color: red;
 }
 
+/* 新增：给父容器（段落的直接父元素）加文本居中 */
+.fsog-news .col-md-6.wow.fadeIn[data-wow-delay] {
+  text-align: center; /* 让内部 inline-block 元素自动居中 */
+}
+
+/* 同时确保正文段落恢复左对齐（避免父容器居中影响其他文本） */
+.fsog-news .news-paragraph {
+  text-align: left;
+}
+
+
 /* 高亮段落 */
 .fsog-news .news-paragraph--highlight-front {
   background-color: #f8f9fa;
