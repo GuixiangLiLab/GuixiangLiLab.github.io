@@ -154,19 +154,19 @@ export default function HomePage() {
             <div className="rm-grid rm-grid--2col">
               <a className="rm-card" href={L("/research")}>
                 <div className="rm-image">
-                  <img src="/img/research/research_directions1.png" alt={t("page.research.energy_opt_card.title")} />
+                  <img src="/img/research/research_directions1.png" alt={t("page.research.energy_opt_card.alt")} />
                 </div>
                 <div className="rm-text">
-                  <h3>{t("page.home.research.card1.title")}</h3>
+                  <h3>{t("page.research.energy_opt_card.title")}</h3>
                 </div>
               </a>
 
               <a className="rm-card" href={L("/research")}>
                 <div className="rm-image">
-                  <img src="/img/research/research_directions2.png" alt={t("page.research.func_semi_card.title")} />
+                  <img src="/img/research/research_directions4.jpg" alt={t("page.research.func_semi_card.alt")} />
                 </div>
                 <div className="rm-text">
-                  <h3>{t("page.home.research.card2.title")}</h3>
+                  <h3>{t("page.research.func_semi_card.title")}</h3>
                 </div>
               </a>
 
