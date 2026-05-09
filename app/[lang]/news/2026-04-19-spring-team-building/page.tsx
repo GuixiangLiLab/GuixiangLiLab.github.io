@@ -40,6 +40,7 @@ export default function SpringTeamBuilding20260419Page() {
               <img
                 src="/img/News/20260419_spring_team_building/bbq.JPG"
                 alt={t("page.news.20260419-spring-team-building.coverAlt")}
+                loading="eager"
               />
 
               <p className="news-paragraph news-paragraph--indent">
@@ -58,6 +59,7 @@ export default function SpringTeamBuilding20260419Page() {
               <img
                 src="/img/News/20260419_spring_team_building/camping.JPG"
                 alt={t("page.news.20260419-spring-team-building.coverAlt1")}
+                loading="eager"
               />
 
               <p className="news-paragraph news-paragraph--indent">
@@ -68,6 +70,7 @@ export default function SpringTeamBuilding20260419Page() {
               <img
                 src="/img/News/20260419_spring_team_building/sunset.JPG"
                 alt={t("page.news.20260419-spring-team-building.coverAlt2")}
+                loading="eager"
               />
 
               <p className="news-paragraph news-paragraph--indent">
@@ -78,6 +81,7 @@ export default function SpringTeamBuilding20260419Page() {
               <img
                 src="/img/News/20260419_spring_team_building/bridge.JPG"
                 alt={t("page.news.20260419-spring-team-building.coverAlt3")}
+                loading="eager"
               />
 
               <p className="news-paragraph news-paragraph--indent-with-line">
