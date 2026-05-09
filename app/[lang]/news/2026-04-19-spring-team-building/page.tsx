@@ -38,7 +38,7 @@ export default function SpringTeamBuilding20260419Page() {
 
               {/* 烧烤特写图片 */}
               <img
-                src="/img/News/20260419_spring_team_building/bbq.jpg"
+                src="/img/News/20260419_spring_team_building/bbq.JPG"
                 alt={t("page.news.20260419-spring-team-building.coverAlt")}
               />
 
@@ -56,7 +56,7 @@ export default function SpringTeamBuilding20260419Page() {
 
               {/* 露营聊天/狼人杀图片 */}
               <img
-                src="/img/News/20260419_spring_team_building/camping.jpg"
+                src="/img/News/20260419_spring_team_building/camping.JPG"
                 alt={t("page.news.20260419-spring-team-building.coverAlt1")}
               />
 
@@ -66,7 +66,7 @@ export default function SpringTeamBuilding20260419Page() {
 
               {/* 江边落日合影图片 */}
               <img
-                src="/img/News/20260419_spring_team_building/sunset.jpg"
+                src="/img/News/20260419_spring_team_building/sunset.JPG"
                 alt={t("page.news.20260419-spring-team-building.coverAlt2")}
               />
 
@@ -76,7 +76,7 @@ export default function SpringTeamBuilding20260419Page() {
 
               {/* 大桥边合影图片 */}
               <img
-                src="/img/News/20260419_spring_team_building/bridge.jpg"
+                src="/img/News/20260419_spring_team_building/bridge.JPG"
                 alt={t("page.news.20260419-spring-team-building.coverAlt3")}
               />
 
