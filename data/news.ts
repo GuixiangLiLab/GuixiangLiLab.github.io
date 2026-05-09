@@ -124,7 +124,7 @@ export const news: NewsItem[] = [
   {
     id: "2026-04-19-spring-team-building",
     slug: "2026-04-19-spring-team-building",
-    cover: "/img/News/20260419_spring_team_building/cover_20260419_spring_team_building.JPG",
+    cover: "/img/News/20260419_spring_team_building/cover_20260419_spring_team_building.jpg",
     title: {
       en: "Breeze by the River, Youth Walking Together - Research Group's Spring Team Building at Nanjing Yuzui Wetland Park Concludes Successfully",
       zh: "春启新程，研聚同心 | 课题组 2026 年春季团建活动圆满落幕"
