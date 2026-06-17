@@ -113,13 +113,13 @@
 
   "page.research.cards.1.alt": "钙钛矿太阳能电池",
   "page.research.cards.1.title": "01 功能材料设计与可控制备",
-  "page.research.cards.1.text": "半导体功能材料的分子/晶体结构设计;钙钛矿及相关材料的可控制备与多尺度调控;材料结构-性能关系及优化策略。",
+  "page.research.cards.1.text": "·半导体功能材料的分子/晶体结构设计;·钙钛矿及相关材料的可控制备与多尺度调控;·材料结构-性能关系及优化策略。",
   "page.research.cards.2.alt": "钙钛矿光伏",
   "page.research.cards.2.title": "02 高效光伏材料与器件",
-  "page.research.cards.2.text": "钙钛矿光伏技术与叠层太阳电池;大面积器件与光伏模组制备;光伏材料的环境可持续性与绿色制备。",
+  "page.research.cards.2.text": "·钙钛矿光伏技术与叠层太阳电池;·大面积器件与光伏模组制备;·光伏材料的环境可持续性与绿色制备。",
   "page.research.cards.3.alt": "新型光电材料",
   "page.research.cards.3.title": "03 光电过程与器件物理",
-  "page.research.cards.3.text": "光电转换中的反应动力学与结晶调控;载流子输运行为与界面/缺陷物理;光电过程调控与器件性能提升机制。",
+  "page.research.cards.3.text": "·光电转换中的反应动力学与结晶调控;·载流子输运行为与界面/缺陷物理;·光电过程调控与器件性能提升机制。",
 
   "page.research.func_semi_card.title": "Ⅱ 功能半导体与智能器件（Functional & Intelligent Semiconductors）",
   "page.research.func_semi_card.text": "围绕器件稳定性、信息功能、智能设计开展研究，实现能源-信息融合的新型器件体系突破。",
@@ -127,13 +127,13 @@
   
   "page.research.cards.4.alt": "器件稳定性",
   "page.research.cards.4.title": "04 器件稳定性与系统集成",
-  "page.research.cards.4.text": "能源器件失效机制与长期稳定性;器件封装与环境适应性;光伏-储能系统与集成应用。",
+  "page.research.cards.4.text": "·能源器件失效机制与长期稳定性;·器件封装与环境适应性;·光伏-储能系统与集成应用。",
   "page.research.cards.5.alt": "信息功能器件",
   "page.research.cards.5.title": "05 新兴信息功能器件",
-  "page.research.cards.5.text": "信息存储与加密（防伪）;杂化半导体晶体管与多功能光电器件;能源-信息融合的新型器件体系。",
+  "page.research.cards.5.text": "·信息存储与加密（防伪）;·杂化半导体晶体管与多功能光电器件;·能源-信息融合的新型器件体系。",
   "page.research.cards.6.alt": "数据驱动设计",
   "page.research.cards.6.title": "06 数据驱动材料与器件设计",
-  "page.research.cards.6.text": "人工智能辅助材料设计与筛选;数据驱动器件结构优化与性能预测;智能光电器件与系统。",
+  "page.research.cards.6.text": "·人工智能辅助材料设计与筛选;·数据驱动器件结构优化与性能预测;·智能光电器件与系统。",
   
 
   "page.publications.title": "论文成果",

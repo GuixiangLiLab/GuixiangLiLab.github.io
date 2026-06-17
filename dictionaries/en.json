@@ -111,13 +111,13 @@
 
   "page.research.cards.1.alt": "Perovskite Solar Cells",
   "page.research.cards.1.title": "01 Functional Material Design and Controllable Preparation",
-  "page.research.cards.1.text": "Molecular/crystal structure design of semiconductor functional materials; Controllable preparation and multi-scale regulation of perovskite and related materials; Structure-property relationships and optimization strategies of materials.",
+  "page.research.cards.1.text": "·Molecular/crystal structure design of semiconductor functional materials; ·preparation and multi-scale regulation of perovskite and related materials; ·Structure-property relationships and optimization strategies of materials.",
   "page.research.cards.2.alt": "Perovskite Photovoltaics",
   "page.research.cards.2.title": "02 High-Efficiency Photovoltaic Materials and Devices",
-  "page.research.cards.2.text": "Perovskite photovoltaic technology and tandem solar cells; Fabrication of large-area devices and photovoltaic modules; Environmental sustainability and green preparation of photovoltaic materials.",
+  "page.research.cards.2.text": "·Perovskite photovoltaic technology and tandem solar cells; ·Fabrication of large-area devices and photovoltaic modules; ·Environmental sustainability and green preparation of photovoltaic materials.",
   "page.research.cards.3.alt": "Novel Optoelectronic Materials",
   "page.research.cards.3.title": "03 Optoelectronic Processes and Device Physics",
-  "page.research.cards.3.text": "Reaction kinetics and crystallization regulation in optoelectronic conversion; Carrier transport behavior and interface/defect physics; Regulation of optoelectronic processes and mechanisms for device performance enhancement.",
+  "page.research.cards.3.text": "·Reaction kinetics and crystallization regulation in optoelectronic conversion; ·Carrier transport behavior and interface/defect physics; ·Regulation of optoelectronic processes and mechanisms for device performance enhancement.",
 
   "page.research.func_semi_card.title": "Ⅱ Functional & Intelligent Semiconductors (Functional & Intelligent Semiconductors)",
   "page.research.func_semi_card.text": "We conduct research on device stability, information functions, and intelligent design to achieve breakthroughs in novel device systems integrating energy and information.",
@@ -125,13 +125,13 @@
 
   "page.research.cards.4.alt": "Device Stability",
   "page.research.cards.4.title": "04 Device Stability and System Integration",
-  "page.research.cards.4.text": "Failure mechanisms and long-term stability of energy devices; Device packaging and environmental adaptability; Photovoltaic-energy storage systems and integrated applications.",
+  "page.research.cards.4.text": "·Failure mechanisms and long-term stability of energy devices; ·Device packaging and environmental adaptability; ·Photovoltaic-energy storage systems and integrated applications.",
   "page.research.cards.5.alt": "Information Functional Devices",
   "page.research.cards.5.title": "05 Emerging Information Functional Devices",
-  "page.research.cards.5.text": "Information storage and encryption (anti-counterfeiting); Hybrid semiconductor transistors and multifunctional optoelectronic devices; Novel device systems integrating energy and information.",
+  "page.research.cards.5.text": "·Information storage and encryption (anti-counterfeiting); ·Hybrid semiconductor transistors and multifunctional optoelectronic devices; ·Novel device systems integrating energy and information.",
   "page.research.cards.6.alt": "Data-Driven Design",
   "page.research.cards.6.title": "06 Data-Driven Material and Device Design",
-  "page.research.cards.6.text": "Artificial intelligence-assisted material design and screening; Data-driven optimization of device structures and performance prediction; Intelligent optoelectronic devices and systems.",
+  "page.research.cards.6.text": "·Artificial intelligence-assisted material design and screening; ·Data-driven optimization of device structures and performance prediction; ·Intelligent optoelectronic devices and systems.",
 
   
   "page.publications.title": "Publications",

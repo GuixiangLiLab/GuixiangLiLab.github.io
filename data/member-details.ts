@@ -50,7 +50,7 @@ export const memberDetails: Record<string, MemberDetail> = {
     portrait: "/img/Members/fangdong1.png",
     alt: { en: "Dong Fang", zh: "方栋" },
     name: { en: "Dong Fang", zh: "方栋" },
-    statusBadge: { en: "Postdoc", zh: "博士后" },
+    statusBadge: { en: "Postdoc, Research Associate", zh: "博士后,助理研究员" },
     affiliation: {
       en: "Guixiang Li Laboratory · Southeast University",
       zh: "功能光电实验室 · 东南大学"
