@@ -1,0 +1,7 @@
+@import "../2026-04-19-spring-team-building/news-detail.css";
+
+/* Keep portrait photographs comfortably sized on wide screens. */
+.fsog-news img[src$="Group_Photo_2.jpg"],
+.fsog-news img[src$="Cake.jpg"] {
+  width: min(80%, 680px);
+}

@@ -21,6 +21,16 @@ function sortByDateDesc(a: NewsItem, b: NewsItem) {
 }
 
 export const news: NewsItem[] = [
+  {
+    id: "2026-07-11-undergraduate-graduation",
+    slug: "2026-07-11-undergraduate-graduation",
+    cover: "/img/News/20260711_undergraduate_graduation/Group_Photo_1.jpg",
+    title: {
+      en: "A New Journey Begins | Congratulations to Our Undergraduate Students on Their Graduation",
+      zh: "青春不散场，扬帆再启航｜祝贺课题组本科生顺利毕业"
+    },
+    date: "2026.07.11"
+  },
 {
     id: "2025-09-19-member-report-in",
     slug: "2025-09-19-member-report-in",

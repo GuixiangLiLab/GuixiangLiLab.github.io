@@ -538,8 +538,8 @@ export const memberDetails: Record<string, MemberDetail> = {
     background: {
       title: { en: "Background", zh: "教育经历" },
       text: {
-        en: "<strong>B.Eng.</strong> School of Materials Science and Engineering, Southeast University(SEU), September 2025 to date",
-        zh: "<strong>本科</strong> 东南大学材料科学与工程学院，2022 年 9 月-至今"
+        en: "<strong>B.Eng.</strong> School of Materials Science and Engineering, Southeast University(SEU), September 2022 to July 2026",
+        zh: "<strong>本科</strong> 东南大学材料科学与工程学院，2022 年 9 月-2026 年 7 月"
       }
     },
     hobbies: {
@@ -591,8 +591,8 @@ export const memberDetails: Record<string, MemberDetail> = {
     background: {
       title: { en: "Background", zh: "教育经历" },
       text: {
-        en: "<strong>B.Eng.</strong> School of Materials Science and Engineering, Southeast University(SEU), September 2025 to date",
-        zh: "<strong>本科</strong> 东南大学材料科学与工程学院，2022 年 9 月-至今"
+        en: "<strong>B.Eng.</strong> School of Materials Science and Engineering, Southeast University(SEU), September 2022 to July 2026",
+        zh: "<strong>本科</strong> 东南大学材料科学与工程学院，2022 年 9 月-2026 年 7 月"
       }
     },
     hobbies: {
