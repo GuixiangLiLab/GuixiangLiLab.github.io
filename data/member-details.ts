@@ -100,7 +100,7 @@ export const memberDetails: Record<string, MemberDetail> = {
     portrait: "/img/Members/zhangxiaochun.jpg",
     alt: { en: "Xiaochun Zhang", zh: "张晓春" },
     name: { en: "Xiaochun Zhang", zh: "张晓春" },
-    statusBadge: { en: "Research Assistant", zh: "科研助理" },
+    statusBadge: { en: "PhD · Year 1", zh: "博士一年级" },
     affiliation: {
       en: "Guixiang Li Laboratory · Southeast University",
       zh: "功能光电实验室 · 东南大学"
@@ -514,6 +514,50 @@ export const memberDetails: Record<string, MemberDetail> = {
       text: {
         en: "Stability of perovskite solar devices.",
         zh: "钙钛矿太阳能器件的稳定性。"
+      }
+    }
+  },
+
+  liuhaomin: {
+    slug: "liuzhaomin",
+    portrait: "/img/Members/liuzhaomin.jpg",
+    alt: { en: "Haomin Liu", zh: "刘昊旻" },
+    name: { en: "Haomin Liu", zh: "刘昊旻" },
+    statusBadge: { en: "PhD · Year 1", zh: "博士一年级" },
+    affiliation: {
+      en: "Guixiang Li Laboratory · Southeast University",
+      zh: "功能光电实验室 · 东南大学"
+    },
+    background: {
+      title: { en: "Background", zh: "教育经历" },
+      text: {
+        en:
+          "<strong>M.Eng.</strong> Materials and Chemical Engineering, Changzhou University. Master research focused on the synthesis and performance investigation of active layer materials for organic solar cells.",
+        zh:
+          "常州大学 · 材料与化工 · 工程硕士。硕士研究方向为有机太阳能电池活性层材料的合成与性能研究。"
+      }
+    },
+    hobbies: {
+      en: ["Games", "Cartoon", "Gourmet food"],
+      zh: ["游戏", "动漫", "美食"]
+    },
+    statement: {
+      title: { en: "Personal Statement", zh: "个人陈述" },
+      text: {
+        en:
+          "He is an 8 out of 10.",
+        zh: "此人100分可以打80分。"
+      }
+    },
+    motto: {
+      en: "“Eat, drink, and be merry.”",
+      zh: "“人生在世，吃喝二字。”"
+    },
+    research: {
+      title: { en: "Research Direction", zh: "研究方向" },
+      text: {
+        en: "Synthesis of organic optoelectronic materials.",
+        zh: "有机光电材料合成。"
       }
     }
   },

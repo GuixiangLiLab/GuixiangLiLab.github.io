@@ -64,7 +64,7 @@ export const members: Member[] = [
     slug: "wangshaoqiang",
     img: "/img/Members/wangshaoqiang.jpg",
     name: { en: "Shaoqiang Wang", zh: "王少强" },
-    order: 3
+    order: 4
   },
   {
     id: "xu-zhang",
@@ -72,7 +72,7 @@ export const members: Member[] = [
     slug: "zhangxu",
     img: "/img/Members/zhangxu.jpg",
     name: { en: "Xu Zhang", zh: "张旭" },
-    order: 5
+    order: 7
   },
   {
     id: "xuebing-wen",
@@ -80,18 +80,27 @@ export const members: Member[] = [
     slug: "wenxuebing",
     img: "/img/Members/wenxuebing.jpg",
     name: { en: "Xuebing Wen", zh: "温雪冰" },
-    order: 4
+    order: 5
   },
-
-  // 科研助理
   {
     id: "xiaochun-zhang",
-    group: "ra",
+    group: "phd",
     slug: "zhangxiaochun",
     img: "/img/Members/zhangxiaochun.jpg",
     name: { en: "Xiaochun Zhang", zh: "张晓春" },
-    order: 2
+    order: 6
   },
+  {
+    id: "haomin-liu",
+    group: "phd",
+    slug: "liuhaomin",
+    img: "/img/Members/liuhaomin.png",
+    name: { en: "Haomin Liu", zh: "刘昊旻" },
+    order: 3
+  },
+
+  // 科研助理
+  
 
   // 硕士
   {
@@ -122,16 +131,17 @@ export const members: Member[] = [
   // 本科生
 
   // 访问学者
+
+
+  // 已毕业
   {
     id: "jing-li",
-    group: "visitingscholar",
+    group: "alumni",
     slug: "lijing",
     img: "/img/Members/lijing.png",
     name: { en: "Jing Li", zh: "李净" },
     order: 1
   },
-
-  // 已毕业
   {
     id: "haixin-lou",
     group: "alumni",
