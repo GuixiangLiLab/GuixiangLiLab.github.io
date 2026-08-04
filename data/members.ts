@@ -100,7 +100,14 @@ export const members: Member[] = [
   },
 
   // 科研助理
-  
+  {
+    id: "xiaonan-jin",
+    group: "ra",
+    slug: "jinxiaonan",
+    img: "/img/Members/jinxiaonan.png",
+    name: { en: "Xiaonan Jin", zh: "金小楠" },
+    order: 1
+  },
 
   // 硕士
   {

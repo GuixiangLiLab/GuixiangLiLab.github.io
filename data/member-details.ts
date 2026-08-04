@@ -162,6 +162,58 @@ export const memberDetails: Record<string, MemberDetail> = {
     }
   },
 
+  jinxiaonan: {
+    slug: "jinxiaonan",
+    portrait: "/img/Members/jinxiaonan.png",
+    alt: { en: "Xiaonan Jin", zh: "金小楠" },
+    name: { en: "Xiaonan Jin", zh: "金小楠" },
+    statusBadge: { en: "Research Assistant", zh: "科研助理" },
+    affiliation: {
+      en: "Guixiang Li Laboratory · Southeast University",
+      zh: "功能光电实验室 · 东南大学"
+    },
+    sideNotes: {
+      heading: { en: "More about me", zh: "更多关于我" },
+      paras: [
+        {
+          en: "Born in September 2002, from Huaian, Jiangsu.",
+          zh: "2002 年 9 月生，江苏淮安人。"
+        },
+      ],
+    },
+    background: {
+      title: { en: "Background", zh: "教育经历" },
+      text: {
+        en: "<strong>M.Eng.</strong> Optical Engineering, Nanjing Tech University, June 2026",
+        zh: "南京工业大学 · 光学工程 · 工程硕士，2026 年 6 月"
+      }
+    },
+    hobbies: {
+      en: ["Listen to music"],
+      zh: ["听音乐"]
+    },
+    statement: {
+      title: { en: "Personal Statement", zh: "个人陈述" },
+      text: {
+        en:
+          "I am outgoing, optimistic, and positive.",
+        zh: "本人性格开朗乐观，积极向上。"
+      }
+    },
+    motto: {
+      en: "“The journey ahead may be long and arduous, but with perseverance, we will reach our destination.”",
+      zh: "“道阻且长，行则将至。”"
+    },
+    research: {
+      title: { en: "Research Direction", zh: "研究方向" },
+      text: {
+        en:
+          "Tin-lead perovskite solar cells.",
+        zh: "锡铅钙钛矿太阳能电池。"
+      }
+    }
+  },
+
   // ========================
   // Master
   // ========================
