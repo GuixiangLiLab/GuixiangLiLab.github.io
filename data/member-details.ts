@@ -90,6 +90,7 @@ export const memberDetails: Record<string, MemberDetail> = {
       }
     }
   },
+  
 
   // ========================
   // Research Assistant
@@ -171,15 +172,6 @@ export const memberDetails: Record<string, MemberDetail> = {
     affiliation: {
       en: "Guixiang Li Laboratory · Southeast University",
       zh: "功能光电实验室 · 东南大学"
-    },
-    sideNotes: {
-      heading: { en: "More about me", zh: "更多关于我" },
-      paras: [
-        {
-          en: "Born in September 2002, from Huaian, Jiangsu.",
-          zh: "2002 年 9 月生，江苏淮安人。"
-        },
-      ],
     },
     background: {
       title: { en: "Background", zh: "教育经历" },
@@ -614,6 +606,54 @@ export const memberDetails: Record<string, MemberDetail> = {
     }
   },
 
+  zhangyifan: {
+    slug: "zhangyifan",
+    portrait: "/img/Members/zhangyifan1.png",
+    alt: { en: "Yifan Zhang", zh: "张轶凡" },
+    name: { en: "Yifan Zhang", zh: "张轶凡" },
+    statusBadge: { en: "PhD · Year 1", zh: "博士一年级" },
+    affiliation: {
+      en: "Guixiang Li Laboratory · Southeast University",
+      zh: "功能光电实验室 · 东南大学"
+    },
+    sideNotes: {
+
+    },
+    background: {
+      title: { en: "Background", zh: "教育经历" },
+      text: {
+        en:
+          "<strong>M.Eng.</strong> Jiangxi University of Science and Technology. Master's research focus is on magneto-optical and magneto-electric coupling.",
+        zh:
+          "江西理工大学 · 工程硕士。硕士研究方向为磁光、磁电耦合。"
+      }
+    },
+    hobbies: {
+      en: ["Dancing", "Listening to Music", "Playing soccer", "Playing badminton"],
+      zh: ["跳舞", "听音乐", "足球", "羽毛球"]
+    },
+    statement: {
+      title: { en: "Personal Statement", zh: "个人陈述" },
+      text: {
+        en:
+          "Aries: Passionate, sincere, confident, and optimistic.",
+        zh: "热烈真诚、自信乐观的白羊。"
+      }
+    },
+    motto: {
+      en: "“In a world moving forward at a rapid pace, remain steadfast and free.”",
+      zh: "“在高速前进的世界中，永远坚定，永远自由。”"
+    },
+    research: {
+      title: { en: "Research Direction", zh: "研究方向" },
+      text: {
+        en:
+          "Magneto-optical materials and photovoltaic devices.",
+        zh: "磁光材料与光伏器件"
+      }
+    }
+  },
+
   // ========================
   // Undergraduate
   // ========================
@@ -770,6 +810,52 @@ export const memberDetails: Record<string, MemberDetail> = {
         en:
           "Research on interface engineering of perovskite photovoltaic devices and the behavior and control of lead contamination in perovskite materials.",
         zh: "钙钛矿光伏器件界面工程及钙钛矿铅污染行为与调控研究。"
+      }
+    }
+  },
+
+  zhangjuan: {
+    slug: "zhangjuan",
+    portrait: "/img/Members/zhangjuan1.png",
+    alt: { en: "Juan Zhang", zh: "张娟" },
+    name: { en: "Juan Zhang", zh: "张娟" },
+    statusBadge: { en: "Visiting Scholar", zh: "访问学者" },
+    affiliation: {
+      en: "Guixiang Li Laboratory · Southeast University",
+      zh: "功能光电实验室 · 东南大学"
+    },
+    sideNotes: {
+      
+    },
+    background: {
+      title: { en: "Background", zh: "教育经历" },
+      text: {
+        en: "<strong>Ph.D.</strong> School of Physical and Chemical Sciences, Queen Mary University of London, September 2025",
+        zh: "日本国立大学弘前大学 · 博士，2026 年 7 月"
+      }
+    },
+    hobbies: {
+      en: ["Curious about all kinds of new knowledge, and refusing to stay the same."],
+      zh: ["好奇各类新知，拒绝一成不变"]
+    },
+    statement: {
+      title: { en: "Personal Statement", zh: "个人陈述" },
+      text: {
+        en:
+          "Do your best to handle every task properly.",
+        zh: "把经手的每一件事尽量做到位。"
+      }
+    },
+    motto: {
+      en: "“It doesn't need to be dazzling, but it should always be warm and radiant.”",
+      zh: "“不必光芒万丈，但始终温暖有光。”"
+    },
+    research: {
+      title: { en: "Research Direction", zh: "研究方向" },
+      text: {
+        en:
+          "Perovskite solar cells.",
+        zh: "钙钛矿太阳能电池。"
       }
     }
   }

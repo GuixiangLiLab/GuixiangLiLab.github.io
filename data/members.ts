@@ -98,6 +98,14 @@ export const members: Member[] = [
     name: { en: "Haomin Liu", zh: "刘昊旻" },
     order: 3
   },
+  {
+    id: "yifan-zhang",
+    group: "phd",
+    slug: "zhangyifan",
+    img: "/img/Members/zhangyifan.png",
+    name: { en: "Yifan Zhang", zh: "张轶凡" },
+    order: 7
+  },
 
   // 科研助理
   {
@@ -138,7 +146,14 @@ export const members: Member[] = [
   // 本科生
 
   // 访问学者
-
+  {
+    id: "juan-zhang",
+    group: "visitingscholar",
+    slug: "zhangjuan",
+    img: "/img/Members/zhangjuan.png",
+    name: { en: "Juan Zhang", zh: "张娟" },
+    order: 1
+  },
 
   // 已毕业
   {
