@@ -22,6 +22,16 @@ function sortByDateDesc(a: NewsItem, b: NewsItem) {
 
 export const news: NewsItem[] = [
   {
+    id: "2026-08-18-lyf-kdd",
+    slug: "2026-08-18-lyf-kdd",
+    cover: "/img/News/20260818_lyf_kdd/figure-1.png",
+    title: {
+      en: "Academic News | KDD 2026: A Multi-Agent System for Perovskite Material Discovery",
+      zh: "学术动态 | KDD 2026：课题组合作报道面向钙钛矿材料发现的多智能体系统"
+    },
+    date: "2026.08.18"
+  },
+  {
     id: "2026-07-11-undergraduate-graduation",
     slug: "2026-07-11-undergraduate-graduation",
     cover: "/img/News/20260711_undergraduate_graduation/Group_Photo_1.jpg",
