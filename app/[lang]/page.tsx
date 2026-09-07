@@ -4,10 +4,11 @@ import { useState, useEffect } from "react";
 import useI18nLite from "@/components/useI18nLite";
 import Publications from "@/app/components/Publications";
 import SliderLeftImgRightText from "@/components/slider/SliderLeftImgRightText";
+import { news } from "@/data/news";
 import "./page.css";
 
 export default function HomePage() {
-  const { t, L } = useI18nLite();
+  const { t, L, lang } = useI18nLite();
 
   // “Show More” 的展开状态 & 首屏 loading
   const [showMore, setShowMore] = useState(false);
@@ -189,30 +190,14 @@ export default function HomePage() {
                 <h2>{t("page.home.news.title")}</h2>
               </div>
               <ul className="pn-list news-list">
-                <li>
-                  <a href={L("/news")}>
-                    <span className="pn-date">{t("page.home.news.item1.date")}</span>
-                    <span className="pn-title">{t("page.home.news.item1.title")}</span>
-                  </a>
-                </li>
-                <li>
-                  <a href={L("/news")}>
-                    <span className="pn-date">{t("page.home.news.item2.date")}</span>
-                    <span className="pn-title">{t("page.home.news.item2.title")}</span>
-                  </a>
-                </li>
-                <li>
-                  <a href={L("/news")}>
-                    <span className="pn-date">{t("page.home.news.item3.date")}</span>
-                    <span className="pn-title">{t("page.home.news.item3.title")}</span>
-                  </a>
-                </li>
-                <li>
-                  <a href={L("/news")}>
-                    <span className="pn-date">{t("page.home.news.item4.date")}</span>
-                    <span className="pn-title">{t("page.home.news.item4.title")}</span>
-                  </a>
-                </li>
+                {news.slice(0, 4).map((item) => (
+                  <li key={item.id}>
+                    <a href={L(`/news/${item.slug}`)}>
+                      <span className="pn-date">{item.date.replaceAll(".", "-")}</span>
+                      <span className="pn-title">{item.title[lang]}</span>
+                    </a>
+                  </li>
+                ))}
               </ul>
               <a href={L("/news")} className="pn-more">{t("page.home.common.readMore")}</a>
             </div>

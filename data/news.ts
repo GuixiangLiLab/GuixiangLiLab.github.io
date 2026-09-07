@@ -22,6 +22,16 @@ function sortByDateDesc(a: NewsItem, b: NewsItem) {
 
 export const news: NewsItem[] = [
   {
+    id: "2026-09-05-wxb-am",
+    slug: "2026-09-05-wxb-am",
+    cover: "/img/News/20260905_wxb_am/front_page.png",
+    title: {
+      en: "Academic News | Advanced Materials: Laser-Defined Reaction Topology for Scalable Perovskite Photovoltaics",
+      zh: "学术动态 | Adv Mater：激光图案化反应拓扑用于规模化钙钛矿光伏"
+    },
+    date: "2026.09.05"
+  },
+  {
     id: "2026-08-18-lyf-kdd",
     slug: "2026-08-18-lyf-kdd",
     cover: "/img/News/20260818_lyf_kdd/figure-1.png",
