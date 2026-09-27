@@ -17,7 +17,7 @@ export default function MemberDetailClient({ slug }: { slug: string }) {
       <section className="member-student">
         <div className="wrap">
           <div className="grid">
-            <article className="card-content reveal">
+            <article className="member-detail-content reveal">
               <h1 style={{ marginBottom: 12 }}>
                 {t("page.members.detail.notFound") || "Member Not Found"}
               </h1>
@@ -56,7 +56,7 @@ export default function MemberDetailClient({ slug }: { slug: string }) {
           </aside>
 
           {/* 右侧：内容 */}
-          <article className="card-content reveal">
+          <article className="member-detail-content reveal">
             <header className="header">
               <h1>{pick(m.name)}</h1>
               {m.statusBadge && <span className="badge-status">{pick(m.statusBadge)}</span>}

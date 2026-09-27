@@ -81,7 +81,10 @@ h3, h4{
 }
 
 /* right: content card */
-.member-student .card-content {
+/* Keep this class distinct from other pages' global .card-content rules. */
+.member-student .member-detail-content {
+  display: block;
+  min-width: 0;
   background: #fff;
   border: 1px solid var(--line);
   border-radius: var(--radius);
