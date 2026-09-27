@@ -100,7 +100,7 @@ export default function ZxcAfmPage() {
                 {t("page.news.20251028-zxc-afm.p16")}
               </p>
 
-              <p className="mb-9">
+              <p className="mb-6">
               {t("page.news.20251111-lgx-np.p22")}
               <a 
               href="https://doi.org/10.1002/adfm.202523417" 

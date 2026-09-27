@@ -24,16 +24,11 @@
 }
 
 .np-item {
-  /* display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 300px;
-  width: 100%; */
   display: flex;
-  align-items: flex-start; /* 顶部对齐，适配不同高度图片 */
   justify-content: space-between;
   align-items: center;
-  height: 300px;
+  min-height: 300px;
+  height: auto;
   width: 100%;
   gap: 40px; /* 图片与文字的水平间隙*/
   padding-bottom: 30px;
@@ -55,6 +50,8 @@
 /* 文本内容块 */
 .np-content {
   height: auto; /* 避免高度被限制 */
+  flex: 1 1 0;
+  min-width: 0;
 }
 
 .np-readmore {
@@ -101,6 +98,11 @@
 
   .np-readmore {
     margin-top: 20px;
+  }
+
+  .np-content {
+    flex: auto;
+    width: 100%;
   }
 }
 

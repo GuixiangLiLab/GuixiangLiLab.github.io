@@ -29,7 +29,6 @@ export default async function NewMembers2026Page({ params }: PageProps) {
         category: "硕士一年级",
         date: "2026 年 9 月 27 日",
         people: "认识新同学",
-        member: "新同学",
         education: "教育经历",
         hometown: "家乡",
         research: "研究方向",
@@ -44,7 +43,6 @@ export default async function NewMembers2026Page({ params }: PageProps) {
         category: "First-year master's students",
         date: "September 27, 2026",
         people: "Meet our new members",
-        member: "New member",
         education: "Education",
         hometown: "Hometown",
         research: "Research direction",
@@ -95,55 +93,55 @@ export default async function NewMembers2026Page({ params }: PageProps) {
                 key={person.slug}
                 aria-labelledby={`${person.slug}-heading`}
               >
-                <figure className="fsog-newcomers-portrait">
-                  <div className="fsog-newcomers-photo">
-                    <Image
-                      src={person.photo}
-                      alt={person.name[locale]}
-                      width={person.width}
-                      height={person.height}
-                      sizes="(max-width: 639px) 280px, 260px"
-                    />
-                  </div>
-                  <figcaption>{person.name.en}</figcaption>
-                </figure>
+                <div className="fsog-newcomers-name-row">
+                  <span className="fsog-newcomers-number" aria-hidden="true">
+                    {String(index + 1).padStart(2, "0")}
+                  </span>
+                  <h2 id={`${person.slug}-heading`}>{person.name[locale]}</h2>
+                </div>
 
-                <div className="fsog-newcomers-profile">
-                  <div className="fsog-newcomers-name-row">
-                    <span className="fsog-newcomers-number" aria-hidden="true">
-                      {String(index + 1).padStart(2, "0")}
-                    </span>
-                    <div>
-                      <p className="fsog-newcomers-person-label">{copy.member}</p>
-                      <h2 id={`${person.slug}-heading`}>{person.name[locale]}</h2>
+                <div className="fsog-newcomers-person-body">
+                  <figure className="fsog-newcomers-portrait">
+                    <div className="fsog-newcomers-photo">
+                      <Image
+                        src={person.photo}
+                        alt={person.name[locale]}
+                        width={person.width}
+                        height={person.height}
+                        sizes="(max-width: 760px) 280px, 240px"
+                      />
                     </div>
+                    <figcaption>{person.name.en}</figcaption>
+                  </figure>
+
+                  <div className="fsog-newcomers-profile">
+                    <dl className="fsog-newcomers-facts">
+                      <div>
+                        <dt>{copy.education}</dt>
+                        <dd>{person.education[locale]}</dd>
+                      </div>
+                      <div>
+                        <dt>{copy.hometown}</dt>
+                        <dd>{person.hometown[locale]}</dd>
+                      </div>
+                    </dl>
+                    <p className="fsog-newcomers-about">{person.about[locale]}</p>
+                    <div className="fsog-newcomers-research">
+                      <h3>{copy.research}</h3>
+                      <p>{person.research[locale]}</p>
+                    </div>
+                    <blockquote className="fsog-newcomers-motto">
+                      <span>{copy.motto}</span>
+                      <p>{person.motto[locale]}</p>
+                    </blockquote>
+                    <Link
+                      className="fsog-newcomers-profile-link"
+                      href={`/${locale}/members/${person.slug}/`}
+                    >
+                      {copy.profile}
+                      <span aria-hidden="true">↗</span>
+                    </Link>
                   </div>
-                  <dl className="fsog-newcomers-facts">
-                    <div>
-                      <dt>{copy.education}</dt>
-                      <dd>{person.education[locale]}</dd>
-                    </div>
-                    <div>
-                      <dt>{copy.hometown}</dt>
-                      <dd>{person.hometown[locale]}</dd>
-                    </div>
-                  </dl>
-                  <p className="fsog-newcomers-about">{person.about[locale]}</p>
-                  <div className="fsog-newcomers-research">
-                    <h3>{copy.research}</h3>
-                    <p>{person.research[locale]}</p>
-                  </div>
-                  <blockquote className="fsog-newcomers-motto">
-                    <span>{copy.motto}</span>
-                    <p>{person.motto[locale]}</p>
-                  </blockquote>
-                  <Link
-                    className="fsog-newcomers-profile-link"
-                    href={`/${locale}/members/${person.slug}/`}
-                  >
-                    {copy.profile}
-                    <span aria-hidden="true">↗</span>
-                  </Link>
                 </div>
               </section>
             ))}

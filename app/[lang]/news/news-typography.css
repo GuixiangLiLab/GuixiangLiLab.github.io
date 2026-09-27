@@ -1,0 +1,151 @@
+/*
+ * Shared by both languages and every news route.
+ * Text sizes match 2025-11-11-lgx-np (Nature Photonics).
+ * Latin title glyphs use an optical size adjustment to match CJK cap height.
+ * The news-pages scope takes precedence over individual article styles,
+ * regardless of which article stylesheet Next.js loads first.
+ */
+.news-pages {
+  --news-body-font: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
+    "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC",
+    Arial, sans-serif;
+  --news-heading-font: var(--font-red-rose), var(--font-roboto), system-ui;
+  --news-title-font: var(--font-news-title-latin), var(--news-heading-font);
+  --news-title-size: clamp(28px, 4vw, 40px);
+  --news-section-size: clamp(23px, 3vw, 31px);
+  --news-body-size: clamp(18px, 1.65vw, 20px);
+  --news-body-leading: 2;
+  --news-caption-size: 14px;
+  font-family: var(--news-body-font);
+}
+
+.news-pages :is(.fsog-news, .fsog-am, .fsog-newcomers) {
+  font-family: var(--news-body-font);
+}
+
+.news-pages .page-header .display-2 {
+  font-family: var(--news-heading-font);
+  line-height: 1.2;
+}
+
+.news-pages .fsog-news h1.display-6,
+.news-pages .fsog-news.fsog-kdd h1.display-6,
+.news-pages .fsog-am .am-header h1,
+.news-pages .fsog-newcomers-header h1 {
+  font-family: var(--news-title-font);
+  font-size: var(--news-title-size);
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: 0.2px;
+  overflow-wrap: break-word;
+}
+
+/* Legacy articles use Bootstrap margin classes; newer ones use named paragraphs. */
+.news-pages .fsog-news :is(p.mb-4, p.mb-6, p.mb-7, p.mb-8, p.mb-9, p.mb-10),
+.news-pages .fsog-news :is(.news-paragraph, .news-paragraph--indent-with-line),
+.news-pages .fsog-kdd :is(.news-lead, .research-highlight p),
+.news-pages .fsog-am :is(.am-lead, .am-paragraph),
+.news-pages .fsog-newcomers :is(.fsog-newcomers-intro, .fsog-newcomers-about),
+.news-pages .fsog-newcomers-research p,
+.news-pages .fsog-newcomers-motto p,
+.news-pages .fsog-newcomers-footer > p:not(.fsog-newcomers-kicker) {
+  font-family: var(--news-body-font);
+  font-size: var(--news-body-size);
+  line-height: var(--news-body-leading);
+  letter-spacing: normal;
+  text-wrap: pretty;
+  overflow-wrap: break-word;
+}
+
+.news-pages .fsog-kdd .news-section-heading h2,
+.news-pages .fsog-am .am-section-heading h2,
+.news-pages .fsog-newcomers-name-row h2,
+.news-pages .fsog-newcomers-footer h2 {
+  font-family: var(--news-heading-font);
+  font-size: var(--news-section-size);
+  font-weight: 800;
+  line-height: 1.4;
+  letter-spacing: 0.2px;
+}
+
+.news-pages .fsog-kdd .research-highlight h3,
+.news-pages .fsog-newcomers-research h3 {
+  font-family: var(--news-body-font);
+  font-size: var(--news-body-size);
+  font-weight: 700;
+  line-height: 1.6;
+  letter-spacing: normal;
+}
+
+.news-pages .fsog-kdd .paper-info :is(dt, dd),
+.news-pages .fsog-am .am-paper-info :is(dt, dd),
+.news-pages .fsog-newcomers-facts :is(dt, dd) {
+  font-family: var(--news-body-font);
+  font-size: var(--news-body-size);
+  line-height: var(--news-body-leading);
+}
+
+.news-pages .fsog-kdd :is(.news-meta, .news-credits, .news-figure figcaption),
+.news-pages .fsog-am :is(.am-meta, .am-credits, .am-figure figcaption),
+.news-pages .fsog-newcomers :is(
+  .fsog-newcomers-kicker,
+  .fsog-newcomers-meta,
+  .fsog-newcomers-person-label,
+  .fsog-newcomers-contents-label,
+  .fsog-newcomers-portrait figcaption,
+  .fsog-newcomers-motto > span
+) {
+  font-family: var(--news-body-font);
+  font-size: var(--news-caption-size);
+  line-height: 1.6;
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+.news-pages .fsog-newcomers :is(
+  .fsog-newcomers-contents a,
+  .fsog-newcomers-profile-link,
+  .fsog-newcomers-back
+) {
+  font-family: var(--news-body-font);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.news-pages .fsog-newcomers-number {
+  font-family: var(--news-heading-font);
+  font-size: var(--news-body-size);
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+/* Keep field labels readable at the same size as the article text. */
+.news-pages .fsog-newcomers-facts > div {
+  grid-template-columns: minmax(5.5em, max-content) minmax(0, 1fr);
+  font-size: var(--news-body-size);
+}
+
+.news-pages .fsog-newcomers-profile {
+  overflow-wrap: break-word;
+}
+
+.news-pages .news-title {
+  font-family: var(--news-title-font);
+  font-size: clamp(23px, 2.5vw, 27px);
+  line-height: 1.4;
+}
+
+.news-pages .news-date {
+  font-family: var(--news-body-font);
+}
+
+@media (max-width: 576px) {
+  .news-pages {
+    --news-title-size: clamp(24px, 6vw, 32px);
+  }
+
+  .news-pages .fsog-newcomers-facts > div {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0;
+  }
+}
