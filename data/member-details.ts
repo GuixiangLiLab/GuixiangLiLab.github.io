@@ -85,8 +85,8 @@ export const memberDetails: Record<string, MemberDetail> = {
       title: { en: "Research Direction", zh: "研究方向" },
       text: {
         en:
-          "Research on Tin-Based Optoelectronic Functional Materials and Solar Cells.",
-        zh: "锡基光电功能材料及其太阳能电池研究"
+          "Construction of Tin-Containing Optoelectronic Functional Materials and Novel Photovoltaic Applications.",
+        zh: "含锡光电功能材料构建及新型光伏应用"
       }
     }
   },
@@ -210,12 +210,204 @@ export const memberDetails: Record<string, MemberDetail> = {
   // Master
   // ========================
 
+  yupeimiao: {
+    slug: "yupeimiao",
+    portrait: "/img/Members/yupeimiao.jpg",
+    alt: { en: "Peimiao Yu", zh: "于沛淼" },
+    name: { en: "Peimiao Yu", zh: "于沛淼" },
+    statusBadge: { en: "Master's · Year 1", zh: "硕士一年级" },
+    affiliation: {
+      en: "Guixiang Li Laboratory · Southeast University",
+      zh: "功能光电实验室 · 东南大学"
+    },
+    background: {
+      title: { en: "Background", zh: "教育经历" },
+      text: {
+        en: "<strong>Undergraduate studies</strong> School of Materials and Energy, Yunnan University.",
+        zh: "云南大学 · 材料与能源学院 · 本科。"
+      }
+    },
+    hobbies: {
+      en: ["Watching anime", "Table tennis", "Guitar", "Mystery novels", "Martial arts novels"],
+      zh: ["看动漫", "乒乓球", "吉他", "推理小说", "武侠小说"]
+    },
+    statement: {
+      title: { en: "Personal Statement", zh: "个人陈述" },
+      text: {
+        en: "I give my all to every task.",
+        zh: "全力以赴完成任务。"
+      }
+    },
+    motto: {
+      en: "“Learning never ends.”",
+      zh: "“学无止境。”"
+    },
+    research: {
+      title: { en: "Research Direction", zh: "研究方向" },
+      text: {
+        en: "Wide-bandgap perovskite solar cells.",
+        zh: "宽带隙钙钛矿太阳能电池。"
+      }
+    },
+    extraSections: [
+      {
+        id: "origin",
+        title: { en: "Hometown", zh: "家乡" },
+        text: { en: "Rencheng District, Jining, Shandong Province.", zh: "山东省济宁市任城区。" }
+      }
+    ]
+  },
+
+  wangwenrui: {
+    slug: "wangwenrui",
+    portrait: "/img/Members/wangwenrui.jpg",
+    alt: { en: "Wenrui Wang", zh: "王文睿" },
+    name: { en: "Wenrui Wang", zh: "王文睿" },
+    statusBadge: { en: "Master's · Year 1", zh: "硕士一年级" },
+    affiliation: {
+      en: "Guixiang Li Laboratory · Southeast University",
+      zh: "功能光电实验室 · 东南大学"
+    },
+    background: {
+      title: { en: "Background", zh: "教育经历" },
+      text: {
+        en: "<strong>Undergraduate studies</strong> Jiangsu University.",
+        zh: "江苏大学 · 本科。"
+      }
+    },
+    hobbies: {
+      en: ["Basketball", "Watching films"],
+      zh: ["打篮球", "看电影"]
+    },
+    statement: {
+      title: { en: "Personal Statement", zh: "个人陈述" },
+      text: {
+        en: "I am an introvert who takes time to open up and values sincerity. I handle pressure well and devote considerable energy to things that interest me. I am patient and attentive to detail.",
+        zh: "大大的 i 人，为人慢热、真诚；有良好的抗压能力，对感兴趣的事情能够投入比较大的精力，有耐心，细致。"
+      }
+    },
+    motto: {
+      en: "“Stay true to your principles, and even a distant destination can be reached; persevere, and even a difficult task can be accomplished.”",
+      zh: "“守正而行，路虽远必至；持恒以进，事虽难必成。”"
+    },
+    research: {
+      title: { en: "Research Direction", zh: "研究方向" },
+      text: {
+        en: "Regular-bandgap perovskite solar cells.",
+        zh: "常规带隙钙钛矿电池。"
+      }
+    },
+    extraSections: [
+      {
+        id: "origin",
+        title: { en: "Hometown", zh: "家乡" },
+        text: { en: "Manzhouli, Hulunbuir, Inner Mongolia.", zh: "内蒙古呼伦贝尔满洲里市。" }
+      }
+    ]
+  },
+
+  wangtianyi: {
+    slug: "wangtianyi",
+    portrait: "/img/Members/wangtianyi.png",
+    alt: { en: "Tianyi Wang", zh: "王天怡" },
+    name: { en: "Tianyi Wang", zh: "王天怡" },
+    statusBadge: { en: "Master's · Year 1", zh: "硕士一年级" },
+    affiliation: {
+      en: "Guixiang Li Laboratory · Southeast University",
+      zh: "功能光电实验室 · 东南大学"
+    },
+    background: {
+      title: { en: "Background", zh: "教育经历" },
+      text: {
+        en: "<strong>Undergraduate studies</strong> Chemical Engineering and Technology, Wuhan Institute of Technology.",
+        zh: "武汉工程大学 · 化学工程与工艺专业 · 本科。"
+      }
+    },
+    hobbies: {
+      en: ["Travel", "Photography", "Journaling", "Comedy"],
+      zh: ["旅游", "摄影", "写手账", "喜剧"]
+    },
+    statement: {
+      title: { en: "Personal Statement", zh: "个人陈述" },
+      text: {
+        en: "I am easygoing, optimistic, and willing to work hard through challenges.",
+        zh: "性格随和，态度乐观，能吃苦耐劳。"
+      }
+    },
+    motto: {
+      en: "“In me the tiger sniffs the rose.”",
+      zh: "“心有猛虎，细嗅蔷薇。”"
+    },
+    research: {
+      title: { en: "Research Direction", zh: "研究方向" },
+      text: {
+        en: "Perovskite solar cells with spatial bandgap gradients.",
+        zh: "空间带隙梯度钙钛矿太阳能电池。"
+      }
+    },
+    extraSections: [
+      {
+        id: "origin",
+        title: { en: "Hometown", zh: "家乡" },
+        text: { en: "Wuhan, Hubei Province.", zh: "湖北省武汉市。" }
+      }
+    ]
+  },
+
+  gejiacheng: {
+    slug: "gejiacheng",
+    portrait: "/img/Members/gejiacheng.jpg",
+    alt: { en: "Jiacheng Ge", zh: "葛嘉诚" },
+    name: { en: "Jiacheng Ge", zh: "葛嘉诚" },
+    statusBadge: { en: "Master's · Year 1", zh: "硕士一年级" },
+    affiliation: {
+      en: "Guixiang Li Laboratory · Southeast University",
+      zh: "功能光电实验室 · 东南大学"
+    },
+    background: {
+      title: { en: "Background", zh: "教育经历" },
+      text: {
+        en: "<strong>Undergraduate studies</strong> Nanjing Forestry University.",
+        zh: "南京林业大学 · 本科。"
+      }
+    },
+    hobbies: {
+      en: ["Table tennis"],
+      zh: ["乒乓球"]
+    },
+    statement: {
+      title: { en: "Personal Statement", zh: "个人陈述" },
+      text: {
+        en: "I am a quiet presence who may be a little clumsy but keeps moving forward.",
+        zh: "笨拙但坚持前行的一个小透明。"
+      }
+    },
+    motto: {
+      en: "“Keep your talents in reserve and stay humble.”",
+      zh: "“藏锋守拙。”"
+    },
+    research: {
+      title: { en: "Research Direction", zh: "研究方向" },
+      text: {
+        en: "Wide-bandgap perovskite devices and tandem solar cells.",
+        zh: "宽带隙钙钛矿器件及叠层电池。"
+      }
+    },
+    extraSections: [
+      {
+        id: "origin",
+        title: { en: "Hometown", zh: "家乡" },
+        text: { en: "Bozhou, Anhui Province.", zh: "安徽省亳州市。" }
+      }
+    ]
+  },
+
   lizeyu: {
     slug: "lizeyu",
     portrait: "/img/Members/lizeyu1.jpg",
     alt: { en: "Zeyu Li", zh: "李泽雨" },
     name: { en: "Zeyu Li", zh: "李泽雨" },
-    statusBadge: { en: "Master's · Year 1", zh: "硕士一年级" },
+    statusBadge: { en: "Master's · Year 2", zh: "硕士二年级" },
     affiliation: {
       en: "Guixiang Li Laboratory · Southeast University",
       zh: "功能光电实验室 · 东南大学"
@@ -259,7 +451,7 @@ export const memberDetails: Record<string, MemberDetail> = {
     portrait: "/img/Members/luodongdong.jpg",
     alt: { en: "Dongdong Luo", zh: "罗栋栋" },
     name: { en: "Dongdong Luo", zh: "罗栋栋" },
-    statusBadge: { en: "Master's · Year 2", zh: "硕士二年级" },
+    statusBadge: { en: "Master's · Year 3", zh: "硕士三年级" },
     affiliation: {
       en: "Guixiang Li Laboratory · Southeast University",
       zh: "功能光电实验室 · 东南大学"
@@ -294,7 +486,7 @@ export const memberDetails: Record<string, MemberDetail> = {
     portrait: "/img/Members/lixinru.jpg",
     alt: { en: "Xinru Li", zh: "李心如" },
     name: { en: "Xinru Li", zh: "李心如" },
-    statusBadge: { en: "Master's · Year 1", zh: "硕士一年级" },
+    statusBadge: { en: "Master's · Year 2", zh: "硕士二年级" },
     affiliation: {
       en: "Guixiang Li Laboratory · Southeast University",
       zh: "功能光电实验室 · 东南大学"
@@ -334,6 +526,59 @@ export const memberDetails: Record<string, MemberDetail> = {
     }
   },
 
+  yizerui: {
+    slug: "yizerui",
+    portrait: "/img/Members/yizerui1.png",
+    alt: { en: "Zerui Yi", zh: "易泽瑞" },
+    name: { en: "Zerui Yi", zh: "易泽瑞" },
+    statusBadge: { en: "Master's · Year 1", zh: "硕士一年级" },
+    affiliation: {
+      en: "Guixiang Li Laboratory · Southeast University",
+      zh: "功能光电实验室 · 东南大学"
+    },
+    sideNotes: {
+      
+    },
+    background: {
+      title: { en: "Background", zh: "教育经历" },
+      text: {
+        en: "<strong>B.Eng.</strong> School of Materials Science and Engineering, Southeast University(SEU), September 2022 to July 2026",
+        zh: "<strong>本科</strong> 东南大学材料科学与工程学院，2022 年 9 月-2026 年 7 月"
+      }
+    },
+    hobbies: {
+      en: ["Badminton", "Game"],
+      zh: ["羽毛球", "游戏"]
+    },
+    statement: {
+      title: { en: "Personal Statement", zh: "个人陈述" },
+      text: {
+        en:
+          "Live life to the fullest.",
+        zh: "热爱生活。"
+      }
+    },
+    motto: {
+      en: "“Turn shame into courage, turn weakness into strength.”",
+      zh: "“知耻而后勇，知不足而奋进。”"
+    },
+    extraSections: [
+      {
+        id: "origin",
+        title: { en: "Hometown", zh: "家乡" },
+        text: { en: "Ganzhou, Jiangxi Province.", zh: "江西省赣州市。" }
+      }
+    ],
+    research: {
+      title: { en: "Research Direction", zh: "研究方向" },
+      text: {
+        en:
+          "Stability of perovskite solar cells.",
+        zh: "钙钛矿太阳能电池稳定性。"
+      }
+    }
+  },
+
   // ========================
   // PhD
   // ========================
@@ -342,7 +587,7 @@ export const memberDetails: Record<string, MemberDetail> = {
     portrait: "/img/Members/huangyuepeng1.png",
     alt: { en: "Yuepeng Huang", zh: "黄月鹏" },
     name: { en: "Yuepeng Huang", zh: "黄月鹏" },
-    statusBadge: { en: "PhD · Year 2", zh: "博士二年级" },
+    statusBadge: { en: "PhD · Year 3", zh: "博士三年级" },
     affiliation: {
       en: "Guixiang Li Laboratory · Southeast University",
       zh: "功能光电实验室 · 东南大学"
@@ -430,7 +675,7 @@ export const memberDetails: Record<string, MemberDetail> = {
     portrait: "/img/Members/wangshaoqiang1.png",
     alt: { en: "Shao-Qiang Wang", zh: "王少强" },
     name: { en: "Shao-Qiang Wang", zh: "王少强" },
-    statusBadge: { en: "PhD · Year 1", zh: "博士一年级" },
+    statusBadge: { en: "PhD · Year 2", zh: "博士二年级" },
     affiliation: {
       en: "Guixiang Li Laboratory · Southeast University",
       zh: "功能光电实验室 · 东南大学"
@@ -477,7 +722,7 @@ export const memberDetails: Record<string, MemberDetail> = {
     portrait: "/img/Members/wenxuebing.jpg",
     alt: { en: "Xuebing Wen", zh: "温雪冰" },
     name: { en: "Xuebing Wen", zh: "温雪冰" },
-    statusBadge: { en: "PhD · Year 1", zh: "博士一年级" },
+    statusBadge: { en: "PhD · Year 2", zh: "博士二年级" },
     affiliation: {
       en: "Guixiang Li Laboratory · Southeast University",
       zh: "功能光电实验室 · 东南大学"
@@ -523,7 +768,7 @@ export const memberDetails: Record<string, MemberDetail> = {
     portrait: "/img/Members/zhangxu.jpg",
     alt: { en: "Xu Zhang", zh: "张旭" },
     name: { en: "Xu Zhang", zh: "张旭" },
-    statusBadge: { en: "PhD · Year 1", zh: "博士一年级" },
+    statusBadge: { en: "PhD · Year 2", zh: "博士二年级" },
     affiliation: {
       en: "Guixiang Li Laboratory · Southeast University",
       zh: "功能光电实验室 · 东南大学"
@@ -657,59 +902,6 @@ export const memberDetails: Record<string, MemberDetail> = {
   // ========================
   // Undergraduate
   // ========================
-
-  yizerui: {
-    slug: "yizerui",
-    portrait: "/img/Members/yizerui1.png",
-    alt: { en: "Zerui Yi", zh: "易泽瑞" },
-    name: { en: "Zerui Yi", zh: "易泽瑞" },
-    statusBadge: { en: "Undergraduate", zh: "本科生" },
-    affiliation: {
-      en: "Guixiang Li Laboratory · Southeast University",
-      zh: "功能光电实验室 · 东南大学"
-    },
-    sideNotes: {
-      
-    },
-    background: {
-      title: { en: "Background", zh: "教育经历" },
-      text: {
-        en: "<strong>B.Eng.</strong> School of Materials Science and Engineering, Southeast University(SEU), September 2022 to July 2026",
-        zh: "<strong>本科</strong> 东南大学材料科学与工程学院，2022 年 9 月-2026 年 7 月"
-      }
-    },
-    hobbies: {
-      en: ["Badminton", "Game"],
-      zh: ["羽毛球", "游戏"]
-    },
-    statement: {
-      title: { en: "Personal Statement", zh: "个人陈述" },
-      text: {
-        en:
-          "Live life to the fullest.",
-        zh: "热爱生活。"
-      }
-    },
-    motto: {
-      en: "“Turn shame into courage, turn weakness into strength.”",
-      zh: "“知耻而后勇，知不足而奋进。”"
-    },
-    extraSections: [
-      {
-        id: "origin",
-        title: { en: "Hometown", zh: "家乡" },
-        text: { en: "Ganzhou, Jiangxi Province.", zh: "江西省赣州市。" }
-      }
-    ],
-    research: {
-      title: { en: "Research Direction", zh: "研究方向" },
-      text: {
-        en:
-          "Stability of perovskite solar cells.",
-        zh: "钙钛矿太阳能电池稳定性。"
-      }
-    }
-  },
 
   louhaixin: {
     slug: "louhaixin",

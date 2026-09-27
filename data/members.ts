@@ -8,8 +8,7 @@ export interface Member {
   group: MemberGroup;                  // 分组
   slug: string;                        // /members/[slug]
   img: string;                         // public 下的图片路径
-  name: { en: string; zh: string };    // 中英姓名（中文没有就填英文）
-  order?: number;                      // 可选：组内排序（越小越靠前）
+  name: { en: string; zh: string };    // 英文使用“名 + 姓”，组内自动按姓氏 A–Z 排序
   isProfessor?: boolean;               // 可选：是否教授
 }
 
@@ -27,7 +26,6 @@ export const members: Member[] = [
     slug: "liguixiang",
     img: "/img/liguixiang.jpg",
     name: { en: "Guixiang Li", zh: "李桂香" },
-    order: 1,
     isProfessor: true
   },
 
@@ -38,7 +36,6 @@ export const members: Member[] = [
     slug: "fangdong",
     img: "/img/Members/fangdong.png",
     name: { en: "Dong Fang", zh: "方栋" },
-    order: 1
   },
 
   // 博士
@@ -48,7 +45,6 @@ export const members: Member[] = [
     slug: "huangyuepeng",
     img: "/img/Members/huangyuepeng.png",
     name: { en: "Yuepeng Huang", zh: "黄月鹏" },
-    order: 1
   },  
   {
     id: "yifan-li",
@@ -56,7 +52,6 @@ export const members: Member[] = [
     slug: "liyifan",
     img: "/img/Members/liyifan.jpg",
     name: { en: "Yifan Li", zh: "李怡凡" },
-    order: 2
   },
   {
     id: "shaoqiang-wang",
@@ -64,7 +59,6 @@ export const members: Member[] = [
     slug: "wangshaoqiang",
     img: "/img/Members/wangshaoqiang.jpg",
     name: { en: "Shaoqiang Wang", zh: "王少强" },
-    order: 4
   },
   {
     id: "xu-zhang",
@@ -72,7 +66,6 @@ export const members: Member[] = [
     slug: "zhangxu",
     img: "/img/Members/zhangxu.jpg",
     name: { en: "Xu Zhang", zh: "张旭" },
-    order: 7
   },
   {
     id: "xuebing-wen",
@@ -80,7 +73,6 @@ export const members: Member[] = [
     slug: "wenxuebing",
     img: "/img/Members/wenxuebing.jpg",
     name: { en: "Xuebing Wen", zh: "温雪冰" },
-    order: 5
   },
   {
     id: "xiaochun-zhang",
@@ -88,7 +80,6 @@ export const members: Member[] = [
     slug: "zhangxiaochun",
     img: "/img/Members/zhangxiaochun.jpg",
     name: { en: "Xiaochun Zhang", zh: "张晓春" },
-    order: 6
   },
   {
     id: "haomin-liu",
@@ -96,7 +87,6 @@ export const members: Member[] = [
     slug: "liuhaomin",
     img: "/img/Members/liuhaomin.png",
     name: { en: "Haomin Liu", zh: "刘昊旻" },
-    order: 3
   },
   {
     id: "yifan-zhang",
@@ -104,7 +94,6 @@ export const members: Member[] = [
     slug: "zhangyifan",
     img: "/img/Members/zhangyifan.png",
     name: { en: "Yifan Zhang", zh: "张轶凡" },
-    order: 7
   },
 
   // 科研助理
@@ -114,17 +103,43 @@ export const members: Member[] = [
     slug: "jinxiaonan",
     img: "/img/Members/jinxiaonan.png",
     name: { en: "Xiaonan Jin", zh: "金小楠" },
-    order: 1
   },
 
   // 硕士
+  {
+    id: "peimiao-yu",
+    group: "master",
+    slug: "yupeimiao",
+    img: "/img/Members/yupeimiao.jpg",
+    name: { en: "Peimiao Yu", zh: "于沛淼" }
+  },
+  {
+    id: "wenrui-wang",
+    group: "master",
+    slug: "wangwenrui",
+    img: "/img/Members/wangwenrui.jpg",
+    name: { en: "Wenrui Wang", zh: "王文睿" }
+  },
+  {
+    id: "tianyi-wang",
+    group: "master",
+    slug: "wangtianyi",
+    img: "/img/Members/wangtianyi.png",
+    name: { en: "Tianyi Wang", zh: "王天怡" }
+  },
+  {
+    id: "jiacheng-ge",
+    group: "master",
+    slug: "gejiacheng",
+    img: "/img/Members/gejiacheng.jpg",
+    name: { en: "Jiacheng Ge", zh: "葛嘉诚" }
+  },
   {
     id: "dongdong-luo",
     group: "master",
     slug: "luodongdong",
     img: "/img/Members/luodongdong.jpg",
     name: { en: "Dongdong Luo", zh: "罗栋栋" },
-    order: 3
   },
   {
     id: "zeyu-li",
@@ -132,7 +147,6 @@ export const members: Member[] = [
     slug: "lizeyu",
     img: "/img/Members/lizeyu.jpg",
     name: { en: "Zeyu Li", zh: "李泽雨" },
-    order: 2
   },
   {
     id: "xinru-li",
@@ -140,7 +154,13 @@ export const members: Member[] = [
     slug: "lixinru",
     img: "/img/Members/lixinru.jpg",
     name: { en: "Xinru Li", zh: "李心如" },
-    order: 1
+  },
+  {
+    id: "zerui-yi",
+    group: "master",
+    slug: "yizerui",
+    img: "/img/Members/yizerui.png",
+    name: { en: "Zerui Yi", zh: "易泽瑞" },
   },
 
   // 本科生
@@ -152,7 +172,6 @@ export const members: Member[] = [
     slug: "zhangjuan",
     img: "/img/Members/zhangjuan.png",
     name: { en: "Juan Zhang", zh: "张娟" },
-    order: 1
   },
 
   // 已毕业
@@ -162,7 +181,6 @@ export const members: Member[] = [
     slug: "lijing",
     img: "/img/Members/lijing.png",
     name: { en: "Jing Li", zh: "李净" },
-    order: 1
   },
   {
     id: "haixin-lou",
@@ -170,14 +188,5 @@ export const members: Member[] = [
     slug: "louhaixin",
     img: "/img/Members/louhaixin.png",
     name: { en: "Haixin Lou", zh: "楼海欣" },
-    order: 1
-  },
-  {
-    id: "zerui-yi",
-    group: "alumni",
-    slug: "yizerui",
-    img: "/img/Members/yizerui.png",
-    name: { en: "Zerui Yi", zh: "易泽瑞" },
-    order: 2
   }
 ];

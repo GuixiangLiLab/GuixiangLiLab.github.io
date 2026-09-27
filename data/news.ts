@@ -1,3 +1,5 @@
+import { newcomerNews2026 } from "./newcomers-2026";
+
 export type NewsItem = {
   /** 唯一 id，可用 slug */
   id: string;
@@ -21,6 +23,13 @@ function sortByDateDesc(a: NewsItem, b: NewsItem) {
 }
 
 export const news: NewsItem[] = [
+  {
+    id: newcomerNews2026.slug,
+    slug: newcomerNews2026.slug,
+    cover: "/img/News/20260927_new_members/cover.svg",
+    title: newcomerNews2026.title,
+    date: newcomerNews2026.date.replaceAll("-", ".")
+  },
   {
     id: "2026-09-05-wxb-am",
     slug: "2026-09-05-wxb-am",

@@ -4,24 +4,12 @@ import Link from "next/link";
 import "./members.css";
 import useI18nLite from "@/components/useI18nLite";
 import { members, GROUP_ORDER, type MemberGroup } from "@/data/members";
+import { groupMembers } from "@/data/member-sorting";
 
-function groupMembers() {
-  const grouped = new Map<MemberGroup, typeof members>();
-  for (const g of GROUP_ORDER) grouped.set(g, []);
-  for (const m of members) {
-    if (!grouped.has(m.group)) grouped.set(m.group, []);
-    grouped.get(m.group)!.push(m);
-  }
-  // 组内排序
-  for (const [g, arr] of grouped) {
-    arr.sort((a, b) => (a.order ?? 1e9) - (b.order ?? 1e9));
-  }
-  return grouped;
-}
+const grouped = groupMembers(members);
 
 export default function MembersPage() {
   const { t, L, lang } = useI18nLite();
-  const grouped = groupMembers();
 
   // 分组标题 key 映射（用现有 i18n 键）
   const groupTitleKey: Record<MemberGroup, string> = {
