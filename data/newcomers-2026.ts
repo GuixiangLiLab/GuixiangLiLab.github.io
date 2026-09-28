@@ -48,8 +48,8 @@ export const newcomerNews2026 = {
         en: "Travel, photography, journaling, and comedy bring color to Tianyi Wang's everyday life. Tianyi describes an easygoing and optimistic personality, together with a willingness to work through challenges. The motto, “In me the tiger sniffs the rose,” combines courage with an appreciation of life's quieter details. We look forward to sharing the research journey ahead."
       },
       research: {
-        zh: "空间带隙梯度钙钛矿太阳能电池",
-        en: "Perovskite solar cells with spatial bandgap gradients"
+        zh: "新型结构钙钛矿太阳能电池",
+        en: "Perovskite solar cells with novel structures"
       },
       motto: { zh: "心有猛虎，细嗅蔷薇。", en: "In me the tiger sniffs the rose." }
     },

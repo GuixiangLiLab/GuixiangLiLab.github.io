@@ -341,8 +341,8 @@ export const memberDetails: Record<string, MemberDetail> = {
     research: {
       title: { en: "Research Direction", zh: "研究方向" },
       text: {
-        en: "Perovskite solar cells with spatial bandgap gradients.",
-        zh: "空间带隙梯度钙钛矿太阳能电池。"
+        en: "Perovskite solar cells with novel structures.",
+        zh: "新型结构钙钛矿太阳能电池。"
       }
     },
     extraSections: [
