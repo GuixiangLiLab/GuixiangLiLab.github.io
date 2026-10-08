@@ -402,6 +402,198 @@ export const memberDetails: Record<string, MemberDetail> = {
     ]
   },
 
+  zuoyihang: {
+    slug: "zuoyihang",
+    portrait: "/img/Members/zuoyihang.jpg",
+    alt: { en: "Yihang Zuo", zh: "左祎航" },
+    name: { en: "Yihang Zuo", zh: "左祎航" },
+    statusBadge: { en: "Master's · Year 1", zh: "硕士一年级" },
+    affiliation: {
+      en: "Guixiang Li Laboratory · Southeast University",
+      zh: "功能光电实验室 · 东南大学"
+    },
+    background: {
+      title: { en: "Background", zh: "教育经历" },
+      text: {
+        en: "<strong>Undergraduate studies</strong> Nanjing Forestry University.",
+        zh: "南京林业大学 · 本科。"
+      }
+    },
+    hobbies: {
+      en: ["Fitness", "Cycling", "Photography"],
+      zh: ["健身", "骑行", "摄影"]
+    },
+    statement: {
+      title: { en: "Personal Statement", zh: "个人陈述" },
+      text: {
+        en: "I love sports and value self-discipline.",
+        zh: "热爱运动、自律。"
+      }
+    },
+    motto: {
+      en: "Move_Up",
+      zh: "Move_Up"
+    },
+    research: {
+      title: { en: "Research Direction", zh: "研究方向" },
+      text: {
+        en: "Narrow-bandgap and tandem solar cells.",
+        zh: "窄带隙及叠层电池。"
+      }
+    },
+    extraSections: [
+      {
+        id: "origin",
+        title: { en: "Hometown", zh: "家乡" },
+        text: { en: "Tongbai County, Nanyang, Henan Province.", zh: "河南省南阳市桐柏县。" }
+      }
+    ]
+  },
+
+  lourundong: {
+    slug: "lourundong",
+    portrait: "/img/Members/lourundong.jpg",
+    alt: { en: "Rundong Lou", zh: "娄润东" },
+    name: { en: "Rundong Lou", zh: "娄润东" },
+    statusBadge: { en: "Master's · Year 1", zh: "硕士一年级" },
+    affiliation: {
+      en: "Guixiang Li Laboratory · Southeast University",
+      zh: "功能光电实验室 · 东南大学"
+    },
+    background: {
+      title: { en: "Background", zh: "教育经历" },
+      text: {
+        en: "<strong>Undergraduate studies</strong> School of Materials Science and Engineering, Zhengzhou University.",
+        zh: "郑州大学 · 材料科学与工程学院 · 本科。"
+      }
+    },
+    hobbies: {
+      en: ["Discovering delicious food"],
+      zh: ["寻找好吃的"]
+    },
+    statement: {
+      title: { en: "Personal Statement", zh: "个人陈述" },
+      text: {
+        en: "I am warm and friendly with others, and I handle pressure well.",
+        zh: "相处时热情，抗压能力挺好。"
+      }
+    },
+    motto: {
+      en: "“Keep a positive mindset, and good things will come.”",
+      zh: "“只要心态好，好事少不了。”"
+    },
+    research: {
+      title: { en: "Research Direction", zh: "研究方向" },
+      text: {
+        en: "Regular-bandgap perovskite solar cells.",
+        zh: "常规带隙钙钛矿电池。"
+      }
+    },
+    extraSections: [
+      {
+        id: "origin",
+        title: { en: "Hometown", zh: "家乡" },
+        text: { en: "Xinxiang, Henan Province.", zh: "河南省新乡市。" }
+      }
+    ]
+  },
+
+  kongdelu: {
+    slug: "kongdelu",
+    portrait: "/img/Members/kongdelu.jpg",
+    alt: { en: "Delu Kong", zh: "孔德鲁" },
+    name: { en: "Delu Kong", zh: "孔德鲁" },
+    statusBadge: { en: "Master's · Year 1", zh: "硕士一年级" },
+    affiliation: {
+      en: "Guixiang Li Laboratory · Southeast University",
+      zh: "功能光电实验室 · 东南大学"
+    },
+    background: {
+      title: { en: "Background", zh: "教育经历" },
+      text: {
+        en: "<strong>Undergraduate studies</strong> Polymer Materials and Engineering, Hangzhou Normal University.",
+        zh: "杭州师范大学 · 高分子材料与工程专业 · 本科。"
+      }
+    },
+    hobbies: {
+      en: ["Running", "Street workouts"],
+      zh: ["跑步", "街健"]
+    },
+    statement: {
+      title: { en: "Personal Statement", zh: "个人陈述" },
+      text: {
+        en: "I am quiet but warmhearted. I stay calm and approach tasks in an orderly way.",
+        zh: "说话不多但热心肠，很沉得住气，做事有条不紊。"
+      }
+    },
+    motto: {
+      en: "“Flowing water does not race to be first; it keeps flowing without end.”",
+      zh: "“流水不争先，争的是滔滔不绝。”"
+    },
+    research: {
+      title: { en: "Research Direction", zh: "研究方向" },
+      text: {
+        en: "Stability of regular-bandgap perovskite solar cells.",
+        zh: "常规带隙钙钛矿太阳能电池稳定性。"
+      }
+    },
+    extraSections: [
+      {
+        id: "origin",
+        title: { en: "Hometown", zh: "家乡" },
+        text: { en: "Zaozhuang, Shandong Province.", zh: "山东枣庄。" }
+      }
+    ]
+  },
+
+  hechang: {
+    slug: "hechang",
+    portrait: "/img/Members/hechang.jpg",
+    alt: { en: "Chang He", zh: "何畅" },
+    name: { en: "Chang He", zh: "何畅" },
+    statusBadge: { en: "Master's · Year 1", zh: "硕士一年级" },
+    affiliation: {
+      en: "Guixiang Li Laboratory · Southeast University",
+      zh: "功能光电实验室 · 东南大学"
+    },
+    background: {
+      title: { en: "Background", zh: "教育经历" },
+      text: {
+        en: "<strong>Undergraduate studies</strong> Materials Science and Engineering, Ningbo University.",
+        zh: "宁波大学 · 材料科学与工程专业 · 本科。"
+      }
+    },
+    hobbies: {
+      en: ["Gaming", "Reading novels", "Tokusatsu shows", "Sleeping"],
+      zh: ["打游戏", "看小说", "特摄剧", "睡觉"]
+    },
+    statement: {
+      title: { en: "Personal Statement", zh: "个人陈述" },
+      text: {
+        en: "Occasionally full of fighting spirit, always tempted to take it easy.",
+        zh: "间歇性斗志昂扬，持续性想当咸鱼。"
+      }
+    },
+    motto: {
+      en: "“Alipay in my left hand, WeChat Pay in my right. I see neither talent nor hard work, just sheer power, kid.”",
+      zh: "“左手支付宝右手微信支付，我没有看到什么天赋与努力，我只看到了纯粹的强度，孩子。”"
+    },
+    research: {
+      title: { en: "Research Direction", zh: "研究方向" },
+      text: {
+        en: "Synthesis of optoelectronic materials and applications in perovskite solar cells.",
+        zh: "光电材料合成与钙钛矿太阳能电池应用。"
+      }
+    },
+    extraSections: [
+      {
+        id: "origin",
+        title: { en: "Hometown", zh: "家乡" },
+        text: { en: "Changzhou, Jiangsu Province.", zh: "江苏常州。" }
+      }
+    ]
+  },
+
   lizeyu: {
     slug: "lizeyu",
     portrait: "/img/Members/lizeyu1.jpg",

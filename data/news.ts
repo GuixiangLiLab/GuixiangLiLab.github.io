@@ -24,6 +24,16 @@ function sortByDateDesc(a: NewsItem, b: NewsItem) {
 
 export const news: NewsItem[] = [
   {
+    id: "2026-10-01-lgx-nree",
+    slug: "2026-10-01-lgx-nree",
+    cover: "/img/News/20261001_lgx_nree/figure-3.png",
+    title: {
+      en: "Academic News | Nature Reviews Electrical Engineering: A System-Level AI Framework for Perovskite Photovoltaics",
+      zh: "学术动态 | Nature Reviews Electrical Engineering：课题组提出钙钛矿光伏系统级 AI 研究框架"
+    },
+    date: "2026.10.01"
+  },
+  {
     id: newcomerNews2026.slug,
     slug: newcomerNews2026.slug,
     cover: "/img/News/20260927_new_members/cover.svg",

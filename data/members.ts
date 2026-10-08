@@ -135,6 +135,34 @@ export const members: Member[] = [
     name: { en: "Jiacheng Ge", zh: "葛嘉诚" }
   },
   {
+    id: "yihang-zuo",
+    group: "master",
+    slug: "zuoyihang",
+    img: "/img/Members/zuoyihang.jpg",
+    name: { en: "Yihang Zuo", zh: "左祎航" }
+  },
+  {
+    id: "rundong-lou",
+    group: "master",
+    slug: "lourundong",
+    img: "/img/Members/lourundong.jpg",
+    name: { en: "Rundong Lou", zh: "娄润东" }
+  },
+  {
+    id: "delu-kong",
+    group: "master",
+    slug: "kongdelu",
+    img: "/img/Members/kongdelu.jpg",
+    name: { en: "Delu Kong", zh: "孔德鲁" }
+  },
+  {
+    id: "chang-he",
+    group: "master",
+    slug: "hechang",
+    img: "/img/Members/hechang.jpg",
+    name: { en: "Chang He", zh: "何畅" }
+  },
+  {
     id: "dongdong-luo",
     group: "master",
     slug: "luodongdong",

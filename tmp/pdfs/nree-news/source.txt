@@ -1,0 +1,1207 @@
+--- PAGE 1 ---
+Nature Reviews Electrical Engineering
+nature reviews electrical engineering
+https://doi.org/10.1038/s44287-026-00332-4
+Review article
+ Check for updates
+Towards system-level artificial  
+intelligence in perovskite 
+photovoltaics
+Yifan Li (李怡凡)1,6, Wei Liu (刘威)2,6, Qing Cao (曹青)3,6, Shimin Di (邸世民)    2 , Mohammad Khaja Nazeeruddin    4,5   
+& Guixiang Li (李桂香)    1 
+Abstract
+Halide perovskite solar cells (PSCs) offer tunable optoelectronic 
+properties and low fabrication costs; however, their industrial 
+deployment is constrained by tightly coupled dependencies among 
+composition, processing and device architecture. Artificial intelligence 
+(AI) has been widely applied across the PSC research cycle, but its impact  
+remains uneven: models accelerate local optimization within data-rich 
+regimes yet do not generalize across compositions, fabrication 
+environments or device architectures. This unevenness reflects the 
+difficulty of representing the coupled, cross-scale relationships that 
+govern PSC behaviour rather than a limitation of modelling capability 
+alone. We examine AI applications across materials discovery, device 
+engineering, process optimization and stability analysis, identify four 
+structural bottlenecks (fragmented data, weak generalization, limited 
+interpretability and misaligned design objectives) and outline research 
+directions to address each. Broad impact will require a transition from 
+task-specific predictive tools towards system-level AI integration that 
+preserves knowledge across the PSC research cycle.
+Sections
+Introduction
+AI capabilities and limits
+Structural bottlenecks for AI
+Outlook
+1School of Materials Science and Engineering, Southeast University, Nanjing, China. 2School of Computer 
+Science and Engineering, Southeast University, Nanjing, China. 3Department of Chemistry and Biochemistry, 
+University of Notre Dame, South Bend, IN, USA. 4Institute of Chemical Sciences and Engineering, École 
+Polytechnique Fédérale de Lausanne (EPFL), Lausanne, Switzerland. 5School of Integrated Circuits, Southeast 
+University, Wuxi, China. 6These authors contributed equally: Yifan Li, Wei Liu, Qing Cao.  e-mail: shimin.di@
+seu.edu.cn; mdkhaja.nazeeruddin@epfl.ch; guixiang.li@seu.edu.cn
+
+--- PAGE 2 ---
+Nature Reviews Electrical Engineering
+Review article
+processing and performance and minimal coupling to real-time 
+ experimental feedback8.
+The underlying difficulty is not primarily algorithmic. It reflects 
+the difficulty of capturing the coupled and evolving relationships 
+among chemistry, processing, device operation and degradation. 
+These relationships are particularly demanding in PSCs, in which ion 
+migration, crystallization dynamics, interfacial reactions and meta-
+stability generate strong cross-scale dependencies that are difficult 
+to capture using conventional data-driven models.
+We refer to the research paradigm needed to address these 
+dependencies as system-level AI integration: a mode of working in 
+which knowledge generated at one stage of the PSC research cycle is 
+continuously propagated, updated and reused to inform subsequent 
+stages through coupled digital–physical feedback. What distinguishes 
+it from conventional closed-loop optimization, which improves indi-
+vidual tasks in isolation, is this continuous cross-stage propagation 
+of transferable knowledge. Workflows that optimize only a single task 
+without preserving and propagating information beyond it fall short 
+of this definition.
+This Review develops that argument in three parts. We first survey 
+what AI has and has not delivered across materials discovery, device 
+engineering, process optimization and stability analysis in PSCs, draw-
+ing out a shared pattern of local acceleration but weak transferability. 
+We then examine the four structural bottlenecks that limit broader 
+impact (fragmented data, weak generalization, limited interpretability, 
+and misalignment with practical design objectives) and the research 
+directions that could address each. We close by sketching a route from 
+today’s isolated workflows towards system-level AI integration across 
+the PSC research life cycle.
+AI capabilities and limits
+AI has been applied at every stage of the PSC research cycle to address 
+the challenges outlined earlier: materials discovery, device engineering, 
+process optimization and stability analysis (Fig. 1). Across these stages, 
+common strengths and limitations emerge. AI reliably identifies pat-
+terns within well-defined systems and accelerates local optimization, 
+but it extrapolates poorly beyond narrow compositional and process-
+ing windows, offers weak transferability across device architectures 
+and provides limited mechanistic insight. Considered together, these 
+stage-specific limitations point to a shared cause: the fragmentation of 
+AI workflows across an otherwise tightly coupled research pipeline. This 
+fragmentation frames the case for system-level integration developed 
+later in this Review.
+Materials discovery and extrapolation
+AI has proved most useful in compositional exploration. For proper-
+ties such as the bandgap Eg, in which large and internally consistent 
+datasets exist, models can map composition–property relationships 
+more efficiently than experiment permits9–11 . These models enable 
+navigation of multicomponent systems, including mixed-cation 
+and mixed-halide compositions, without relying entirely on trial  
+and error.
+This approach has been extended to less conventional systems, 
+including low-dimensional variants, structures modified by  ligands 
+and Pb-free alternatives7,12–15 . AI is often used to relate molecular char-
+acteristics such as ligand size or polarity to structural outcomes such 
+as octahedral distortion, layer spacing or phase stability16– 18. These rela-
+tionships are meaningful and, in some cases, provide useful  guidance 
+for narrowing candidate materials.
+Key points
+ • Perovskite solar cell (PSC) deployment is bottlenecked by tightly 
+coupled dependencies, not by single-parameter optimization. 
+Composition governs processing dynamics, processing determines 
+microstructure, and microstructure sets device performance, 
+so improvements identified in one system rarely transfer to another.
+ • Artificial intelligence (AI) accelerates PSC research locally but 
+does not generalize. Across materials discovery, device engineering, 
+process optimization and stability analysis, AI reliably identifies 
+correlations and speeds up optimization within data-rich regimes;  
+it does not yet extract mechanism-anchored insights that transfer 
+across compositions, architectures or operating conditions.
+ • The limitation is structural, not algorithmic. Four bottlenecks recur 
+across AI applications in PSCs: fragmented and non-interoperable 
+data, weak generalization across systems, limited interpretability with 
+weak physical grounding, and misalignment between AI objectives and 
+practical design constraints.
+ • Addressing these bottlenecks requires integrated infrastructures, not 
+more accurate individual models. Multimodal and multilevel datasets, 
+physics-informed and explainable models and closed-loop coupling 
+between AI predictions and experimental feedback each address one 
+bottleneck; together, they provide the building blocks for a coupled 
+research pipeline.
+ • System-level AI integration is the direction of travel. The near-term 
+shift is from local, task-specific AI towards frameworks in which 
+knowledge is continuously propagated, updated and reused across 
+the full PSC research cycle, reframing AI from a predictive tool into a 
+participant in materials discovery, device optimization and reliability 
+engineering.
+Introduction
+Halide perovskite solar cells (PSCs) have reached certified power con-
+version efficiencies (PCEs)1 of 28%, and their tunable optoelectronic 
+properties, solution processability and low fabrication costs 2 have 
+made them one of the most active platforms in photovoltaic research. 
+However, the path to industrial deployment remains constrained by 
+instability under heat, moisture and illumination, by the presence of 
+lead-based components and by a tightly coupled interplay among mate-
+rial chemistry, processing conditions and device architecture3– 5. These 
+couplings mean that improvements identified in one  composition, 
+process or architecture rarely transfer to another.
+Artificial intelligence (AI), spanning machine learning (ML), deep 
+learning and data-driven optimization, has therefore been applied 
+across the PSC research cycle, from bandgap Eg prediction and materi-
+als screening to process optimization and device engineering6,7. Within 
+well-defined systems and data-rich regimes, these approaches deliver 
+measurable acceleration: they identify correlations that guide experi-
+mental design, narrow candidate compositions and rank the variables 
+that most strongly influence performance.
+Progress in these areas has, nonetheless, been uneven. Most exist-
+ing efforts remain narrowly scoped, relying on isolated predictive 
+models with limited generalizability, weak links across composition, 
+
+--- PAGE 3 ---
+Nature Reviews Electrical Engineering
+Review article
+Predictive performance, nonetheless, deteriorates rapidly once 
+the chemistry moves outside the compositional range of the training 
+data19. Unusual ligands, new B-site substitutions or competing phase 
+behaviour introduces effects (defect formation, lattice instability 
+and phase segregation) that are only weakly represented in existing 
+datasets14,15. As a result, models extrapolate poorly and remain better 
+at organizing known compositions than at identifying genuinely new 
+materials. Most studies accordingly remain retrospective analyses of 
+published data, with few examples in which AI predictions have guided 
+experimental discovery of a new composition.
+Device engineering and local design rules
+At the device level, AI has helped identify the factors that most influ-
+ence device performance, including energy level alignment, interfacial 
+recombination and charge transport balance20,21. This has enabled more 
+efficient screening of transport layers, interface modifiers and addi-
+tive systems, particularly in architectures in which multiple variables 
+interact nonlinearly22– 24.
+In practice, AI often acts as a filter, narrowing candidate materials 
+and highlighting design directions, for example, by identifying interfa-
+cial treatments that suppress non-radiative recombination or additives 
+that reduce defect density at grain boundaries24– 26. These insights can 
+accelerate optimization within specific device architectures.
+However, these findings rarely transfer across systems. Small varia-
+tions in composition, interface chemistry or processing conditions can 
+alter device behaviour, so that the predictive power of models trained 
+on one dataset does not carry over to another. Correlations identified 
+at the device level do not necessarily reflect underlying mechanisms 
+such as defect passivation pathways or carrier recombination dynam-
+ics. AI, therefore, supports local optimization but does not provide the 
+mechanism-anchored design principles that would generalize across 
+device platforms.
+Process optimization and narrow optima
+If there is a domain in which AI delivers immediate practical value, it 
+is process optimization27. Fabrication of PSCs involves many coupled 
+parameters, such as solvent choice, precursor ratios and annealing con-
+ditions, and exploring this space experimentally is time-consuming28. 
+AI can shorten this process by steering experiments towards regions 
+likely to yield high performance29–33 .
+Processing cannot, however, be reduced to a set of static param-
+eters. Film formation depends on dynamic phenomena: nucleation 
+behaviour, intermediate phase formation, solvent evaporation rates 
+and grain growth pathways. The incorporation of in situ diagnostics 
+has made this dependence explicit, revealing how small variations 
+in these dynamics can lead to differences in morphology and device 
+performance34,35.
+The ‘optimal’ conditions identified by AI are often confined to 
+a narrow window, so many AI-selected solutions are not robustly 
+optimal but rather context-sensitive local optima. This narrowness 
+helps explain why reproducibility across laboratories remains dif -
+ficult and why scale-up to manufacturing continues to lag laboratory 
+optimization.
+Stability without mechanistic insight
+Stability is arguably the most complex aspect of PSC research, and AI 
+has been widely applied to it. By analysing time-dependent data such 
+as photoluminescence evolution or spectral changes under stress, 
+AI can identify which variables are most strongly associated with 
+degradation36–38 .
+These analyses help spot early warning signs: phase segregation 
+under illumination, the onset of ion migration or the accumulation of 
+defects that eventually lead to performance loss10,38. They also permit 
+comparisons across different stress conditions, helping to rank the 
+relative importance of heat, moisture and electric fields39–42 .
+Requirements
+• AI capabilities
+Information retrieval, representation
+• Multimodal data processing
+• Reading comprehension, information synthesis
+Statistical induction, pattern discovery
+• Function approximation
+• Pattern recognition, anomaly detection
+• Symbolic induction, equation discovery
+Search and generate
+• Search
+• Generative
+Auto-interaction, closed-loop execution
+• Interaction skills
+Domains
+• Limitations
+Cross-domain
+• Weak cross-
+domain integration
+Stability
+• Correlation without 
+mechanism
+Process
+• Constrained 
+reproducibility
+Device
+• Local design 
+rules
+Materials
+• Limited 
+extrapolation
+Required Not essential
+Fig. 1 | Capabilities and limitations of artificial intelligence across the 
+perovskite solar cell research workflow. Matrix of AI (artificial intelligence) 
+capabilities required to address the principal limitation in each domain of 
+perovskite solar cell research. Filled circles indicate a required capability; open 
+circles indicate one that is not essential.
+
+--- PAGE 4 ---
+Nature Reviews Electrical Engineering
+Review article
+Most such analyses, nonetheless, operate at the level of correla-
+tion. They identify which factors matter, but often do not capture how 
+degradation pathways unfold at the microscopic level, for example, 
+how ion migration interacts with defect formation or phase transitions 
+over time. Combined with the absence of standardized long-term 
+datasets, this limitation makes reliable lifetime prediction difficult. For 
+now, AI organizes stability data better than it fully explains them, and 
+generalizable lifetime prediction remains an open challenge.
+Cross-domain limits and weak integration
+Across materials discovery, device engineering, process optimization 
+and stability analysis, a consistent limitation is evident: AI excels at 
+high-dimensional correlation analysis and local optimization but does 
+not deliver system-level, generalizable insights43. This is not merely a 
+model shortcoming but a consequence of the tightly coupled nature 
+of PSC systems, in which composition governs processing dynamics, 
+processing defines microstructure, and microstructure determines 
+device performance. Isolated treatment of these interconnected stages 
+inevitably discards the mechanistic couplings that link them.
+PSCs pose an unusually difficult challenge for AI because device 
+behaviour emerges from tightly coupled and dynamically evolving 
+processes that span multiple spatial and temporal scales. Ion migration 
+continuously modifies local electric fields and defect distributions 
+during operation, whereas crystallization pathways remain highly sensi-
+tive to environmental fluctuations and processing history. Metastable 
+phases, interfacial reactions and stress-induced structural evolution 
+introduce non-equilibrium behaviour that is difficult to represent using 
+static descriptors. As a result, correlations learnt from one dataset often 
+become invalid when transferred across compositions, architectures 
+or operating conditions.
+Viewed from this perspective, the challenge is not simply to boost 
+predictive accuracy, but to reframe research workflows around inte-
+grated, cross-scale frameworks that unify data, models and experi -
+ments. Such a paradigm shift will be as consequential for unlocking AI’s 
+potential in PSC engineering as incremental algorithmic improvements.
+Structural bottlenecks for AI
+Reliable, widespread deployment of AI in PSC research is constrained by 
+four interrelated bottlenecks (Fig. 2): fragmented data with weak inter-
+operability, limited generalization across materials and processes, weak 
+physical grounding of black-box models and misalignment between 
+AI objectives and practical design constraints. Each is examined below 
+alongside the research directions that could shift AI from a correlational 
+tool towards a mechanistically grounded design partner.
+Data gaps and interoperability limits
+PSC research suffers from fragmented datasets with inconsistent 
+formats, uncontrolled variability and limited public accessibility. 
+Experimental data are often recorded in unstructured formats such 
+as figures and supplementary files and lack essential metadata such as 
+processing conditions, measurement protocols or degradation history. 
+Three related deficits, therefore, need to be addressed: the difficulty of 
+Shapley 
+interactions
+DFT 
+datasets Mechanism
+Mechanism insights
+Fabrication
+Monitoring
+Recycling
+Maintenance
+Design
+Lifecycle-aware AI
+Stability
+Toxicity
+CostPCE
+Goal
+Single-objective focus
+Text Images
+Charts
+MAPbl 3 2D perovskite
+Other /f.shortields
+MASnl 3
+ModelsVideos
+Mixed data types Limited generalization
+Multilevel 
+datasets
+Atomic, 
+molecular Film
+Device Cognitive
+Structured datasets
+Data
+Key bottlenecksPathways forward
+Models Algorithms
+Multimodal datasets
+Multilevel datasets
+Standardized datasets
+Dataset augmentation
+Transfer learning
+Pareto front modelling
+Lifecycle-aware AI
+Physics-informed ML
+Explainable AI
+Model–simulation integration
+PSCs
+Si PV Formula
+Other 
+/f.shortieldsLED
+PSC 
+models
+Cross-domain transfer
+Material 
+design
+ReproducibilityDFT
+'Black-box' 
+properties
+Poor interpretability
+Fig. 2 | Structural bottlenecks limiting the practical impact of AI. Four 
+bottleneck themes (red panels) are arranged along a data–models–algorithms 
+axis: mixed data types, limited generalization, poor interpretability of black-
+box models and single-objective focus. Grey bars list the strategies proposed 
+to address each bottleneck, and blue panels show the pathway outcomes each 
+strategy targets. The vertical arrow at the left marks the progression from 
+present bottlenecks to future pathways. DFT, density functional theory; 
+LED, light-emitting diode; MA, methylammonium; ML, machine learning; 
+PCE, power conversion efficiency; PSC, perovskite solar cell; PV, photovoltaics.
+
+--- PAGE 5 ---
+Nature Reviews Electrical Engineering
+Review article
+jointly using different data modalities, the absence of representations 
+that span the atomic to the device scale and the lack of standardized, 
+dynamically maintained datasets.
+Multimodal data integration challenges. PSC data are multimodal. 
+Research should therefore not rely on simple correlation between 
+literature-mined descriptors and performance. A well-formed dataset 
+should integrate explicit data modalities (morphology images, spec-
+troscopy, current–voltage and external quantum efficiency curves and 
+ageing profiles) with structured metadata (fabrication parameters and 
+scalar electrical metrics), so that models can learn the relationships 
+among composition, process and performance 44. Monomodal data 
+often capture only a subset of the relationships governing PSC behav-
+iour and does not reflect fundamental physical principles. For example, 
+materials with identical compositions can differ in morphology and 
+stability because of varying processing conditions45– 47. Therefore, reli-
+able predictions of performance and stability require joint modelling 
+that combines composition, morphology, spectroscopic and electrical 
+characterization.
+We distinguish multimodal data from multisource and multilevel 
+data. Multimodal data are fundamentally different forms of infor -
+mation, such as morphology images, spectroscopy, electrical char -
+acterization curves and ageing trajectories. By contrast, structured 
+metadata provide contextual information about how each data record 
+was obtained. Multisource and multilevel data capture information 
+across different experimental pathways and physical scales. Effective 
+PSC learning ultimately requires the integration of all three dimensions 
+across composition, processing and device operation.
+Multilevel data representation gaps.  PSC research requires the 
+construction of rigorous, multilevel datasets to bridge computa -
+tional and experimental feasibility48,49. Such datasets span four levels: 
+atomic and molecular, thin-film, device and (as elaborated below) a 
+knowledge-level representation that captures cross-level relation -
+ships. Models trained solely on data from a single level tend to pro -
+duce isolated black-box mappings, leading to mismatches between 
+materials and experimental or device results 50– 52. By contrast, mul -
+tilevel training incorporates cross-level physical constraints, which 
+improves prediction accuracy and reveals mechanistic evolution44,53. 
+For example, correlating the spectral signals of perovskites with mor-
+phological heterogeneity can pinpoint the microscopic origins of 
+device degradation54,55.
+Standardization and dynamic updating.  A further data challenge 
+is insufficient standardization and poor interoperability. In many 
+subfields, chemical composition records lack a standardized format, 
+making them difficult to convert into uniform atomic descriptors 56. 
+Furthermore, multimodal data are often compressed into scalar 
+values, resulting in the loss of information 54,57. Data integrity is com-
+promised by sparse structures and inconsistent handling of miss -
+ing values; in some databases, mixed notation and ambiguous field 
+definitions can lead to ambiguity58. From a distributional perspective, 
+literature-mining databases also suffer from positive bias and long-tail 
+distribution issues — for example, an excess of data on TiO 2 electron 
+transport layers, which can lead models to learn editorial preferences 
+of the field rather than universal physical laws. Finally, static data -
+set construction cannot keep pace with the rapid evolution of PSC 
+technology56. Without dynamic update mechanisms, feature spaces 
+lag behind current practice in the field.
+Although the integrated multimodal, multilevel and standard -
+ized database envisaged earlier remains conceptual, the continued 
+emergence of monomodal databases offers a foundation on which 
+such a resource can be built; concrete recommendations are set out 
+in the Outlook section.
+Weak generalization across systems
+Most published models are system-specific and trained on narrow 
+datasets, for example, laboratory-scale MAPbI3-based systems, result-
+ing in weak generalization. These models cannot easily accommodate 
+variations in dimensionality, chemical system and fabrication process. 
+The challenge is not simply one of data quantity but the difficulty of pre-
+serving physicochemical invariants across heterogeneous PSC systems. 
+Data augmentation and transfer learning should therefore be viewed 
+not as standalone solutions but as attempts to recover  transferable 
+representations from incomplete observations.
+Dataset augmentation limitations.  In perovskite research, sample 
+scarcity makes it difficult to construct standardized databases, and 
+this scarcity can lead to model underfitting and reduced prediction 
+accuracy. T o address this scarcity, common data-level augmenta -
+tion strategies used in perovskite research include conventional data 
+transformation, generative adversarial networks and large-language-
+model-based data generation technologies59,60. For example, elemental 
+cation substitution at the  A-site and B-site of perovskite lattices is 
+widely used to expand small original datasets and diversify sample 
+coverage61.
+Data augmentation has successfully increased dataset sizes. How-
+ever, increasing dataset size does not necessarily improve dataset 
+quality62. A challenge is that generated samples may satisfy statistical 
+similarity to real data while violating fundamental physicochemical 
+constraints. For PSC applications, charge neutrality, phase stability, 
+tolerance factor requirements, synthetic accessibility and device rele-
+vance should be considered during both data generation and validation 
+(Table 1). Without such constraints, augmented datasets may introduce 
+Table 1 | Data augmentation for different data types
+Data type Use case Augmentation Constraint Validation
+Composition Materials screening Constrained substitution; generative models Charge neutrality; phase stability Physical feasibility
+Process Process optimization Parameter perturbation; generative models Process window Experimental validation
+Images Morphology analysis Rotation; crop; mixup Morphology preservation Visual consistency
+Spectra Phase and defect analysis Noise; shift; scaling Peak assignment Spectral consistency
+Device ageing Stability prediction Resampling; physics-based simulation Ageing trend Lifetime-test consistency
+
+--- PAGE 6 ---
+Nature Reviews Electrical Engineering
+Review article
+chemically unrealistic compositions or experimentally inaccessible 
+structures, thereby limiting model reliability and transferability.
+Transfer learning and domain mismatch.  Although data augmen -
+tation acts within a single system, transfer learning, which reuses a 
+model trained on one system as the starting point for a related system, 
+transfers general knowledge, structural patterns and features from 
+the source domain to a different but related target domain. By using 
+general structure–property relationships, transfer learning reduces 
+the computational and time costs of training from scratch.
+However, transfer learning has yielded limited results in perovskite 
+materials research so far and can suffer from negative transfer caused 
+by cross-domain heterogeneity 63. In a typical failure case, models 
+trained on the dataset of lead–halide  2D perovskites processed by 
+conventional solution methods produce unreliable predictions when 
+applied directly to Sn-based or Bi-based perovskite systems61. The dis-
+tinct ionic radii, valence electron configurations and lattice-distortion 
+characteristics of the two families break the shared structure–property 
+correlation the model has learnt64. Similarly, models optimized for 2D 
+perovskite architectures often do not transfer to other architectures, 
+because charge transport requirements and bonding mechanisms vary 
+across device structures65.
+More fundamentally, transfer failure often arises because mod-
+els learn dataset-specific statistical regularities rather than invari -
+ant physicochemical relationships. When the dominant degradation 
+mechanisms, crystallization pathways, defect chemistries or interfacial 
+interactions differ between source and target domains, correlations 
+learnt from one system become unreliable predictors in another. As a 
+result, models that perform well within a narrowly defined materials 
+family or processing protocol frequently fail when transferred across 
+compositions, device architectures or operating conditions. This chal-
+lenge is particularly severe in PSC research because device performance 
+emerges from coupled interactions among composition, processing 
+history, microstructure and operational conditions, many of which 
+are poorly represented in existing datasets. A shared data space must 
+therefore be carefully designed to avoid mismatches in structure and 
+features and to eliminate systematic experimental biases. The pre -
+cursor space produced by transfer learning still requires validation 
+by small-scale, high-throughput experimentation to quantify gains in 
+prediction accuracy.
+Interpretability and physical grounding
+A criticism of AI in materials science is its black-box nature. High-  
+performing models often provide little insight into why a given 
+prediction is made. In the PSC context, this both constrains 
+mechanism-guided design of materials and devices and impedes the 
+integration of ML with density functional theory (DFT), device model-
+ling and process simulation, and it reduces the reliability of research 
+results and inter-laboratory reproducibility. Three responses to these 
+limitations are considered below: physics-informed ML (PIML), which 
+embeds known physical laws into the model’s architecture or train-
+ing objective; explainable AI, which exposes which input features 
+drive a model’s predictions; and the joint use of models with physical 
+ simulation.
+Physics-informed modelling strategies. In PSC research, the main 
+barrier to interpretable AI is that purely data-driven models can -
+not account for the strong nonlinear couplings among the dynamic 
+processes that occur inside a PSC. PIML is particularly suited to PSC 
+systems, because it can embed lattice dynamics, carrier transport, ion 
+migration and defect physics into neural networks, so that models can 
+infer causal relationships among processing history, microstructure 
+evolution, device operation and long-term stability, rather than relying 
+on empirical correlations.
+However, multiscale physical coupling remains conceptual in 
+practice. This is because many key phenomena in perovskites evolve 
+across multiple spatial and temporal scales and cannot be fully char-
+acterized by a single physical constraint or statistical correlation. For 
+example, ion migration continuously modifies local electric fields and 
+interfacial energetics during device operation, whereas crystallization 
+pathways determine defect distributions and microstructure forma-
+tion during film growth. In addition, degradation processes emerge 
+from the coupled evolution of defects, strain, phase segregation and 
+interfacial reactions under external stresses.
+Phase transitions, halide segregation, lattice reconstruction and 
+black-phase degradation are rare events involving bond-breaking 
+and restructuring, so that the physical loss function of PIML cannot 
+precisely constrain the kinetic pathways. Organic–inorganic hybrid 
+perovskites also involve covalent, ionic and van der Waals interactions, 
+for which no unified analytical physical prior is available.
+Explainability and its limitations.  A range of explainable AI tech -
+niques, such as Shapley additive explanations, have been used to ana-
+lyse feature importance and decision logic, thereby increasing human 
+trust in models64. Although these methods, and their combinations 
+with other approaches, appear to provide interpretable insights for 
+optimizing PSC performance and exploring underlying mechanisms, 
+long-standing puzzles remain unresolved20,37,65.
+Existing mechanistic studies have largely focused on rationalizing 
+experimental observations within established frameworks, whereas 
+fundamentally new mechanistic perspectives remain scarce. For exam-
+ple, a particular halide ion has been reported to dominate both the 
+bandgap66 and the perovskite adsorption energy67. This convergence 
+on a single feature may reflect subjective feature selection or the omis-
+sion of features judged unimportant a priori. Future opportunities 
+may therefore lie in applying explainable AI to phenomena that remain 
+difficult to probe experimentally, including metastable ion migra -
+tion pathways, high-temperature degradation and crystallization 
+dynamics, in which AI may help reveal hidden variables and causal 
+relationships39.
+Furthermore, biases arising from correlations between element 
+features should also be reduced68. Explainable AI should not be limited 
+to explaining ‘material design’; explaining ‘model design’ will improve 
+the accuracy of model predictions.
+Model and simulation integration. Integrating ML models with DFT 
+and time-dependent DFT simulations has become a standard work -
+flow in perovskite calculations 69,70. Typically, molecular screening 
+from source databases to intermediate or synthetic databases relies 
+on random selection or feature engineering to identify meaningful 
+descriptors22,71; however, this approach remains constrained by the sub-
+jective judgement of the researcher. By contrast, molecular descriptors 
+derived from DFT calculations in intermediate databases shift the focus 
+from human-defined macroscopic features to microscopic quantities.
+Automating the evaluation of DFT convergence, the selection 
+of functionals and the diagnosis of strong correlations could reduce 
+human intervention in ML and may become a core component of 
+autonomous design. Although cross-validating DFT results against 
+
+--- PAGE 7 ---
+Nature Reviews Electrical Engineering
+Review article
+ML predictions can improve model accuracy, the scarcity of standard-
+ized DFT datasets, together with the inherent systematic errors and 
+the supercomputing cost of high-precision DFT data, undermines the 
+efficiency motivation for using ML in the first place.
+Misalignment with design objectives
+Many AI models in PSC research target only maximizing PCE. How-
+ever, industrial feasibility requires balancing PCE against long-term 
+operational stability, toxicity and environmental impact, and scalability 
+against material costs and supply-chain constraints. Multi-objective 
+optimization (MOO) frameworks that map trade-offs on a Pareto front, 
+together with lifecycle-aware AI, are needed to move PSCs from the 
+laboratory to commercialization.
+Multi-objective optimization frameworks.  MOO has been widely 
+applied in perovskite research because it addresses problems that 
+require coordinated screening of multiple metrics, including device 
+design, interface control, process sensitivity and performance cou -
+pling. It reduces experimental and simulation costs while streamlining 
+optimization from material screening to device fabrication 72. Com-
+bined with high-throughput experiments and ML-assisted experi -
+mental design, MOO supports systematic frameworks for identifying 
+component and doping schemes that balance PCE and long-term 
+stability73.
+However, MOO’s decision-making depends on human-defined 
+objectives and offers limited insight into the structure–property mech-
+anisms of perovskites. Furthermore, MOO may remain confined to 
+laboratory research, as there is no unified quantitative standard for 
+weighting multiple objectives in industrial applications.
+Lifecycle-aware design strategies. When assessing the market poten-
+tial and industrialization progress of PSCs, it is essential to consider 
+performance, stability, cost, environmental impact and device lifespan. 
+AI that incorporates lifecycle metrics enables sustainability assess -
+ment across PCE, toxicity and environmental burden43. For example, 
+the green solvents γ-pentyl acetate and ethyl acetate can reduce the 
+safety risks and costs of traditional solvent systems while maintaining 
+a high PCE43,74. From a full-lifecycle perspective, PSCs based on such 
+solvent systems can become competitive with Si photovoltaics and 
+other renewable energy sources.
+Although lifecycle-aware AI remains conceptual in the perovskite 
+field, it is central to moving from the laboratory to commercialization75. 
+Its development requires the synergistic advancement of data, models 
+and MOO, together with a unified digital foundation and industry 
+standards spanning the full chain from research and development to 
+recycling. It must also integrate cross-scale physical mechanisms to 
+achieve closed-loop management across the full life cycle.
+These four bottlenecks — fragmented data, weak generalization, 
+limited interpretability and misaligned objectives — are interconnected 
+rather than independent. Each ultimately reflects the same underlying 
+challenge: current AI workflows cannot represent or learn the coupled 
+processes that span composition, processing, device physics and deg-
+radation across scales. This shared cause motivates the integrated AI 
+frameworks discussed next.
+Outlook
+It is tempting to attribute progress in AI for PSC research to increas-
+ingly powerful models. In practice, however, many of the limitations 
+discussed earlier do not arise from modelling capability alone; they 
+reflect a mismatch between how data are used, how models are trained 
+and how experiments are carried out. The future of AI in PSC research 
+will therefore be shaped less by incremental algorithmic improvement 
+than by frameworks that integrate data, physics, experimentation and 
+operational feedback.
+Progress will therefore depend not only on model architecture 
+but also on the quality, diversity and interoperability of experimental 
+datasets and on knowledge transfer across all PSC subtasks in both the 
+physical and digital realms.
+Dynamic and physics-aware modelling
+Processing in PSC systems is inherently dynamic; however, it is often 
+treated as a static optimization problem. In reality, crystallization 
+pathways, intermediate phases and solvent dynamics evolve over time 
+and are highly sensitive to environmental conditions6. Small fluctua-
+tions in humidity or temperature can alter nucleation behaviour and 
+grain growth, producing different defect distributions and device 
+performance76. Such effects are difficult to capture with models that 
+rely only on fixed input parameters.
+Moving forward, incorporating time-dependent and environment- 
+sensitive information will be essential. This may require the integration 
+of real-time diagnostics or treating processing as a trajectory rather 
+than a set of discrete conditions. The challenge is not only to predict 
+outcomes but also to capture how those outcomes emerge during 
+film formation.
+Multimodal data infrastructures
+PSC datasets must go beyond simple correlations between 
+literature-mined descriptors and performance. They must integrate 
+multiple data modalities and structured metadata so that models 
+can consume multisource data and link information across scales 
+Table 2 | Development of AI capabilities at different stages
+Design Forecast Knowledge Analysis Fabrication Test Preparation
+Data-driven prediction Manual PCE forecast Curated data Fundamental Manual synthesis Manual 
+characterization
+Manual 
+configuration
+AI-guided design AI-suggested PCE forecast Database Fundamental Manual synthesis Manual 
+characterization
+Manual 
+configuration
+Local closed-loop 
+workflows
+Self-designed Multi-objective Auto-updated Mechanistic High-throughput High-throughput High-throughput
+System-level autonomous 
+frameworka
+Self-designed Multi-objective Auto-updated Mechanistic High-throughput High-throughput High-throughput
+AI, artificial intelligence; PCE, power conversion efficiency. aIn the system-level autonomous framework, the digital loop is closed and AI can iterate between the digital and physical loops.
+
+--- PAGE 8 ---
+Nature Reviews Electrical Engineering
+Review article
+and dimensions. This requires structured, detailed and standardized 
+archiving of material composition, fabrication processes, device struc-
+tures and testing conditions. The archive must also support compliant 
+uploads and cross-verification by research teams worldwide, so that 
+the resulting public dataset is reusable, reproducible and comparable.
+The archive should draw on established industry standards 
+such as the National Renewable Energy Laboratory Photovoltaic 
+Data Acquisition (NREL-PVDAQ) database for the photovoltaic sec -
+tor and on authoritative computational and experimental databases 
+such as the Inorganic Crystal Structure Database (ICSD) and Materi -
+als Project for inorganic crystalline materials. It should incorporate 
+modules for standardized feature extraction, data normalization and 
+physical-constraint validation, so that it aligns with ML modelling 
+requirements and integrates with explainable AI and physics-informed 
+learning frameworks. Such an archive would support an integrated 
+research-and-development platform for perovskite material screening, 
+device optimization, mechanism analysis and industrial parameter 
+iteration.
+Closed-loop AI–experimental integration
+A related direction is the integration of AI with experimental 
+workflows77. Rather than treating prediction and validation as separate 
+steps, these approaches create iterative cycles in which models guide 
+experiments and are continuously updated by new data.
+In PSC research, such closed-loop workflows could bridge stages 
+that are currently separated: for example, composition design, process-
+ing optimization and device evaluation78. Implementing them remains 
+challenging. Experimental platforms need to execute precisely and 
+provide reliable data, whereas feedback models must adapt as new 
+information becomes available. At least in the near term, the goal is 
+less about full automation than about strengthening the feedback loop 
+between decision-making and physical validation.
+T owards system-level AI integration
+T o realize the potential of AI in PSC research, the field must move beyond 
+isolated prediction tasks towards integrated, iterative workflows that 
+link data maturity, model development and experimental validation 
+into a continuous feedback system. Here, we outline a two-part road-
+map: first, a conceptual four-stage progression of AI-enabled research 
+paradigms (Table 2), and second, the transition from local closed-loop 
+workflows to a global system-level framework (Fig. 3).
+Four-stage evolution of AI paradigms. The progression outlined sub-
+sequently reflects a progressive increase in the coupling among data, 
+models and experiments within PSC research. The progression is con-
+ceptual rather than chronological and represents the expanding role 
+of AI from retrospective analysis to increasingly active  participation 
+in experimental decision-making.
+At present, most work remains focused on data-driven predic -
+tion. Models are trained on curated datasets to estimate device per -
+formance or material properties, often achieving good retrospective 
+accuracy within well-defined systems. However, these approaches 
+remain  limited by the scope and quality of available data.
+A second stage involves design-oriented tasks, in which AI is used 
+not only to predict outcomes but also to suggest candidate materials 
+or processing conditions. Here, the focus begins to shift towards incor-
+porating constraints such as stability, toxicity or manufacturability, 
+beyond purely performance-driven optimization. However, candidate 
+validation still relies largely on human intervention.
+A third stage introduces local closed-loop workflows, either 
+through robotic experimentation or through digital  multi-agent 
+systems 38,79– 81. Although these approaches shorten the distance 
+between decision-making and validation, they remain confined to indi-
+vidual tasks or platforms82. Looking ahead, a global autonomous PSC 
+framework would generate, test and refine hypotheses continuously 
+Record outcomes Capture deviations
+Diagnose failures Update strategies
+Memory
+Understanding
+Planning
+Main agent
+Data
+analysis
+Data 
+storage
+Analysis agent
+Scienti/f.shortic 
+problem
+Cell
+analysis
+Performance 
+test
+Data 
+representation
+Preparation agent
+High-throughput 
+fabrication
+Knowledge 
+storage
+Literature 
+search
+Knowledge agent
+Hypothesis 
+generation
+Research 
+focus
+Next 
+research
+cycle
+Process 
+optimization
+Fabrication 
+scheme
+Design agent
+Materials
+design
+Fig. 3 | Closed-loop AI–experiment integration workflow for PSC development. 
+The schematic illustrates a future system-level AI framework in which knowledge 
+generation, experimental execution and model updating are continuously 
+coupled through iterative feedback loops across the PSC research cycle. Cycles 
+begin at the Main agent and return to it after Analysis, initiating the next research 
+cycle. AI, artificial intelligence; PSC, perovskite solar cell.
+
+--- PAGE 9 ---
+Nature Reviews Electrical Engineering
+Review article
+by treating experimental outcomes as inputs for ongoing model 
+improvement.
+From local to global integration. Existing autonomous AI paradigms 
+differ primarily in the scope of knowledge propagation: robotic experi-
+mentation, closed-loop optimization and self-driving laboratories 
+remain largely confined to individual tasks or platforms, whereas 
+system-level AI integration enables continuous knowledge transfer 
+across the entire PSC research life cycle.
+The motivation for such integration is strong in PSC systems, 
+in which performance emerges from tightly coupled interactions 
+among composition, processing and device architecture 83. At pre-
+sent, most local closed-loop AI–experiment workflows are closed 
+around a defined task, objective, platform or protocol. Unlike local 
+closed-loop optimization, PSC research requires AI to preserve cou -
+pled relationships across materials chemistry, processing, interfaces, 
+device physics and stability. A system-level framework therefore links 
+hypothesis generation, experimentation and model updating through 
+continuous cross-stage knowledge propagation 84: models propose 
+candidate materials or processing strategies, experiments evaluate 
+their performance under controlled conditions and the resulting data 
+are used to refine subsequent predictions. Over successive iterations, 
+this process can improve both predictive accuracy and experimental 
+efficiency. The challenge is therefore not to close a simple loop but 
+to determine how much of the PSC research workflow the loop can 
+meaningfully connect.
+Table 3 | Local and global closed-loop frameworks compared
+Framework Feedback Scope Data Coupling Knowledge transfer Maturity
+Robotic experimentation Physical Single task Process records Tight Limited Established
+Closed-loop optimization Digital Task-specific Structured datasets Partial Local Demonstrated
+Self-driving laboratory Mixed Platform Machine-readable Closed loop Intra-platform Emerging
+System-level AI Digital–physical Full life cycle Multimodal, multilevel Cross-stage Continuous Conceptual
+Glossary
+2D perovskite
+A layered variant in which insulating 
+organic spacer molecules separate 
+perovskite octahedral slabs, giving 
+increased moisture tolerance but 
+reduced charge transport.
+A-site and B-site
+The two cation positions in the ABX2 
+perovskite lattice: the A-site hosts a large 
+cation and the B-site a smaller cation.
+Bandgap
+The minimum energy required 
+to promote an electron from a 
+semiconductor’s valence band to 
+its conduction band. In perovskites, 
+it determines which wavelengths of 
+sunlight are absorbed.
+Black-phase degradation
+Loss of the photoactive black perovskite 
+phase through conversion to a 
+non-photoactive polymorph.
+Crystallization pathway
+The sequence of nucleation, 
+intermediate-phase formation and grain 
+growth by which a perovskite thin film 
+transitions from precursor solution to 
+solid film.
+Electron transport layer
+Thin layers adjacent to the  
+perovskite absorber that selectively 
+extract electrons and block the 
+opposite carrier.
+Generative adversarial 
+network
+A pair of neural networks (generator 
+and discriminator) trained against 
+each other to produce synthetic 
+data samples resembling a target 
+distribution.
+High-throughput 
+experimentation
+Parallelized experimental workflows 
+in which many samples are prepared 
+and characterized in an automated 
+pipeline.
+Ligand
+An organic molecule bonded to 
+the perovskite lattice or a colloidal 
+nanocrystal surface, used to tune 
+structural, electronic or interfacial 
+properties.
+Metastable phase
+A structural configuration of 
+the perovskite that is not the 
+thermodynamic ground state but is 
+kinetically trapped and can persist 
+under operating conditions.
+Multi-agent system
+A software framework in which 
+multiple autonomous AI agents 
+cooperate or negotiate to perform 
+tasks that a single agent cannot  
+easily handle.
+Non-radiative recombination
+Loss of a photogenerated electron– 
+hole pair through processes that do 
+not emit a photon; a primary limit on 
+solar cell voltage.
+Octahedral distortion
+Deviation of the BX6 coordination 
+octahedron from ideal geometry,  
+which shifts electronic structure  
+and phase stability.
+Pareto front
+The set of solutions to a multi- 
+objective problem in which no 
+objective can be improved without 
+worsening another.
+Passivation
+Surface or interface treatment that 
+neutralizes defects capable of trapping 
+charge carriers, thereby suppressing 
+non-radiative recombination.
+Phase segregation
+Reversible or irreversible separation  
+of a mixed-halide perovskite  
+into iodide-rich and bromide- 
+rich domains under illumination  
+or bias, which alters the local 
+bandgap.
+Tolerance factor
+A dimensionless geometric ratio 
+predicting whether a given combination 
+of A, B and X ions will form a stable 
+perovskite structure.
+
+--- PAGE 10 ---
+Nature Reviews Electrical Engineering
+Review article
+The value of such systems does not lie in full automation but 
+in improved decision quality. By systematically linking hypothesis 
+generation with experimental validation, closed-loop approaches 
+can reduce reliance on trial and error and help identify more robust 
+design strategies78. For PSCs, feedback must also capture variables 
+that strongly affect reproducibility, including processing history, 
+environmental conditions, measurement protocols and device-to-
+device variability. Progress towards system-level AI is likely to be 
+incremental38,72,73,85–87  (Table 3): near-term advances will rely on tight 
+integration of local digital and physical loops, ultimately supporting 
+a global framework that continuously propagates knowledge across 
+the PSC research life cycle88,89.
+The future impact of AI in PSC research will depend less on more 
+sophisticated algorithms than on closed-loop AI–experiment inte -
+gration within adaptive system-level frameworks that preserve the 
+coupled relationships among chemistry, processing, device physics 
+and operational stability. Such a convergence may transform AI from a 
+predictive tool into an active participant in the discovery, optimization 
+and reliability engineering of PSCs.
+Published online: xx xx xxxx
+References
+1. Green, M. A. et al. Solar cell efficiency tables (Version 66). Prog. Photovolt. 33, 795–810 
+(2025).
+2. Ramadan, A. J., Oliver, R. D. J., Johnston, M. B. & Snaith, H. J. Methylammonium-free 
+wide-bandgap metal halide perovskites for tandem photovoltaics. Nat. Rev. Mater. 8, 
+822–838 (2023).
+3. Wu, L. et al. Resilience pathways for halide perovskite photovoltaics under temperature 
+cycling. Nat. Rev. Mater. 10, 536–549 (2025).
+4. Li, G. et al. Highly efficient p–i–n perovskite solar cells that endure temperature 
+variations. Science 379, 399–403 (2023).  
+This paper examines the evolution of perovskite devices under temperature cycling 
+and informs stability research for real-world operating environments.
+5. Zhang, Z. et al. Photoswitchable isomers to improve grain boundary resilience and 
+perovskite solar cells stability under light cycling. Nat. Energy 11, 623–632 (2026).
+6. Hering, A. R., Sutter-Fella, C. M. & Leite, M. S. An AI-accelerated pathway for reproducible 
+and stable halide perovskites. Chem. Soc. Rev. 54, 10397–10426 (2025).
+7. Sun, S. et al. Accelerated development of perovskite-inspired materials via 
+high-throughput synthesis and machine-learning diagnosis. Joule 3, 1437–1451 (2019).  
+This paper demonstrates that combining experimental cycle learning with ML enables 
+an automated platform for lead-free perovskite research.
+8. Yılmaz, B. & Yıldırım, R. Critical review of machine learning applications in perovskite 
+solar research. Nano Energy 80, 105546 (2021).
+9. Ye, Y. et al. Machine learning for energy band prediction of halide perovskites. Mater. Future 
+4, 035607 (2025).
+10. Wu, B. et al. Data-driven strategy for bandgap database construction of perovskites and 
+the potential segregation study. J. Mater. Inform. 4, 7 (2024).
+11. Chen, Z. et al. Highly versatile and accurate machine learning methods for predicting 
+perovskite properties. J. Mater. Chem. C 12, 15444–15453 (2024).
+12. Miao, Z. et al. Machine learning-driven ligand engineering decodes and controls 
+structural distortions in 2D perovskites. Matter 9, 102482 (2026).
+13. Yan, G., Tang, H., Shen, Y., Han, L. & Han, Q. AI-generated ammonium ligands for 
+high-efficiency and stable 2D/3D heterojunction perovskite solar cells. Adv. Mater.  
+37, 2503154 (2025).  
+This paper demonstrates AI-enabled design of functional ligands for perovskite 
+materials.
+14. Wu, Y. et al. Universal machine learning aided synthesis approach of two-dimensional 
+perovskites in a typical laboratory. Nat. Commun. 15, 138 (2024).
+15. Mishra, P. et al. Synthesis of machine learning-predicted Cs2PbSnI6 double perovskite 
+nanocrystals. ACS Nano 19, 6107–6119 (2025).
+16. He, T., Jiang, Y., Xing, X. & Yuan, M. Structured perovskite light absorbers for efficient and 
+stable photovoltaics. Adv. Mater. 32, 1903937 (2020).
+17. Li, G. et al. Stabilizing high-efficiency perovskite solar cells via strategic interfacial 
+contact engineering. Nat. Photonics 20, 55–62 (2026).
+18. Diekmann, J. et al. Rapid parameter prediction in perovskite solar cells via AI-assisted 
+performance analysis. ACS Energy Lett. 11, 3395–3404 (2026).
+19. Lu, L., Pan, X., Luo, J. & Sun, Z. Recent advances and optoelectronic applications of 
+lead-free halide double perovskites. Chem. Eur. J. 26, 16975–16984 (2020).
+20. Lou, Q. et al. Prediction and fine screening of small molecular passivation materials  
+for high-efficiency perovskite solar cells via an enhanced machine learning workflow. 
+Adv. Funct. Mater. 35, e11549 (2025).
+21. Yang, A. et al. Enhancing power conversion efficiency of perovskite solar cells through 
+machine learning guided experimental strategies. Adv. Funct. Mater. 35, 2410419 (2025).
+22. Wu, J. et al. Inverse design workflow discovers hole-transport materials tailored for 
+perovskite solar cells. Science 386, 1256–1264 (2024).  
+This paper addresses the data bottleneck in the inverse design of organic molecules 
+and has been adopted in AI-assisted perovskite research.
+23. Zhi, C. et al. Machine-learning-assisted screening of interface passivation materials for 
+perovskite solar cells. ACS Energy Lett. 8, 1424–1433 (2023).
+24. Pu, Y. et al. Data-driven molecular encoding for efficient screening of organic additives  
+in perovskite solar cells. Adv. Funct. Mater. 36, e06672 (2026).
+25. Pyzer-Knapp, E. O. et al. Accelerating materials discovery using artificial intelligence, 
+high performance computing and robotics. npj Comput. Mater. 8, 84 (2022).
+26. Xu, J. et al. Anion optimization for bifunctional surface passivation in perovskite 
+solar cells. Nat. Mater. 22, 1507–1514 (2023).
+27. Feng, Z. et al. Machine learning-driven perovskite research from experimental 
+exploration to industrial development. Sol. RRL 9, 202500464 (2025).
+28. Wu, Z. et al. Crystallization kinetics of hybrid perovskite solar cells. Angew. Chem. Int. Ed. 
+63, e202319170 (2024).
+29. Tao, Q., Xu, P., Li, M. & Lu, W. Machine learning for perovskite materials design and 
+discovery. npj Comput. Mater. 7, 23 (2021).
+30. Zhang, Y., Guo, Y. & Zhou, Y. GrainBot: quantifying multi-variable microstructure disorder 
+in materials. Matter 9, 102626 (2026).
+31. Liu, Z. et al. Machine learning with knowledge constraints for process optimization of 
+open-air perovskite solar cell manufacturing. Joule 6, 834–849 (2022).  
+This paper pioneered a paradigm for developing new processes for perovskite device 
+fabrication through machine learning.
+32. Taherimakhsousi, N. et al. A machine vision tool for facilitating the optimization of 
+large-area perovskite photovoltaics. npj Comput. Mater. 7, 190 (2021).
+33. Luo, L. et al. Accelerated development of vapor deposition technology for efficient 
+perovskite solar cells via accurate and practical machine learning tools. Adv. Sci. 12, 
+e10946 (2025).
+34. Zhang, J. et al. Optimizing perovskite thin-film parameter spaces with machine learning- 
+guided robotic platform for high-performance perovskite solar cells. Adv. Energy Mater. 
+13, 2302594 (2023).
+35. Yang, J., Lawrie, B. J., Kalinin, S. V. & Ahmadi, M. High-throughput automated exploration 
+of phase growth behaviors in quasi-2D formamidinium metal halide perovskites.  
+Adv. Energy Mater. 13, 2302337 (2023).
+36. Higgins, K., Valleti, S. M., Ziatdinov, M., Kalinin, S. V. & Ahmadi, M. Chemical robotics 
+enabled exploration of stability in multicomponent lead halide perovskites via machine 
+learning. ACS Energy Lett. 5, 3426–3436 (2020).
+37. Zhao, Y. et al. Discovery of temperature-induced stability reversal in perovskites using 
+high-throughput robotic learning. Nat. Commun. 12, 2191 (2021).  
+This study, using high-throughput robotic learning, has uncovered the patterns of 
+temperature-induced stability reversal in perovskites, providing a new theoretical 
+basis and design approach for optimizing the thermal stability of perovskite materials.
+38. Higgins, K., Ziatdinov, M., Kalinin, S. V. & Ahmadi, M. High-throughput study of 
+antisolvents on the stability of multicomponent metal halide perovskites through 
+robotics-based synthesis and machine learning approaches. J. Am. Chem. Soc. 143, 
+19945–19955 (2021).
+39. Zhao, S. et al. Machine learning-assisted analysis of perovskite solar cell long-term 
+stability under multiple environmental factors. ACS Sustain. Chem. Eng. 13, 7155–7165 
+(2025).
+40. Yılmaz, B., Odabaşı, Ç & Yıldırım, R. Efficiency and stability analysis of 2D/3D perovskite 
+solar cells using machine learning. Energy Technol. 10, 2100948 (2022).
+41. Hu, Y. et al. Machine-learning modeling for ultra-stable high-efficiency perovskite 
+solar cells. Adv. Energy Mater. 12, 2201463 (2022).
+42. Kouroudis, I. et al. Artificial intelligence-based, wavelet-aided prediction of long-term 
+outdoor performance of perovskite solar cells. ACS Energy Lett. 9, 1581–1586 (2024).
+43. Bae, J., Cha, J., Kim, M. & Han, J. Advancing perovskite solar cells with biomass-derived 
+solvents: a pathway to sustainability. Green. Chem. 27, 10598–10611 (2025).
+44. Zhang, Z., Wang, H., Jacobsson, T. J. & Luo, J. Big data driven perovskite solar cell stability 
+analysis. Nat. Commun. 13, 7639 (2022).
+45. Zhang, W. et al. Enhanced optoelectronic quality of perovskite thin films with 
+hypophosphorous acid for planar heterojunction solar cells. Nat. Commun. 6, 10030 
+(2015).
+46. Shi, P. et al. Oriented nucleation in formamidinium perovskite for photovoltaics. Nature 
+620, 323–327 (2023).
+47. Shen, Y. et al. Strain regulation retards natural operation decay of perovskite solar cells. 
+Nature 635, 882–889 (2024).
+48. Hartono, N. T. P. et al. Stability follows efficiency based on the analysis of a large 
+perovskite solar cells ageing dataset. Nat. Commun. 14, 4869 (2023).
+49. Szymanski, N. J. et al. An autonomous laboratory for the accelerated synthesis of 
+inorganic materials. Nature 624, 86–91 (2023).  
+This paper is one of the earliest to contribute to the development of autonomous 
+laboratories for accelerating the synthesis of inorganic materials.
+50. Aykol, M. et al. Network analysis of synthesizable materials discovery. Nat. Commun. 10, 
+2018 (2019).
+51. Aykol, M., Dwaraknath, S. S., Sun, W. & Persson, K. A. Thermodynamic limit for synthesis 
+of metastable inorganic materials. Sci. Adv. 4, eaaq0148 (2018).
+
+
+--- PAGE 11 ---
+Nature Reviews Electrical Engineering
+Review article
+52. Hartono, N. T. P. et al. How machine learning can help select capping layers to suppress 
+perovskite degradation. Nat. Commun. 11, 4172 (2020).
+53. Frohna, K. et al. The impact of interfacial quality and nanoscale performance disorder  
+on the stability of alloyed perovskite solar cells. Nat. Energy 10, 66–76 (2025).
+54. Shen, X. et al. Crystal-facet-directed all-vacuum-deposited perovskite solar cells.  
+Nat. Mater. 25, 999–1010 (2026).
+55. Zhao, Y. et al. Strain-activated light-induced halide segregation in mixed-halide 
+perovskite solids. Nat. Commun. 11, 6328 (2020).
+56. Maqsood, A. et al. Towards an interoperable perovskite description or how to keep track 
+of 300 perovskite ions. Nat. Commun. 16, 8725 (2025).
+57. Doherty, T. A. S. et al. Stabilized tilted-octahedra halide perovskites inhibit local 
+formation of performance-limiting phases. Science 374, 1598–1605 (2021).
+58. Odabaşı, Ç & Yıldırım, R. Performance analysis of perovskite solar cells in 2013–2018 
+using machine-learning tools. Nano Energy 56, 770–791 (2019).
+59. Chen, Y. et al. Development and application of few-shot learning methods in materials 
+science under data scarcity. J. Mater. Chem. A 12, 30249–30268 (2024).
+60. Zhang, J. et al. Discovery Learning predicts battery cycle life from minimal experiments. 
+Nature 650, 110–115 (2026).  
+This paper was the first to predict cell-cycle life with minimal experimentation using 
+discovery learning, a new scientific machine-learning method.
+61. Zhou, H. et al. Few-shot learning breaks the data bottlenecks in perovskite materials 
+design. Mater. Today Phys. 59, 101904 (2025).
+62. Ma, B. et al. Data augmentation in microscopic images for material data mining. npj 
+Comput. Mater. 6, 125 (2020).
+63. Zhao, C. et al. CrystalGAT: an AI-based intelligent flexible crystal materials design 
+computing platform. Angew. Chem. Int. Ed. 64, e18543 (2025).
+64. Gunning, D. et al. XAI–Explainable artificial intelligence. Sci. Rob. 4, eaay7120 (2019).
+65. Klein, L. et al. Discovering process dynamics for scalable perovskite solar cell 
+manufacturing with explainable AI. Adv. Mater. 36, 2307160 (2024).
+66. Gou, F. et al. Machine learning-assisted prediction and control of bandgap for 
+organic–inorganic metal halide perovskites. ACS Appl. Mater. Interfaces 17, 18383–18393 
+(2025).
+67. Bi, H. et al. The influence of perovskite crystal structure on its stability. J. Mater. Chem. A 
+12, 12744–12751 (2024).
+68. Schleich, M., Geng, Z., Zhang, Y. & Suciu, D. GeCo: quality counterfactual explanations  
+in real time. Proc. VLDB Endow. 14, 1681–1693 (2021).
+69. Wang, Z. et al. Data-driven design of halide perovskites for efficient green light-emitting 
+diodes via machine learning and DFT. Phys. Chem. C 129, 13542–13557 (2025).
+70. Sharma, P., Ranjan, P. & Chakraborty, T. DFT and TD-DFT studies of perovskite  
+materials LiAX3 (A=Ge, Sn; X= F, Cl, Br, I) in reference to their solar cell applications. 
+Mater. Today Sustain. 26, 100791 (2024).
+71. Wen, J. et al. Accelerated discovery of high-performance small-molecule hole transport 
+materials via molecular splicing, high-throughput screening, and machine learning.  
+J. Mater. Inform. 5, 30 (2025).
+72. Zhang, Y. et al. Machine learning for designing perovskites and perovskite-inspired solar 
+materials: emerging opportunities and challenges. Adv. Sci. 13, e74952 (2026).
+73. Miftahullatif, E. B. et al. Machine-learning-driven in-device optimization of all-printed 
+perovskite solar cells. ACS Energy Lett. 10, 3952–3961 (2025).
+74. Gao, Y., Hu, Y., Yao, C. & Zhang, S. Recent advances in lead-safe perovskite solar cells. 
+Adv. Funct. Mater. 32, 2208225 (2022).
+75. Liu, T. et al. Disentangling environmental effects on perovskite solar cell performance via 
+interpretable machine learning. ACS Energy Lett. 11, 1609–1617 (2025).
+76. Kim, S.-W. et al. Reducing humidity dependency of ambient-air-processed wide-bandgap 
+inverted perovskite solar cells. ACS Energy Lett. 8, 4777–4781 (2023).
+77. Xie, L. et al. Unlocking a self-driving research workflow for perovskite photovoltaics. 
+Matter 8, 102097 (2025).
+78. Lee, J. et al. Recent advances in data-driven and artificial intelligence-integrated 
+perovskite solar cells: from design to self-driving laboratories. InfoMat 8, e70124 (2026).
+79. Abolhasani, M. & Kumacheva, E. The rise of self-driving labs in chemical and materials 
+sciences. Nat. Synth. 2, 483–492 (2023).
+80. Gao, D. et al. Autonomous closed-loop framework for reproducible perovskite solar cells. 
+Nature 653, 707–714 (2026).  
+This work established a state-of-the-art automated closed-loop system, setting a 
+new benchmark for autonomous discovery and manufacturing in photovoltaics and 
+materials science.
+81. Wang, Y. et al. PeroMAS: A multi-agent system of perovskite material discovery.  
+Proc. 32nd ACM SIGKDD Conference on Knowledge Discovery and Data Mining V. 2  
+(KDD ’26) 12339–12350 https://doi.org/10.1145/3770855.3818858 (2026).
+82. Yu, W., Guo, H., Xiao, J. & Shen, J. Physical neural networks with self-learning capabilities. 
+Sci. China Phys. Mech. 67, 287501 (2024).
+83. Howard, J. M., Tennyson, E. M., Neves, B. R. A. & Leite, M. S. Machine learning for 
+perovskites’ reap–rest–recovery cycle. Joule 3, 325–337 (2019).
+84. Li, B. et al. Closed-loop manufacturing for sustainable perovskite photovoltaics.  
+Nat. Rev. Mater. 11, 10–25 (2026).  
+This paper pioneered the development of a sustainable closed-loop manufacturing 
+framework for perovskite solar cells, providing systematic guidance for establishing 
+sustainable manufacturing pathways.
+85. Li, X., Wang, S., Zeng, S., Wu, Y. & Yang, Y. A survey on LLM-based multi-agent systems: 
+workflow, infrastructure, and challenges. Vicinagearth 1, 9 (2024).
+86. Guo, T. et al. Large language model based multi-agents: a survey of progress and 
+challenges. Proc. Thirty‑Third International Joint Conference on Artificial Intelligence 
+(IJCAI ’24) 8048–8057 https://doi.org/10.24963/ijcai.2024/890 (2024).
+87. Li, Z. et al. Robot-accelerated perovskite investigation and discovery. Chem. Mater. 32, 
+5650–5663 (2020).
+88. Shi, T. et al. Knowledge-driven autonomous materials research via collaborative 
+multi-agent and robotic system. Matter 9, 102577 (2026).
+89. Wong, A., Bäck, T., Kononova, A. V. & Plaat, A. Deep multiagent reinforcement learning: 
+challenges and directions. Artif. Intell. Rev. 56, 5023–5056 (2023).
+Acknowledgements
+The authors acknowledge the funding support from the National Natural Science 
+Foundation of China (Grant No. 52503336) and the Basic Research Program of Jiangsu 
+(Grant No. BK20251292).
+Author contributions
+Y.L. and G.L. developed the conceptual framework and overall structure of the manuscript, 
+and G.L. supervised the work. Y.L., W.L., Q.C. and G.L. contributed substantially to the 
+discussion of content. Y.L. wrote the article. S.D., M.K.N. and G.L. reviewed and/or edited 
+the manuscript before submission. All authors researched data for the article and contributed 
+to its revision.
+Competing interests
+The authors declare no competing interests.
+Additional information
+Peer review information Nature Reviews Electrical Engineering thanks Sang Il Seok,  
+Carlo A. R. Perini and the other, anonymous, reviewer(s) for their contribution to the peer 
+review of this work.
+Publisher’s note Springer Nature remains neutral with regard to jurisdictional claims in 
+published maps and institutional affiliations.
+Springer Nature or its licensor (e.g. a society or other partner) holds exclusive rights to this 
+article under a publishing agreement with the author(s) or other rightsholder(s); author 
+self-archiving of the accepted manuscript version of this article is solely governed by the 
+terms of such publishing agreement and applicable law.
+© Springer Nature Limited 2026
