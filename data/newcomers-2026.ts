@@ -3,12 +3,12 @@ export const newcomerNews2026 = {
   slug: "2026-09-27-new-members",
   date: "2026-09-27",
   title: {
-    zh: "逐光而来，研途同行｜欢迎 2026 级硕士新生",
-    en: "Following the Light, Learning Together | Welcome to Our 2026 Master's Cohort"
+    zh: "逐光而来，研途同行｜欢迎 2026 级新生",
+    en: "Following the Light, Learning Together | Welcome to Our 2026 Graduate Cohort"
   },
   intro: {
-    zh: "九月的风翻开新的书页，实验室也迎来了新的学习与探索。2026 年秋，易泽瑞、王天怡、葛嘉诚、于沛淼、王文睿、左祎航、娄润东、孔德鲁、何畅九位同学在东南大学功能光电实验室开启硕士阶段的旅程。不同的家乡、不同的校园经历，让大家带着各自的兴趣与期待相聚于此。让我们一起认识这九位新生，听听他们的故事与心中的坚持。",
-    en: "September opens a new chapter of learning and discovery. This autumn, Zerui Yi, Tianyi Wang, Jiacheng Ge, Peimiao Yu, Wenrui Wang, Yihang Zuo, Rundong Lou, Delu Kong, and Chang He begin their master's studies in the Guixiang Li Laboratory at Southeast University. They bring different hometowns, university experiences, and interests to this shared journey. Let us meet our nine first-year master's students and learn about the ideas and interests that inspire them."
+    zh: "九月的风翻开新的书页，实验室也迎来了新的学习与探索。2026 年秋，易泽瑞、王天怡、葛嘉诚、于沛淼、王文睿、左祎航、娄润东、孔德鲁、何畅等人在东南大学功能光电实验室开启研究生阶段的旅程。不同的家乡、不同的校园经历，让大家带着各自的兴趣与期待相聚于此。让我们一起认识这些新生，听听他们的故事与心中的坚持。",
+    en: "September opens a new chapter of learning and discovery. This autumn, Zerui Yi, Tianyi Wang, Jiacheng Ge, Peimiao Yu, Wenrui Wang, Yihang Zuo, Rundong Lou, Delu Kong, Chang He, and other new students begin their graduate studies in the Guixiang Li Laboratory at Southeast University. They bring different hometowns, university experiences, and interests to this shared journey. Let us meet our first-year students and learn about the ideas and interests that inspire them."
   },
   people: [
     {
@@ -23,8 +23,8 @@ export const newcomerNews2026 = {
       },
       hometown: { zh: "江西赣州", en: "Ganzhou, Jiangxi" },
       about: {
-        zh: "热爱生活，是易泽瑞对自己的简洁介绍。课余时间，羽毛球和游戏都是喜欢的放松方式。从本科到硕士，在熟悉的东南校园里继续求学，新的阶段也带来了新的问题与期待。易泽瑞以“知耻而后勇，知不足而奋进”自勉，愿在认识不足、不断学习的过程中，一步步走向更好的自己。",
-        en: "Zerui Yi describes a simple outlook: a love of life. Badminton and gaming are among favorite ways to relax. Continuing from undergraduate to master's studies on a familiar campus brings new questions and possibilities. Zerui's motto encourages courage through acknowledging one's shortcomings and progress through recognizing what remains to be learned, a fitting companion for the journey ahead."
+        zh: "热爱生活，是易泽瑞对自己的简洁介绍。课余时间，羽毛球和游戏都是喜欢的放松方式。从本科到研究生，在熟悉的东南校园里继续求学，新的阶段也带来了新的问题与期待。易泽瑞以“知耻而后勇，知不足而奋进”自勉，愿在认识不足、不断学习的过程中，一步步走向更好的自己。",
+        en: "Zerui Yi describes a simple outlook: a love of life. Badminton and gaming are among favorite ways to relax. Continuing from undergraduate to graduate studies on a familiar campus brings new questions and possibilities. Zerui's motto encourages courage through acknowledging one's shortcomings and progress through recognizing what remains to be learned, a fitting companion for the journey ahead."
       },
       research: { zh: "钙钛矿太阳能电池稳定性", en: "Stability of perovskite solar cells" },
       motto: {
@@ -83,7 +83,7 @@ export const newcomerNews2026 = {
       },
       hometown: { zh: "山东济宁任城区", en: "Rencheng District, Jining, Shandong" },
       about: {
-        zh: "看动漫、打乒乓球、弹吉他，以及阅读推理和武侠小说，都是于沛淼喜欢的休闲方式。“全力以赴完成任务”是对自己的要求，“学无止境”是记在心中的座右铭。带着丰富的兴趣与认真投入的态度，于沛淼开启了硕士阶段的学习。愿这份求知之心，陪伴每一次尝试与进步。",
+        zh: "看动漫、打乒乓球、弹吉他，以及阅读推理和武侠小说，都是于沛淼喜欢的休闲方式。“全力以赴完成任务”是对自己的要求，“学无止境”是记在心中的座右铭。带着丰富的兴趣与认真投入的态度，于沛淼开启了研究生阶段的学习。愿这份求知之心，陪伴每一次尝试与进步。",
         en: "Peimiao Yu's interests range from anime, table tennis, and guitar to mystery and martial arts novels. A commitment to giving every task full effort goes hand in hand with the motto, “Learning never ends.” With varied interests and a wholehearted approach to learning, Peimiao begins a new stage of study and exploration. May that curiosity accompany each new attempt and each step forward."
       },
       research: { zh: "宽带隙钙钛矿太阳能电池", en: "Wide-bandgap perovskite solar cells" },
@@ -116,7 +116,7 @@ export const newcomerNews2026 = {
       education: { zh: "南京林业大学本科", en: "Undergraduate degree, Nanjing Forestry University" },
       hometown: { zh: "河南南阳桐柏", en: "Tongbai County, Nanyang, Henan" },
       about: {
-        zh: "健身、骑行和摄影是左祎航的日常爱好，热爱运动、自律是对自己的评价。从南京林业大学来到东南大学，左祎航将在硕士阶段探索窄带隙及叠层电池。“Move_Up”是写在个人介绍中的座右铭，也寄托着不断向前的期待。愿这份行动力与自律，伴随今后的学习和生活。",
+        zh: "健身、骑行和摄影是左祎航的日常爱好，热爱运动、自律是对自己的评价。从南京林业大学来到东南大学，左祎航将在研究生阶段探索窄带隙及叠层电池。“Move_Up”是写在个人介绍中的座右铭，也寄托着不断向前的期待。愿这份行动力与自律，伴随今后的学习和生活。",
         en: "Fitness, cycling, and photography are among Yihang Zuo's favorite activities. Yihang describes a love of sport and a disciplined approach to life. After undergraduate studies at Nanjing Forestry University, Yihang joins Southeast University to explore narrow-bandgap and tandem solar cells. The motto, “Move_Up,” expresses a wish to keep moving forward. May that energy and discipline accompany the years of study ahead."
       },
       research: { zh: "窄带隙及叠层电池", en: "Narrow-bandgap and tandem solar cells" },
@@ -152,7 +152,7 @@ export const newcomerNews2026 = {
       },
       hometown: { zh: "山东枣庄", en: "Zaozhuang, Shandong" },
       about: {
-        zh: "孔德鲁喜欢跑步和街健，自称说话不多但热心肠，沉得住气，做事有条不紊。“流水不争先，争的是滔滔不绝”是这份沉静与坚持的写照。从杭州师范大学的高分子材料与工程专业出发，孔德鲁将在硕士阶段关注常规带隙钙钛矿太阳能电池的稳定性。愿持续的积累，陪伴每一次探索。",
+        zh: "孔德鲁喜欢跑步和街健，自称说话不多但热心肠，沉得住气，做事有条不紊。“流水不争先，争的是滔滔不绝”是这份沉静与坚持的写照。从杭州师范大学的高分子材料与工程专业出发，孔德鲁将在研究生阶段关注常规带隙钙钛矿太阳能电池的稳定性。愿持续的积累，陪伴每一次探索。",
         en: "Delu Kong enjoys running and street workouts. Quiet but warmhearted, Delu describes a calm and methodical approach to tasks. The motto, “Flowing water does not race to be first; it keeps flowing without end,” reflects a belief in steady effort. With an undergraduate background in Polymer Materials and Engineering at Hangzhou Normal University, Delu will focus on the stability of regular-bandgap perovskite solar cells. We wish Delu steady progress in this new stage of research."
       },
       research: {
@@ -190,7 +190,7 @@ export const newcomerNews2026 = {
     }
   ],
   closing: {
-    zh: "九位同学，九种鲜明的个性，也让课题组的科研与生活多了新的期待。愿大家在今后的日子里保持好奇、踏实求索，在交流中拓宽思路，在合作中彼此支持，也在忙碌之余珍藏生活的趣味。欢迎大家开启硕士阶段的新旅程！愿我们研途同行，在东南共同写下充实而难忘的新篇章。",
-    en: "Nine students bring nine distinct personalities and much to look forward to, both in research and in everyday life. May the years ahead be filled with curiosity, thoughtful exploration, open discussion, and mutual support, with time for the interests that make life enjoyable. A warm welcome to this new stage of master's study. We look forward to learning together and making lasting memories at Southeast University."
+    zh: "同学们各具特色，为课题组的科研与生活带来了新的期待。愿大家在今后的日子里保持好奇、踏实求索，在交流中拓宽思路，在合作中彼此支持，也在忙碌之余珍藏生活的趣味。欢迎大家开启研究生阶段的新旅程！愿我们研途同行，在东南共同写下充实而难忘的新篇章。",
+    en: "Our new students bring distinct personalities and much to look forward to, both in research and in everyday life. May the years ahead be filled with curiosity, thoughtful exploration, open discussion, and mutual support, with time for the interests that make life enjoyable. A warm welcome to this new stage of graduate study. We look forward to learning together and making lasting memories at Southeast University."
   }
 };

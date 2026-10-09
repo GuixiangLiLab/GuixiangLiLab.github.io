@@ -26,7 +26,7 @@ export default async function NewMembers2026Page({ params }: PageProps) {
     ? {
         news: "新闻动态",
         year: "2026 · 新生介绍",
-        category: "硕士一年级",
+        category: "研究生一年级",
         date: "2026 年 9 月 27 日",
         people: "认识新同学",
         education: "教育经历",
@@ -40,7 +40,7 @@ export default async function NewMembers2026Page({ params }: PageProps) {
     : {
         news: "News",
         year: "2026 · NEW MEMBERS",
-        category: "First-year master's students",
+        category: "First-year graduate students",
         date: "September 27, 2026",
         people: "Meet our new members",
         education: "Education",
@@ -86,7 +86,7 @@ export default async function NewMembers2026Page({ params }: PageProps) {
           </header>
 
           <div className="fsog-newcomers-people">
-            {newcomerNews2026.people.map((person, index) => (
+            {newcomerNews2026.people.map((person) => (
               <section
                 className="fsog-newcomers-person"
                 id={person.slug}
@@ -94,9 +94,6 @@ export default async function NewMembers2026Page({ params }: PageProps) {
                 aria-labelledby={`${person.slug}-heading`}
               >
                 <div className="fsog-newcomers-name-row">
-                  <span className="fsog-newcomers-number" aria-hidden="true">
-                    {String(index + 1).padStart(2, "0")}
-                  </span>
                   <h2 id={`${person.slug}-heading`}>{person.name[locale]}</h2>
                 </div>
 
