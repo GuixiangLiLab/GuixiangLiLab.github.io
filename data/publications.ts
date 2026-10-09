@@ -18,6 +18,57 @@ export interface Publication {
 
 export const publications: Publication[] = [
   {
+    id: "nree-2026-system-level-ai",
+    year: 2026,
+    href: "https://doi.org/10.1038/s44287-026-00332-4",
+    img: "",
+    title: {
+      en: "Towards system-level artificial intelligence in perovskite photovoltaics",
+      zh: "Towards system-level artificial intelligence in perovskite photovoltaics<br/>（面向钙钛矿光伏的系统级人工智能）"
+    },
+    authorsHtml: {
+      en: `Yifan Li#, Wei Liu#, Qing Cao#, Shimin Di*, Mohammad Khaja Nazeeruddin*, <span class="bold">Guixiang Li*</span>`,
+      zh: `Yifan Li#, Wei Liu#, Qing Cao#, Shimin Di*, Mohammad Khaja Nazeeruddin*, <span class="bold">Guixiang Li*(李桂香*)</span>`
+    },
+    venue: { en: "Nature Reviews Electrical Engineering (2026)", zh: "Nature Reviews Electrical Engineering（2026）" },
+    doi: "10.1038/s44287-026-00332-4",
+    selected: false
+  },
+  {
+    id: "adma-2026-laser-defined-reaction-topology",
+    year: 2026,
+    href: "https://doi.org/10.1002/adma.74828",
+    img: "",
+    title: {
+      en: "Laser-Defined Reaction Topology Enables Controllable Solid-State Transformations for Scalable Perovskite Photovoltaics",
+      zh: "Laser-Defined Reaction Topology Enables Controllable Solid-State Transformations for Scalable Perovskite Photovoltaics<br/>（激光图案化反应拓扑实现面向规模化钙钛矿光伏的可控固相转化）"
+    },
+    authorsHtml: {
+      en: `Kaihuai Du, Haoran Zhang, Aili Wang*, Xuebing Wen, Chunna Huang, Mengde Zhai, Hang Lin, Jialin Zhang, Lvzhou Li, Antonio Abate, Mohammad Khaja Nazeeruddin, <span class="bold">Guixiang Li*</span>, Weijia Zhou*, Jianning Ding*`,
+      zh: `Kaihuai Du, Haoran Zhang, Aili Wang*, Xuebing Wen, Chunna Huang, Mengde Zhai, Hang Lin, Jialin Zhang, Lvzhou Li, Antonio Abate, Mohammad Khaja Nazeeruddin, <span class="bold">Guixiang Li*(李桂香*)</span>, Weijia Zhou*, Jianning Ding*`
+    },
+    venue: { en: "Advanced Materials (2026)", zh: "Advanced Materials（2026）" },
+    doi: "10.1002/adma.74828",
+    selected: false
+  },
+  {
+    id: "kdd-2026-peromas",
+    year: 2026,
+    href: "https://doi.org/10.1145/3770855.3818858",
+    img: "",
+    title: {
+      en: "PeroMAS: A Multi-agent System of Perovskite Material Discovery",
+      zh: "PeroMAS: A Multi-agent System of Perovskite Material Discovery<br/>（PeroMAS：面向钙钛矿材料发现的多智能体系统）"
+    },
+    authorsHtml: {
+      en: `Yishu Wang, Wei Liu, Yifan Li, Shengxiang Xu, Xujie Yuan, Ran Li, Yuyu Luo, Jia Zhu, Shimin Di*, Min-Ling Zhang*, <span class="bold">Guixiang Li*</span>`,
+      zh: `Yishu Wang, Wei Liu, Yifan Li, Shengxiang Xu, Xujie Yuan, Ran Li, Yuyu Luo, Jia Zhu, Shimin Di*, Min-Ling Zhang*, <span class="bold">Guixiang Li*(李桂香*)</span>`
+    },
+    venue: { en: "ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD) (2026)", zh: "ACM SIGKDD Conference on Knowledge Discovery and Data Mining（KDD） （2026）" },
+    doi: "10.1145/3770855.3818858",
+    selected: false
+  },
+  {
     id: "science-2023-pipn-temp-variation",
     year: 2023,
     href: "https://www.science.org/doi/10.1126/science.add7331",
