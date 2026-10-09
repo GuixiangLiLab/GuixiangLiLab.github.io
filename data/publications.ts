@@ -28,7 +28,7 @@ export const publications: Publication[] = [
     },
     authorsHtml: {
       en: `Yifan Li#, Wei Liu#, Qing Cao#, Shimin Di*, Mohammad Khaja Nazeeruddin*, <span class="bold">Guixiang Li*</span>`,
-      zh: `Yifan Li#, Wei Liu#, Qing Cao#, Shimin Di*, Mohammad Khaja Nazeeruddin*, <span class="bold">Guixiang Li*(李桂香*)</span>`
+      zh: `Yifan Li#(李怡凡#), Wei Liu#, Qing Cao#, Shimin Di*, Mohammad Khaja Nazeeruddin*, <span class="bold">Guixiang Li*(李桂香*)</span>`
     },
     venue: { en: "Nature Reviews Electrical Engineering (2026)", zh: "Nature Reviews Electrical Engineering（2026）" },
     doi: "10.1038/s44287-026-00332-4",
@@ -45,7 +45,7 @@ export const publications: Publication[] = [
     },
     authorsHtml: {
       en: `Kaihuai Du, Haoran Zhang, Aili Wang*, Xuebing Wen, Chunna Huang, Mengde Zhai, Hang Lin, Jialin Zhang, Lvzhou Li, Antonio Abate, Mohammad Khaja Nazeeruddin, <span class="bold">Guixiang Li*</span>, Weijia Zhou*, Jianning Ding*`,
-      zh: `Kaihuai Du, Haoran Zhang, Aili Wang*, Xuebing Wen, Chunna Huang, Mengde Zhai, Hang Lin, Jialin Zhang, Lvzhou Li, Antonio Abate, Mohammad Khaja Nazeeruddin, <span class="bold">Guixiang Li*(李桂香*)</span>, Weijia Zhou*, Jianning Ding*`
+      zh: `Kaihuai Du, Haoran Zhang, Aili Wang*, Xuebing Wen(温雪冰), Chunna Huang, Mengde Zhai, Hang Lin, Jialin Zhang, Lvzhou Li, Antonio Abate, Mohammad Khaja Nazeeruddin, <span class="bold">Guixiang Li*(李桂香*)</span>, Weijia Zhou*, Jianning Ding*`
     },
     venue: { en: "Advanced Materials (2026)", zh: "Advanced Materials（2026）" },
     doi: "10.1002/adma.74828",
@@ -62,7 +62,7 @@ export const publications: Publication[] = [
     },
     authorsHtml: {
       en: `Yishu Wang, Wei Liu, Yifan Li, Shengxiang Xu, Xujie Yuan, Ran Li, Yuyu Luo, Jia Zhu, Shimin Di*, Min-Ling Zhang*, <span class="bold">Guixiang Li*</span>`,
-      zh: `Yishu Wang, Wei Liu, Yifan Li, Shengxiang Xu, Xujie Yuan, Ran Li, Yuyu Luo, Jia Zhu, Shimin Di*, Min-Ling Zhang*, <span class="bold">Guixiang Li*(李桂香*)</span>`
+      zh: `Yishu Wang, Wei Liu, Yifan Li(李怡凡), Shengxiang Xu, Xujie Yuan, Ran Li, Yuyu Luo, Jia Zhu, Shimin Di*, Min-Ling Zhang*, <span class="bold">Guixiang Li*(李桂香*)</span>`
     },
     venue: { en: "ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD) (2026)", zh: "ACM SIGKDD Conference on Knowledge Discovery and Data Mining（KDD） （2026）" },
     doi: "10.1145/3770855.3818858",
