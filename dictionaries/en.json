@@ -498,5 +498,14 @@
   "page.news.20261001-lgx-nree.published": "October 1, 2026",
   "page.news.20261001-lgx-nree.paperLinkLabel": "Paper link",
   "page.news.20261001-lgx-nree.figureCredit": "Images: original paper in Nature Reviews Electrical Engineering (2026)",
-  "page.news.20261001-lgx-nree.sourceLink": "View the original WeChat article"
+  "page.news.20261001-lgx-nree.sourceLink": "View the original WeChat article",
+
+  "page.news.20261011-achievement.title": "News | Our Perovskite Photovoltaic Technology Selected for the Second Jiangsu U35 Youth Science and Technology Achievements List",
+  "page.news.20261011-achievement.p1": "Following a new survey of achievements by young scientists and entrepreneurs across the province, the Jiangsu Provincial Committee of the Communist Youth League and the Jiangsu Youth Federation released the second list of 40 Jiangsu U35 youth science and technology achievements. Our group's key technology for interface regulation in next-generation photovoltaics was selected for the list.",
+  "page.news.20261011-achievement.p2": "The Second Jiangsu U35 Youth Science and Technology Achievements List",
+  "page.news.20261011-achievement.p3": "Key Technology for Interface Regulation in Next-Generation Photovoltaics",
+  "page.news.20261011-achievement.figure1Alt": "The second Jiangsu U35 youth science and technology achievements list, with our photovoltaic interface regulation technology at No. 16",
+  "page.news.20261011-achievement.figure2Alt": "Overview of the key technology for interface regulation in next-generation photovoltaics",
+  "page.news.20261011-achievement.source": "Source: Jiangsu Provincial Committee of the Communist Youth League",
+  "page.news.20261011-achievement.sourceLink": "Read the original WeChat article"
 }

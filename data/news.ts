@@ -24,6 +24,16 @@ function sortByDateDesc(a: NewsItem, b: NewsItem) {
 
 export const news: NewsItem[] = [
   {
+    id: "2026-10-11-achievement",
+    slug: "2026-10-11-achievement",
+    cover: "/img/News/20261011_achievement/cover.jpg",
+    title: {
+      en: "News | Our Perovskite Photovoltaic Technology Selected for the Second Jiangsu U35 Youth Science and Technology Achievements List",
+      zh: "新闻资讯 | 课题组钙钛矿光伏技术入选第二批江苏青年科技成果清单"
+    },
+    date: "2026.10.11"
+  },
+  {
     id: "2026-10-01-lgx-nree",
     slug: "2026-10-01-lgx-nree",
     cover: "/img/News/20261001_lgx_nree/figure-3.png",
