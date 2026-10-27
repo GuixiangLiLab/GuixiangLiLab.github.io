@@ -54,6 +54,13 @@ export const members: Member[] = [
     name: { en: "Yifan Li", zh: "李怡凡" },
   },
   {
+    id: "chao-liu",
+    group: "phd",
+    slug: "liuchao",
+    img: "/img/Members/liuchao.png",
+    name: { en: "Chao Liu", zh: "刘超" },
+  },
+  {
     id: "shaoqiang-wang",
     group: "phd",
     slug: "wangshaoqiang",

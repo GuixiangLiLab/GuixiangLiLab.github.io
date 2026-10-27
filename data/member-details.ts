@@ -41,6 +41,56 @@ export interface MemberDetail {
  */
 export const memberDetails: Record<string, MemberDetail> = {
 
+  liuchao: {
+    slug: "liuchao",
+    portrait: "/img/Members/liuchao.png",
+    alt: { en: "Chao Liu", zh: "刘超" },
+    name: { en: "Chao Liu", zh: "刘超" },
+    statusBadge: { en: "PhD · Year 1", zh: "博士一年级" },
+    affiliation: {
+      en: "Guixiang Li Laboratory · Southeast University",
+      zh: "功能光电实验室 · 东南大学"
+    },
+    sideNotes: {
+      heading: { en: "More about me", zh: "更多关于我" },
+      paras: [
+        {
+          en: "Born in December 2001, from Zhuzhou, Hunan.",
+          zh: "2001 年 12 月生，湖南株洲人。"
+        }
+      ]
+    },
+    background: {
+      title: { en: "Background", zh: "教育经历" },
+      text: {
+        en: "<strong>Undergraduate and master's studies</strong>, Southeast University",
+        zh: "东南大学 · 本科、硕士"
+      }
+    },
+    hobbies: {
+      en: ["Basketball", "Fitness"],
+      zh: ["篮球", "健身"]
+    },
+    statement: {
+      title: { en: "Personal Statement", zh: "个人陈述" },
+      text: {
+        en: "Optimistic and outgoing, sincere and warmhearted.",
+        zh: "乐观开朗、真诚热情。"
+      }
+    },
+    motto: {
+      en: "“Beautiful scenery beyond the window, a bright future shaped by the pen.”",
+      zh: "“窗外好风景，笔下好前途。”"
+    },
+    research: {
+      title: { en: "Research Direction", zh: "研究方向" },
+      text: {
+        en: "Encapsulation of perovskite solar cells.",
+        zh: "钙钛矿太阳能电池封装"
+      }
+    }
+  },
+
   // ========================
   // PostDoc
   // ========================
